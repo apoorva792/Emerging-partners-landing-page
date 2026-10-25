@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "node scripts/dev-server.js",
     "setup": "node scripts/studio-setup.js",
     "try": "node scripts/try.js",
     "run-journey": "node scripts/run.js"

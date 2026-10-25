@@ -14,7 +14,7 @@ are asked for anything.** Recommendations come at step 3; strategic accounts at 
 
 ```bash
 cd ~/partner-opportunity-agent
-npm start                       # http://localhost:3000
+npm start                       # http://localhost:3000 (scripts/dev-server.js)
 ```
 
 No install step — no dependencies. Node 20+.
@@ -201,6 +201,13 @@ Vercel, project root here. `public/` is served statically and `api/*.js` become 
 | `APOLLO_API_KEY` | no, but | Company enrichment, the partner's logo on the brief, and the only source that works when a site sits behind a WAF. Without it the agent still runs from the crawl alone. |
 
 There is no build step and no dependency install — Node 20+, no `node_modules`.
+
+**The dev server lives in `scripts/`, not the repo root, and has to stay there.** Vercel's
+CLI treats a root `server.js` as the application entrypoint and deploys the whole project
+as a long-running Node server. The build still succeeds, which is what makes it nasty: it
+silently bypasses the `functions` block in `vercel.json`, so `maxDuration` falls back to
+the platform default of about ten seconds while the real calls take twenty to thirty, and
+`public/` is served by the dev server's own file handler instead of the CDN.
 
 Three things in `vercel.json` and the code exist because of how serverless differs from a
 laptop, and all three were found by reading rather than by a failed deploy:
