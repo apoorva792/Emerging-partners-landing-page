@@ -1,0 +1,26 @@
+id: mk-02-brand-compliant-creative
+archetype: marketing-agency
+name: Brand-compliant creative production at scale
+one_liner: Agents generate and check creative against the brand book, so the volume
+  goes up without the brand team becoming the bottleneck.
+fits_when:
+  - holds a brand guardianship or retainer relationship
+  - clients are consumer, retail, automotive, CPG or hospitality
+  - produces assets across many SKUs, markets or store formats
+buyer: Brand Director / Head of Content
+pitch_to_their_client: "Ten times the assets, and legal still signs them off."
+why_you: "You are the one who already owns the brand book. Nobody else can
+  credibly sell the compliance half of this."
+delivery:
+  shape: 6-week build including brand-rule encoding, then per-asset or retainer
+  team_needed: 1 creative lead + 1 engineer
+  lyzr_products: [Agent Studio, Responsible AI]
+first_offer:
+  name: Brand rules audit
+  shape: 2-3 weeks, one asset family
+  ends_with: the brand book turned into rules a machine can check, and a pilot on that asset family
+proof:
+  case: cs_campaign_photography_automation
+  customer: a German manufacturer of premium passenger vehicles
+  named: false
+  result: 95% brand-compliant images ready to use

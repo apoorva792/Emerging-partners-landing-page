@@ -1,0 +1,27 @@
+id: in-03-regulated-industry-enablement
+archetype: infrastructure-sovereignty
+also_fits: [it-consultancy-msp]
+name: Regulated-industry AI enablement (banking, insurance, public sector)
+one_liner: KYC, compliance monitoring and case handling as agents that work inside
+  the regulator's rules and can explain every decision they made.
+fits_when:
+  - clients are banks, insurers, regulators or government departments
+  - mentions KYC, AML, compliance, claims, licensing or citizen services
+  - has existing clearance, empanelment or sector credentials
+buyer: Head of Compliance / COO of the business line
+pitch_to_their_client: "Automated, and still defensible in front of the regulator."
+why_you: "The sector credential you already hold is the hard part. Very few
+  AI vendors can get through the door you're already inside."
+delivery:
+  shape: 10-week build on one regulated workflow, then expansion per product line
+  team_needed: 1 domain SME + 1–2 engineers
+  lyzr_products: [Agent Studio, OpenController, Responsible AI]
+first_offer:
+  name: Regulated workflow review
+  shape: 3 weeks, one workflow
+  ends_with: that workflow mapped against the rules it answers to, and a pilot that leaves an audit trail
+proof:
+  case: cs_major_banking_institution
+  customer: a large bank
+  named: false
+  result: 30,000+ hours saved by minimizing manual guideline tracking across 30+ products

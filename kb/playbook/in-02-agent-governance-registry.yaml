@@ -1,0 +1,27 @@
+id: in-02-agent-governance-registry
+archetype: infrastructure-sovereignty
+also_fits: [it-consultancy-msp]
+name: AI governance and agent registry (OpenController)
+one_liner: One place where every agent in the enterprise is registered, permissioned,
+  monitored and explainable — whoever built it, wherever it runs.
+fits_when:
+  - clients are regulated, or have an internal audit / risk function
+  - mentions governance, compliance, risk, ISO/SOC, or model risk
+  - clients already have AI sprawl across teams and vendors
+buyer: CISO / Chief Risk Officer / Head of AI
+pitch_to_their_client: "You can't govern what you can't see. Start with the inventory."
+why_you: "This is the engagement that gets you in front of risk and the board,
+  and it is vendor-neutral — you govern agents you didn't build."
+delivery:
+  shape: 4-week discovery and registry, then annual platform + advisory
+  team_needed: 1 governance consultant + 1 engineer
+  lyzr_products: [OpenController, Responsible AI, Hallucination Manager]
+first_offer:
+  name: Agent estate assessment
+  shape: 3 weeks, one business unit
+  ends_with: an inventory of every agent and copilot running, what each can reach, and a registry pilot
+proof:
+  case: cs_enterprise_ai_governance
+  customer: a global growth and creative consulting firm
+  named: false
+  result: $100M joint go-to-market value across a three-year partnership

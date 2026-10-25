@@ -1,0 +1,26 @@
+id: hr-02-hr-service-desk
+archetype: hr-consultancy
+name: HR operations and employee service desk agents
+one_liner: Policy questions, leave, payroll queries and letters answered on the spot,
+  with escalation to a human only when it genuinely needs one.
+fits_when:
+  - implements or supports an HRMS (Workday, SuccessFactors, Darwinbox, Zoho People)
+  - clients have 1000+ employees
+  - mentions HR shared services, employee experience or an HR helpdesk
+buyer: CHRO / HR Shared Services Head
+pitch_to_their_client: "Your HR team stops answering the same 200 questions."
+why_you: "You configured their HRMS. You know where the answers live and which
+  policies actually apply — which is exactly what makes this work."
+delivery:
+  shape: 6–8 week build, then per-employee-per-month
+  team_needed: 1 HR domain consultant + 1 engineer
+  lyzr_products: [Agent Studio, Responsible AI]
+first_offer:
+  name: Employee query baseline
+  shape: 2-3 weeks, one quarter of tickets
+  ends_with: the queries that never needed a human, and a pilot on the top twenty
+proof:
+  case: cs_global_enterprise_streamlined_hr_engineering_qa_with_lyzr
+  customer: a global enterprise
+  named: false
+  result: 75% reduction in HR workload

@@ -1,0 +1,26 @@
+id: in-01-private-ai-deployment
+archetype: infrastructure-sovereignty
+name: Private and sovereign AI deployments
+one_liner: The whole agent stack inside the client's own data centre or national
+  cloud — no data leaving the boundary, no foreign SaaS in the audit.
+fits_when:
+  - operates or resells data centre, private cloud or GPU capacity
+  - clients are government, defence, banking, healthcare or telecom
+  - mentions data residency, sovereignty, on-premise or air-gapped
+buyer: CIO / CISO / Head of Infrastructure
+pitch_to_their_client: "Agents, inside your perimeter, with the same controls as everything else there."
+why_you: "Sovereignty is the objection that kills most AI deals in your market.
+  You are the answer to it — which makes you the partner, not the reseller."
+delivery:
+  shape: 10–12 week deployment, then infrastructure + support annuity
+  team_needed: 1 infra architect + 1 platform engineer
+  lyzr_products: [Agentic OS, Optimus, OpenController]
+first_offer:
+  name: Deployment readiness review
+  shape: 3-4 weeks, one target environment
+  ends_with: hosting, data residency and hardware settled in writing, and a scoped sovereign pilot
+proof:
+  case: cs_cpg_ai_governance
+  customer: a Fortune 50 CPG company
+  named: false
+  result: One registry for every agent, any cloud or framework

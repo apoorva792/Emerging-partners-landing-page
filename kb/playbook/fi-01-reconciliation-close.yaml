@@ -1,0 +1,26 @@
+id: fi-01-reconciliation-close
+archetype: finance-accounting-firm
+name: Reconciliation and close automation agents
+one_liner: Agents match transactions, chase the exceptions and draft the close
+  checklist, so the month-end team reviews instead of reconstructs.
+fits_when:
+  - does bookkeeping, controllership, audit support or CFO services
+  - implements or supports an ERP (NetSuite, SAP, Dynamics, Tally, QuickBooks)
+  - clients are mid-market with a small finance team
+buyer: CFO / Controller
+pitch_to_their_client: "Close in three days, with the exceptions already explained."
+why_you: "You're doing the reconciliation today with your own staff. Automating it
+  turns a capacity-bound service into a margin-bound one."
+delivery:
+  shape: 6-week build on one entity, then per-entity monthly
+  team_needed: 1 qualified accountant + 1 engineer
+  lyzr_products: [Agent Studio, OpenController]
+first_offer:
+  name: Close process assessment
+  shape: 2-3 weeks, one legal entity
+  ends_with: a map of which month-end reconciliations are agent-ready, and a scoped pilot on the noisiest one
+proof:
+  case: cs_insurance_billing
+  customer: A Fortune Global 500 insurance brokerage
+  named: false
+  result: 80% reduction in manual data entry per billing activity

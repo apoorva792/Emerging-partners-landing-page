@@ -1,0 +1,14 @@
+{
+  "kb": {
+    "partner_playbook": "6ad90100db61dada3e8504d0",
+    "partner_program": "6ad9010124e25f21cb01590b"
+  },
+  "agents": {
+    "partner_profiler": "6ad9030c19edfa4264c53ada",
+    "partner_opportunity": "6ad9069b32a767a5458e7c5a",
+    "partner_assessment": "6ad9069b7ded1767b0b60158",
+    "partner_client_brief": "6ade086075c4489578be2d4b",
+    "partner_accounts": "6ade09199ff3e0e78e1b85b4",
+    "partner_shortlist": "6ade49387bf8306e2901dc1c"
+  }
+}

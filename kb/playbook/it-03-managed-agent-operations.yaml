@@ -1,0 +1,26 @@
+id: it-03-managed-agent-operations
+archetype: it-consultancy-msp
+name: Managed AI agents (agents-as-a-service)
+one_liner: You run the client's agents the way you already run their infrastructure —
+  monitored, versioned, SLA'd, with someone to call when one misbehaves.
+fits_when:
+  - already sells managed services, AMS, or a support retainer
+  - has an NOC, a helpdesk or an on-call rota
+  - clients have already bought AI somewhere and nobody owns it
+buyer: CIO / Head of IT Operations
+pitch_to_their_client: "Someone has to own these in production. That's us."
+why_you: "This is the annuity line. You're not selling a project — you're adding
+  agents to the estate you already manage, at the renewal you already have."
+delivery:
+  shape: per-agent monthly fee, onboarding sprint to take over existing agents
+  team_needed: existing support team + 1 agent ops lead
+  lyzr_products: [OpenController, Agent Studio, Responsible AI]
+first_offer:
+  name: Agent operations review
+  shape: 2 weeks, their current estate
+  ends_with: what is running, what is unmonitored, what has already broken, and a takeover plan
+proof:
+  case: cs_movate
+  customer: Movate
+  named: true
+  result: 25–35% faster impact checks

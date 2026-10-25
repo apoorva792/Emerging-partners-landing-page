@@ -1,0 +1,2503 @@
+{
+ "built": "2026-09-30T20:42:39.100Z",
+ "resources": [
+  {
+   "priority": 3,
+   "id": "cs_multicultural_audience_intelligence",
+   "type": "case_study",
+   "title": "Audience Intelligence Automation for a Multicultural Media Agency",
+   "blurb": "Up to 5x more research volume per planner",
+   "teaser": "A multicultural media agency now turns a media brief into a channel-ready, confidence-scored plan in",
+   "url": "https://www.lyzr.ai/case-studies/multicultural-audience-intelligence/",
+   "topics": [
+    "media & advertising",
+    "marketing",
+    "research & strategy",
+    "agent studio",
+    "agent_studio"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_analyst_database_intelligence",
+   "type": "case_study",
+   "title": "AI Analyst Research Automation | Lyzr Case Study",
+   "blurb": "12 weeks from discovery to a live, production system",
+   "teaser": "A global leader in industrial technology and infrastructure: 12 weeks from discovery to a live",
+   "url": "https://www.lyzr.ai/case-studies/analyst-database-intelligence/",
+   "topics": [
+    "manufacturing",
+    "technology & it services",
+    "marketing",
+    "research & strategy",
+    "agent studio",
+    "agent_studio"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_innovation_idea_evaluation",
+   "type": "case_study",
+   "title": "Global Professional Services Firm | Lyzr Case Study",
+   "blurb": "Evaluation time cut from 1 to 2 weeks to 15 to 20 minutes per idea",
+   "teaser": "A Fortune 500 global professional services firm: evaluation time cut from 1 to 2 weeks to 15 to 20",
+   "url": "https://www.lyzr.ai/case-studies/innovation-idea-evaluation/",
+   "topics": [
+    "professional services",
+    "research & strategy",
+    "operations",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_agentic_procurement",
+   "type": "case_study",
+   "title": "$10B+ Global Advisory Firm | Lyzr Case Study",
+   "blurb": "Up to 55% wider reach in supplier discovery",
+   "teaser": "A leading global professional services and advisory firm: up to 55% wider reach in supplier discovery",
+   "url": "https://www.lyzr.ai/case-studies/agentic-procurement/",
+   "topics": [
+    "professional services",
+    "procurement",
+    "operations",
+    "compliance & risk",
+    "finance",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_campaign_photography_automation",
+   "type": "case_study",
+   "title": "AI Campaign Photography Pipeline Built for a Global Premium Automaker",
+   "blurb": "95% brand-compliant images ready to use",
+   "teaser": "A German manufacturer of premium passenger vehicles: 95% brand-compliant images ready to use",
+   "url": "https://www.lyzr.ai/case-studies/campaign-photography-automation/",
+   "topics": [
+    "manufacturing",
+    "marketing",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_telecom_order_automation",
+   "type": "case_study",
+   "title": "$4.3B Telecom Infrastructure Leader | Lyzr Case Study",
+   "blurb": "Document extraction time reduced from 30 min to 3 min (90% faster than incumbent platform)",
+   "teaser": "A global leader in wireless communications infrastructure: document extraction time reduced from 30 min to",
+   "url": "https://www.lyzr.ai/case-studies/telecom-order-automation/",
+   "topics": [
+    "telecom",
+    "operations",
+    "it operations",
+    "it_operations"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_payments_support_automation",
+   "type": "case_study",
+   "title": "Global Payments & Commerce Platform | Lyzr Case Study",
+   "blurb": "16.17% reduction in average handle time in the first trial cohort",
+   "teaser": "A global payments and commerce technology company: 16.17% reduction in average handle time in the first",
+   "url": "https://www.lyzr.ai/case-studies/payments-support-automation/",
+   "topics": [
+    "fintech",
+    "e-commerce",
+    "customer service",
+    "operations",
+    "knowledge base",
+    "e_commerce",
+    "customer_service",
+    "knowledge_base"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_cpg_ai_governance",
+   "type": "case_study",
+   "title": "AI Agent Governance Control Plane for a Fortune 50 CPG Company",
+   "blurb": "One registry for every agent, any cloud or framework",
+   "teaser": "A Fortune 50 CPG company: one registry for every agent, any cloud or framework",
+   "url": "https://www.lyzr.ai/case-studies/cpg-ai-governance/",
+   "topics": [
+    "cpg",
+    "it operations",
+    "compliance & risk",
+    "engineering",
+    "opencontroller",
+    "responsible ai",
+    "responsible_ai",
+    "it_operations"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_venture_screening",
+   "type": "case_study",
+   "title": "Fortune 500 Global Professional Services Case Study | Lyzr AI",
+   "blurb": "Research time per startup reduced from 2 to 4 weeks to a few minutes",
+   "teaser": "A Fortune 500 global professional services firm: research time per startup reduced from 2 to 4 weeks to a",
+   "url": "https://www.lyzr.ai/case-studies/venture-screening/",
+   "topics": [
+    "professional services",
+    "private equity & vc",
+    "research & strategy",
+    "finance",
+    "knowledge graph",
+    "agents as a service",
+    "agents_as_a_service",
+    "knowledge_graph",
+    "venture_capital"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "cs_enterprise_ai_governance",
+   "type": "case_study",
+   "title": "$200 Mn+ Revenue Global Enterprise | Lyzr Case Study",
+   "blurb": "$100M joint go-to-market value across a three-year partnership",
+   "teaser": "A global growth and creative consulting firm: $100M joint go-to-market value across a three-year partnership",
+   "url": "https://www.lyzr.ai/case-studies/enterprise-ai-governance/",
+   "topics": [
+    "professional services",
+    "it operations",
+    "compliance & risk",
+    "operations",
+    "research & strategy",
+    "responsible ai",
+    "agentic os",
+    "agentic_os",
+    "responsible_ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_insurance_billing",
+   "type": "case_study",
+   "title": "Fortune Global 500 Insurance Brokerage Case Study | Lyzr AI",
+   "blurb": "80% reduction in manual data entry per billing activity",
+   "teaser": "A Fortune Global 500 insurance brokerage: 80% reduction in manual data entry per billing activity",
+   "url": "https://www.lyzr.ai/case-studies/insurance-billing/",
+   "topics": [
+    "insurance",
+    "finance",
+    "operations",
+    "compliance & risk"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_professional_services_innovation_evaluation",
+   "type": "case_study",
+   "title": "Professional Services AI Innovation Evaluation Case Study | Lyzr AI",
+   "blurb": "Every idea now moves through the same defined pillars and the same weighted scoring",
+   "teaser": "Lyzr replaced hours of manual desk research with a single triggered multi-agent workflow that delivers",
+   "url": "https://www.lyzr.ai/case-studies/professional-services-innovation-evaluation/",
+   "topics": [
+    "professional services",
+    "research & strategy",
+    "operations",
+    "product",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_case_studies_professional_services_value_pool_evaluation",
+   "type": "case_study",
+   "title": "Professional Services AI Value Pool Evaluation Case Study | Lyzr AI",
+   "blurb": "Standardized scoring across 12 dimensions",
+   "teaser": "Lyzr built the Vera Research Agent for a global professional services firm, automating end-to-end value",
+   "url": "https://www.lyzr.ai/case-studies/case-studies-professional-services-value-pool-evaluation/",
+   "topics": [
+    "professional services",
+    "research & strategy",
+    "operations",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_competitive_intelligence_digital_trust",
+   "type": "case_study",
+   "title": "Digital Trust & Security Provider Automated Competitive Intelligence with Lyzr",
+   "blurb": "70–80% reduction in manual research effort",
+   "teaser": "Lyzr automated a digital trust and security provider's competitive intelligence end to end, cutting",
+   "url": "https://www.lyzr.ai/case-studies/competitive-intelligence-digital-trust/",
+   "topics": [
+    "technology & it services",
+    "research & strategy",
+    "marketing",
+    "product",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_global_advertising_media_planning",
+   "type": "case_study",
+   "title": "Media Planning Research Agent Built for a Global Advertising Group",
+   "blurb": "Research insights went from hours to on-demand",
+   "teaser": "A global advertising and marketing group: research insights went from hours to on-demand",
+   "url": "https://www.lyzr.ai/case-studies/global-advertising-media-planning/",
+   "topics": [
+    "media & advertising",
+    "research & strategy",
+    "marketing",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_global_enterprise_streamlined_hr_engineering_qa_with_lyzr",
+   "type": "case_study",
+   "title": "Global Enterprise Streamlined HR, Engineering & QA with Lyzr",
+   "blurb": "75% reduction in HR workload",
+   "teaser": "A global enterprise: 75% reduction in HR workload",
+   "url": "https://www.lyzr.ai/case-studies/global-enterprise-streamlined-hr-engineering-qa-with-lyzr/",
+   "topics": [
+    "technology & it services",
+    "human resources",
+    "engineering",
+    "it operations",
+    "agent studio",
+    "human_resources"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_how_a_global_enterprise_built_an_ai_powered_procurement_operating_system_with_lyzr",
+   "type": "case_study",
+   "title": "AI-Powered Procurement Operating System Built for a Global Enterprise",
+   "blurb": "Up to 50% faster supplier onboarding",
+   "teaser": "A global enterprise: up to 50% faster supplier onboarding",
+   "url": "https://www.lyzr.ai/case-studies/how-a-global-enterprise-built-an-ai-powered-procurement-operating-system-with-lyzr/",
+   "topics": [
+    "manufacturing",
+    "logistics",
+    "cross-industry",
+    "procurement",
+    "operations",
+    "compliance & risk",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_how_a_technology_services_firm_optimized_resource_allocation_with_lyzr",
+   "type": "case_study",
+   "title": "Technology Services Firm Optimized Resource Allocation with Lyzr",
+   "blurb": "60–75% reduction in manual resource planning effort (targeted)",
+   "teaser": "A global technology services firm: 60–75% reduction in manual resource planning effort (targeted)",
+   "url": "https://www.lyzr.ai/case-studies/how-a-technology-services-firm-optimized-resource-allocation-with-lyzr/",
+   "topics": [
+    "technology & it services",
+    "professional services",
+    "human resources",
+    "operations",
+    "it operations",
+    "agent studio",
+    "human_resources"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_how_a_global_bpm_company_standardized_account_research_with_lyzr",
+   "type": "case_study",
+   "title": "Account Research Agent Built for a Global BPM Company",
+   "blurb": "Account snapshots on demand",
+   "teaser": "A global business-process management organization: account snapshots on demand",
+   "url": "https://www.lyzr.ai/case-studies/how-a-global-bpm-company-standardized-account-research-with-lyzr/",
+   "topics": [
+    "professional services",
+    "revenue & sales",
+    "operations",
+    "agent studio",
+    "responsible ai",
+    "revenue"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_how_a_90_person_sales_team_standardized_meeting_readiness_with_lyzr",
+   "type": "case_study",
+   "title": "First-Meeting Brief Agent for a 90-Person Sales Team",
+   "blurb": "~1 hour saved per rep, per week",
+   "teaser": "A 90-person sales organization: ~1 hour saved per rep, per week",
+   "url": "https://www.lyzr.ai/case-studies/how-a-90-person-sales-team-standardized-meeting-readiness-with-lyzr/",
+   "topics": [
+    "technology & it services",
+    "professional services",
+    "revenue & sales",
+    "agent studio",
+    "revenue"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_global_organization_scaled_crisis_simulations_with_lyzr",
+   "type": "case_study",
+   "title": "Global Organization Scaled Crisis Simulations with Lyzr",
+   "blurb": "Lyzr replaced manual crisis-workshop execution for a global strategy organization with",
+   "teaser": "Lyzr replaced manual crisis-workshop execution for a global strategy organization with a",
+   "url": "https://www.lyzr.ai/case-studies/global-organization-scaled-crisis-simulations-with-lyzr/",
+   "topics": [
+    "professional services",
+    "education",
+    "operations",
+    "research & strategy",
+    "cross-function",
+    "agent studio",
+    "orchestration as a service",
+    "knowledge base",
+    "orchestration_as_a_service",
+    "knowledge_base"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_how_a_large_scale_enterprise_client_built_a_procurement_agentic_os_with_lyzr",
+   "type": "case_study",
+   "title": "Procurement Agentic OS Built for a Large-Scale Enterprise Client",
+   "blurb": "Onboarding moved from email chains to a fully tracked, automated workflow",
+   "teaser": "A large-scale enterprise client: onboarding moved from email chains to a fully tracked, automated workflow",
+   "url": "https://www.lyzr.ai/case-studies/how-a-large-scale-enterprise-client-built-a-procurement-agentic-os-with-lyzr/",
+   "topics": [
+    "manufacturing",
+    "professional services",
+    "cross-industry",
+    "procurement",
+    "operations",
+    "compliance & risk",
+    "agentic os",
+    "hallucination manager",
+    "responsible ai",
+    "agentic_os",
+    "hallucination_manager"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_how_lyzr_reduced_financial_model_preparation_from_10_hours_to_under_5_minutes",
+   "type": "case_study",
+   "title": "Lyzr Reduced Financial Model Preparation From 10 Hours to Under 5 Minutes",
+   "blurb": "Financial model preparation dropped from 6–10 hours to under 5 minutes per target",
+   "teaser": "A leading investment and advisory firm: financial model preparation dropped from 6–10 hours to under",
+   "url": "https://www.lyzr.ai/case-studies/how-lyzr-reduced-financial-model-preparation-from-10-hours-to-under-5-minutes/",
+   "topics": [
+    "private equity & vc",
+    "professional services",
+    "banking",
+    "finance",
+    "research & strategy",
+    "responsible ai",
+    "venture_capital"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_yugabyte_built_an_ai_driven_gtm_intelligence_engine_with_lyzr",
+   "type": "case_study",
+   "title": "Yugabyte built an AI-driven GTM intelligence engine with Lyzr",
+   "blurb": "Yugabyte used Lyzr to replace manual account research and outreach preparation with",
+   "teaser": "Yugabyte used Lyzr to replace manual account research and outreach preparation with an AI-driven",
+   "url": "https://www.lyzr.ai/case-studies/yugabyte-built-an-ai-driven-gtm-intelligence-engine-with-lyzr/",
+   "topics": [
+    "technology & it services",
+    "revenue & sales",
+    "marketing",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_how_lyzr_helped_an_eyewear_brand_turn_online_shopping_into_a_guided_buying_experience",
+   "type": "case_study",
+   "title": "Lyzr Helped an Eyewear Brand Turn Online Shopping Into a Guided Buying Experience",
+   "blurb": "Lyzr built a conversational shopping agent for a direct-to-consumer eyewear brand that",
+   "teaser": "Lyzr built a conversational shopping agent for a direct-to-consumer eyewear brand that unified",
+   "url": "https://www.lyzr.ai/case-studies/how-lyzr-helped-an-eyewear-brand-turn-online-shopping-into-a-guided-buying-experience/",
+   "topics": [
+    "e-commerce",
+    "retail",
+    "customer service",
+    "revenue & sales",
+    "agent studio",
+    "responsible ai",
+    "e_commerce",
+    "customer_service"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_global_infrastructure_leader_scaled_inbound_sdr_operations",
+   "type": "case_study",
+   "title": "Global AI Infrastructure Leader Scaled Inbound SDR Operations",
+   "blurb": "Faster first response times",
+   "teaser": "A global leader in AI infrastructure and accelerated computing: faster first response times",
+   "url": "https://www.lyzr.ai/case-studies/global-infrastructure-leader-scaled-inbound-sdr-operations/",
+   "topics": [
+    "technology & it services",
+    "revenue & sales",
+    "agent studio",
+    "knowledge graph",
+    "responsible ai",
+    "knowledge_graph"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_leading_retail_company_re_imagined_customer_support",
+   "type": "case_study",
+   "title": "AI Customer Support Agent for a Leading Retail E-commerce Company",
+   "blurb": "Lyzr built a retail support agent that answers order questions instantly",
+   "teaser": "Lyzr built a retail support agent that answers order questions instantly, auto-escalates complex cases",
+   "url": "https://www.lyzr.ai/case-studies/leading-retail-company-re-imagined-customer-support/",
+   "topics": [
+    "retail",
+    "e-commerce",
+    "customer service",
+    "operations",
+    "hallucination manager",
+    "hallucination_manager"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_mentorcloud",
+   "type": "case_study",
+   "title": "Multi-agent mentorship engine built for MentorCloud on AWS",
+   "blurb": "80% profiling reduction",
+   "teaser": "MentorCloud: 80% profiling reduction",
+   "url": "https://www.lyzr.ai/case-studies/mentorcloud/",
+   "topics": [
+    "education",
+    "technology & it services",
+    "human resources",
+    "operations",
+    "product",
+    "responsible ai",
+    "knowledge base"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_movate",
+   "type": "case_study",
+   "title": "Movate Built an AI Pod for SDLC Automation with Lyzr",
+   "blurb": "25–35% faster impact checks",
+   "teaser": "Movate: 25–35% faster impact checks",
+   "url": "https://www.lyzr.ai/case-studies/movate/",
+   "topics": [
+    "technology & it services",
+    "engineering",
+    "it operations",
+    "product",
+    "agent studio",
+    "knowledge graph"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_ftv_capital",
+   "type": "case_study",
+   "title": "Portfolio-wide AI SDR and Voice Agent system built for FTV Capital",
+   "blurb": "Lyzr deployed a portfolio-wide AI SDR and Voice Agent system for FTV Capital that",
+   "teaser": "Lyzr deployed a portfolio-wide AI SDR and Voice Agent system for FTV Capital that automated",
+   "url": "https://www.lyzr.ai/case-studies/ftv-capital/",
+   "topics": [
+    "private equity & vc",
+    "fintech",
+    "healthcare",
+    "revenue & sales",
+    "operations",
+    "compliance & risk",
+    "jazon"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_japanese_bank_automated_customer_onboarding",
+   "type": "case_study",
+   "title": "Automated Customer Onboarding for a Leading Japanese Bank",
+   "blurb": "Lyzr deployed a governed multi-agent system for one of Japan's largest banks",
+   "teaser": "Lyzr deployed a governed multi-agent system for one of Japan's largest banks, automating",
+   "url": "https://www.lyzr.ai/case-studies/japanese-bank-automated-customer-onboarding/",
+   "topics": [
+    "banking",
+    "operations",
+    "compliance & risk",
+    "customer service",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_global_bank_reimagined_customer_experience",
+   "type": "case_study",
+   "title": "Multi-Agent System Reimagines Customer Onboarding for a Global Bank",
+   "blurb": "Reduced drop-offs and improved onboarding completion rates through real-time engagement",
+   "teaser": "A global financial institution: reduced drop-offs and improved onboarding completion rates through",
+   "url": "https://www.lyzr.ai/case-studies/global-bank-reimagined-customer-experience/",
+   "topics": [
+    "banking",
+    "customer service",
+    "operations",
+    "compliance & risk",
+    "responsible ai",
+    "hallucination manager"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_accenture_ad_generator",
+   "type": "case_study",
+   "title": "Lyzr AI agent case study - Accenture ad generator",
+   "blurb": "Posts and visuals generated in under two minutes",
+   "teaser": "Accenture: posts and visuals generated in under two minutes",
+   "url": "https://www.lyzr.ai/case-studies/accenture-ad-generator/",
+   "topics": [
+    "professional services",
+    "media & advertising",
+    "marketing",
+    "agent studio",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_lion_medical_ai",
+   "type": "case_study",
+   "title": "Lyzr AI agent case study - Lion Medical AI",
+   "blurb": "Case reviews completed up to 60% faster",
+   "teaser": "Lion Medical AI: case reviews completed up to 60% faster",
+   "url": "https://www.lyzr.ai/case-studies/lion-medical-ai/",
+   "topics": [
+    "healthcare",
+    "operations",
+    "compliance & risk",
+    "research & strategy",
+    "responsible ai",
+    "hallucination manager",
+    "sovereign ai",
+    "sovereign_ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_culture_code_agent",
+   "type": "case_study",
+   "title": "AI-Powered Culture Code Agent for Accenture and Accubate",
+   "blurb": "Lyzr built a Culture Code Agent for Accenture that fully automates employee",
+   "teaser": "Lyzr built a Culture Code Agent for Accenture that fully automates employee feedback collection",
+   "url": "https://www.lyzr.ai/case-studies/culture-code-agent/",
+   "topics": [
+    "professional services",
+    "technology & it services",
+    "human resources",
+    "agent studio",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_ai_powered_customer_support",
+   "type": "case_study",
+   "title": "AI-Powered Customer Support Agent for a Global Insurance Provider",
+   "blurb": "70–80% of average requests resolved without human intervention",
+   "teaser": "A global insurance provider serving diverse client segments: 70–80% of average requests resolved",
+   "url": "https://www.lyzr.ai/case-studies/ai-powered-customer-support/",
+   "topics": [
+    "insurance",
+    "customer service",
+    "operations",
+    "knowledge base",
+    "hallucination manager",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_ai_driven_email_triage",
+   "type": "case_study",
+   "title": "Lyzr AI agent case study - AI-Driven Email Triage",
+   "blurb": "Lyzr built an AI email triage system for a leading global insurer that",
+   "teaser": "Lyzr built an AI email triage system for a leading global insurer that automatically acknowledges emails",
+   "url": "https://www.lyzr.ai/case-studies/ai-driven-email-triage/",
+   "topics": [
+    "insurance",
+    "customer service",
+    "operations",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_agentic_cvc",
+   "type": "case_study",
+   "title": "World's First Agentic CVC Platform Built for a Corporate Venture Team",
+   "blurb": "Research and scoring timelines reduced from weeks to minutes",
+   "teaser": "A leading corporate venture team: research and scoring timelines reduced from weeks to minutes",
+   "url": "https://www.lyzr.ai/case-studies/agentic-cvc/",
+   "topics": [
+    "private equity & vc",
+    "professional services",
+    "research & strategy",
+    "finance",
+    "knowledge graph",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_emudhra",
+   "type": "case_study",
+   "title": "Lyzr AI agent case study - eMudhra",
+   "blurb": "Response rates tripled from 2.7% to 8.3%",
+   "teaser": "eMudhra: response rates tripled from 2.7% to 8.3%",
+   "url": "https://www.lyzr.ai/case-studies/emudhra/",
+   "topics": [
+    "fintech",
+    "technology & it services",
+    "customer service",
+    "revenue & sales",
+    "marketing",
+    "knowledge base",
+    "hallucination manager"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_leading_support_agent",
+   "type": "case_study",
+   "title": "AI-Powered Customer Support Agent for a Leading Insurance Provider",
+   "blurb": "70–80% of average requests resolved without human intervention",
+   "teaser": "A global insurance provider serving diverse client segments: 70–80% of average requests resolved",
+   "url": "https://www.lyzr.ai/case-studies/leading-support-agent/",
+   "topics": [
+    "insurance",
+    "customer service",
+    "operations",
+    "knowledge base",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_novitium",
+   "type": "case_study",
+   "title": "Lyzr AI agent case study - Novitium",
+   "blurb": "Campaign launch time reduced by 85% (3 days to 4 hours)",
+   "teaser": "Novitium: campaign launch time reduced by 85% (3 days to 4 hours)",
+   "url": "https://www.lyzr.ai/case-studies/novitium/",
+   "topics": [
+    "technology & it services",
+    "professional services",
+    "revenue & sales",
+    "marketing",
+    "jazon"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_sns_global",
+   "type": "case_study",
+   "title": "AI Resource Optimization Agent for SNS Global",
+   "blurb": "Automated allocation reduced mismatches and delays",
+   "teaser": "SNS Global: automated allocation reduced mismatches and delays",
+   "url": "https://www.lyzr.ai/case-studies/sns-global/",
+   "topics": [
+    "technology & it services",
+    "professional services",
+    "human resources",
+    "operations",
+    "research & strategy",
+    "agent studio",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_saksoft_code",
+   "type": "case_study",
+   "title": "AI Coding Agent for Saksoft to accelerate code retrieval and delivery",
+   "blurb": "Freed 5 HR FTEs",
+   "teaser": "Saksoft: freed 5 HR FTEs",
+   "url": "https://www.lyzr.ai/case-studies/saksoft-code/",
+   "topics": [
+    "technology & it services",
+    "engineering",
+    "it operations",
+    "knowledge base"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_accenture_accubate",
+   "type": "case_study",
+   "title": "AI-Powered Startup Onboarding Platform Built for Accenture Accubate",
+   "blurb": "Reduced onboarding timelines from weeks to days",
+   "teaser": "Accenture: reduced onboarding timelines from weeks to days",
+   "url": "https://www.lyzr.ai/case-studies/accenture-accubate/",
+   "topics": [
+    "professional services",
+    "technology & it services",
+    "operations",
+    "compliance & risk",
+    "procurement",
+    "responsible ai",
+    "hallucination manager"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_saksoft",
+   "type": "case_study",
+   "title": "Multi-agent HR, coding, and QA automation for Saksoft",
+   "blurb": "60% cut in operational costs",
+   "teaser": "Saksoft: 60% cut in operational costs",
+   "url": "https://www.lyzr.ai/case-studies/saksoft/",
+   "topics": [
+    "technology & it services",
+    "human resources",
+    "engineering",
+    "it operations",
+    "operations",
+    "knowledge base",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_altrius",
+   "type": "case_study",
+   "title": "AI Voice and CRM Outreach Agents for Altrius Advisors",
+   "blurb": "14,000+ dormant clients re-engaged through personalized automation",
+   "teaser": "Altrius Advisors: 14,000+ dormant clients re-engaged through personalized automation",
+   "url": "https://www.lyzr.ai/case-studies/altrius/",
+   "topics": [
+    "insurance",
+    "financial services",
+    "revenue & sales",
+    "customer service",
+    "operations",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_move",
+   "type": "case_study",
+   "title": "Lyzr AI agent case study - Move",
+   "blurb": "Article production time reduced significantly, eliminating manual delays in",
+   "teaser": "Move: article production time reduced significantly, eliminating manual delays in research, outlining",
+   "url": "https://www.lyzr.ai/case-studies/move/",
+   "topics": [
+    "travel & hospitality",
+    "marketing",
+    "agent studio"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_hfs_research",
+   "type": "case_study",
+   "title": "HFS Research builds multi-agent reasoning system for complex queries",
+   "blurb": "Queries are now resolved in seconds with precise, verified responses",
+   "teaser": "HFS Research: queries are now resolved in seconds with precise, verified responses",
+   "url": "https://www.lyzr.ai/case-studies/hfs-research/",
+   "topics": [
+    "professional services",
+    "technology & it services",
+    "research & strategy",
+    "it operations",
+    "knowledge base",
+    "hallucination manager",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_artha99",
+   "type": "case_study",
+   "title": "Lyzr AI agent case study - Artha99",
+   "blurb": "Lyzr built a fully autonomous AI Marketing Agent for Artha99 that",
+   "teaser": "Lyzr built a fully autonomous AI Marketing Agent for Artha99 that generates platform-optimized",
+   "url": "https://www.lyzr.ai/case-studies/artha99/",
+   "topics": [
+    "private equity & vc",
+    "manufacturing",
+    "marketing",
+    "research & strategy",
+    "knowledge base",
+    "skott"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_curatal",
+   "type": "case_study",
+   "title": "AI-Powered Interview Evaluation Agent for Curatal",
+   "blurb": "Significantly reduced time to conduct and evaluate interviews, enabling recruiters to",
+   "teaser": "Curatal: significantly reduced time to conduct and evaluate interviews, enabling recruiters to process",
+   "url": "https://www.lyzr.ai/case-studies/curatal/",
+   "topics": [
+    "technology & it services",
+    "human resources",
+    "jazon",
+    "responsible ai",
+    "hallucination manager"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_yardstick",
+   "type": "case_study",
+   "title": "Policy Coverage Review Assistant built for Yardstick (RegTech)",
+   "blurb": "Internal policy and standards review processes accelerated from days to hours",
+   "teaser": "Yardstick: internal policy and standards review processes accelerated from days to hours",
+   "url": "https://www.lyzr.ai/case-studies/yardstick/",
+   "topics": [
+    "fintech",
+    "banking",
+    "legal",
+    "compliance & risk",
+    "research & strategy",
+    "responsible ai",
+    "hallucination manager",
+    "knowledge base"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_witzeal",
+   "type": "case_study",
+   "title": "AI-Powered Chat Support Agent Built for Witzeal",
+   "blurb": "AI-human handoff rate kept below 10–15%",
+   "teaser": "Witzeal: aI-human handoff rate kept below 10–15%",
+   "url": "https://www.lyzr.ai/case-studies/witzeal/",
+   "topics": [
+    "e-commerce",
+    "technology & it services",
+    "customer service",
+    "operations",
+    "agent studio",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_accenture",
+   "type": "case_study",
+   "title": "Lyzr AI agent case study - Accenture",
+   "blurb": "Reduced downtime through automated data gathering and analysis",
+   "teaser": "Accenture: reduced downtime through automated data gathering and analysis",
+   "url": "https://www.lyzr.ai/case-studies/accenture/",
+   "topics": [
+    "manufacturing",
+    "energy & utilities",
+    "professional services",
+    "it operations",
+    "operations",
+    "engineering",
+    "responsible ai",
+    "knowledge base"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_rising_financial_provider",
+   "type": "case_study",
+   "title": "AI-Driven Refund System for a Midsize Bank",
+   "blurb": "Reduced ticket volume: ambiguous queries resolved by AI-driven chat, lowering customer",
+   "teaser": "A midsize bank offering deposits: reduced ticket volume: ambiguous queries resolved by AI-driven",
+   "url": "https://www.lyzr.ai/case-studies/rising-financial-provider/",
+   "topics": [
+    "banking",
+    "customer service",
+    "compliance & risk",
+    "finance",
+    "responsible ai",
+    "hallucination manager"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_major_banking_institution",
+   "type": "case_study",
+   "title": "Regulatory Compliance Multi-Agent System Built for a Large Bank",
+   "blurb": "30,000+ hours saved by minimizing manual guideline tracking across 30+ products",
+   "teaser": "A large bank offering a full spectrum of financial services: 30,000+ hours saved by minimizing",
+   "url": "https://www.lyzr.ai/case-studies/major-banking-institution/",
+   "topics": [
+    "banking",
+    "compliance & risk",
+    "product",
+    "operations",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_customer_service_leader",
+   "type": "case_study",
+   "title": "AI Multi-Agent Invoice Automation Built for NPD Powered",
+   "blurb": "Reduced manual effort by eliminating routine checks and data entry tasks",
+   "teaser": "NPD Powered: reduced manual effort by eliminating routine checks and data entry tasks",
+   "url": "https://www.lyzr.ai/case-studies/customer-service-leader/",
+   "topics": [
+    "energy & utilities",
+    "finance",
+    "procurement",
+    "operations"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_hr_workforce_leader",
+   "type": "case_study",
+   "title": "AI Coaching Agents for Psychometric Insights, Built for SurePeople",
+   "blurb": "Enhanced employee engagement through tailored, real-time insights",
+   "teaser": "SurePeople: enhanced employee engagement through tailored, real-time insights",
+   "url": "https://www.lyzr.ai/case-studies/hr-workforce-leader/",
+   "topics": [
+    "technology & it services",
+    "education",
+    "human resources",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_industrial_manufacturing_firm",
+   "type": "case_study",
+   "title": "AI Meeting Translation and Note-Taking Agent Built for Nelson Global",
+   "blurb": "Improved collaboration through real-time translations that reduce errors",
+   "teaser": "Nelson Global: improved collaboration through real-time translations that reduce errors",
+   "url": "https://www.lyzr.ai/case-studies/industrial-manufacturing-firm/",
+   "topics": [
+    "manufacturing",
+    "operations",
+    "it operations",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_ntt_data",
+   "type": "case_study",
+   "title": "AI-Powered Incident Prediction and Change Management for NTT Data",
+   "blurb": "70,000+ Hours Saved",
+   "teaser": "NTT Data: 70,000+ Hours Saved",
+   "url": "https://www.lyzr.ai/case-studies/ntt-data/",
+   "topics": [
+    "technology & it services",
+    "it operations",
+    "operations",
+    "compliance & risk",
+    "responsible ai"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "cs_leading_energy_provider",
+   "type": "case_study",
+   "title": "AI Work-Order Agent Built for Dairyland Power",
+   "blurb": "70,000+ hours saved annually",
+   "teaser": "Dairyland Power: 70,000+ hours saved annually",
+   "url": "https://www.lyzr.ai/case-studies/leading-energy-provider/",
+   "topics": [
+    "energy & utilities",
+    "operations",
+    "compliance & risk",
+    "it operations",
+    "responsible ai",
+    "hallucination manager"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_agent_finder_tool",
+   "type": "tool",
+   "title": "Find the right agent (2 min)",
+   "blurb": "Answer 4 questions about your team and workflow. Get matched to the right AI agent, see",
+   "url": "https://www.lyzr.ai/assessment/agent-finder-tool/",
+   "topics": [
+    "start",
+    "what_lyzr_does",
+    "workflow_automation",
+    "ai_and_automation",
+    "assessment"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_ai_enterprise_platform_assessment",
+   "type": "tool",
+   "title": "Take the enterprise AI assessment",
+   "blurb": "20 questions that quietly decide whether your AI strategy will scale — or snap.",
+   "url": "https://www.lyzr.ai/ai-enterprise-platform-assessment",
+   "topics": [
+    "what_lyzr_does",
+    "ceo",
+    "digital_transformation",
+    "assessment"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_agentic_ai_maturity_assessment_for_enterprises",
+   "type": "tool",
+   "title": "Check your agentic AI maturity",
+   "blurb": "See how ready your enterprise is to deploy, scale, and govern AI agents. Score your",
+   "url": "https://www.lyzr.ai/assessment/agentic-ai-maturity-assessment-for-enterprises/",
+   "topics": [
+    "ceo",
+    "digital_transformation",
+    "head_of_ai",
+    "assessment"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_agent_governance_maturity_assessment",
+   "type": "tool",
+   "title": "Assess your AI governance",
+   "blurb": "Evaluate your enterprise AI governance with a six-point assessment covering AI",
+   "url": "https://www.lyzr.ai/assessment/agent-governance-maturity-assessment/",
+   "topics": [
+    "cio",
+    "compliance_and_governance",
+    "opencontroller",
+    "responsible_ai",
+    "assessment"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_ai_agent_sprawl_audit",
+   "type": "tool",
+   "title": "Audit your agent sprawl",
+   "blurb": "Most enterprises run more AI agents than they can name. Take the 29-question audit to",
+   "url": "https://www.lyzr.ai/assessment/ai-agent-sprawl-audit/",
+   "topics": [
+    "opencontroller",
+    "cio",
+    "it_and_platform",
+    "assessment"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_hallucination_risk_assessment",
+   "type": "tool",
+   "title": "Test your hallucination risk",
+   "blurb": "Score your AI agent's defenses against hallucination across six layers and get",
+   "url": "https://www.lyzr.ai/assessment/hallucination-risk-assessment/",
+   "topics": [
+    "hallucination_manager",
+    "responsible_ai",
+    "compliance_and_governance",
+    "assessment"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_production_agent_evaluation_assessment",
+   "type": "tool",
+   "title": "Evaluate an agent for production",
+   "blurb": "Most teams grade an agent's answer, not the path that produced it. Score your eval",
+   "url": "https://www.lyzr.ai/assessment/production-agent-evaluation-assessment/",
+   "topics": [
+    "head_of_ai",
+    "ai_and_automation",
+    "cto",
+    "assessment"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_agentic_os_readiness_assessment_for_marketing",
+   "type": "tool",
+   "title": "Agentic OS readiness for marketing",
+   "blurb": "Score your marketing function across six capabilities and see how close it is to an",
+   "url": "https://www.lyzr.ai/assessment/agentic-os-readiness-assessment-for-marketing/",
+   "topics": [
+    "marketing",
+    "agentic_os",
+    "assessment"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_how_to_take_agents_to_production",
+   "type": "playbook",
+   "title": "Playbook: agents to production",
+   "blurb": "A practical guide to turn AI prototypes into reliable, production-ready agents",
+   "url": "https://www.lyzr.ai/playbook/how-to-take-agents-to-production/",
+   "topics": [
+    "head_of_ai",
+    "cto",
+    "ai_and_automation",
+    "agent_studio",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_agentic_ai_roadmap",
+   "type": "playbook",
+   "title": "Playbook: your agentic AI roadmap",
+   "blurb": "From first idea to production-grade agentic system. A phase-by-phase roadmap with",
+   "url": "https://www.lyzr.ai/playbook/agentic-ai-roadmap/",
+   "topics": [
+    "ceo",
+    "digital_transformation",
+    "what_lyzr_does",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_become_an_agentic_leader",
+   "type": "playbook",
+   "title": "Playbook: become an agentic leader",
+   "blurb": "Traditional management doesn't work on AI agents. Unlearn old frameworks and become an",
+   "url": "https://www.lyzr.ai/playbook/become-an-agentic-leader/",
+   "topics": [
+    "ceo",
+    "head_of_ai",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_the_cio_guide_to_ai_agent_governance",
+   "type": "playbook",
+   "title": "CIO's guide to agent governance",
+   "blurb": "From pilot sprawl to production control. The five control points of the Lyzr Control",
+   "url": "https://www.lyzr.ai/playbook/the-cio-guide-to-ai-agent-governance/",
+   "topics": [
+    "cio",
+    "compliance_and_governance",
+    "opencontroller",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_banking",
+   "type": "playbook",
+   "title": "Banking AI playbook",
+   "blurb": "How banks can scale AI agents from concept to enterprise-grade systems",
+   "url": "https://www.lyzr.ai/playbook/banking/",
+   "topics": [
+    "banking",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_bfsi_guide_to_dispute_management",
+   "type": "playbook",
+   "title": "BFSI dispute resolution guide",
+   "blurb": "From manual triage to autonomous resolution, discover a practical framework and",
+   "url": "https://www.lyzr.ai/playbook/bfsi-guide-to-dispute-management/",
+   "topics": [
+    "banking",
+    "fintech",
+    "insurance",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_hr",
+   "type": "playbook",
+   "title": "HR agents playbook",
+   "blurb": "Streamline hiring, onboarding, and employee support with AI-powered HR agents",
+   "url": "https://www.lyzr.ai/playbook/hr/",
+   "topics": [
+    "human_resources",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_performance_management",
+   "type": "playbook",
+   "title": "AI performance management guide",
+   "blurb": "How forward-thinking organisations are moving beyond tools to autonomous",
+   "url": "https://www.lyzr.ai/playbook/performance-management/",
+   "topics": [
+    "human_resources",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_marketing",
+   "type": "playbook",
+   "title": "Marketing agents playbook",
+   "blurb": "Deploy AI agents to automate campaigns, personalize content, and scale your marketing team.",
+   "url": "https://www.lyzr.ai/playbook/marketing/",
+   "topics": [
+    "marketing",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_content",
+   "type": "playbook",
+   "title": "AI content playbook",
+   "blurb": "Scale your brand’s voice with AI from deep research to polished content and",
+   "url": "https://www.lyzr.ai/playbook/content/",
+   "topics": [
+    "marketing",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_sales",
+   "type": "playbook",
+   "title": "Sales agents playbook",
+   "blurb": "Automate lead gen, outreach, and follow-ups so your team can focus on closing deals.",
+   "url": "https://www.lyzr.ai/playbook/sales/",
+   "topics": [
+    "revenue",
+    "revenue_and_sales",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_the_strategic_procurement_automation_playbook",
+   "type": "playbook",
+   "title": "Procurement automation: 90-day guide",
+   "blurb": "Discover a practical guide to agent-led procurement automation with 36 AI agents, a",
+   "url": "https://www.lyzr.ai/playbook/the-strategic-procurement-automation-playbook/",
+   "topics": [
+    "procurement",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_analyst_army_starter_pack",
+   "type": "playbook",
+   "title": "Analyst Army starter pack",
+   "blurb": "The Complete Field Guide for Analysts Who Build Their Own Intelligence",
+   "url": "https://www.lyzr.ai/playbook/analyst-army-starter-pack/",
+   "topics": [
+    "venture_capital",
+    "finance",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_the_fundraising_agent",
+   "type": "playbook",
+   "title": "Fundraising agent playbook",
+   "blurb": "A practical guide to building an AI fundraising agent that helps startups find",
+   "url": "https://www.lyzr.ai/playbook/the-fundraising-agent/",
+   "topics": [
+    "venture_capital",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_how_to_build_a_10m_ai_practice",
+   "type": "playbook",
+   "title": "How to build a $10M AI practice",
+   "blurb": "Only 5% of enterprise AI agents reach production. Discover the playbook for consulting",
+   "url": "https://www.lyzr.ai/playbook/how-to-build-a-10m-ai-practice/",
+   "topics": [
+    "managing_director",
+    "consulting_partners",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_agentforce_alternative",
+   "type": "playbook",
+   "title": "The Agentforce alternative playbook",
+   "blurb": "Discover how Lyzr outperforms Agentforce with agentic AI that thinks, decides, and",
+   "url": "https://www.lyzr.ai/playbook/agentforce-alternative/",
+   "topics": [
+    "comparison",
+    "revenue_and_sales",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_100_reasons_not_to_use_chatgpt_for_enterprise",
+   "type": "playbook",
+   "title": "100+ reasons to quit ChatGPT Enterprise",
+   "blurb": "A brutally honest breakdown of every gap, risk, and limitation you’ll hit with",
+   "url": "https://www.lyzr.ai/playbook/100-reasons-not-to-use-chatgpt-for-enterprise/",
+   "topics": [
+    "comparison",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "res_the_chatgpt_enterprise_reality_checklist",
+   "type": "playbook",
+   "title": "Enterprise AI buyer's guide",
+   "blurb": "Compare ChatGPT Enterprise, Microsoft Copilot, and alternatives with 20 questions",
+   "url": "https://www.lyzr.ai/playbook/the-chatgpt-enterprise-reality-checklist/",
+   "topics": [
+    "comparison",
+    "cio",
+    "playbook"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_101_ai_use_cases",
+   "type": "guide",
+   "title": "101 enterprise agent use cases",
+   "blurb": "Download 101 production-ready AI agent use cases with real metrics and ROI calculations.",
+   "url": "https://www.lyzr.ai/template/101-ai-use-cases/",
+   "topics": [
+    "start",
+    "what_lyzr_does",
+    "workflow_automation",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_top_50_workflow_automation_ideas",
+   "type": "guide",
+   "title": "50 workflow automation ideas",
+   "blurb": "Staying ahead of your competitors requires more than just innovation—it demands efficiency",
+   "url": "https://www.lyzr.ai/template/top-50-workflow-automation-ideas/",
+   "topics": [
+    "workflow_automation",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_banking_ai_use_cases",
+   "type": "guide",
+   "title": "16 banking agent use cases",
+   "blurb": "Download the complete playbook with detailed workflows, deployment guides, and case studies.",
+   "url": "https://www.lyzr.ai/template/banking-ai-use-cases/",
+   "topics": [
+    "banking",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_insurance_ai_agents_use_cases",
+   "type": "guide",
+   "title": "100+ insurance agent use cases",
+   "blurb": "From FNOL to final settlement, from underwriting to regulatory audit. Every use case",
+   "url": "https://www.lyzr.ai/template/insurance-ai-agents-use-cases/",
+   "topics": [
+    "insurance",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_140_agentic_use_cases_for_healthcare",
+   "type": "guide",
+   "title": "140+ healthcare use cases",
+   "blurb": "Trace the patient journey from first call to final follow-up. See exactly where AI",
+   "url": "https://www.lyzr.ai/template/140-agentic-use-cases-for-healthcare/",
+   "topics": [
+    "healthcare",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_100_retail_agent_use_cases",
+   "type": "guide",
+   "title": "100+ retail agent use cases",
+   "blurb": "Cart abandonment climbing. Stockouts spreading. Pricing falling behind. Deploy agents",
+   "url": "https://www.lyzr.ai/template/100-retail-agent-use-cases/",
+   "topics": [
+    "e_commerce",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_100_use_cases_for_cfos",
+   "type": "guide",
+   "title": "100+ agents for finance + ROI calculator",
+   "blurb": "Discover 100+ agentic use cases built for every function a CFO oversees. Calculate your",
+   "url": "https://www.lyzr.ai/template/100-use-cases-for-cfos/",
+   "topics": [
+    "finance",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_100_use_cases_for_legal_teams",
+   "type": "guide",
+   "title": "Use cases for legal teams",
+   "blurb": "See 100+ ways legal teams deploy AI agents across contracts, compliance, litigation, and",
+   "url": "https://www.lyzr.ai/template/100-use-cases-for-legal-teams/",
+   "topics": [
+    "legal",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_ai_agents_use_cases_for_hr",
+   "type": "guide",
+   "title": "23 HR agents every CHRO should know",
+   "blurb": "Which HR agent should you deploy first? This playbook documents 23 AI use cases for",
+   "url": "https://www.lyzr.ai/template/ai-agents-use-cases-for-hr/",
+   "topics": [
+    "human_resources",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_hr_tax_savings_calculator",
+   "type": "guide",
+   "title": "HR savings calculator",
+   "blurb": "Calculate how much your HR team could save by automating recruiting, onboarding",
+   "url": "https://www.lyzr.ai/template/hr-tax-savings-calculator/",
+   "topics": [
+    "human_resources",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_performance_roi_calculator",
+   "type": "guide",
+   "title": "Performance management ROI calculator",
+   "blurb": "See what your organization could save by automating performance reviews, goal tracking",
+   "url": "https://www.lyzr.ai/template/performance-roi-calculator/",
+   "topics": [
+    "human_resources",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_ai_marketing_agent_use_cases",
+   "type": "guide",
+   "title": "12 marketing agent use cases",
+   "blurb": "Learn how AI agents for marketing scale content 10x, drive pipeline attribution & prove",
+   "url": "https://www.lyzr.ai/template/ai-marketing-agent-use-cases/",
+   "topics": [
+    "marketing",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_marketing_handbook",
+   "type": "guide",
+   "title": "Marketing handbook",
+   "blurb": "This handbook is designed for those building or scaling a marketing engine, whether",
+   "url": "https://www.lyzr.ai/template/marketing-handbook/",
+   "topics": [
+    "marketing",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_ai_sales_agents_use_cases",
+   "type": "guide",
+   "title": "12 sales agent use cases",
+   "blurb": "Download the AI sales agents playbook: 12 use cases with workflows, deployment roadmaps",
+   "url": "https://www.lyzr.ai/template/ai-sales-agents-use-cases/",
+   "topics": [
+    "revenue",
+    "revenue_and_sales",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_50_ai_automation_tools_for_sales",
+   "type": "guide",
+   "title": "50+ AI automations for sales",
+   "blurb": "Unlock the Power of AI in Sales: 50+ AI Automations for Sales Professionals",
+   "url": "https://www.lyzr.ai/template/50-ai-automation-tools-for-sales/",
+   "topics": [
+    "revenue",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_50_killer_cold_email_templates",
+   "type": "guide",
+   "title": "50+ cold email templates",
+   "blurb": "Are you struggling to craft the perfect cold email that grabs attention and gets",
+   "url": "https://www.lyzr.ai/template/50-killer-cold-email-templates/",
+   "topics": [
+    "revenue",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_customer_support_use_cases",
+   "type": "guide",
+   "title": "108 support use cases + ROI calculator",
+   "blurb": "Browse customer support use cases, copy agent prompts, and deploy agents in weeks not quarters.",
+   "url": "https://www.lyzr.ai/template/customer-support-use-cases/",
+   "topics": [
+    "customer_service",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_the_90_day_pilot_for_procurement_agent_deployment",
+   "type": "guide",
+   "title": "90-day procurement agent pilot",
+   "blurb": "A proven, phase-by-phase framework that helps CPOs and procurement leaders move from",
+   "url": "https://www.lyzr.ai/template/the-90-day-pilot-for-procurement-agent-deployment/",
+   "topics": [
+    "procurement",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_100_use_cases_for_analyst_scorecard",
+   "type": "guide",
+   "title": "100+ analyst use cases + scorecard",
+   "blurb": "The gap between analysts who use AI and analysts who build with it is widening fast.",
+   "url": "https://www.lyzr.ai/template/100-use-cases-for-analyst-scorecard/",
+   "topics": [
+    "venture_capital",
+    "finance",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_100_use_cases_for_dev_shops",
+   "type": "guide",
+   "title": "100+ use cases for dev shops",
+   "blurb": "111 production-grade agentic solutions across 10 industries. Browse by vertical, build",
+   "url": "https://www.lyzr.ai/template/100-use-cases-for-dev-shops/",
+   "topics": [
+    "consulting_partners",
+    "managing_director",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_agent_use_cases_for_ai_consultants",
+   "type": "guide",
+   "title": "Agent use cases for AI consultants",
+   "blurb": "75+ Agent Use Cases for AI Consultants + Your Consulting Archetype",
+   "url": "https://www.lyzr.ai/template/agent-use-cases-for-ai-consultants/",
+   "topics": [
+    "consulting_partners",
+    "managing_director",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_50_ai_automations_for_product_managers",
+   "type": "guide",
+   "title": "50+ automations for product managers",
+   "blurb": "With the rapidly increasing number of new tech launches, product managers need to stay",
+   "url": "https://www.lyzr.ai/template/50-ai-automations-for-product-managers/",
+   "topics": [
+    "ai_and_automation",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_50_ai_automations_for_data_scientists",
+   "type": "guide",
+   "title": "50+ automations for data scientists",
+   "blurb": "In the world of data science, efficiency is key. To stay competitive, you need to leverage",
+   "url": "https://www.lyzr.ai/template/50-ai-automations-for-data-scientists/",
+   "topics": [
+    "ai_and_automation",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_architect_agent_usecases",
+   "type": "guide",
+   "title": "Architect use cases",
+   "blurb": "Real AI agents built on Architect: find your use case, steal the idea, build it yourself.",
+   "url": "https://www.lyzr.ai/template/architect-agent-usecases/",
+   "topics": [
+    "architect",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_shadow_ai_discovery_checklist",
+   "type": "guide",
+   "title": "Shadow AI discovery checklist",
+   "blurb": "Find shadow AI agents, non-human identities, and agent frameworks across AWS, Azure, and",
+   "url": "https://www.lyzr.ai/template/shadow-ai-discovery-checklist/",
+   "topics": [
+    "opencontroller",
+    "it_and_platform",
+    "cio",
+    "template"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_the_enterprise_agent_estate_is_the_next_infrastructure_decision",
+   "type": "report",
+   "title": "White paper: governing the agent estate",
+   "blurb": "Why governing the agents you've built matters more than the model you built them on, and",
+   "url": "https://www.lyzr.ai/white-paper/the-enterprise-agent-estate-is-the-next-infrastructure-decision/",
+   "topics": [
+    "cio",
+    "cto",
+    "opencontroller",
+    "white_paper"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_the_measurement_gap_between_ai_pilots_and_production_deployments",
+   "type": "report",
+   "title": "White paper: pilot to production",
+   "blurb": "Learn what separates production AI deployments from pilots, with insights on task",
+   "url": "https://www.lyzr.ai/white-paper/the-measurement-gap-between-ai-pilots-and-production-deployments/",
+   "topics": [
+    "head_of_ai",
+    "ceo",
+    "digital_transformation",
+    "white_paper"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_the_shadow_agent_crisis",
+   "type": "report",
+   "title": "White paper: the shadow agent crisis",
+   "blurb": "Discover how enterprises can identify shadow AI agents, track autonomous workloads",
+   "url": "https://www.lyzr.ai/white-paper/the-shadow-agent-crisis/",
+   "topics": [
+    "opencontroller",
+    "it_and_platform",
+    "compliance_and_governance",
+    "white_paper"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "res_fdecollective",
+   "type": "program",
+   "title": "Become a forward-deployed engineer",
+   "blurb": "AI is creating a million forward-deployed engineering jobs by 2030. Get trained for one",
+   "url": "https://fdecollective.com/",
+   "topics": [
+    "courses",
+    "consulting_partners",
+    "head_of_ai",
+    "cto",
+    "ai_and_automation",
+    "program"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_insurance",
+   "type": "solution_page",
+   "title": "Benjie: agents for Insurance",
+   "blurb": "Lyzr's Benjie is the Agentic OS that orchestrates underwriting, claims, fraud detection",
+   "url": "https://www.lyzr.ai/insurance-ai-agent-benjie/",
+   "topics": [
+    "insurance",
+    "by_industry"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_government",
+   "type": "solution_page",
+   "title": "Government: what we do",
+   "blurb": "Lyzr's Agentic OS deploys 400+ governed AI agents across citizen services",
+   "url": "https://www.lyzr.ai/government/",
+   "topics": [
+    "government",
+    "by_industry"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_healthcare",
+   "type": "solution_page",
+   "title": "Healthcare: what we do",
+   "blurb": "Lyzr's Healthcare Agentic OS automates prior authorization, revenue cycle, and",
+   "url": "https://www.lyzr.ai/healthcare-agents/",
+   "topics": [
+    "healthcare",
+    "by_industry"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_fintech",
+   "type": "solution_page",
+   "title": "Fintech: what we do",
+   "blurb": "Lyzr's Agentic OS sits above your existing fintech stack, activates the right agents",
+   "url": "https://www.lyzr.ai/fintech/",
+   "topics": [
+    "fintech",
+    "by_industry"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_e_commerce",
+   "type": "solution_page",
+   "title": "E-commerce: what we do",
+   "blurb": "Lyzr's purpose-built e-commerce AI agents deliver a 41% higher conversion rate, up to",
+   "url": "https://www.lyzr.ai/ecommerce-agents/",
+   "topics": [
+    "e_commerce",
+    "e-commerce",
+    "by_industry"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_revenue",
+   "type": "solution_page",
+   "title": "Jazon: agents for Revenue",
+   "blurb": "Jazon activates 400+ sales agents from a single revenue objective and delivers 3x",
+   "url": "https://www.lyzr.ai/jazon/",
+   "topics": [
+    "revenue",
+    "by_function"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_marketing",
+   "type": "solution_page",
+   "title": "Skott: agents for Marketing",
+   "blurb": "Skott is the agentic OS that activates 400+ marketing agents against a single",
+   "url": "https://www.lyzr.ai/skott/",
+   "topics": [
+    "marketing",
+    "by_function"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_customer_service",
+   "type": "solution_page",
+   "title": "Jeff: agents for Customer Service",
+   "blurb": "Jeff is the Agentic OS that resolves 70% of tier-1 issues without human escalation and",
+   "url": "https://www.lyzr.ai/jeff/",
+   "topics": [
+    "customer_service",
+    "customer service",
+    "by_function"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_human_resources",
+   "type": "solution_page",
+   "title": "Diane: agents for Human Resources",
+   "blurb": "Diane is the agentic OS that sits above your existing HRIS, activates 400+ agents across",
+   "url": "https://www.lyzr.ai/diane/",
+   "topics": [
+    "human_resources",
+    "human resources",
+    "by_function"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_procurement",
+   "type": "solution_page",
+   "title": "Procurement: what we do",
+   "blurb": "Lyzr's Agentic OS sits above SAP, Coupa, and your ERP to orchestrate sourcing",
+   "url": "https://www.lyzr.ai/procurement/",
+   "topics": [
+    "procurement",
+    "by_function"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_legal",
+   "type": "solution_page",
+   "title": "Legal: what we do",
+   "blurb": "Lyzr's Legal OS connects your contract repository, compliance frameworks, and regulatory",
+   "url": "https://www.lyzr.ai/legal-industry/",
+   "topics": [
+    "legal",
+    "by_function"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_compliance_and_governance",
+   "type": "solution_page",
+   "title": "Compliance & Governance: what we do",
+   "blurb": "Lyzr gives compliance teams a coordinated system of agents for monitoring, fraud review",
+   "url": "https://www.lyzr.ai/teams/compliance-teams/",
+   "topics": [
+    "compliance_and_governance",
+    "compliance & governance",
+    "by_team"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_ai_and_automation",
+   "type": "solution_page",
+   "title": "AI & Automation: what we do",
+   "blurb": "Lyzr takes AI agents from stalled POC to production with 50,000 pre-production",
+   "url": "https://www.lyzr.ai/teams/ai-and-automation-teams/",
+   "topics": [
+    "ai_and_automation",
+    "ai & automation",
+    "by_team"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_revenue_and_sales",
+   "type": "solution_page",
+   "title": "Revenue & Sales: what we do",
+   "blurb": "Lyzr's Jazon agent runs 130+ personalised outreach sequences in parallel and takes",
+   "url": "https://www.lyzr.ai/teams/revenue-and-sales-team/",
+   "topics": [
+    "revenue_and_sales",
+    "revenue & sales",
+    "by_team"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_it_and_platform",
+   "type": "solution_page",
+   "title": "IT & Platform: what we do",
+   "blurb": "Lyzr gives platform teams a control plane, CI/CD pipeline, and platform-wide governance",
+   "url": "https://www.lyzr.ai/teams/platform-teams/",
+   "topics": [
+    "it_and_platform",
+    "it & platform",
+    "by_team"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_digital_transformation",
+   "type": "solution_page",
+   "title": "Digital Transformation: what we do",
+   "blurb": "Lyzr takes digital transformation programmes from roadmap to running—first function",
+   "url": "https://www.lyzr.ai/teams/digital-transformation-teams/",
+   "topics": [
+    "digital_transformation",
+    "digital transformation",
+    "by_team"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_cio",
+   "type": "solution_page",
+   "title": "CIO: what we do",
+   "blurb": "Lyzr gives CIOs one governance layer — registry, observability, responsible AI",
+   "url": "https://www.lyzr.ai/roles/cio/",
+   "topics": [
+    "cio",
+    "by_role"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_cto",
+   "type": "solution_page",
+   "title": "CTO: what we do",
+   "blurb": "Lyzr gives CTOs the simulation, CI/CD, observability, and fine-tuning infrastructure",
+   "url": "https://www.lyzr.ai/roles/cto/",
+   "topics": [
+    "cto",
+    "by_role"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_ceo",
+   "type": "solution_page",
+   "title": "CEO: what we do",
+   "blurb": "Lyzr is the Agentic OS that takes enterprises from a single function with clear ROI to",
+   "url": "https://www.lyzr.ai/roles/ceo/",
+   "topics": [
+    "ceo",
+    "by_role"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_managing_director",
+   "type": "solution_page",
+   "title": "Managing Director: what we do",
+   "blurb": "MDs at SI and consulting firms build their agentic practice once on Lyzr's governed",
+   "url": "https://www.lyzr.ai/roles/md/",
+   "topics": [
+    "managing_director",
+    "managing director",
+    "by_role"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_head_of_ai",
+   "type": "solution_page",
+   "title": "Head of AI: what we do",
+   "blurb": "Lyzr takes Heads of AI from platform evaluation to 200+ agents in production in weeks",
+   "url": "https://www.lyzr.ai/roles/heads-of-ai/",
+   "topics": [
+    "head_of_ai",
+    "head of ai",
+    "by_role"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_agent_studio",
+   "type": "product_page",
+   "title": "Agent Studio overview",
+   "blurb": "Build, test and deploy agents, low-code",
+   "url": "https://studio.lyzr.ai/",
+   "topics": [
+    "agent_studio",
+    "agent studio",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_architect",
+   "type": "product_page",
+   "title": "Architect overview",
+   "blurb": "Describe a workflow, get a working agent",
+   "url": "https://architect.new/",
+   "topics": [
+    "architect",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_opencontroller",
+   "type": "product_page",
+   "title": "OpenController overview",
+   "blurb": "Govern every agent you run, anywhere",
+   "url": "https://www.lyzr.ai/opencontroller/",
+   "topics": [
+    "opencontroller",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_agentic_os",
+   "type": "product_page",
+   "title": "Agentic OS overview",
+   "blurb": "Run a whole function on coordinated agents",
+   "url": "https://www.lyzr.ai/agentic-os/",
+   "topics": [
+    "agentic_os",
+    "agentic os",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_sovereign_ai",
+   "type": "product_page",
+   "title": "Sovereign AI overview",
+   "blurb": "Own your models, data and infrastructure",
+   "url": "https://www.lyzr.ai/sovereign-ai/",
+   "topics": [
+    "sovereign_ai",
+    "sovereign ai",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_lyzr_nitro",
+   "type": "product_page",
+   "title": "Lyzr Nitro overview",
+   "blurb": "Take cloud agents from demo to production",
+   "url": "https://www.lyzr.ai/partners/google/",
+   "topics": [
+    "lyzr_nitro",
+    "lyzr nitro",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_lyzr_optimus",
+   "type": "product_page",
+   "title": "Lyzr Optimus overview",
+   "blurb": "A sealed, on-premise agent factory",
+   "url": "https://optimus.lyzr-ai.com/",
+   "topics": [
+    "lyzr_optimus",
+    "lyzr optimus",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_responsible_ai",
+   "type": "product_page",
+   "title": "Responsible AI overview",
+   "blurb": "Lyzr is the only platform with Responsible AI built into its core architecture",
+   "url": "https://www.lyzr.ai/responsible-ai-as-a-service/",
+   "topics": [
+    "responsible_ai",
+    "responsible ai",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_orchestration_as_a_service",
+   "type": "product_page",
+   "title": "Orchestration as a Service overview",
+   "blurb": "Lyzr's Orchestration as a Service turns siloed AI agents into a coordinated system",
+   "url": "https://www.lyzr.ai/orchestration-as-a-service/",
+   "topics": [
+    "orchestration_as_a_service",
+    "orchestration as a service",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_agents_as_a_service",
+   "type": "product_page",
+   "title": "Agents as a Service overview",
+   "blurb": "With Lyzr Agents as a Service, enterprises can build and deploy production-ready custom",
+   "url": "https://www.lyzr.ai/agents-as-a-service/",
+   "topics": [
+    "agents_as_a_service",
+    "agents as a service",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_hallucination_manager",
+   "type": "product_page",
+   "title": "Hallucination Manager overview",
+   "blurb": "Lyzr's Hallucination Manager catches and corrects AI errors before they reach",
+   "url": "https://www.lyzr.ai/hallucination-manager-as-a-service/",
+   "topics": [
+    "hallucination_manager",
+    "hallucination manager",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_knowledge_base",
+   "type": "product_page",
+   "title": "Knowledge Base overview",
+   "blurb": "Lyzr's Knowledge Base turns your PDFs, DOCX files, and web pages into a no-code",
+   "url": "https://www.lyzr.ai/knowledge-base-as-a-service/",
+   "topics": [
+    "knowledge_base",
+    "knowledge base",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_knowledge_graph",
+   "type": "product_page",
+   "title": "Knowledge Graph overview",
+   "blurb": "Lyzr's Knowledge Graph turns your unstructured enterprise data into a semantic",
+   "url": "https://www.lyzr.ai/knowledge-graph-as-a-service/",
+   "topics": [
+    "knowledge_graph",
+    "knowledge graph",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_ai_agent_memory",
+   "type": "product_page",
+   "title": "AI Agent Memory overview",
+   "blurb": "Cognis gives AI agents persistent memory that ranks #1 on LongMemEval with 100% SS-User",
+   "url": "https://www.lyzr.ai/cognis/",
+   "topics": [
+    "ai_agent_memory",
+    "ai agent memory",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_opengap",
+   "type": "product_page",
+   "title": "OpenGAP overview",
+   "blurb": "OpenGAP lets teams define an AI agent once in git and run it on any of 8",
+   "url": "https://www.lyzr.ai/oss/opengap/",
+   "topics": [
+    "opengap",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_gitagent",
+   "type": "product_page",
+   "title": "GitAgent overview",
+   "blurb": "GitAgent is a self-improving, git-native AI coding agent where session memory",
+   "url": "https://www.lyzr.ai/oss/gitagent/",
+   "topics": [
+    "gitagent",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_docs_and_api",
+   "type": "product_page",
+   "title": "Docs & API overview",
+   "blurb": "Lyzr replaces the 14-tool AI agent stack with a single full-stack enterprise platform",
+   "url": "https://docs.lyzr.ai/enterprise/get-started/intro",
+   "topics": [
+    "docs_and_api",
+    "docs & api",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_venture_capital",
+   "type": "solution_page",
+   "title": "Private equity & VC: what we do",
+   "blurb": "Lyzr's Agentic OS reduces due diligence time by 85% and gets PE firms from",
+   "url": "https://www.lyzr.ai/private-equity/",
+   "topics": [
+    "venture_capital",
+    "private equity & vc",
+    "by_industry"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_it_operations",
+   "type": "solution_page",
+   "title": "IT operations: what we do",
+   "blurb": "Lyzr's Agentic OS for IT operations reduces MTTR by 50–70%, gets enterprises to production",
+   "url": "https://www.lyzr.ai/it-operations/",
+   "topics": [
+    "it_operations",
+    "it operations",
+    "by_function"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_madison",
+   "type": "product_page",
+   "title": "Madison overview",
+   "blurb": "The agentic banking OS",
+   "url": "https://madison.lyzr-ai.com/",
+   "topics": [
+    "madison",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_madison_grc",
+   "type": "product_page",
+   "title": "Madison GRC overview",
+   "blurb": "Agentic compliance for banks",
+   "url": "https://www.madison.lyzr.ai/",
+   "topics": [
+    "madison_grc",
+    "madison grc",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_agent_blocks",
+   "type": "product_page",
+   "title": "Agent Blocks overview",
+   "blurb": "Embed agent capabilities in your product",
+   "url": "https://www.lyzr.ai/agentblocks/",
+   "topics": [
+    "agent_blocks",
+    "agent blocks",
+    "product"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_dwight",
+   "type": "solution_page",
+   "title": "Dwight, AI RFP Scout: what we do",
+   "blurb": "Finds and drafts winning RFPs",
+   "url": "https://www.lyzr.ai/dwight-ai-rfp-scout/",
+   "topics": [
+    "dwight",
+    "dwight, ai rfp scout",
+    "named_agent"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "page_kathy",
+   "type": "solution_page",
+   "title": "Kathy, AI competitor analyst: what we do",
+   "blurb": "Real-time competitive intelligence",
+   "url": "https://www.lyzr.ai/kathy/",
+   "topics": [
+    "kathy",
+    "kathy, ai competitor analyst",
+    "named_agent"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "partner_microsoft",
+   "type": "partner_page",
+   "title": "How Lyzr works with Microsoft Azure",
+   "blurb": "For CIOs & global SI partners standardizing on Microsoft AI Foundry, Lyzr is the",
+   "url": "https://www.lyzr.ai/partners/microsoft/",
+   "topics": [
+    "microsoft",
+    "azure",
+    "copilot",
+    "microsoft 365",
+    "ai foundry",
+    "microsoft_azure"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "partner_aws",
+   "type": "partner_page",
+   "title": "How Lyzr works with AWS",
+   "blurb": "Stop wrestling with complex infrastructure and endless roadmaps. Lyzr provides",
+   "url": "https://www.lyzr.ai/partners/aws/",
+   "topics": [
+    "aws",
+    "amazon",
+    "bedrock",
+    "amazon_web_services"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "partner_gsi_si",
+   "type": "partner_page",
+   "title": "Partnering with Lyzr as a consulting firm",
+   "blurb": "AI agent infrastructure for system integrators to build, deploy, and scale secure",
+   "url": "https://www.lyzr.ai/gsi-si/",
+   "topics": [
+    "partner",
+    "consulting",
+    "si",
+    "gsi",
+    "consulting_partners",
+    "managing_director"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "partner_partners",
+   "type": "partner_page",
+   "title": "Reselling and building on Lyzr",
+   "blurb": "Partner with Lyzr to deliver secure enterprise AI solutions, accelerate GenAI adoption",
+   "url": "https://www.lyzr.ai/partners/",
+   "topics": [
+    "reseller",
+    "partner",
+    "isv",
+    "reseller_partners"
+   ]
+  },
+  {
+   "priority": 1,
+   "id": "trust",
+   "type": "trust",
+   "title": "Our security and compliance",
+   "blurb": "SOC 2 Type II, ISO 27001, ISO 42001, GDPR and HIPAA",
+   "url": "https://security.lyzr.ai/",
+   "topics": [
+    "security",
+    "compliance",
+    "soc 2",
+    "iso",
+    "gdpr",
+    "hipaa",
+    "trust",
+    "compliance_and_governance"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_how_we_generated_400m_interest_for_our_series_b_funding",
+   "type": "story",
+   "title": "How our own agent, SivaClaw, ran investor relations",
+   "blurb": "",
+   "url": "https://www.lyzr.ai/webinar/how-we-generated-400m-interest-for-our-series-b-funding/",
+   "topics": [
+    "funding",
+    "raised",
+    "investors",
+    "funded",
+    "series",
+    "valuation"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_ai_firm_lyzr_series_a_funding_rocketship",
+   "type": "story",
+   "title": "YourStory: our $8M Series A, led by Rocketship",
+   "blurb": "",
+   "url": "https://yourstory.com/ai-story/ai-firm-lyzr-series-a-funding-rocketship",
+   "topics": [
+    "funding",
+    "raised",
+    "investors",
+    "funded",
+    "series",
+    "valuation"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_accenture_invests_in_lyzr_to_bring_agentic_ai_to_banking_and_insurance_companies",
+   "type": "story",
+   "title": "Accenture: why it invested in Lyzr for banking and insurance",
+   "blurb": "",
+   "url": "https://newsroom.accenture.com/news/2025/accenture-invests-in-lyzr-to-bring-agentic-ai-to-banking-and-insurance-companies",
+   "topics": [
+    "accenture",
+    "investor",
+    "backs"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_lyzr_and_accenture",
+   "type": "story",
+   "title": "Lyzr and Accenture: what we build together",
+   "blurb": "",
+   "url": "https://www.lyzr.ai/lyzr-and-accenture/",
+   "topics": [
+    "accenture",
+    "investor",
+    "backs"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_about_us",
+   "type": "story",
+   "title": "Who we are and how we work with enterprises",
+   "blurb": "",
+   "url": "https://www.lyzr.ai/about-us/",
+   "topics": [
+    "company",
+    "about",
+    "where",
+    "based"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_wall_of_love",
+   "type": "story",
+   "title": "What customers say about us",
+   "blurb": "",
+   "url": "https://www.lyzr.ai/wall-of-love/",
+   "topics": [
+    "company",
+    "about",
+    "where",
+    "based"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_lyzr_analyst_recognition",
+   "type": "story",
+   "title": "How analysts rate us",
+   "blurb": "",
+   "url": "https://www.lyzr.ai/lyzr-analyst-recognition/",
+   "topics": [
+    "company",
+    "about",
+    "where",
+    "based"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_customers",
+   "type": "story",
+   "title": "Teams running Lyzr agents in production",
+   "blurb": "",
+   "url": "https://www.lyzr.ai/customers/",
+   "topics": [
+    "customers",
+    "references"
+   ]
+  },
+  {
+   "priority": 2,
+   "id": "story_case_studies",
+   "type": "story",
+   "title": "Every case study, newest first",
+   "blurb": "",
+   "url": "https://www.lyzr.ai/case-studies/",
+   "topics": [
+    "customers",
+    "references"
+   ]
+  }
+ ]
+}

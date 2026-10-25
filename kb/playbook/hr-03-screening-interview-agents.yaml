@@ -1,0 +1,26 @@
+id: hr-03-screening-interview-agents
+archetype: hr-consultancy
+name: Candidate screening and interview agents
+one_liner: Agents screen, structure the interview and score consistently, so recruiters
+  spend their time on the shortlist rather than building it.
+fits_when:
+  - is a recruitment, search or RPO business
+  - handles high applicant volume or hard-to-fill technical roles
+  - mentions screening, assessment or quality of hire
+buyer: Talent Acquisition Head / Founder of the staffing firm
+pitch_to_their_client: "Every candidate gets the same interview. You see the shortlist on day two."
+why_you: "Your margin is recruiter hours. This is the rare AI line that improves
+  your own P&L on the first client and can then be sold on."
+delivery:
+  shape: 4–6 week build, then per-role or per-candidate
+  team_needed: 1 senior recruiter + 1 engineer
+  lyzr_products: [Agent Studio]
+first_offer:
+  name: Screening consistency review
+  shape: 2 weeks, one role family
+  ends_with: the same shortlist scored two ways, and a pilot on that role family
+proof:
+  case: cs_curatal
+  customer: Curatal
+  named: true
+  result: Significantly reduced time to conduct and evaluate interviews, enabling recruiters to process more candidates in less time

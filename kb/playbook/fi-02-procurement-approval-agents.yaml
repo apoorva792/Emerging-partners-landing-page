@@ -1,0 +1,27 @@
+id: fi-02-procurement-approval-agents
+archetype: finance-accounting-firm
+also_fits: [it-consultancy-msp]
+name: Procurement and approval workflow agents
+one_liner: Supplier onboarding, PO matching and approval chasing handled by agents,
+  with every decision logged for audit.
+fits_when:
+  - advises on finance operations, P2P, shared services or spend control
+  - clients have multi-step approvals and a supplier base in the hundreds
+  - mentions procurement, vendor management or compliance
+buyer: CFO / Head of Procurement
+pitch_to_their_client: "Supplier onboarding stops living in an email chain."
+why_you: "You already map these approval chains in your advisory work. Here you
+  get paid to run them, not just document them."
+delivery:
+  shape: 8-week build, then managed with per-transaction pricing
+  team_needed: 1 finance process consultant + 1–2 engineers
+  lyzr_products: [Agent Studio, Agent Architect, OpenController]
+first_offer:
+  name: Procure-to-pay workflow review
+  shape: 3 weeks, one approval chain
+  ends_with: the three approval steps costing the most time, and a scoped pilot on the worst
+proof:
+  case: cs_how_a_global_enterprise_built_an_ai_powered_procurement_operating_system_with_lyzr
+  customer: a global enterprise
+  named: false
+  result: Up to 50% faster supplier onboarding

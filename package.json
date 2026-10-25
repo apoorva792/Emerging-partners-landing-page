@@ -1,0 +1,13 @@
+{
+  "name": "partner-opportunity-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "setup": "node scripts/studio-setup.js",
+    "try": "node scripts/try.js",
+    "run-journey": "node scripts/run.js"
+  },
+  "engines": { "node": ">=20" }
+}

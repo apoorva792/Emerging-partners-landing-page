@@ -1,0 +1,25 @@
+id: it-04-delivery-ops-agents
+archetype: it-consultancy-msp
+name: Resource planning and delivery-ops agents
+one_liner: Agents that match people to projects, flag bench risk and keep utilisation
+  forecasts current without a weekly spreadsheet ritual.
+fits_when:
+  - is itself a people business billing by the hour or by the seat
+  - mentions utilisation, bench, staffing or capacity anywhere on the site
+buyer: Delivery Head / COO (and themselves first)
+pitch_to_their_client: "Your staffing meeting becomes a review, not a reconstruction."
+why_you: "Run it on your own bench first. The demo you give every prospect is
+  your own business — that is the most credible sale a services firm can make."
+delivery:
+  shape: 4–6 week internal build, then resold to peer firms
+  team_needed: 1 engineer + whoever owns staffing today
+  lyzr_products: [Agent Studio]
+first_offer:
+  name: Delivery visibility review
+  shape: 2 weeks, your own bench
+  ends_with: where utilisation forecasting actually breaks, and an internal pilot you can later resell
+proof:
+  case: cs_how_a_technology_services_firm_optimized_resource_allocation_with_lyzr
+  customer: a global technology services firm
+  named: false
+  result: 60–75% reduction in manual resource planning effort (targeted)
