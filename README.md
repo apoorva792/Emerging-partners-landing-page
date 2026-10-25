@@ -229,11 +229,14 @@ laptop, and all three were found by reading rather than by a failed deploy:
   filesystem is read-only apart from `/tmp` and does not survive the request, so the record
   is a local convenience and never a reason to fail a visitor.
 
-The landing page is committed at `public/landing.html` and served at `/landing.html`. It is
-generated from a Claude Design export that is **not** in the repo, so regenerating it needs
-that export: `python3 scripts/patch-landing.py "<export>.html" https://<your-deployment>`,
-then copy the result over `public/landing.html`. After deploying, re-run it with the real
-URL so the embedded agent points at the deployment rather than localhost.
+**The landing page is the site index.** `public/index.html` is the Emerging Partners page
+with the agent embedded; the agent itself is `public/agent.html`, also reachable at
+`/agent`. The embed opens `/agent.html` — a path on the same origin, not an absolute URL —
+so moving the site to another domain needs no re-patch.
+
+`public/index.html` is generated from a Claude Design export that is **not** in the repo.
+To regenerate it: `python3 scripts/patch-landing.py "<export>.html"`. The copy rewrites
+live in `data/landing-copy.json` and the patch fails loudly if any of them stops matching.
 
 
 ## Out of scope for the POC

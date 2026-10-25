@@ -6,7 +6,8 @@
  * `window` — which survives the replace — poll for the hero form, and bind directly to it
  * each time it appears, replacing the simulation with the real agent.
  *
- * __APP__ is substituted by scripts/patch-landing.py.
+ * __APP__ is substituted by scripts/patch-landing.py. It defaults to a path on the same
+ * origin — /agent.html — so moving the site to another domain needs no re-patch.
  */
 (function () {
   var APP = '__APP__';
@@ -57,7 +58,7 @@
   function open(email) {
     /* The overlay is rebuilt if the bundler replaced the DOM under us. */
     if (!ov || !ov.isConnected) build();
-    fr.src = APP + '/?embed=1&email=' + encodeURIComponent(email);
+    fr.src = APP + (APP.indexOf('?') > -1 ? '&' : '?') + 'embed=1&email=' + encodeURIComponent(email);
     ov.style.display = 'block';
     document.body.style.overflow = 'hidden';
   }

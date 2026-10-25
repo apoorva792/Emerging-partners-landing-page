@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partner Opportunity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Lyzr website design system — colour roles, not a loose palette. */
+  --bg:#FAFAF9; --surface:#FFFFFF; --fill:#F1F0EE; --line:#E3E1DE;
+  --ink:#1F2022; --soft:#6B675F; --muted:#8A857C;
+  --accent:#FE4B1E; --navy:#043E77; --forest:#063B28; --oxblood:#593D3D; --green:#2F8F5B;
+  --sans:'Aeonik','Inter',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
+  /* Two radii, no shadows: 4 on buttons, 6 on cards and panels. */
+  --r:6px; --rb:4px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+body{font-size:18px;line-height:1.45}
+.wrap{max-width:720px;margin:0 auto;padding:30px 20px 120px;transition:max-width .4s ease}
+.wrap.wide{max-width:1000px}
+
+/* ---------- rail ---------- */
+.rail{display:flex;gap:4px;margin-bottom:44px}
+.rail div{flex:1;min-width:0}
+.rail i{display:block;height:2px;background:var(--line);transition:background .4s}
+.rail .on i{background:var(--accent)}
+.rail span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);margin-top:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rail .now span{color:var(--ink)}
+@media(max-width:560px){.rail span{font-size:8.5px;letter-spacing:.04em}}
+
+/* ---------- type ---------- */
+/* Mono uppercase is reserved for the one eyebrow above a headline. Everywhere else the
+   hierarchy is carried by size and weight, because a page of tracked capitals is a page
+   nobody reads. */
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 14px}
+h1{font-size:clamp(30px,4vw,40px);line-height:1.08;letter-spacing:-.028em;margin:0 0 16px;font-weight:600}
+h2{font-size:24px;line-height:1.15;letter-spacing:-.02em;margin:0 0 10px;font-weight:600}
+h3{font-size:18px;line-height:1.3;letter-spacing:-.01em;margin:0 0 6px;font-weight:600}
+p{margin:0 0 16px}
+.lede{font-size:19px;line-height:1.55;color:var(--ink);max-width:60ch}
+.sub{color:var(--soft);font-size:18px;line-height:1.45;max-width:60ch;margin:0 0 30px}
+.small{font-size:15px;line-height:1.45;color:var(--soft)}
+.step{display:none;animation:in .4s cubic-bezier(.2,.7,.3,1) both}
+.step.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.hr{height:1px;background:var(--line);border:0;margin:34px 0}
+
+/* ---------- controls ---------- */
+input[type=text],input[type=email],textarea{width:100%;font:inherit;font-size:17px;color:var(--ink);
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--rb);outline:none;transition:border-color .15s}
+input[type=text],input[type=email]{height:46px;padding:0 14px}
+textarea{padding:13px 14px;min-height:96px;resize:vertical;line-height:1.5}
+input:focus,textarea:focus{border-color:var(--ink)}
+input::placeholder,textarea::placeholder{color:var(--muted)}
+label.fl{display:block;font-size:15px;color:var(--soft);margin:0 0 7px}
+.field{margin-bottom:16px;max-width:460px}
+button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
+/* One orange button per view; everything else black. */
+.go{background:var(--ink);color:#fff;height:46px;padding:0 22px;font-size:17px;transition:background .15s}
+.go:hover{background:#000}
+.go.accent{background:var(--accent)}
+.go.accent:hover{background:#E8431A}
+.go[disabled]{opacity:.4;cursor:default}
+.outline{background:none;border:1px solid var(--line);color:var(--ink);height:46px;padding:0 22px;font-size:17px}
+.outline:hover{border-color:var(--ink)}
+.ghost{background:none;color:var(--soft);padding:12px 2px;font-size:16px;text-decoration:underline;text-underline-offset:4px}
+.ghost:hover{color:var(--ink)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:30px}
+.backbar{margin:0 0 22px}
+.backbar button{background:none;color:var(--soft);font-size:15px;padding:6px 0}
+.backbar button:hover{color:var(--ink)}
+.note{font-size:15px;color:var(--muted);margin-top:16px}
+.err{color:#B3261E;font-size:16px;margin-top:12px}
+
+/* ---------- waiting ---------- */
+.bar{height:2px;background:var(--line);overflow:hidden;margin:26px 0 14px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .6s ease}
+.ticker{font-family:var(--mono);font-size:14px;color:var(--soft);min-height:28px}
+.ticker b{color:var(--ink);font-weight:400}
+
+/* ---------- 02 validate ---------- */
+.insight{border-left:2px solid var(--accent);padding:4px 0 4px 20px;margin:0 0 34px;max-width:60ch}
+.insight em{display:block;font-style:normal;font-size:15px;color:var(--accent);margin-bottom:6px}
+.insight p{margin:0;font-size:18px;line-height:1.5}
+
+/* ---------- 03 focus ---------- */
+.dots{display:flex;gap:5px;margin-bottom:28px}
+.dots i{width:26px;height:3px;background:var(--line)}
+.dots i.on{background:var(--accent)}
+.opts{display:flex;flex-direction:column;gap:10px;margin:8px 0 0;max-width:520px}
+.opt{text-align:left;background:var(--surface);border:1px solid var(--line);color:var(--ink);
+  padding:16px 20px;border-radius:var(--rb);font-size:17.5px;line-height:1.35;transition:border-color .15s}
+.opt:hover{border-color:var(--ink)}
+.opt.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.opt.on:after{content:'✓';float:right;color:var(--accent)}
+
+/* ---------- 04 explore ---------- */
+.optabs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
+.optab{text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:18px;transition:border-color .18s,box-shadow .18s;display:flex;flex-direction:column;gap:10px}
+.optab:hover{border-color:var(--muted)}
+/* Two states, drawn differently, because they mean different things: `open` is the card
+   being read, `on` is a card that goes in the brief. Reading an unselected card still has
+   to look like something, or clicking a tile appears to do nothing. */
+.optab.open{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.optab.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.optab.on.open{box-shadow:inset 0 0 0 2px var(--accent)}
+.optab .pickbox{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:12px;
+  font-size:14px;color:var(--muted)}
+.optab .box{width:17px;height:17px;border:1px solid var(--line);border-radius:3px;flex:none;
+  display:grid;place-items:center;font-size:11px;color:#fff;background:var(--surface)}
+.optab.on .box{background:var(--accent);border-color:var(--accent)}
+.optab.on .pickbox{color:var(--accent)}
+.optab em{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-style:normal}
+.optab.on em{color:var(--accent)}
+.optab strong{font-size:16.5px;line-height:1.3;letter-spacing:-.012em;font-weight:600}
+.detail{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:32px}
+.detail>h2{max-width:26ch}
+.fits{font-size:18px;line-height:1.5;color:var(--ink);border-left:2px solid var(--accent);
+  padding-left:18px;margin:0 0 26px;max-width:62ch}
+.tabs{display:flex;gap:26px;border-bottom:1px solid var(--line);margin:0 0 26px}
+.tabs button{background:none;color:var(--muted);padding:0 0 13px;font-size:16.5px;border-radius:0;
+  border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button:hover{color:var(--ink)}
+.tabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
+.pane{display:none;animation:in .26s ease both}
+.pane.on{display:block}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin:0}
+.fact{padding:14px 0;border-top:1px solid var(--line)}
+.fact dt{font-size:15px;color:var(--muted);margin-bottom:3px}
+.fact dd{margin:0;font-size:17px;line-height:1.4}
+.offer{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:0 0 26px}
+.offer em{font-style:normal;font-size:15px;color:var(--accent);display:block;margin-bottom:8px}
+.offer h3{margin:0 0 4px}
+.offer .shape{font-family:var(--mono);font-size:13.5px;color:var(--soft);margin:0 0 10px}
+.offer p:last-child{margin:0;font-size:16.5px}
+.quote{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:0 0 14px}
+.quote p{margin:0;font-size:17px;line-height:1.55}
+.copy{background:none;border:1px solid var(--line);color:var(--soft);font-size:14px;padding:7px 14px;margin-top:14px}
+.copy:hover{color:var(--ink);border-color:var(--ink)}
+.qlist{list-style:none;margin:0 0 26px;padding:0}
+.qlist li{padding:12px 0;border-top:1px solid var(--line);font-size:17px}
+.reslist{list-style:none;margin:0;padding:0}
+.reslist li{padding:15px 0;border-top:1px solid var(--line)}
+.reslist em{font-style:normal;font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--muted);display:block;margin-bottom:5px}
+.reslist a{display:block;font-size:17px;font-weight:500;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.reslist a:hover{color:var(--accent)}
+.reslist p{margin:4px 0 0;font-size:15px;color:var(--soft)}
+.proofline{font-size:19px;line-height:1.5;margin:0 0 10px}
+.proofline b{color:var(--accent);font-weight:600}
+.dfoot{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
+@media(max-width:860px){.optabs{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.detail{padding:24px}}
+
+/* ---------- accounts ---------- */
+/* The relationship select carries a long label, so it gets room rather than a
+   fixed column that cuts it off mid-word. */
+.acct{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,210px);gap:10px;margin-bottom:10px;max-width:720px}
+select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--rb);color:var(--ink)}
+@media(max-width:620px){.acct{grid-template-columns:1fr}}
+
+/* ---------- documents ----------
+   The Lyzr One-Pager System: white page, hairline edge, 6 radius, no shadows, its own
+   tighter scale (hero 40/42, section title 28/30, body 12/18), 24 between components and
+   48 between sections, and exactly one deep colour per piece. */
+.sheet{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:44px 46px;font-size:14px;line-height:21px}
+.sheet p{margin:0 0 14px}
+.sh-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:40px;
+  padding-bottom:22px;border-bottom:1px solid var(--line);
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+/* The lockup: their mark, a small cross, ours. The brand guidelines set the symbol's
+   minimum at 24px, so the header uses the symbol and the footer the full wordmark at its
+   own 150px minimum — never the wordmark shrunk to fit. */
+/* Clear space: the guidelines require x on every side of our lockup, where x is the
+   lockup's own height — so a 26px symbol gets 26px of air, and the cross sits in it. */
+.lockup{display:flex;align-items:center;gap:26px}
+.lockup img{display:block}
+.lockup .theirs{height:26px;width:auto;max-width:150px;object-fit:contain}
+.lockup .name{font-family:var(--sans);font-size:17px;font-weight:600;letter-spacing:-.015em;
+  text-transform:none;color:var(--ink);line-height:26px}
+.lockup .x{color:var(--muted);font-size:15px;font-family:var(--sans);margin:0 -13px}
+.lockup .mark{height:26px;width:26px}
+.sh-doclabel{text-align:right;line-height:1.5}
+.sh-doclabel b{display:block;color:var(--ink);font-weight:400}
+.sh-wordmark{height:34px;width:auto}
+.sh-head{font-size:clamp(28px,3.4vw,38px);line-height:1.08;letter-spacing:-.03em;margin:0 0 20px;
+  font-weight:600;max-width:20ch}
+.sh-lede{font-size:17px;line-height:1.6;color:var(--soft);margin:0 0 48px;max-width:58ch}
+.sh-sect{margin-bottom:48px}
+.sh-sect:last-child{margin-bottom:0}
+.sh-sect>h3{font-size:20px;letter-spacing:-.015em;margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+/* Each chosen line is its own block, so three of them read as three plays rather than
+   one long column of fields. */
+.play{padding:0 0 26px;margin-bottom:26px;border-bottom:1px solid var(--line)}
+.play:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.playnum{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.play>h3{font-size:19px;letter-spacing:-.018em;margin:0 0 10px;border:0;padding:0}
+.playwhy{border-left:2px solid var(--accent);padding-left:14px;margin:0 0 16px;font-size:15px;line-height:1.5;max-width:60ch}
+.play .kv{margin-bottom:16px}
+.playproof{font-size:14.5px;margin:0;padding:12px 0 0;border-top:1px solid var(--line)}
+.playproof b{color:var(--accent)}
+.reading{margin-top:14px}
+.readlab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 7px}
+.reading ul{list-style:none;margin:0;padding:0}
+.reading li{padding:5px 0;font-size:14.5px}
+.reading li span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-left:8px}
+.connect{margin:22px 0 0;padding:14px 16px;background:var(--fill);border-radius:var(--r);font-size:15px}
+.sh-body{font-size:15px;line-height:1.55;max-width:62ch}
+.sheet a{color:var(--navy)}
+.panel a{color:#fff}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:14px;background:var(--fill);border-radius:999px;padding:7px 15px}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:14px 20px;font-size:15px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:13px 0 13px 40px;border-top:1px solid var(--line);font-size:15.5px}
+.steps li:first-child{border-top:none}
+.steps li:before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:14px;
+  font-family:var(--mono);font-size:12px;color:var(--accent)}
+.track{list-style:none;margin:0;padding:0}
+.track li{position:relative;padding:0 0 22px 24px;border-left:1px solid var(--line);font-size:15.5px}
+.track li:last-child{border-left-color:transparent;padding-bottom:0}
+.track li:before{content:'';position:absolute;left:-4px;top:6px;width:7px;height:7px;border-radius:50%;
+  background:var(--surface);border:1.5px solid var(--accent)}
+.track em{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-bottom:3px}
+.lands{list-style:none;margin:0;padding:0}
+.lands li{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.lands li:first-child{border-top:none}
+.lands .r{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
+.lands li:first-child .r{color:var(--accent)}
+.lands b{display:block;font-size:16px;font-weight:600}
+.lands span{font-size:14.5px;color:var(--soft)}
+.panel{background:var(--navy);color:#fff;border-radius:var(--r);padding:30px 32px}
+.panel h3{color:#fff;margin:0 0 14px;font-size:19px}
+.panel ul{list-style:none;margin:0 0 18px;padding:0}
+.panel li{font-size:15px;padding:9px 0;border-top:1px solid rgba(255,255,255,.18)}
+.panel li:first-child{border-top:none}
+.panel p{margin:0;font-size:16px;color:rgba(255,255,255,.92)}
+.closing{margin-top:44px;border:1px solid var(--line);border-radius:var(--r);padding:30px 32px;background:var(--surface)}
+.closing h2{margin-bottom:12px}
+.closing p{font-size:17px;color:var(--soft);max-width:60ch;margin-bottom:18px}
+.closing ul{list-style:none;margin:0;padding:0;max-width:60ch}
+.closing li{padding:11px 0;border-top:1px solid var(--line);font-size:16.5px}
+.sh-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:44px;
+  padding-top:20px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.sh-foot .by{display:flex;align-items:center;gap:12px}
+.sh-foot img{height:26px;width:auto}
+@media(max-width:620px){.sheet{padding:28px 22px}.kv{grid-template-columns:1fr;gap:4px 0}.kv dd{margin-bottom:12px}}
+@media print{
+  .rail,.row,.note,.tabs,.copy{display:none!important}
+  body{background:#fff;font-size:11pt}
+  .wrap{max-width:none;padding:0}
+  .sheet{border:none;border-radius:0;padding:0;font-size:10.5pt;line-height:1.5}
+  /* Keep a section whole on one page wherever it will fit, and never leave a heading
+     stranded at the foot of a page. */
+  .sh-sect{break-inside:avoid;page-break-inside:avoid;margin-bottom:26pt}
+  .sh-sect>h3{break-after:avoid;page-break-after:avoid}
+  .quote,.offer,.panel,.lands li,.track li,.steps li,.play{break-inside:avoid;page-break-inside:avoid}
+  .panel{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sh-head{font-size:26pt;line-height:1.1}
+  .sh-top{position:running(head)}
+  a{text-decoration:none}
+  a[href^="http"]:after{content:' (' attr(href) ')';font-size:8pt;color:#6B675F;word-break:break-all}
+}
+@page{size:A4;margin:14mm 15mm 16mm}
+</style>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <div class="rail" id="rail"></div>
+
+  <!-- 0 discover -->
+  <section class="step on" id="s0">
+    <p class="eyebrow">Lyzr Emerging Partner Program</p>
+    <h1>See the AI services your firm could be selling.</h1>
+    <p class="sub">Two minutes. We read your site, then show you the service lines you could take to the clients you already have — each with the first engagement to sell and the proof behind it.</p>
+    <div class="field"><label class="fl" for="email">Work email</label><input id="email" type="email" placeholder="you@yourcompany.com" autocomplete="email"></div>
+    <button class="go" id="start">See my opportunity</button>
+    <div class="err" id="e0" hidden></div>
+    <p class="note">We don't contact anyone without your say-so.</p>
+  </section>
+
+  <!-- 1 reading -->
+  <section class="step" id="s1">
+    <p class="eyebrow">One moment</p>
+    <h1>Getting to know your business.</h1>
+    <div class="bar"><i id="bar"></i></div>
+    <div class="ticker" id="tick"></div>
+  </section>
+
+  <!-- 3 focus -->
+  <section class="step" id="s3">
+    <div class="dots" id="qdots"></div>
+    <h1 id="qtext"></h1>
+    <p class="sub" id="qhint"></p>
+    <div class="opts" id="qopts"></div>
+    <div class="field" style="margin-top:16px;max-width:520px"><input id="qfree" type="text" placeholder="Or tell us in your own words"></div>
+    <p class="small" style="margin:0 0 4px">Pick as many as apply.</p>
+    <div class="row" style="margin-top:14px">
+      <button class="go" id="qnext">Continue</button>
+      <button class="ghost" id="qback" hidden>&larr; Back</button>
+      <button class="ghost" id="qskip">Skip this one</button>
+    </div>
+  </section>
+
+  <!-- 4 thinking -->
+  <section class="step" id="s4">
+    <p class="eyebrow">Nearly there</p>
+    <h1>Finding what you could sell next.</h1>
+    <div class="bar"><i id="bar2"></i></div>
+    <div class="ticker" id="tick2"></div>
+  </section>
+
+  <!-- 5 explore -->
+  <section class="step" id="s5">
+    <div class="backbar"><button id="exploreback">&larr; Back to the questions</button></div>
+    <p class="eyebrow">Your opportunities</p>
+    <h1 id="s5h">Ways you could grow with Lyzr.</h1>
+    <p class="sub" id="opening"></p>
+    <div class="optabs" id="optabs"></div>
+    <div class="detail" id="detail"></div>
+  </section>
+
+  <!-- 6 accounts -->
+  <section class="step" id="s6">
+    <div class="backbar"><button data-back="s5">&larr; Back to the opportunities</button></div>
+    <p class="eyebrow">Before we write it up</p>
+    <h1>Have customers in mind?</h1>
+    <p class="sub">Name the clients you'd think of first and we'll put them in order on your brief, with what to open with. Three is plenty. These go to the Lyzr partner team only — nobody is contacted without your say-so.</p>
+    <div id="accts"></div>
+    <button class="ghost" id="addacct">+ Add another</button>
+    <div class="row"><button class="go" id="acctgo">Build my brief</button><button class="ghost" id="acctskip">Skip this</button></div>
+  </section>
+
+  <!-- 7 writing -->
+  <section class="step" id="s7">
+    <p class="eyebrow">Almost there</p>
+    <h1>Putting your brief together.</h1>
+    <div class="bar"><i id="bar3"></i></div>
+    <div class="ticker" id="tick3"></div>
+  </section>
+
+  <!-- 8 opportunity brief -->
+  <section class="step" id="s8">
+    <div class="backbar"><button data-back="s6">&larr; Back</button></div>
+    <h1 style="margin-bottom:28px">Your opportunity brief</h1>
+    <div id="partnerdoc"></div>
+    <div class="row">
+      <button class="go accent" id="dlpartner">Download as PDF</button>
+      <button class="outline" id="talk">Talk to Lyzr about this</button>
+      <span class="small" id="talkdone" hidden>Noted — the partner team will pick this up.</span>
+    </div>
+  </section>
+
+  <section class="step" id="sx">
+    <h1>That didn't work.</h1>
+    <p class="sub" id="xmsg"></p>
+    <button class="go" id="xagain">Try again</button>
+  </section>
+</div>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

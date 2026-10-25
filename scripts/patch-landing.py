@@ -19,8 +19,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 
 src = os.path.expanduser(sys.argv[1] if len(sys.argv) > 1 else "~/Downloads/Lyzr Emerging Partners (3).html")
-app = (sys.argv[2] if len(sys.argv) > 2 else "http://localhost:3000").rstrip("/")
-out = os.path.join(ROOT, "landing", "Lyzr Emerging Partners — with agent.html")
+app = (sys.argv[2] if len(sys.argv) > 2 else "/agent.html").rstrip("/") or "/agent.html"
+out = os.path.join(ROOT, "public", "index.html")
 
 embed = open(os.path.join(ROOT, "embed", "agent-embed.js"), encoding="utf-8").read()
 if "__APP__" not in embed:
@@ -88,12 +88,6 @@ s = s[:i] + "<script>\n" + embed + "\n</script>\n" + s[i:]
 os.makedirs(os.path.dirname(out), exist_ok=True)
 open(out, "w", encoding="utf-8").write(s)
 
-# A copy the local server can serve, so `npm start` gives you the agent on /
-# and the whole landing page with the agent embedded on /landing.html.
-served = os.path.join(ROOT, "public", "landing.html")
-open(served, "w", encoding="utf-8").write(s)
-
 print("wrote " + os.path.realpath(out))
-print("  served locally at http://localhost:3000/landing.html")
-print("  agent app: " + app)
+print("  the landing page is the site index; the agent lives at " + app)
 print("  original untouched: " + src)

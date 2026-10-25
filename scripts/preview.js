@@ -68,6 +68,6 @@ addEventListener('load', () => {
 });
 <\/script>`;
 
-const html = fs.readFileSync(path.join(ROOT_DIR, 'public', 'index.html'), 'utf8').replace('</head>', stub + '\n</head>');
+const html = fs.readFileSync(path.join(ROOT_DIR, 'public', 'agent.html'), 'utf8').replace('</head>', stub + '\n</head>');
 fs.writeFileSync(path.join(ROOT_DIR, 'public', '_preview.html'), html);
 console.log('wrote public/_preview.html');
