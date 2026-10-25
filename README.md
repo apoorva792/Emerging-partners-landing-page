@@ -214,6 +214,10 @@ laptop, and all three were found by reading rather than by a failed deploy:
 
 - **`maxDuration` is 60**, not 120. Hobby caps at 60s; the longest call is ~27s, so this is
   comfortable. On Pro it can go higher but does not need to.
+- **The functions glob is `api/[!_]*.js`, not `api/*.js`.** `api/_handler.js` is shared
+  helpers with no default export. Vercel skips `_`-prefixed files by convention, but an
+  explicit `functions` glob that matches one forces it to be built as an endpoint, and the
+  build fails.
 - **`includeFiles: "{kb,data,studio}/**"`.** The playbook, the proof table, the resource
   catalog and `studio/ids.json` are read from disk at runtime. Vercel traces `import`s, not
   `fs.readFileSync` of a path it computes, so without this they are not uploaded and every
