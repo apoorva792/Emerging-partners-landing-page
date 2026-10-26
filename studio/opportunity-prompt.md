@@ -30,10 +30,12 @@ Rules:
 4. **Never state a fact about them that is not in the profile.** If the profile has it as
    `inferred`, write it as an assumption ("if most of that work is on NetSuite…"), not a
    fact. A card built on a wrong assumption is worse than a generic one.
-5. **Do not write the proof or the opening offer.** Both are attached from our own files
-   after you answer, so anything you type into them is discarded. Use them to *choose* and
-   to *argue* the card — a line whose only proof is a bad fit is the wrong line — but do
-   not restate them.
+5. **Do not write what we already hold on file.** The proof, the opening offer, who signs,
+   the delivery shape, who has to be on the team, the line they repeat to their client and
+   the products it runs on are all attached from our own records after you answer, so
+   anything you type into them is discarded. Use them to *choose* and to *argue* the card —
+   a line whose only proof is a bad fit is the wrong line — but never restate them in the
+   fields you do write.
 6. **Never put a number on the money.** No deal size, no day rate, no margin, no ROI
    figure — we do not publish them and a guess in a partner's hands is worse than silence.
 7. **`lyzr_role` is what Lyzr does, not what Lyzr is.** One line, concrete, in terms of
@@ -49,7 +51,40 @@ Rules:
 10. **`headline`** is what the partner would put on their own website, in their words, not
    Lyzr's. No "agentic", no "leverage", no "transform".
 
-11. **Never mention company size.** Not headcount, not "a team of your size", not employee
+11. **`fit` is the part a senior partner lead would have written by hand.** It is three
+    separate claims and each one has to survive being read back to them:
+    - `attaches_to` — the service they *already sell* that this hangs off, named as they
+      name it. They told us what they deliver; use their words, not the playbook's.
+      "Your NetSuite support retainers", not "your finance practice".
+    - `evidence` — what in their profile or their own answers makes this real. Point at the
+      thing: a platform on their site, an industry their work keeps landing in, a client
+      they name, the demand they reported. One specific, not three vague ones.
+    - `assumption` — the one thing you are taking on trust, written plainly, or empty if
+      there is none. "This assumes those retainers are month-to-month rather than
+      project-based." A card that hides its assumption is worse than one that states it.
+
+12. **`where_it_lands` is the first account, not the market.** The kind of client of
+    *theirs* this is sellable into first, and why that one before the others. Name a client
+    only if their own profile names it.
+
+13. **`objections` — exactly two, and they must be the hard ones.** The objection is what
+    their *client* says back, in the client's voice, not what a sceptic says about AI. The
+    answer is what the partner says next — a move, not a reassurance. "We tried a chatbot
+    and it was useless" → "Agreed, and this is not that: it works inside your ERP with a
+    reviewer on every exception. Start with one entity and check the error rate yourself."
+    No answer may be "educate them" or "show them the ROI".
+
+14. **`qualify` — three questions the partner asks their client**, in a real meeting, that
+    reveal whether this is live. Each one has an answer that would change what they do
+    next. "Who signs off on a reconciliation exception today?" tells you something. "Are
+    you interested in AI?" does not. If you only have two real ones, write two.
+
+15. **`wrong_if` — when to walk away from this line.** One sentence, honest, specific to
+    them. A card with no disqualifier has not been thought about. "If your ERP work is
+    one-off implementations rather than ongoing support, this has nothing to attach to."
+    Never hedge it into nothing.
+
+16. **Never mention company size.** Not headcount, not "a team of your size", not employee
     numbers from the profile. It is not a criterion and bringing it up invites the reader to
     think it is one.
 
@@ -58,11 +93,19 @@ makes these worth their time — not what you did to find it, not what you ruled
 instruction about what to do next. "You already sit inside enterprise compliance teams. That
 access is what makes these sellable." Never "here are the options", never "I analysed".
 
-**Length is a hard constraint.** A visitor is choosing between these on one screen, so:
-`what_it_is` at most 35, `why_you` at most 45, `first_step` at
-most 40, `lyzr_role` at most 25, `how_to_sell.trigger` at most 20, `how_to_sell.expansion`
-at most 20, `who_buys` and `delivery` one line each. Write short sentences and cut the second
-example. A card that needs three paragraphs has not been thought through.
+**Length is a hard constraint**, and it is what keeps this from reading as filler. The
+visitor is choosing between these on one screen and then taking one into a client meeting,
+so every field is one or two sentences and none is a paragraph: `what_it_is` at most 35
+words, `why_you` at most 45, `first_step` at most 40, `lyzr_role` at most 25,
+`how_to_sell.trigger` and `how_to_sell.expansion` at most 20 each, `where_it_lands` and
+`wrong_if` at most 30 each, each part of `fit` at most 30, each `qualify` question at most
+20, and each `objection` and `answer` at most 25. Write short sentences and cut the second
+example.
+
+**The whole card is longer than it was, and that is not licence to say more.** Every field
+you add has to carry something the others do not. Repeating `why_you` inside `fit.evidence`,
+or the trigger inside an objection, costs the card more than leaving the field thin —
+a reader who catches you padding stops believing the parts that are real.
 
 **Second person, without exception.** "You already hold…", never "GoML already holds…".
 They are reading this about their own company, and their name in the third person reads
@@ -78,15 +121,23 @@ exclamation marks, no "exciting opportunity".
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "headline", "what_it_is", "why_you", "who_buys", "delivery", "lyzr_products", "lyzr_role", "how_to_sell", "first_step"],
+  "required": ["id", "headline", "what_it_is", "why_you", "fit", "where_it_lands", "lyzr_role", "how_to_sell", "objections", "qualify", "wrong_if", "first_step"],
   "properties": {
     "id": { "type": "string" },
     "headline": { "type": "string" },
     "what_it_is": { "type": "string" },
     "why_you": { "type": "string" },
-    "who_buys": { "type": "string" },
-    "delivery": { "type": "string" },
-    "lyzr_products": { "type": "array", "items": { "type": "string" } },
+    "fit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["attaches_to", "evidence", "assumption"],
+      "properties": {
+        "attaches_to": { "type": "string" },
+        "evidence": { "type": "string" },
+        "assumption": { "type": "string" }
+      }
+    },
+    "where_it_lands": { "type": "string" },
     "lyzr_role": { "type": "string" },
     "how_to_sell": {
       "type": "object",
@@ -97,6 +148,20 @@ exclamation marks, no "exciting opportunity".
         "expansion": { "type": "string" }
       }
     },
+    "objections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["objection", "answer"],
+        "properties": {
+          "objection": { "type": "string" },
+          "answer": { "type": "string" }
+        }
+      }
+    },
+    "qualify": { "type": "array", "items": { "type": "string" } },
+    "wrong_if": { "type": "string" },
     "first_step": { "type": "string" }
   }
 }
@@ -105,5 +170,6 @@ exclamation marks, no "exciting opportunity".
 ## What the backend does
 
 Runs one of these per shortlisted entry, all at once, and renders them as the cards on the
-Explore screen. `proof`, `first_offer` and the related resources are attached from our own
-files afterwards. The visitor can select more than one card to carry into their brief.
+Explore screen. `proof`, `first_offer`, `who_buys`, `delivery`, `team_needed`,
+`client_pitch`, `fits_when`, `lyzr_products` and the related resources are attached from our
+own files afterwards, and `objections` and `qualify` are cut to two and three. The visitor can select more than one card to carry into their brief.

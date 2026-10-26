@@ -179,6 +179,37 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
 .reslist a{display:block;font-size:17px;font-weight:500;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
 .reslist a:hover{color:var(--accent)}
 .reslist p{margin:4px 0 0;font-size:15px;color:var(--soft)}
+/* ---------- the consult half of a card ---------- */
+/* Sections inside a pane, each under a quiet mono label: the card now carries enough that
+ * unlabelled paragraphs would run together into an essay. */
+.block{margin:0 0 28px}
+.block:last-child{margin-bottom:0}
+.facts+.block{margin-top:28px}
+.block>em{font-style:normal;display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);margin:0 0 11px}
+/* The one line they repeat in the meeting, which is ours and not the model's. */
+.pull{margin:0 0 26px;padding:18px 22px;background:var(--fill);border-radius:var(--r);font-size:19px;line-height:1.5}
+.pull span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:9px}
+.qlist{list-style:none;margin:0;padding:0;counter-reset:q}
+.qlist li{counter-increment:q;position:relative;padding:13px 0 13px 34px;border-top:1px solid var(--line);
+  font-size:17px;line-height:1.45}
+.qlist li:first-child{border-top:none;padding-top:0}
+.qlist li:first-child::before{top:1px}
+.qlist li::before{content:counter(q,decimal-leading-zero);position:absolute;left:0;top:14px;
+  font-family:var(--mono);font-size:12px;color:var(--accent)}
+/* What the client says back, and what the partner says next. */
+.qa{border-top:1px solid var(--line);padding:15px 0}
+.qa:first-of-type{border-top:none;padding-top:0}
+.qa b{display:block;font-weight:400;font-size:17px;line-height:1.4;margin-bottom:8px}
+.qa p{margin:0;padding-left:16px;border-left:2px solid var(--accent);font-size:16px;line-height:1.5;color:var(--soft)}
+.checks{list-style:none;margin:0;padding:0}
+.checks li{position:relative;padding:8px 0 8px 22px;font-size:16px;line-height:1.45;color:var(--soft)}
+.checks li::before{content:'';position:absolute;left:0;top:15px;width:10px;height:1px;background:var(--accent)}
+/* The assumption and the disqualifier. Quiet on purpose — they are the parts a reader
+ * checks us on, not the parts we sell with. */
+.caveat{margin:22px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:15px;line-height:1.5;color:var(--muted)}
+.caveat b{color:var(--soft);font-weight:400}
 .proofline{font-size:19px;line-height:1.5;margin:0 0 10px}
 .proofline b{color:var(--accent);font-weight:600}
 .dfoot{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}

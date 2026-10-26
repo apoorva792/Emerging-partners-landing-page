@@ -20,4 +20,8 @@ scores `fits_when` against the company profile, and renders the top 2–3 as car
 | `proof` | drafted | case id from `lyzr_case_studies`; result quoted verbatim |
 
 Rules the engine must follow:
+- `buyer`, `pitch_to_their_client`, `delivery.shape`, `delivery.team_needed`,
+  `delivery.lyzr_products`, `first_offer` and `fits_when` are rendered on the card as
+  written here. The model argues from them and may not reword them, so they have to read
+  as finished copy in this file.
 - `proof.result` is quoted exactly; customer name only when `named: true`

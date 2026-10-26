@@ -349,13 +349,20 @@ function renderDetail() {
   const o = c.first_offer ?? {}, h = c.how_to_sell ?? {}, pr = c.proof ?? {};
   const m = /^([\d.,]+(?:[–-][\d.,]+)?\s*(?:%|x|\+)?)\s+(.{4,})$/i.exec(pr.result ?? '');
 
+  /* Sections only exist when they have something in them: a labelled empty block reads
+   * as a feature we shipped half of. */
+  const fit = c.fit ?? {};
+  const block = (label, body) => (body ? `<div class="block"><em>${esc(label)}</em>${body}</div>` : '');
+  const fact = (dt, dd) => (dd ? `<div class="fact"><dt>${esc(dt)}</dt><dd>${esc(dd)}</dd></div>` : '');
+
   $('detail').innerHTML = `
     <h2>${esc(c.headline)}</h2>
     <p class="fits">${esc(c.why_you)}</p>
 
     <div class="tabs" id="dtabs">
       <button class="on" data-p="ov">Overview</button>
-      <button data-p="sell">How to sell it</button>
+      <button data-p="fit">Why it fits you</button>
+      <button data-p="sell">In the room</button>
       <button data-p="proof">Proof</button>
     </div>
 
@@ -368,18 +375,36 @@ function renderDetail() {
         <p>Ends with ${esc(o.ends_with ?? '')}.</p>
       </div>
       <dl class="facts">
-        <div class="fact"><dt>Who buys it</dt><dd>${esc(c.who_buys)}</dd></div>
-        <div class="fact"><dt>Delivery shape</dt><dd>${esc(c.delivery)}</dd></div>
-        <div class="fact"><dt>What Lyzr does</dt><dd>${esc(up(c.lyzr_role ?? ''))}</dd></div>
-        <div class="fact"><dt>Runs on</dt><dd>${esc((c.lyzr_products ?? []).join(' · '))}</dd></div>
+        ${fact('Who buys it', c.who_buys)}
+        ${fact('Delivery shape', c.delivery)}
+        ${fact('Who you need on it', c.team_needed)}
+        ${fact('What Lyzr does', up(c.lyzr_role ?? ''))}
+        ${fact('Runs on', (c.lyzr_products ?? []).join(' · '))}
       </dl>
     </div>
 
-    <div class="pane" data-p="sell">
-      <p class="lede" style="margin-bottom:26px">Raise it when ${esc((h.trigger ?? '').replace(/^[A-Z]/, (x) => x.toLowerCase()))}.</p>
+    <div class="pane" data-p="fit">
+      ${block('What it attaches to', fit.attaches_to ? `<p class="lede">${esc(up(fit.attaches_to))}</p>` : '')}
       <dl class="facts">
-        <div class="fact"><dt>The first thing to do</dt><dd>${esc(up(c.first_step ?? ''))}</dd></div>
-        <div class="fact"><dt>Where it goes next</dt><dd>${esc(up(h.expansion ?? ''))}</dd></div>
+        ${fact('Why we think so', fit.evidence)}
+        ${fact('Where it lands first', up(c.where_it_lands ?? ''))}
+      </dl>
+      ${block('This line was drafted for firms that', (c.fits_when ?? []).length
+        ? `<ul class="checks">${c.fits_when.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : '')}
+      ${fit.assumption ? `<p class="caveat"><b>Taking on trust:</b> ${esc(fit.assumption)}</p>` : ''}
+      ${c.wrong_if ? `<p class="caveat"><b>The wrong line if:</b> ${esc(c.wrong_if.replace(/^(if|when)\s+/i, ''))}</p>` : ''}
+    </div>
+
+    <div class="pane" data-p="sell">
+      ${c.client_pitch ? `<p class="pull"><span>The line to repeat</span>${esc(c.client_pitch)}</p>` : ''}
+      ${block('When to raise it', h.trigger ? `<p class="lede">${esc(up(h.trigger))}</p>` : '')}
+      ${block('Ask them', (c.qualify ?? []).length
+        ? `<ol class="qlist">${c.qualify.map((q) => `<li>${esc(q)}</li>`).join('')}</ol>` : '')}
+      ${block("What they'll say back", (c.objections ?? []).length
+        ? c.objections.map((ob) => `<div class="qa"><b>&ldquo;${esc(ob.objection)}&rdquo;</b><p>${esc(ob.answer)}</p></div>`).join('') : '')}
+      <dl class="facts">
+        ${fact('The first thing to do', up(c.first_step ?? ''))}
+        ${fact('Where it goes next', up(h.expansion ?? ''))}
       </dl>
     </div>
 
