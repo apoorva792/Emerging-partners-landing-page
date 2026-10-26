@@ -97,9 +97,11 @@ Rules:
     they are reading this about themselves. Never flatter, never state the obvious back to
     them ("you work in financial services"), never name a Lyzr product, never promise or
     imply a result.
-12. **`confirm` is the heart of this. At most two questions, and fewer is better.**
-    The backend always asks its own question about where they want to grow, so yours are
-    the second and third thing the visitor is asked — spend them well.
+12. **`confirm` is the heart of this. At most one question, and none is better.**
+    The backend already asks five of its own, and yours comes sixth — after the visitor has
+    told us what work they deliver, where they want to grow, what their customers are
+    asking for today, how far along their AI delivery is, and where those customers are.
+    None of those five is yours to ask again. Spend the one you have on what is left.
 
     Ask only what satisfies **both** tests:
     - you genuinely could not establish it from the site or Apollo, **and**

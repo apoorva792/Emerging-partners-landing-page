@@ -85,6 +85,30 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
 .ticker{font-family:var(--mono);font-size:14px;color:var(--soft);min-height:28px}
 .ticker b{color:var(--ink);font-weight:400}
 
+/* The waits run twenty to forty seconds. They carry three things about Lyzr, one at a
+ * time — slow enough to read, quiet enough to ignore. A card rather than loose text, so
+ * the claim reads as something stated rather than something muttered; the outgoing line
+ * is taken out of the flow while it leaves, so nothing under it moves. */
+.proof{position:relative;box-sizing:border-box;max-width:36em;margin:34px 0 0;padding:20px 22px 18px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-height:112px}
+.proof::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent)}
+.proof .pi{opacity:0;transform:translateY(8px);animation:pin .7s cubic-bezier(.2,.7,.3,1) forwards}
+.proof .pi.out{position:absolute;top:20px;left:22px;right:22px;animation:pout .5s ease forwards}
+.proof h4{margin:0 0 8px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);font-weight:400}
+.proof p{margin:0;font-size:16px;line-height:1.5;color:var(--ink);text-wrap:pretty}
+/* Three marks, not a spinner: they say how much is left without asking to be watched. */
+.proof .pdots{position:absolute;left:22px;bottom:16px;display:flex;gap:5px}
+.proof .pdots i{width:16px;height:2px;background:var(--line);transition:background .5s ease}
+.proof .pdots i.on{background:var(--accent)}
+@keyframes pin{to{opacity:1;transform:none}}
+@keyframes pout{to{opacity:0;transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){
+  .proof .pi,.proof .pi.out{animation:none;opacity:1;transform:none}
+  .proof .pi.out{display:none}
+}
+}
+
 /* ---------- 02 validate ---------- */
 .insight{border-left:2px solid var(--accent);padding:4px 0 4px 20px;margin:0 0 34px;max-width:60ch}
 .insight em{display:block;font-style:normal;font-size:15px;color:var(--accent);margin-bottom:6px}
@@ -298,6 +322,7 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
     <h1>Getting to know your business.</h1>
     <div class="bar"><i id="bar"></i></div>
     <div class="ticker" id="tick"></div>
+    <div class="proof" id="proof-tick" aria-hidden="true"></div>
   </section>
 
   <!-- 3 focus -->
@@ -321,6 +346,7 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
     <h1>Finding what you could sell next.</h1>
     <div class="bar"><i id="bar2"></i></div>
     <div class="ticker" id="tick2"></div>
+    <div class="proof" id="proof-tick2" aria-hidden="true"></div>
   </section>
 
   <!-- 5 explore -->
@@ -350,6 +376,7 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
     <h1>Putting your brief together.</h1>
     <div class="bar"><i id="bar3"></i></div>
     <div class="ticker" id="tick3"></div>
+    <div class="proof" id="proof-tick3" aria-hidden="true"></div>
   </section>
 
   <!-- 8 opportunity brief -->

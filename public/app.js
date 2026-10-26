@@ -3,6 +3,7 @@ const S = {
   id: null, profile: null, questions: [], answers: [], qi: 0,
   brand: null, cards: [], pick: 0, picked: [], chosen: [], brief: null, accounts: [],
   pending: {},   // work started before the visitor needs it
+  seen: new Set(),  // questions already put in front of the visitor
 };
 
 /* Four stages now: the profile screen is gone. The visitor answers questions while we read
@@ -35,6 +36,47 @@ async function post(path, payload) {
   return r.json();
 }
 
+/* Three things about Lyzr, shown one at a time under the progress line while the visitor
+ * waits. The cursor is module-level on purpose: the three waits in a session continue the
+ * rotation rather than each restarting on the first one. */
+const PROOF = [
+  {
+    label: 'Recognized by CB Insights',
+    text: "Named among the world's 100 most promising AI startups in 2026.",
+  },
+  {
+    label: 'Trusted by global enterprises',
+    text: 'Powering production AI deployments for enterprises including Accenture, PepsiCo, KPMG and WTW.',
+  },
+  {
+    label: '$100M+ in partner opportunities',
+    text: 'Over $100 million in AI opportunities routed to Lyzr partners in 2026.',
+  },
+];
+let proofAt = 0;
+
+function proof(el, ms = 6000) {
+  if (!el) return () => {};
+  let timer = null;
+  el.innerHTML = `<div class="pdots">${PROOF.map(() => '<i></i>').join('')}</div>`;
+  const dots = el.querySelector('.pdots');
+  const paint = () => {
+    const i = proofAt++ % PROOF.length;
+    const p = PROOF[i];
+    /* Taken out of the flow before the next one lands, so the card never resizes. */
+    const leaving = el.querySelector('.pi:not(.out)');
+    if (leaving) { leaving.classList.add('out'); setTimeout(() => leaving.remove(), 600); }
+    const d = document.createElement('div');
+    d.className = 'pi';
+    d.innerHTML = `<h4>${esc(p.label)}</h4><p>${esc(p.text)}</p>`;
+    el.insertBefore(d, dots);
+    [...dots.children].forEach((b, n) => b.classList.toggle('on', n === i));
+    timer = setTimeout(paint, ms);
+  };
+  paint();
+  return () => clearTimeout(timer);
+}
+
 function ticker(tickEl, barEl, lines, seconds) {
   let i = -1, t0 = Date.now(), stop = false;
   const paint = () => {
@@ -46,37 +88,108 @@ function ticker(tickEl, barEl, lines, seconds) {
     requestAnimationFrame(paint);
   };
   paint();
-  return () => { stop = true; if (barEl) barEl.style.width = '100%'; };
+  /* Every wait screen carries one, so it starts and stops with the progress line rather
+   * than at three separate call sites. */
+  const stopProof = proof(tickEl.parentElement?.querySelector('.proof'));
+  return () => { stop = true; stopProof(); if (barEl) barEl.style.width = '100%'; };
 }
 
-/* The two questions no website can answer. They are asked the moment the email is in —
- * while the site is still being read — because neither one needs the profile, and twenty
- * seconds of watching a progress bar buys nothing. */
+/* The five questions every visitor is asked, in order. Only the first one touches the
+ * site, and only to pre-tick: its options stand on their own, so nobody waits on the crawl
+ * to answer it. They are asked the moment the email is in — while the site is still being
+ * read — because twenty seconds of watching a progress bar buys nothing. */
 const FIXED_QUESTIONS = [
+  {
+    field: 'service_lines',
+    question: 'What kind of work do you primarily deliver for clients?',
+    /* The hint only claims a reading of their site once there is one. */
+    hint: () => (serviceHits().size
+      ? 'We found a few areas on your website. Tell us which ones matter most.'
+      : 'Tell us which ones matter most.'),
+    preselect: serviceHits,
+    options: [
+      'Cloud & infrastructure',
+      'ERP & enterprise systems',
+      'Software engineering',
+      'Data & analytics',
+      'Business process automation',
+      'AI consulting',
+      'Other',
+    ],
+  },
   {
     field: 'growth',
     question: 'Where do you see the biggest opportunity to grow?',
     hint: "We'll use this to shape what we recommend.",
     options: [
-      'Sell more to existing customers',
-      'Win new customers',
-      'Launch a new AI services offering',
+      'Expand within existing accounts',
+      'Win new enterprise customers',
+      'Add AI services to existing offerings',
+      'Build repeatable industry solutions',
       'Improve delivery margins',
     ],
   },
   {
+    field: 'demand',
+    /* The one question that decides the rest: everything else describes the firm, this is
+     * the only place actual demand shows up. */
+    question: 'What are your customers asking you for today?',
+    options: [
+      'Automating manual workflows',
+      'AI agents connected to business systems',
+      'Internal AI assistants',
+      'Modernizing existing applications',
+      'Private or on-prem AI',
+      'Exploring AI but no defined use case',
+      'Not seeing much demand yet',
+    ],
+  },
+  {
+    field: 'ai_delivery',
+    question: 'How far along are you in delivering AI projects?',
+    hint: 'It decides what kind of enablement and technical support is worth offering.',
+    options: [
+      'Already delivering in production',
+      'Running pilots or POCs',
+      'Have opportunities but need delivery capabilities',
+      'Building our first offering',
+      'Still evaluating',
+    ],
+  },
+  {
     field: 'client_geography',
-    question: 'Where are most of your clients based?',
-    hint: 'It changes what we can propose — data residency and regulation vary a lot.',
+    question: 'Where are most of your customers based?',
+    hint: 'Quick one — it changes what we can propose.',
     options: [
       'North America',
-      'UK and Europe',
+      'UK & Europe',
       'Middle East',
-      'India and South Asia',
+      'India & South Asia',
       'Asia Pacific',
+      'Other',
     ],
   },
 ];
+
+/* The crawl names service lines in the company's own words ("NetSuite implementation");
+ * the question offers buckets. This maps one onto the other well enough to tick a box the
+ * visitor can untick, never well enough to answer for them. An empty profile — the site is
+ * still being read, or could not be — simply ticks nothing. */
+const SERVICE_BUCKETS = [
+  ['Cloud & infrastructure', /\b(cloud|aws|azure|gcp|devops|infrastructure|kubernetes|managed services|migration)\b/i],
+  ['ERP & enterprise systems', /\b(erp|sap|netsuite|oracle|dynamics|salesforce|workday|servicenow|crm)\b/i],
+  ['Software engineering', /\b(software|application|product engineering|web|mobile|full[ -]?stack|custom development)\b/i],
+  ['Data & analytics', /\b(data|analytics|bi|warehouse|lakehouse|etl|reporting|power bi)\b/i],
+  ['Business process automation', /\b(process automation|rpa|workflow|bpa|bpo)\b/i],
+  ['AI consulting', /\b(ai|artificial intelligence|machine learning|ml ops|mlops|genai|llm)\b/i],
+];
+
+function serviceHits() {
+  const text = (S.profile?.services ?? [])
+    .map((x) => (typeof x === 'string' ? x : `${x.name ?? ''} ${x.evidence ?? ''}`))
+    .join(' · ');
+  return new Set(SERVICE_BUCKETS.filter(([, re]) => re.test(text)).map(([label]) => label));
+}
 
 /* ---------------- 00 discover ---------------- */
 $('start').onclick = () => {
@@ -93,6 +206,13 @@ $('start').onclick = () => {
       /* Whatever the profiler could not establish gets appended, so the adaptive question
        * lands after the fixed two rather than holding them up. */
       for (const q of r.questions ?? []) if (!S.questions.some((x) => x.field === q.field)) S.questions.push(q);
+      /* The site finishes being read while the visitor is still on the first question. If
+       * they have not answered it yet, draw it again so what we found arrives in time to
+       * be of use — ticked, and said in the hint — rather than a moment too late. */
+      if (S.questions[S.qi]?.field === 'service_lines' && !$('qopts').querySelector('.opt.on')) {
+        S.seen.delete('service_lines');
+        askQ();
+      }
       return r;
     });
   /* Work started ahead of the visitor can fail before anyone is waiting on it. Marking it
@@ -102,6 +222,7 @@ $('start').onclick = () => {
 
   S.questions = [...FIXED_QUESTIONS];
   S.answers = [];
+  S.seen = new Set();
   S.qi = 0;
   askQ();
 };
@@ -127,11 +248,16 @@ async function askQ() {
   const had = answerFor(q.field);
   $('qdots').innerHTML = Array.from({ length: n }, (_, i) => `<i class="${i <= S.qi ? 'on' : ''}"></i>`).join('');
   $('qtext').textContent = q.question;
-  $('qhint').textContent = q.hint ?? '';
+  $('qhint').textContent = (typeof q.hint === 'function' ? q.hint() : q.hint) ?? '';
   $('qfree').value = '';
   /* Nothing here is single-choice any more: a firm that sells to two regions should be
    * able to say so, and coming back to a question shows what they picked last time. */
-  const chosen = new Set(had ? had.split(' · ') : []);
+  /* Pre-ticks are an opening offer, not an answer: they appear the first time a question
+   * is shown and never again, so coming back shows what the visitor picked, not what we
+   * guessed. */
+  const first = !S.seen.has(q.field);
+  S.seen.add(q.field);
+  const chosen = new Set(had ? had.split(' · ') : (first && q.preselect ? q.preselect() : []));
   $('qopts').innerHTML = (q.options ?? []).map((o) =>
     `<button class="opt${chosen.has(o) ? ' on' : ''}">${esc(o)}</button>`).join('');
   [...$('qopts').children].forEach((b) => {
@@ -150,6 +276,8 @@ function recordAnswer(q, value) {
 
 function nextQ() {
   const q = S.questions[S.qi];
+  /* Past the last question there is nothing to record: the screen has already moved on. */
+  if (!q) return;
   const picked = [...$('qopts').querySelectorAll('.opt.on')].map((b) => b.textContent.trim());
   const free = $('qfree').value.trim();
   recordAnswer(q, [...picked, free].filter(Boolean).join(' · '));
@@ -161,7 +289,11 @@ function nextQ() {
 
 $('qnext').onclick = nextQ;
 $('qfree').addEventListener('keydown', (e) => { if (e.key === 'Enter') nextQ(); });
-$('qskip').onclick = () => { recordAnswer(S.questions[S.qi], ''); S.qi++; askQ(); };
+$('qskip').onclick = () => {
+  const q = S.questions[S.qi];
+  if (!q) return;
+  recordAnswer(q, ''); S.qi++; askQ();
+};
 $('qback').onclick = () => { S.qi = Math.max(0, S.qi - 1); askQ(); };
 
 /* ---------------- 05 explore ---------------- */
