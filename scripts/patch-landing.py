@@ -88,6 +88,12 @@ s = s[:i] + "<script>\n" + embed + "\n</script>\n" + s[i:]
 os.makedirs(os.path.dirname(out), exist_ok=True)
 open(out, "w", encoding="utf-8").write(s)
 
-print("wrote " + os.path.realpath(out))
+# The export inlines every asset as base64 in one JSON line, so the page cannot paint
+# until all 7.7MB has arrived and been decoded — the "Unpacking..." splash. unbundle.py
+# writes those assets out as files and rewrites the page to point at them.
+sys.path.insert(0, HERE)
+import unbundle
+unbundle.main(out)
+
 print("  the landing page is the site index; the agent lives at " + app)
 print("  original untouched: " + src)
