@@ -1,5 +1,5 @@
 {
- "built": "2026-10-27T13:57:09.746Z",
+ "built": "2026-10-27T15:29:00.522Z",
  "records": {
   "cs_innovation_idea_evaluation": {
    "id": "cs_innovation_idea_evaluation",
@@ -39,7 +39,8 @@
     "One consolidated score from 4 research passes"
    ],
    "sellable_as": "Automating idea evaluation against standardized criteria through sequential research agents, with leadership review of scored reports.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_multicultural_audience_intelligence": {
    "id": "cs_multicultural_audience_intelligence",
@@ -81,7 +82,8 @@
     "One click turns a completed brief into a channel-ready plan"
    ],
    "sellable_as": "Running multicultural audience intelligence and media planning as a governed, evidence-traced workflow that merges multiple research sources and scores every recommendation for confidence and source.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_agentic_procurement": {
    "id": "cs_agentic_procurement",
@@ -126,7 +128,8 @@
     "One use case made live in 12 weeks"
    ],
    "sellable_as": "Operating layer spanning full procurement lifecycle with connected agents that route work automatically, applying standardized risk assessment and reusable templates across client engagements.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_analyst_database_intelligence": {
    "id": "cs_analyst_database_intelligence",
@@ -171,7 +174,8 @@
     "Records kept current through scheduled or on-demand runs"
    ],
    "sellable_as": "Automated discovery and de-duplicated maintenance of analyst and advisor contact databases using structured extraction from public sources.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_enterprise_ai_governance": {
    "id": "cs_enterprise_ai_governance",
@@ -217,7 +221,8 @@
     "$100M joint go-to-market value, three-year partnership"
    ],
    "sellable_as": "Operating enterprise AI as a governed platform across a consulting organization with centralized workflows, knowledge reuse and auditability.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_payments_support_automation": {
    "id": "cs_payments_support_automation",
@@ -264,7 +269,8 @@
     "Organization-wide rollout cleared by leadership following trial results"
    ],
    "sellable_as": "Running customer support triage and real-time agent assistance across existing telephony and systems platforms without migration.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_professional_services_innovation_evaluation": {
    "id": "cs_professional_services_innovation_evaluation",
@@ -308,7 +314,8 @@
     "Innovation Review Team works from standardized report and readiness score for structured decisions"
    ],
    "sellable_as": "Automating innovation idea evaluation and readiness scoring through agents that research market opportunity and competitive intensity.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_case_studies_professional_services_value_pool_evaluation": {
    "id": "cs_case_studies_professional_services_value_pool_evaluation",
@@ -358,7 +365,8 @@
     "Reports retrievable via API for self-serve programmatic access"
    ],
    "sellable_as": "Automating end-to-end value pool and business idea evaluation with standardized scoring across multiple dimensions and self-serve API access to reports.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_insurance_billing": {
    "id": "cs_insurance_billing",
@@ -408,7 +416,8 @@
     "Live in production within 8 weeks"
    ],
    "sellable_as": "Running insurance billing operations through agentic workflow that extracts and validates data from multiple systems, presenting billers with confidence-scored outcomes for review and approval.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_global_advertising_media_planning": {
    "id": "cs_global_advertising_media_planning",
@@ -446,7 +455,8 @@
     "Insight quality became consistent across all team members regardless of experience level"
    ],
    "sellable_as": "Running media planning research synthesis as an on-demand agent querying multiple sources simultaneously.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_competitive_intelligence_digital_trust": {
    "id": "cs_competitive_intelligence_digital_trust",
@@ -483,7 +493,8 @@
     "Intelligence arrived on time, not after the fact"
    ],
    "sellable_as": "Automating competitive intelligence research and report generation across multiple data sources into consistent, timely outputs.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_how_a_technology_services_firm_optimized_resource_allocation_with_lyzr": {
    "id": "cs_how_a_technology_services_firm_optimized_resource_allocation_with_lyzr",
@@ -525,7 +536,8 @@
     "Balanced workloads improve workforce efficiency and reduce over- and under-utilization"
    ],
    "sellable_as": "Running resource allocation and workforce planning as an AI-powered optimization system inside the client's systems.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_how_a_global_enterprise_built_an_ai_powered_procurement_operating_system_with_lyzr": {
    "id": "cs_how_a_global_enterprise_built_an_ai_powered_procurement_operating_system_with_lyzr",
@@ -567,7 +579,8 @@
     "Platform targets 30% improvement in supply chain efficiency and up to 55% broader supplier discovery."
    ],
    "sellable_as": "Building an AI-powered procurement operating system automating supplier-to-payment workflows with centralized visibility and compliance controls.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_global_enterprise_streamlined_hr_engineering_qa_with_lyzr": {
    "id": "cs_global_enterprise_streamlined_hr_engineering_qa_with_lyzr",
@@ -609,7 +622,8 @@
     "Production bugs reduced by 35% through automated regression testing and earlier issue detection."
    ],
    "sellable_as": "Automating HR queries, developer codebase navigation, and QA regression testing with purpose-built agents across enterprise functions.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_how_a_global_bpm_company_standardized_account_research_with_lyzr": {
    "id": "cs_how_a_global_bpm_company_standardized_account_research_with_lyzr",
@@ -648,7 +662,8 @@
     "Mid-five-figure annual time savings across the Sales Research Suite with the Account Research Agent and two sibling agents."
    ],
    "sellable_as": "Running account research and snapshot generation as an on-demand agent within a sales organization's workflow.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_how_a_90_person_sales_team_standardized_meeting_readiness_with_lyzr": {
    "id": "cs_how_a_90_person_sales_team_standardized_meeting_readiness_with_lyzr",
@@ -689,7 +704,8 @@
     "Newer reps achieved same structured preparation as experienced reps from day one."
    ],
    "sellable_as": "Automating first-meeting brief assembly from CRM, email, and LinkedIn to standardize sales rep preparation and save research time.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_how_lyzr_reduced_financial_model_preparation_from_10_hours_to_under_5_minutes": {
    "id": "cs_how_lyzr_reduced_financial_model_preparation_from_10_hours_to_under_5_minutes",
@@ -730,7 +746,8 @@
     "Analysts spent less time preparing spreadsheets and more time evaluating businesses"
    ],
    "sellable_as": "Automating financial data extraction and model preparation for investment due diligence workflows.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_global_organization_scaled_crisis_simulations_with_lyzr": {
    "id": "cs_global_organization_scaled_crisis_simulations_with_lyzr",
@@ -779,7 +796,8 @@
     "A single platform supports different organizations, scenarios, and workshop formats while maintaining consistency across deployments."
    ],
    "sellable_as": "Building and scaling crisis simulation platforms with multi-agent orchestration and persistent knowledge for enterprise workshop delivery.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_how_a_large_scale_enterprise_client_built_a_procurement_agentic_os_with_lyzr": {
    "id": "cs_how_a_large_scale_enterprise_client_built_a_procurement_agentic_os_with_lyzr",
@@ -825,7 +843,8 @@
     "One infrastructure powers all client deployments without rebuilding processes each time."
    ],
    "sellable_as": "Running procurement from supplier onboarding through sourcing execution and risk assessment as a unified agentic workflow across business units and categories.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_how_lyzr_helped_an_eyewear_brand_turn_online_shopping_into_a_guided_buying_experience": {
    "id": "cs_how_lyzr_helped_an_eyewear_brand_turn_online_shopping_into_a_guided_buying_experience",
@@ -870,7 +889,8 @@
     "Company established a scalable AI layer capable of supporting high-volume customer interactions"
    ],
    "sellable_as": "Building conversational shopping experiences and omnichannel support into ecommerce platforms for guided customer discovery and support at scale.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_yugabyte_built_an_ai_driven_gtm_intelligence_engine_with_lyzr": {
    "id": "cs_yugabyte_built_an_ai_driven_gtm_intelligence_engine_with_lyzr",
@@ -913,7 +933,8 @@
     "Leadership teams gained centralized visibility into account prioritization and workflow outputs"
    ],
    "sellable_as": "Building AI-driven GTM intelligence platforms that automate account research and prioritization for sales teams.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_global_infrastructure_leader_scaled_inbound_sdr_operations": {
    "id": "cs_global_infrastructure_leader_scaled_inbound_sdr_operations",
@@ -956,7 +977,8 @@
     "System met strict enterprise security and compliance requirements while scaling globally"
    ],
    "sellable_as": "Running inbound SDR triage and lead enrichment as an automated workflow integrated with customer CRM systems.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_leading_retail_company_re_imagined_customer_support": {
    "id": "cs_leading_retail_company_re_imagined_customer_support",
@@ -997,7 +1019,8 @@
     "Quicker resolutions and reliable responses lead to higher overall satisfaction."
    ],
    "sellable_as": "Automated customer support agent handling order inquiries and ticket escalation across chat and voice channels.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_mentorcloud": {
    "id": "cs_mentorcloud",
@@ -1042,7 +1065,8 @@
     "New enterprise programs deployed in under three weeks, down from 2-3 months"
    ],
    "sellable_as": "Running mentor-mentee matching and program onboarding as an automated workflow on AWS with enterprise compliance.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_movate": {
    "id": "cs_movate",
@@ -1090,7 +1114,8 @@
     "Shared knowledge graph replaced scattered data reducing duplicated work"
    ],
    "sellable_as": "Running software development lifecycle automation with centralized agents orchestrating Jira, GitHub, and test systems.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_japanese_bank_automated_customer_onboarding": {
    "id": "cs_japanese_bank_automated_customer_onboarding",
@@ -1133,7 +1158,8 @@
     "Multi-agent architecture created a secure, extensible base for future process automation"
    ],
    "sellable_as": "Automating customer onboarding document processing and compliance verification inside core banking systems.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_global_bank_reimagined_customer_experience": {
    "id": "cs_global_bank_reimagined_customer_experience",
@@ -1173,7 +1199,8 @@
     "System now supports continuous learning and personalization across digital ecosystem"
    ],
    "sellable_as": "Multi-agent customer onboarding system that guides KYC and verification, profiles users, recovers drop-offs, and analyzes sentiment for adaptive engagement.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_ftv_capital": {
    "id": "cs_ftv_capital",
@@ -1222,7 +1249,8 @@
     "Enterprise-grade compliance achieved with PII redaction, usage logging, and secure AWS architecture"
    ],
    "sellable_as": "Portfolio-wide sales development automation with voice agents, CRM integration, and enterprise compliance guardrails for growth equity firms.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_accenture_ad_generator": {
    "id": "cs_accenture_ad_generator",
@@ -1263,7 +1291,8 @@
     "Supports multiple campaigns simultaneously with session tracking and enhanced prompt enrichment."
    ],
    "sellable_as": "Automated social media content creation with compliance review and integrated image generation for marketing campaigns.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_lion_medical_ai": {
    "id": "cs_lion_medical_ai",
@@ -1306,7 +1335,8 @@
     "Achieved HIPAA-grade compliance"
    ],
    "sellable_as": "Running multi-specialty diagnostic review and case coordination as medical-grade AI agents inside the provider's clinical workflow.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_ai_powered_customer_support": {
    "id": "cs_ai_powered_customer_support",
@@ -1344,7 +1374,8 @@
     "Clients received personalized, context-aware responses, reducing follow-ups and improving trust."
    ],
    "sellable_as": "Running intelligent customer support triage and personalized query handling as an agent inside a carrier's support platform.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_culture_code_agent": {
    "id": "cs_culture_code_agent",
@@ -1381,7 +1412,8 @@
     "Structured feedback empowers teams to focus on strengths, address weaknesses, and celebrate progress"
    ],
    "sellable_as": "Running automated employee feedback collection and insight generation as a managed culture analytics service inside the client's HR systems.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_ai_driven_email_triage": {
    "id": "cs_ai_driven_email_triage",
@@ -1419,7 +1451,8 @@
     "Customers receive timely confirmations and clear next steps"
    ],
    "sellable_as": "Running email triage and case management as automated workflow inside Salesforce for insurance customer service teams.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_agentic_cvc": {
    "id": "cs_agentic_cvc",
@@ -1456,7 +1489,8 @@
     "System handled tens of thousands of startups, giving continuous oversight across industries."
    ],
    "sellable_as": "Automated venture startup research and evaluation with transparent 88-point scoring and real-time competitive intelligence monitoring.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_emudhra": {
    "id": "cs_emudhra",
@@ -1501,7 +1535,8 @@
     "Weekly dashboards provide actionable analytics on conversations and lead opportunities."
    ],
    "sellable_as": "Running a multi-product support chatbot with automated lead capture and CRM routing on AWS.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_leading_support_agent": {
    "id": "cs_leading_support_agent",
@@ -1538,7 +1573,8 @@
     "Clients received personalized, context-aware responses, reducing follow-ups"
    ],
    "sellable_as": "Managing insurance customer support through AI-driven triage and personalized agent responses based on client segment and urgency.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_saksoft_code": {
    "id": "cs_saksoft_code",
@@ -1579,7 +1615,8 @@
     "Freed 5 HR FTEs."
    ],
    "sellable_as": "Running intelligent code search and generation as a managed service inside enterprise GitHub repositories.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_sns_global": {
    "id": "cs_sns_global",
@@ -1621,7 +1658,8 @@
     "Scenario simulations reduced last-minute project adjustments"
    ],
    "sellable_as": "Running resource allocation and workload balancing as an automated workflow within a client's project management infrastructure.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_novitium": {
    "id": "cs_novitium",
@@ -1668,7 +1706,8 @@
     "100% of campaigns pre-checked for GDPR and CAN-SPAM compliance before launch"
    ],
    "sellable_as": "Automating B2B outreach campaigns with compliance checks, personalization, and real-time engagement tracking built on AWS.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_accenture_accubate": {
    "id": "cs_accenture_accubate",
@@ -1709,7 +1748,8 @@
     "Enabled onboarding higher volume of startups without increasing overhead."
    ],
    "sellable_as": "Automating startup due diligence and onboarding verification through document processing and data enrichment workflows.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_saksoft": {
    "id": "cs_saksoft",
@@ -1755,7 +1795,8 @@
     "Achieved 95% HR query resolution, 92% test coverage, 35% fewer bugs, and 45% faster feature releases"
    ],
    "sellable_as": "Running HR, development, and QA operations as automated multi-agent workflows within customer's cloud infrastructure.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_altrius": {
    "id": "cs_altrius",
@@ -1804,7 +1845,8 @@
     "CRM compliance improved to 100%."
    ],
    "sellable_as": "Automating insurance coverage validation and dormant client re-engagement through multi-channel voice and CRM workflows.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_move": {
    "id": "cs_move",
@@ -1844,7 +1886,8 @@
     "The repeatable workflow allowed quick replication for new topics without starting from scratch"
    ],
    "sellable_as": "Running SEO content production and fact-checking as an agent-led workflow with human editorial review inside a marketing platform.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_artha99": {
    "id": "cs_artha99",
@@ -1887,7 +1930,8 @@
     "Publishes insights faster and with greater accuracy through always-on access to dynamic industry data"
    ],
    "sellable_as": "Autonomous content creation and multi-platform optimization for thematic investment firms targeting niche investor audiences.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_hfs_research": {
    "id": "cs_hfs_research",
@@ -1928,7 +1972,8 @@
     "Metadata enrichment and multi-agent design enable expansion across new content types and domains"
    ],
    "sellable_as": "Building multi-agent reasoning systems that classify queries and route them to specialized knowledge bases for precise research discovery.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_curatal": {
    "id": "cs_curatal",
@@ -1972,7 +2017,8 @@
     "Continuous monitoring and feedback loops enabled refinement of question logic and agent performance"
    ],
    "sellable_as": "AI-powered interview automation and evaluation system that standardizes candidate assessments and reduces hiring cycle time.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_yardstick": {
    "id": "cs_yardstick",
@@ -2016,7 +2062,8 @@
     "Outputs include supporting evidence, relevant document sections, and alignment scores for review teams"
    ],
    "sellable_as": "Running policy coverage reviews and regulatory gap analysis as a managed workflow inside compliance and risk teams.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_witzeal": {
    "id": "cs_witzeal",
@@ -2059,7 +2106,8 @@
     "Improved user engagement through seamless query resolution and session tracking"
    ],
    "sellable_as": "Deploying an AI-powered chat support agent that handles high-volume customer queries with intelligent routing to human agents.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_accenture": {
    "id": "cs_accenture",
@@ -2102,7 +2150,8 @@
     "Continuous improvement as root-cause analysis updates feed into the knowledge base."
    ],
    "sellable_as": "Automated industrial troubleshooting and root-cause analysis running on customer knowledge bases and operational APIs.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_customer_service_leader": {
    "id": "cs_customer_service_leader",
@@ -2142,7 +2191,8 @@
     "Automated support ensures prompt responses to invoice queries"
    ],
    "sellable_as": "Running vendor invoice validation and reconciliation as an automated workflow across QuickBooks and SAP with integrated vendor support.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_rising_financial_provider": {
    "id": "cs_rising_financial_provider",
@@ -2184,7 +2234,8 @@
     "Customers experience faster refunds and natural conversation interactions."
    ],
    "sellable_as": "Running AI-driven refund processing with embedded fraud detection as a managed service inside the bank's customer support workflow.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_major_banking_institution": {
    "id": "cs_major_banking_institution",
@@ -2222,7 +2273,8 @@
     "Faster product development via real-time guidance and brainstorming tools"
    ],
    "sellable_as": "Automated regulatory monitoring and product compliance guidance for financial institutions managing multiple regulated products.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_hr_workforce_leader": {
    "id": "cs_hr_workforce_leader",
@@ -2259,7 +2311,8 @@
     "Clients benefit from deeper, more actionable psychometric support"
    ],
    "sellable_as": "Deploying AI coaching agents that integrate psychometric profiles to deliver personalized guidance on workplace communication, conflict resolution, and team collaboration.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_industrial_manufacturing_firm": {
    "id": "cs_industrial_manufacturing_firm",
@@ -2294,7 +2347,8 @@
     "Nelson Global plans to build more AI agents for research tasks"
    ],
    "sellable_as": "Running live meeting transcription and translation as an automated agent generating bilingual notes for distributed teams.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "story_accenture_invests_in_lyzr_to_bring_agentic_ai_to_banking_and_insurance_companies": {
    "id": "story_accenture_invests_in_lyzr_to_bring_agentic_ai_to_banking_and_insurance_companies",
@@ -2326,7 +2380,8 @@
     "Enhances operational efficiency in heavily regulated industries"
    ],
    "sellable_as": "Building secure, explainable AI agents that automate decisions across banking and insurance workflows while maintaining regulatory compliance.",
-   "confidence": "low"
+   "confidence": "low",
+   "kind": "delivered"
   },
   "cs_leading_energy_provider": {
    "id": "cs_leading_energy_provider",
@@ -2366,7 +2421,8 @@
     "Consistently accurate inclusion of all required guidelines"
    ],
    "sellable_as": "Running work-order safety compliance and updates as an AI agent with human approval inside the client's Dynamics 365 system.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_ntt_data": {
    "id": "cs_ntt_data",
@@ -2410,7 +2466,8 @@
     "Automation frees teams to focus on complex, value-added tasks"
    ],
    "sellable_as": "Incident prediction and remediation guidance for change management using AI-driven risk analysis and historical case matching.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "story_how_we_generated_400m_interest_for_our_series_b_funding": {
    "id": "story_how_we_generated_400m_interest_for_our_series_b_funding",
@@ -2451,7 +2508,8 @@
     "Same approach used successfully in $8M Series A fundraise"
    ],
    "sellable_as": "Running investor relations and data room Q&A through an agent that cites sources and filters inquiries before founder calls.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "story_lyzr_and_accenture": {
    "id": "story_lyzr_and_accenture",
@@ -2504,7 +2562,8 @@
     "10x improvement in personalisation coverage for WTW Retirement Advisory System"
    ],
    "sellable_as": "Building production-ready multi-agent systems with embedded governance and compliance controls deployed on private cloud infrastructure.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_telecom_order_automation": {
    "id": "cs_telecom_order_automation",
@@ -2549,7 +2608,8 @@
     "75% fewer systems needed to process an order"
    ],
    "sellable_as": "Running order automation and document extraction as an agentic workflow inside existing site management and logistics systems.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_cpg_ai_governance": {
    "id": "cs_cpg_ai_governance",
@@ -2595,7 +2655,8 @@
     "Teams keep existing tools with no migration required"
    ],
    "sellable_as": "Building a unified AI agent governance and control plane across multiple cloud environments with central registry, observability and rollback capability.",
-   "confidence": "high"
+   "confidence": "high",
+   "kind": "delivered"
   },
   "cs_venture_screening": {
    "id": "cs_venture_screening",
@@ -2646,7 +2707,1590 @@
     "Platform went live in 12 weeks."
    ],
    "sellable_as": "Building a knowledge graph and agentic platform for continuous startup screening and evaluation inside a venture team's existing data stack.",
+   "confidence": "high",
+   "kind": "delivered"
+  },
+  "page_e_commerce": {
+   "id": "page_e_commerce",
+   "kind": "offer",
+   "title": "E-commerce: what we do",
+   "url": "https://www.lyzr.ai/ecommerce-agents/",
+   "topics": [
+    "e_commerce",
+    "e-commerce",
+    "by_industry"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "e-commerce",
+   "functions": [
+    "marketing",
+    "sales",
+    "customer service",
+    "operations",
+    "supply chain"
+   ],
+   "problem": [
+    "Manual processes limit personalization at scale across customer journey",
+    "Post-purchase support and returns handling are inefficient and slow",
+    "On-site search and product discovery do not surface relevant results",
+    "Inventory forecasting and replenishment lack accuracy, causing overstocking and stockouts"
+   ],
+   "built": [
+    "Agents recommend products based on browsing history and deliver personalized marketing campaigns",
+    "Agents route returns and exchanges with intelligent support personalization",
+    "Agents automatically generate product descriptions, metadata, and keywords for search optimization",
+    "Agents forecast demand, automate replenishment, and optimize warehouse operations"
+   ],
+   "systems": [
+    "Shopify",
+    "Magento",
+    "Salesforce Commerce Cloud"
+   ],
+   "results": [],
+   "sellable_as": "Building AI agents for e-commerce that handle personalization, support routing, product discovery, and inventory optimization across customer journey.",
+   "confidence": "low"
+  },
+  "page_insurance": {
+   "id": "page_insurance",
+   "kind": "offer",
+   "title": "Benjie: agents for Insurance",
+   "url": "https://www.lyzr.ai/insurance-ai-agent-benjie/",
+   "topics": [
+    "insurance",
+    "by_industry"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "insurance",
+   "functions": [
+    "compliance",
+    "customer service",
+    "finance",
+    "operations"
+   ],
+   "problem": [
+    "Claims processing lacks real-time fraud detection before payment authorization",
+    "Claims intake and customer communication across channels requires manual effort and headcount",
+    "Underwriting lacks sophisticated analytics to compete on combined ratio and premium growth",
+    "Insurance systems operate in silos without integrated intelligence layer"
+   ],
+   "built": [
+    "Monitors claims as they arrive cross-referencing behavioral patterns, historical data, network relationships and external intelligence",
+    "Flags fraud before payment is authorized and hands off complete dossier to investigators",
+    "Handles claims intake, acknowledgement, initial assessment and status communication in real time across channels",
+    "Routes simple claims automatically and complex claims with full context to the right adjuster",
+    "Reads live data and returns ranked execution plan by process, line of business and action",
+    "Activates relevant agents within defined autonomy boundaries with staged autonomy from assistive to autonomous",
+    "Tracks outcomes against business objectives and makes every decision explainable and auditable",
+    "Parses broker submissions, enriches and triages with risk context attached",
+    "Surfaces fraud signals correlated across claims with case files investigators can act on"
+   ],
+   "systems": [
+    "Guidewire",
+    "Duck Creek",
+    "Majesco",
+    "Sapiens",
+    "claims management platform",
+    "policy administration system",
+    "fraud detection tools"
+   ],
+   "results": [],
+   "sellable_as": "Insurance operations transformation combining claims handling, underwriting and fraud detection into integrated workflow layer.",
    "confidence": "high"
+  },
+  "page_healthcare": {
+   "id": "page_healthcare",
+   "kind": "offer",
+   "title": "Healthcare: what we do",
+   "url": "https://www.lyzr.ai/healthcare-agents/",
+   "topics": [
+    "healthcare",
+    "by_industry"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "Healthcare",
+   "functions": [
+    "operations",
+    "finance",
+    "compliance",
+    "customer service"
+   ],
+   "problem": [
+    "Prior authorization processes require 13 hours per physician per week of manual work",
+    "Claim denial rates climbed from 30% to 41%, threatening financial viability",
+    "Administrative costs rising faster than revenue in nearly 4 in 10 hospitals operating at loss",
+    "Care coordination gaps and documentation problems drive preventable readmissions and quality failures"
+   ],
+   "built": [
+    "Identifies prior authorization requirements, gathers clinical documentation, submits to payers, tracks status, and auto-initiates appeals on standard requests",
+    "Predicts claims at risk before submission, corrects documentation gaps in real time, and auto-generates appeals with payer-specific evidence",
+    "Deploys agents across eligibility verification, coding, claims management, prior auth, denial management, reducing manual touches per claim",
+    "Monitors care coordination signals and routes interventions to right care team member at right moment"
+   ],
+   "systems": [
+    "Epic",
+    "Oracle Health",
+    "Cerner",
+    "Meditech",
+    "Athenahealth",
+    "revenue cycle platforms",
+    "scheduling systems",
+    "payer connectivity layers"
+   ],
+   "results": [],
+   "sellable_as": "Automating prior authorization, claims processing, and denial management in healthcare revenue cycle operations with agents deployed above existing clinical systems.",
+   "confidence": "high"
+  },
+  "page_revenue": {
+   "id": "page_revenue",
+   "kind": "offer",
+   "title": "Jazon: agents for Revenue",
+   "url": "https://www.lyzr.ai/jazon/",
+   "topics": [
+    "revenue",
+    "by_function"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [
+    "sales"
+   ],
+   "problem": [
+    "Sales reps waste time on deals that won't close",
+    "Pipeline intelligence and account context scattered across systems and individual rep knowledge",
+    "Sales execution spans prospecting, outreach, sequencing, CRM updates without coordination",
+    "Sales teams enter meetings underprepared on account changes and competitive threats"
+   ],
+   "built": [
+    "Ranks accounts by fit, intent, timing and prior engagement daily",
+    "Drafts personalized emails, LinkedIn notes and call openers per account",
+    "Sequences outreach across email, LinkedIn, phone and ads with performance-based rewrites",
+    "Books discovery, demo and follow-up meetings with context pre-shared",
+    "Captures and scores calls against sales methodology into next-step actions",
+    "Keeps Salesforce and HubSpot updated with contacts, activities, stages and next steps",
+    "Surfaces deal risk, slippage and uplift signals before pipeline reviews",
+    "Provides objection handling and discovery prompts in-the-moment during calls"
+   ],
+   "systems": [
+    "Salesforce",
+    "HubSpot",
+    "Outreach",
+    "Gong",
+    "Apollo",
+    "Clay",
+    "LinkedIn Sales Navigator"
+   ],
+   "results": [],
+   "sellable_as": "Sales execution automation with live account intelligence and agent-driven prospecting, outreach and deal progression.",
+   "confidence": "high"
+  },
+  "page_government": {
+   "id": "page_government",
+   "kind": "offer",
+   "title": "Government: what we do",
+   "url": "https://www.lyzr.ai/government/",
+   "topics": [
+    "government",
+    "by_industry"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "government",
+   "functions": [
+    "compliance",
+    "finance",
+    "operations",
+    "customer service",
+    "procurement"
+   ],
+   "problem": [
+    "Citizens navigate multiple agencies, fill 11 forms, wait 47 days for benefits access",
+    "Agencies process thousands of procurement requests annually, many standard requests consuming disproportionate staff time",
+    "Chatbots and RPA deployments have not reduced backlogs, improved citizen satisfaction, or freed civil servants from paperwork",
+    "Regulatory compliance spans hundreds of obligations; agencies struggle to ensure posture reflects every requirement"
+   ],
+   "built": [
+    "Orchestrates citizen journey across agencies, verifying eligibility and retrieving verified data without requiring citizens to restart at agency boundaries",
+    "Handles standard procurement intake, bid analysis, compliance validation, and evaluation summaries, routing only complex procurements to human decision-makers",
+    "Deploys agents across high-volume rule-bound workflows: intake, document validation, eligibility checking, routing with human judgment retained for sensitive decisions",
+    "Monitors regulatory and legislative change feeds continuously, mapping changes to policies, identifying gaps, and generating updated compliance documentation",
+    "Triages citizen intake forms, calls and chats to correct programme with eligibility pre-checked"
+   ],
+   "systems": [
+    "Salesforce Government Cloud",
+    "ServiceNow",
+    "Oracle",
+    "SAP",
+    "benefits platform",
+    "procurement system"
+   ],
+   "results": [],
+   "sellable_as": "Orchestrating multi-agency citizen service workflows and standard procurement processing with agents while preserving human oversight for sensitive decisions.",
+   "confidence": "low"
+  },
+  "page_fintech": {
+   "id": "page_fintech",
+   "kind": "offer",
+   "title": "Fintech: what we do",
+   "url": "https://www.lyzr.ai/fintech/",
+   "topics": [
+    "fintech",
+    "by_industry"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "fintech",
+   "functions": [
+    "finance",
+    "compliance",
+    "operations",
+    "customer service"
+   ],
+   "problem": [
+    "Fraud detection relies on threshold-based scoring that generates false positives and cannot explain decisions to customers or regulators.",
+    "Customer onboarding runs sequentially across identity verification, sanctions screening, and account provisioning, compressing timelines and creating compliance gaps.",
+    "Regulatory changes across multiple jurisdictions require manual mapping to existing systems and scrambled control updates before examinations.",
+    "Fintechs building point AI features lack orchestrated agentic infrastructure to govern AI agents across revenue, risk, and compliance operations."
+   ],
+   "built": [
+    "Correlates fraud signals, device intelligence, transaction velocity, counterparty analysis, and historical patterns into context-aware dynamic fraud scores with explainability.",
+    "Runs KYC and onboarding as parallel event-driven workflows executing identity verification, sanctions screening, risk profiling, and account provisioning simultaneously.",
+    "Monitors regulatory change feeds across CFPB, FCA, FINRA, MiCA, and state jurisdictions continuously, maps changes to systems, and generates updated controls.",
+    "Selects and stages relevant agents from 400+ available for fraud scoring, KYC, underwriting, AML monitoring, and dispute resolution within defined risk boundaries.",
+    "Logs every agent decision with reasoning at execution time and tracks outcomes against stated business objectives for audit trails and insights."
+   ],
+   "systems": [
+    "Stripe",
+    "Plaid",
+    "Marqeta",
+    "FIS",
+    "Temenos"
+   ],
+   "results": [],
+   "sellable_as": "Operating a fintech compliance and fraud operations center as orchestrated agentic workflows across payment, onboarding, and regulatory systems.",
+   "confidence": "low"
+  },
+  "page_marketing": {
+   "id": "page_marketing",
+   "kind": "offer",
+   "title": "Skott: agents for Marketing",
+   "url": "https://www.lyzr.ai/skott/",
+   "topics": [
+    "marketing",
+    "by_function"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "marketing",
+    "sales"
+   ],
+   "problem": [
+    "Marketing teams cannot see what content drives pipeline or where reallocation would have highest impact",
+    "Sales teams lack prepared, current account briefs before customer conversations",
+    "Marketing execution scales slowly despite existing tools and team capability"
+   ],
+   "built": [
+    "Audits content against pipeline data and buyer intent to find what should work but does not",
+    "Builds and distributes missing content automatically without requiring creative briefs",
+    "Creates live account briefs from funding signals, hiring patterns, stakeholder maps and deal history",
+    "Orchestrates content creation, distribution, sequencing and publishing across channels",
+    "Tracks every campaign outcome against objectives and surfaces what to do differently"
+   ],
+   "systems": [
+    "HubSpot",
+    "GA4",
+    "Search Console",
+    "Ads",
+    "Slack",
+    "Semrush",
+    "Apollo",
+    "Clay",
+    "WordPress",
+    "LangChain",
+    "CrewAI",
+    "Agentforce",
+    "OpenAI",
+    "Anthropic",
+    "Google",
+    "AWS",
+    "Azure",
+    "GCP"
+   ],
+   "results": [],
+   "sellable_as": "Deploy marketing and sales agents to connect channels to pipeline, attribute impact, and run content execution at scale without headcount.",
+   "confidence": "low"
+  },
+  "page_customer_service": {
+   "id": "page_customer_service",
+   "kind": "offer",
+   "title": "Jeff: agents for Customer Service",
+   "url": "https://www.lyzr.ai/jeff/",
+   "topics": [
+    "customer_service",
+    "customer service",
+    "by_function"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "customer service"
+   ],
+   "problem": [
+    "Support teams cannot identify recurring issues or knowledge base gaps that prevent resolution at source",
+    "High-value customers are not recognized on arrival, risking relationship and contract value",
+    "Support volume increases break SLAs, team morale, or customer satisfaction without hiring proportionally",
+    "Agents handle routine work across multiple channels instead of focusing on complex issues"
+   ],
+   "built": [
+    "Maps recurring issue patterns across ticket history and identifies knowledge base gaps and outdated content",
+    "Generates articles, workflows, and deflection paths to eliminate issues at source",
+    "Builds live context profile per customer including account value, contract tier, interaction history, and product usage",
+    "Surfaces customer context and risk the moment contact arrives across any channel",
+    "Routes issues to specialized agents by type: triage, resolution, escalation, proactive outreach, knowledge base update, root cause analysis",
+    "Tracks outcomes against experience objectives and feeds resolution patterns into next interactions"
+   ],
+   "systems": [
+    "Zendesk",
+    "Freshdesk",
+    "Salesforce Service Cloud",
+    "Intercom"
+   ],
+   "results": [],
+   "sellable_as": "Building an agent layer that routes customer issues by type and channel while identifying and fixing recurring problems in the knowledge base.",
+   "confidence": "high"
+  },
+  "page_human_resources": {
+   "id": "page_human_resources",
+   "kind": "offer",
+   "title": "Diane: agents for Human Resources",
+   "url": "https://www.lyzr.ai/diane/",
+   "topics": [
+    "human_resources",
+    "human resources",
+    "by_function"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "human resources",
+   "functions": [
+    "hr"
+   ],
+   "problem": [
+    "Critical roles take three months to fill despite defined hiring stages and SLAs",
+    "New hire issues go undetected until week twelve, missing the narrow window to intervene",
+    "HR teams are reactive rather than present across the organization",
+    "Attrition risk signals buried in disconnected workforce data"
+   ],
+   "built": [
+    "Maps hiring funnel bottlenecks and deploys agents to run sourcing, screening, scheduling, and communication in parallel",
+    "Monitors onboarding health continuously and surfaces issues in week two via task completion and engagement signals",
+    "Deploys always-available employee intelligence layer answering queries, collecting sentiment, and routing escalations",
+    "Reads live workforce data against stated people objectives and returns ranked execution plans with reasoning"
+   ],
+   "systems": [
+    "Workday",
+    "SAP SuccessFactors",
+    "BambooHR",
+    "Greenhouse",
+    "Lever",
+    "LinkedIn Talent"
+   ],
+   "results": [],
+   "sellable_as": "Intelligent HR operations layer that accelerates hiring, surfaces attrition risk early, and delivers people outcomes above HR activity metrics.",
+   "confidence": "high"
+  },
+  "page_compliance_and_governance": {
+   "id": "page_compliance_and_governance",
+   "kind": "offer",
+   "title": "Compliance & Governance: what we do",
+   "url": "https://www.lyzr.ai/teams/compliance-teams/",
+   "topics": [
+    "compliance_and_governance",
+    "compliance & governance",
+    "by_team"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "compliance",
+    "it operations"
+   ],
+   "problem": [
+    "Compliance reviews run on fixed schedules, leaving the estate ungoverned between cycles",
+    "Audit preparation requires manual scrambling to reconstruct decisions and pull logs under deadline",
+    "AI agent decisions lack documented trails that non-engineers can use to explain them",
+    "AI governance policies are written but not enforced in real time on agent outputs"
+   ],
+   "built": [
+    "Monitors every transaction and policy trigger continuously, surfacing issues before they become findings",
+    "Maintains full audit-ready traces on every decision with one-click compliance exports",
+    "Logs every AI decision input, model run, output, and policy checks automatically and reconstructably",
+    "Enforces RAI policies at inference time on all agent outputs before user visibility"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Continuous compliance monitoring and governance for AI agent deployments with real-time policy enforcement and full audit trails.",
+   "confidence": "high"
+  },
+  "page_legal": {
+   "id": "page_legal",
+   "kind": "offer",
+   "title": "Legal: what we do",
+   "url": "https://www.lyzr.ai/legal-industry/",
+   "topics": [
+    "legal",
+    "by_function"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [
+    "legal",
+    "compliance"
+   ],
+   "problem": [
+    "Contract obligations and renewal windows go unmonitored until business asks why they were not renewed.",
+    "Compliance gaps emerge because regulations change faster than policy updates.",
+    "Legal team spends time on first-draft work that does not require legal judgment.",
+    "Business waits days or weeks for legal answers on deals, markets, or regulations."
+   ],
+   "built": [
+    "Monitors every obligation, deadline, and renewal window across contract portfolio continuously.",
+    "Identifies regulatory changes across jurisdictions and gaps against existing compliance posture.",
+    "Generates first-draft contracts, redlines, research memos, entity filings, and compliance documentation.",
+    "Maintains living knowledge layer of legal positions, precedents, and playbooks so answers draw on prior decisions not built from scratch.",
+    "Activates relevant agents from 400+ by legal objective and workflow stage to execute plan."
+   ],
+   "systems": [
+    "Ironclad",
+    "DocuSign CLM",
+    "Conga",
+    "Icertis"
+   ],
+   "results": [],
+   "sellable_as": "Operating legal function's contract monitoring, compliance tracking, and first-draft work through orchestrated agent workflows without replacing existing CLM or matter systems.",
+   "confidence": "high"
+  },
+  "page_procurement": {
+   "id": "page_procurement",
+   "kind": "offer",
+   "title": "Procurement: what we do",
+   "url": "https://www.lyzr.ai/procurement/",
+   "topics": [
+    "procurement",
+    "by_function"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [
+    "procurement"
+   ],
+   "problem": [
+    "Procurement teams lack visibility into where spend is leaking and which supplier relationships are unprofitable.",
+    "Single points of failure in the supplier base risk disruption from geopolitical events or financial instability.",
+    "Suppliers often fail to honour contracted terms, SLAs and pricing clauses without timely detection.",
+    "Procurement workload grows faster than headcount, forcing teams away from strategic work."
+   ],
+   "built": [
+    "Connects spend categories to supplier performance, contract compliance, and market benchmarks to surface overpayment and renegotiation opportunities.",
+    "Monitors every supplier for financial health, geopolitical exposure, ESG risk, concentration risk, and performance trends to flag vulnerability early.",
+    "Continuously monitors supplier performance against contracted SLAs, delivery terms, pricing clauses and compliance obligations, surfacing deviations with evidence.",
+    "Automates supplier research, RFx drafting, contract review, onboarding, compliance monitoring and spend reporting to free teams for strategic work.",
+    "Accepts a spend objective and returns a ranked execution plan by category, supplier and action with reasoning."
+   ],
+   "systems": [
+    "SAP",
+    "Oracle",
+    "Coupa",
+    "Ariba",
+    "Jaggaer",
+    "contract repositories",
+    "spend analytics tools",
+    "ERP"
+   ],
+   "results": [],
+   "sellable_as": "Running procurement execution from supplier sourcing through contract compliance and spend monitoring as an agent-driven OS above existing systems.",
+   "confidence": "high"
+  },
+  "page_it_and_platform": {
+   "id": "page_it_and_platform",
+   "kind": "offer",
+   "title": "IT & Platform: what we do",
+   "url": "https://www.lyzr.ai/teams/platform-teams/",
+   "topics": [
+    "it_and_platform",
+    "it & platform",
+    "by_team"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [
+    "it operations"
+   ],
+   "problem": [
+    "Platform teams deploy fragmented governance frameworks across AI infrastructure without central registry or deployment pipeline",
+    "Multiple downstream teams inherit inconsistent infrastructure decisions, creating a fragile and indefensible AI estate",
+    "Organizations lack foundation for coordinated AI agent deployment before governance becomes a CIO escalation"
+   ],
+   "built": [
+    "Provides infrastructure architecture for sovereign, agnostic AI agent deployment",
+    "Establishes central control plane, CI/CD, and observability layers for coordinated agent governance",
+    "Enables VPC deployment, zero-data-egress configuration, and RBAC for security compliance",
+    "Supports production-ready agent deployment from prototype to live systems"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Building and governing an enterprise AI agent platform with centralized deployment, security, and observability controls.",
+   "confidence": "low"
+  },
+  "page_revenue_and_sales": {
+   "id": "page_revenue_and_sales",
+   "kind": "offer",
+   "title": "Revenue & Sales: what we do",
+   "url": "https://www.lyzr.ai/teams/revenue-and-sales-team/",
+   "topics": [
+    "revenue_and_sales",
+    "revenue & sales",
+    "by_team"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "sales",
+    "marketing"
+   ],
+   "problem": [
+    "Prospect research, enrichment, and qualification consume rep time before selling starts",
+    "Outreach volume is capped by headcount and personalization at scale is impossible",
+    "Pipeline data is stale because CRM updates lag behind reality",
+    "Stalled deals fall through cracks because follow-up gets missed"
+   ],
+   "built": [
+    "Enriches and scores every prospect automatically before it reaches a rep",
+    "Runs personalised outreach sequences in parallel at enterprise scale without adding headcount",
+    "Surfaces deal data current and enriched, automatically updating pipeline intelligence",
+    "Triggers automatic follow-up nudges for stalled deals at the right moment"
+   ],
+   "systems": [
+    "CRM"
+   ],
+   "results": [],
+   "sellable_as": "Operating revenue team workflows at scale through agents handling research, outreach sequencing, pipeline hygiene, and follow-up.",
+   "confidence": "high"
+  },
+  "page_cio": {
+   "id": "page_cio",
+   "kind": "offer",
+   "title": "CIO: what we do",
+   "url": "https://www.lyzr.ai/roles/cio/",
+   "topics": [
+    "cio",
+    "by_role"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "it operations"
+   ],
+   "problem": [
+    "AI agents deployed across multiple environments lack unified visibility and governance",
+    "Compliance and audit trails difficult to establish across heterogeneous agent frameworks and cloud platforms",
+    "Responsible AI policies cannot be enforced consistently across agents built by different teams",
+    "Data security requirements prevent centralized governance solutions from operating in regulated environments"
+   ],
+   "built": [
+    "Connects existing agents across AWS Bedrock, Azure AI Foundry, GCP Vertex, LangChain, CrewAI and custom builds without rebuilding or migration",
+    "Registers full agent fleet with owner, version, access scope, framework and cloud metadata in centralized registry",
+    "Applies RBAC, hallucination guards, PII masking and approval workflows across all agents regardless of framework",
+    "Records complete trace of every agent run with full decision reconstruction and compliance exports for audits",
+    "Runs inside customer VPC with zero data egress from cloud boundary, supporting air-gapped on-premises deployment"
+   ],
+   "systems": [
+    "AWS Bedrock",
+    "Azure AI Foundry",
+    "GCP Vertex",
+    "LangChain",
+    "CrewAI"
+   ],
+   "results": [],
+   "sellable_as": "Deploy unified AI governance layer across heterogeneous agent estate without rebuilding existing agents or infrastructure.",
+   "confidence": "high"
+  },
+  "page_ai_and_automation": {
+   "id": "page_ai_and_automation",
+   "kind": "offer",
+   "title": "AI & Automation: what we do",
+   "url": "https://www.lyzr.ai/teams/ai-and-automation-teams/",
+   "topics": [
+    "ai_and_automation",
+    "ai & automation",
+    "by_team"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "operations",
+    "it operations"
+   ],
+   "problem": [
+    "POC looks great but production reveals unforeseen layers and complexity",
+    "Teams locked into one framework for all agents regardless of use case fit",
+    "Testing is manual and incomplete, edge cases surface in production",
+    "No visibility into agent cost, degradation, or failures until users report them",
+    "Rollback requires manual hunting for stable versions with no audit trail"
+   ],
+   "built": [
+    "Connects any framework (LangChain, CrewAI, Bedrock, Autogen, custom SDKs) to a single control plane",
+    "Runs 50,000 domain-specific and adversarial simulations before production deployment",
+    "Provides full trace on every execution: latency, token cost, quality, hallucination score",
+    "Enables one-command rollback with Git-native CI/CD and instant version recovery",
+    "Orchestrates system-to-system workflows with human-in-the-loop at configurable checkpoints",
+    "Handles document extraction, email triage, and reporting reconciliation without manual data entry"
+   ],
+   "systems": [
+    "Salesforce",
+    "Anaplan",
+    "SAP (implied via contract and revenue workflows)"
+   ],
+   "results": [],
+   "sellable_as": "Production infrastructure for AI agents: multi-framework deployment, simulation-based testing, full observability, and audited rollback across complex workflows.",
+   "confidence": "high"
+  },
+  "page_cto": {
+   "id": "page_cto",
+   "kind": "offer",
+   "title": "CTO: what we do",
+   "url": "https://www.lyzr.ai/roles/cto/",
+   "topics": [
+    "cto",
+    "by_role"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "Agents built by teams are only reliable as their underlying infrastructure",
+    "Agent deployments lack production-grade governance and version control",
+    "Testing agent behavior at scale before production is difficult",
+    "Teams cannot easily observe and improve agents across different frameworks and clouds"
+   ],
+   "built": [
+    "Connects to existing agents without migration or rewriting code",
+    "Runs agents through simulation engine with up to 50,000 scenario runs before production",
+    "Implements Git-native CI/CD with version tracking to commit hash and one-command rollback",
+    "Provides unified observability dashboard across agents on different frameworks and clouds",
+    "Performs model fine-tuning inside customer VPC with full data sovereignty"
+   ],
+   "systems": [
+    "LangChain",
+    "CrewAI",
+    "Bedrock",
+    "Autogen",
+    "GitHub",
+    "Azure DevOps"
+   ],
+   "results": [],
+   "sellable_as": "Infrastructure layer enabling CTOs to deploy and govern AI agents in production without agent code changes or migration.",
+   "confidence": "high"
+  },
+  "page_digital_transformation": {
+   "id": "page_digital_transformation",
+   "kind": "offer",
+   "title": "Digital Transformation: what we do",
+   "url": "https://www.lyzr.ai/teams/digital-transformation-teams/",
+   "topics": [
+    "digital_transformation",
+    "digital transformation",
+    "by_team"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [
+    "finance",
+    "hr",
+    "marketing",
+    "customer service",
+    "operations",
+    "compliance",
+    "procurement"
+   ],
+   "problem": [
+    "First agents fail to move from demo to production without planned infrastructure.",
+    "Each function builds differently, creating incompatible approaches and no shared infrastructure.",
+    "Governance retrofitted after deployment creates audit and compliance gaps.",
+    "Impact measurement is manual and inconsistent across functions."
+   ],
+   "built": [
+    "Deploy coordinated agentic OS across functions on one control plane with consistent CI/CD pipeline.",
+    "Establish governance from first deployment with registry entry, responsible AI policy, audit trail, ownership record.",
+    "Reuse infrastructure template built for first function across subsequent functions.",
+    "Measure cost, latency, quality, and business outcome consistently via one observability layer."
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Enterprise transformation programme delivery using reusable agentic OS infrastructure across functions with built-in governance and measurement.",
+   "confidence": "low"
+  },
+  "page_ceo": {
+   "id": "page_ceo",
+   "kind": "offer",
+   "title": "CEO: what we do",
+   "url": "https://www.lyzr.ai/roles/ceo/",
+   "topics": [
+    "ceo",
+    "by_role"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "revenue",
+    "operations",
+    "customer service",
+    "finance",
+    "hr",
+    "marketing"
+   ],
+   "problem": [
+    "AI projects stall between pilot and production due to missing governance, infrastructure, and deployment pipeline.",
+    "Enterprise leaders need to coordinate agents across multiple business functions with unified governance and audit trails.",
+    "Moving from AI pilots to production-ready agents at scale requires infrastructure built in from day one, not bolted on."
+   ],
+   "built": [
+    "Deploys agents across business functions within six weeks from kickoff to production.",
+    "Runs all agents under a Control Plane with responsible AI policies, full audit trails, and board-visible registry.",
+    "Enables function-by-function expansion using shared governance layer, infrastructure, and operating model.",
+    "Coordinates agents across revenue, operations, HR, and customer service with continuous improvement."
+   ],
+   "systems": [
+    "AWS",
+    "Azure",
+    "Google Cloud",
+    "Salesforce Agentforce",
+    "Microsoft"
+   ],
+   "results": [],
+   "sellable_as": "Deploying and governing production AI agents across enterprise functions with unified control plane and audit trails.",
+   "confidence": "high"
+  },
+  "page_managing_director": {
+   "id": "page_managing_director",
+   "kind": "offer",
+   "title": "Managing Director: what we do",
+   "url": "https://www.lyzr.ai/roles/md/",
+   "topics": [
+    "managing_director",
+    "managing director",
+    "by_role"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "SI and consulting firms need reusable infrastructure to build agentic practices at scale",
+    "Practices risk maintaining separate delivery models across multiple cloud environments",
+    "Regulated clients demand compliance and data sovereignty with production-ready governance",
+    "Teams lack production-ready patterns to deploy agents to client environments quickly"
+   ],
+   "built": [
+    "Provides reusable LyzrBlocks for BFSI, healthcare, HR, customer service, and procurement functions",
+    "Deploys the same governance model and agent components across AWS, Azure, GCP, and on-premises environments",
+    "Enables enterprise-grade governance including audit trails and responsible AI guardrails from day one",
+    "Delivers first governed agent to client production environment in 48 hours"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Building and scaling agentic AI practices for enterprise clients using reusable agent components and governed deployment infrastructure.",
+   "confidence": "low"
+  },
+  "page_agentic_os": {
+   "id": "page_agentic_os",
+   "kind": "capability",
+   "title": "Agentic OS overview",
+   "url": "https://www.lyzr.ai/agentic-os/",
+   "topics": [
+    "agentic_os",
+    "agentic os",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [],
+   "built": [
+    "Orchestrates agents from a defined objective without requiring a pre-built agent list",
+    "Activates agents and workflows based on the business outcome needed",
+    "Provides function-specific agent orchestration for marketing, sales, HR, customer service, and procurement",
+    "Coordinates end-to-end workflows within a single function from one executive objective"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "",
+   "confidence": "low"
+  },
+  "page_head_of_ai": {
+   "id": "page_head_of_ai",
+   "kind": "offer",
+   "title": "Head of AI: what we do",
+   "url": "https://www.lyzr.ai/roles/heads-of-ai/",
+   "topics": [
+    "head_of_ai",
+    "head of ai",
+    "by_role"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "Enterprise teams struggle to evaluate agent reliability before production deployment",
+    "Organizations need to deploy agents across multiple LLM providers without vendor lock-in",
+    "AI platforms lack configurable responsible AI enforcement tied to existing enterprise policies",
+    "Engineering teams face friction integrating production agent deployment into existing CI/CD pipelines"
+   ],
+   "built": [
+    "Evaluates agents against specific LLM stacks, cloud environments, and security requirements before deployment",
+    "Runs 50,000 simulation scenarios including edge cases and adversarial inputs to test Six Sigma reliability",
+    "Deploys production agent CI/CD pipelines inside customer VPC with Git-native versioning and staged promotion",
+    "Abstracts model layer to run multiple LLM providers from single control plane without lock-in",
+    "Enforces configurable responsible AI policies at inference time including hallucination scoring and PII detection",
+    "Feeds production traces back into simulation to continuously improve agents with every run"
+   ],
+   "systems": [
+    "Git",
+    "VPC",
+    "NayaOne sandbox"
+   ],
+   "results": [],
+   "sellable_as": "Building and deploying enterprise AI agents to production with configurable reliability testing and continuous improvement.",
+   "confidence": "high"
+  },
+  "page_lyzr_optimus": {
+   "id": "page_lyzr_optimus",
+   "kind": "capability",
+   "title": "Lyzr Optimus overview",
+   "url": "https://optimus.lyzr-ai.com/",
+   "topics": [
+    "lyzr_optimus",
+    "lyzr optimus",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "finance",
+    "it operations",
+    "compliance"
+   ],
+   "problem": [
+    "Cloud AI charges per token, creating cost barriers to experimentation and scaling agent usage",
+    "Teams lack access to AI where internet connectivity is unavailable or restricted",
+    "Data sovereignty requirements prevent use of cloud-based models and services",
+    "Closed commercial models cannot run on-premise infrastructure"
+   ],
+   "built": [
+    "Runs open-weight models entirely on-premise with zero external calls or cloud dependency",
+    "Agents operate in air-gapped environments without network connectivity",
+    "Provides fixed pricing per year instead of per-token metering",
+    "Supports importing custom models and fine-tunes for specialized use cases"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Deploying enterprise AI agents on on-premise infrastructure with full data sovereignty and unlimited usage.",
+   "confidence": "low"
+  },
+  "page_responsible_ai": {
+   "id": "page_responsible_ai",
+   "kind": "capability",
+   "title": "Responsible AI overview",
+   "url": "https://www.lyzr.ai/responsible-ai-as-a-service/",
+   "topics": [
+    "responsible_ai",
+    "responsible ai",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "AI without guardrails exposes organizations to biased decisions, sensitive data leaks, and costly regulatory penalties"
+   ],
+   "built": [
+    "Continuous bias detection keeps outcomes fair and equitable",
+    "Traces and audits reasoning behind every agent decision",
+    "Redacts personally identifiable information to prevent data exposure",
+    "Merges LLMs with structured ML to prevent hallucinations",
+    "Integrates human-in-the-loop oversight and real-time monitoring"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Implementing responsible AI governance frameworks with continuous bias monitoring, PII protection, and explainability controls.",
+   "confidence": "low"
+  },
+  "page_lyzr_nitro": {
+   "id": "page_lyzr_nitro",
+   "kind": "capability",
+   "title": "Lyzr Nitro overview",
+   "url": "https://www.lyzr.ai/partners/google/",
+   "topics": [
+    "lyzr_nitro",
+    "lyzr nitro",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "Most agents stall between proof of concept and production deployment",
+    "Enterprises need fourteen separate platforms for orchestration, vectors, memory, observability, guardrails, CI/CD, and UI",
+    "Each client engagement rebuilds the entire production stack from scratch",
+    "Agent projects reach production less than 30% of the time"
+   ],
+   "built": [
+    "Collapses fourteen separate platforms into one integrated stack running inside GCP VPC",
+    "Runs agent simulation at scale with 50,000 test scenarios before production deployment",
+    "Provides hybrid BPMN orchestration through SuperFlow for complex multi-step agent processes",
+    "Enables fine-tuning of open source models on customer data within their own environment",
+    "Delivers Git-native CI/CD with staged promotion, versioning, and instant rollback per release",
+    "Detects and corrects agent behaviour drift automatically without requiring tickets or sprints"
+   ],
+   "systems": [
+    "Google Cloud",
+    "Vertex AI",
+    "Gemini",
+    "BigQuery",
+    "AlloyDB",
+    "Firestore",
+    "GKE",
+    "Cloud Run",
+    "Compute Engine"
+   ],
+   "results": [],
+   "sellable_as": "Delivering production-grade agents on Vertex AI with built-in simulation, governance, and CI/CD inside customer GCP environments in 48 hours.",
+   "confidence": "high"
+  },
+  "page_opencontroller": {
+   "id": "page_opencontroller",
+   "kind": "capability",
+   "title": "OpenController overview",
+   "url": "https://www.lyzr.ai/opencontroller/",
+   "topics": [
+    "opencontroller",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "Agents deployed across clouds, clusters and developer laptops lack centralized visibility and control",
+    "Agent releases run without gates, evals or rollback capability",
+    "Agent access, model spending and tool calls run without policy enforcement",
+    "Production failures lack systematic capture and validation before next release"
+   ],
+   "built": [
+    "Discovers all agents across clouds, clusters and on-premises, surfacing shadow agents into inventory",
+    "Issues workload identity to every agent, authenticated through existing identity providers",
+    "Gates agent releases on multi-turn, red-team and regression evals with evidence shipped per version",
+    "Enforces policy on every agent call: access control, rate limits, model routing and guardrails in the request path",
+    "Screens inputs for prompt injection and outputs for PII, redacts sensitive data and holds tool calls exceeding limits",
+    "Traces every action with cost, quality and ownership on each span, exported to existing observability tools",
+    "Clusters production failures, proposes fixes and validates them on held-out evals before promoting releases"
+   ],
+   "systems": [
+    "AWS",
+    "Microsoft Azure",
+    "Google Cloud",
+    "Kubernetes",
+    "Salesforce",
+    "SAP",
+    "Okta",
+    "OpenTelemetry"
+   ],
+   "results": [],
+   "sellable_as": "Centralized control plane for agent governance, identity and observability across multi-cloud deployments without migration.",
+   "confidence": "high"
+  },
+  "page_orchestration_as_a_service": {
+   "id": "page_orchestration_as_a_service",
+   "kind": "capability",
+   "title": "Orchestration as a Service overview",
+   "url": "https://www.lyzr.ai/orchestration-as-a-service/",
+   "topics": [
+    "orchestration_as_a_service",
+    "orchestration as a service",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "Individual AI agents lack coordination, causing disjointed workflows and manual handoffs",
+    "Multiple agents operate in silos without unified sequencing or error handling"
+   ],
+   "built": [
+    "Coordinates actions of multiple AI agents in defined or dynamic sequences",
+    "Automates handoffs between agents to maintain workflow momentum",
+    "Provides centralized orchestration with role clarity and error resilience",
+    "Manages dependencies between agents with visual or manager-agent models"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Centralizing AI agent orchestration to eliminate manual coordination and accelerate multi-agent workflow execution.",
+   "confidence": "low"
+  },
+  "page_agents_as_a_service": {
+   "id": "page_agents_as_a_service",
+   "kind": "capability",
+   "title": "Agents as a Service overview",
+   "url": "https://www.lyzr.ai/agents-as-a-service/",
+   "topics": [
+    "agents_as_a_service",
+    "agents as a service",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "it operations"
+   ],
+   "problem": [
+    "Generic AI solutions require months of development and specialized expertise",
+    "Building and deploying custom agents typically involves complex coding and rigid platforms",
+    "Organizations need to integrate AI agents with existing workflows without extensive customization"
+   ],
+   "built": [
+    "Design and configure custom AI agents via low-code Agent Studio",
+    "Deploy agents as microservices callable via API in minutes",
+    "Integrate agents with databases, CRMs, and custom APIs",
+    "Build multi-agent systems using visual orchestration tools including DAG workflows",
+    "Equip agents with proprietary knowledge bases for context-aware responses"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Building and deploying custom AI agents to automate enterprise workflows without specialized ML engineering teams.",
+   "confidence": "low"
+  },
+  "page_hallucination_manager": {
+   "id": "page_hallucination_manager",
+   "kind": "capability",
+   "title": "Hallucination Manager overview",
+   "url": "https://www.lyzr.ai/hallucination-manager-as-a-service/",
+   "topics": [
+    "hallucination_manager",
+    "hallucination manager",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "AI outputs can be factually inaccurate, fabricating facts and misleading users",
+    "Hallucinations erode customer trust and damage brand reputation",
+    "Enterprises lack tools to verify and validate AI output accuracy"
+   ],
+   "built": [
+    "Detects and mitigates hallucinations before outputs reach users",
+    "Cross-references AI outputs against verified data sources for truthfulness",
+    "Uses mathematical logic to verify factual accuracy of responses",
+    "Configures responsible AI policies through UI without coding"
+   ],
+   "systems": [
+    "AWS Bedrock"
+   ],
+   "results": [],
+   "sellable_as": "Implementing verified AI accuracy controls with hallucination detection integrated into enterprise applications.",
+   "confidence": "high"
+  },
+  "page_knowledge_base": {
+   "id": "page_knowledge_base",
+   "kind": "capability",
+   "title": "Knowledge Base overview",
+   "url": "https://www.lyzr.ai/knowledge-base-as-a-service/",
+   "topics": [
+    "knowledge_base",
+    "knowledge base",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "Team knowledge locked away in scattered documents across multiple file types",
+    "Manual searching through endless files instead of finding direct answers"
+   ],
+   "built": [
+    "Ingests PDFs, DOCX, TXT, CSV, JSON and web pages into a centralized index",
+    "Breaks documents into semantic chunks for accurate retrieval",
+    "Answers natural language questions with direct excerpts from source documents",
+    "Offers three retrieval strategies: Basic, MMR, and HyDE for different query types",
+    "Connects knowledge base to AI agents via visual interface without coding"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Building a centralized, AI-powered knowledge base that transforms scattered documents into searchable Q&A systems for faster information access.",
+   "confidence": "high"
+  },
+  "page_knowledge_graph": {
+   "id": "page_knowledge_graph",
+   "kind": "capability",
+   "title": "Knowledge Graph overview",
+   "url": "https://www.lyzr.ai/knowledge-graph-as-a-service/",
+   "topics": [
+    "knowledge_graph",
+    "knowledge graph",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "Documents contain critical relationships that traditional search and RAG systems miss entirely.",
+    "Systems struggle to connect the dots between people, processes, and concepts spread across thousands of files.",
+    "Manual analysis of complex, relational queries takes months instead of minutes.",
+    "Keyword matching fails to enable true semantic reasoning about critical information."
+   ],
+   "built": [
+    "Transforms unstructured data into an interconnected knowledge graph using automated entity and relationship extraction.",
+    "Answers cross-document questions with single, coherent responses spanning multiple files.",
+    "Provides entity disambiguation to understand precise context of every entity.",
+    "Navigates relationships between concepts from organizational structures to project dependencies.",
+    "Translates complex natural language questions into powerful graph traversals."
+   ],
+   "systems": [
+    "Neo4J"
+   ],
+   "results": [],
+   "sellable_as": "Building and querying knowledge graphs over enterprise documents to enable cross-document reasoning and reduce analysis time.",
+   "confidence": "high"
+  },
+  "page_ai_agent_memory": {
+   "id": "page_ai_agent_memory",
+   "kind": "capability",
+   "title": "AI Agent Memory overview",
+   "url": "https://www.lyzr.ai/cognis/",
+   "topics": [
+    "ai_agent_memory",
+    "ai agent memory",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "AI agents forget everything after a session ends",
+    "No persistent memory across conversations",
+    "Agents lack context about user preferences, identity, and past decisions"
+   ],
+   "built": [
+    "Extracts atomic facts from conversations and auto-categorizes across 13 categories",
+    "Stores facts locally in SQLite and Qdrant with no cloud infrastructure required",
+    "Retrieves relevant context via hybrid vector and BM25 search in 300ms",
+    "Isolates memory by owner_id, agent_id, and session_id to prevent cross-contamination",
+    "Automatically adds, updates, or deletes memories to keep knowledge accurate"
+   ],
+   "systems": [
+    "Qdrant",
+    "SQLite",
+    "LLM API"
+   ],
+   "results": [],
+   "sellable_as": "Implementing persistent agent memory with local fact extraction and hybrid search for multi-turn AI workflows.",
+   "confidence": "high"
+  },
+  "page_opengap": {
+   "id": "page_opengap",
+   "kind": "capability",
+   "title": "OpenGAP overview",
+   "url": "https://www.lyzr.ai/oss/opengap/",
+   "topics": [
+    "opengap",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "AI agents are locked into proprietary frameworks, making it impossible to switch vendors without rebuilding from scratch",
+    "Agent identity, memory, skills, rules, and knowledge are stored in opaque formats tied to one vendor's runtime",
+    "Months of prompt tuning, memory accumulation, and skill development are lost when switching frameworks"
+   ],
+   "built": [
+    "Defines agents as version-controlled files in git repositories using agent.yaml and SOUL.md",
+    "Exports a single agent definition to eight frameworks including Claude, OpenAI, Lyzr, and CrewAI with one adapter flag",
+    "Stores agent identity, memory, skills, and rules as composable files that can be versioned, branched, and merged",
+    "Enables collaboration on agents using git workflows: forking, pull requests, code review, and promotion across environments"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Implement framework-agnostic AI agent definitions stored as version-controlled git repositories with multi-framework export capability.",
+   "confidence": "high"
+  },
+  "page_gitagent": {
+   "id": "page_gitagent",
+   "kind": "capability",
+   "title": "GitAgent overview",
+   "url": "https://www.lyzr.ai/oss/gitagent/",
+   "topics": [
+    "gitagent",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [
+    "engineering"
+   ],
+   "problem": [
+    "AI coding agents lack transparency and auditability in their decision-making",
+    "Agent improvements require manual retraining rather than autonomous learning",
+    "Switching between different LLM providers creates vendor lock-in and requires code changes",
+    "Regulated industries need compliance frameworks and audit trails for AI agent deployments"
+   ],
+   "built": [
+    "Creates a git branch for each agent session, persisting working memory and decisions as commits",
+    "Evaluates agent outputs through a reinforcement learning loop and commits skill improvements back to the repository",
+    "Decomposes complex tasks into subtasks with full traceability and autonomous planning",
+    "Supports multiple LLM providers through the OpenGAP standard without changing agent definition"
+   ],
+   "systems": [
+    "GitHub",
+    "Claude",
+    "OpenAI",
+    "Gemini"
+   ],
+   "results": [],
+   "sellable_as": "Deploy self-improving, auditable AI coding agents with git-native memory and multi-model support for regulated industries.",
+   "confidence": "high"
+  },
+  "page_docs_and_api": {
+   "id": "page_docs_and_api",
+   "kind": "capability",
+   "title": "Docs & API overview",
+   "url": "https://docs.lyzr.ai/enterprise/get-started/intro",
+   "topics": [
+    "docs_and_api",
+    "docs & api",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [],
+   "built": [
+    "Replaces patchwork of agent frameworks with unified full-stack infrastructure covering building, evaluating, deploying, and governing agents",
+    "Provides built-in agent framework, multi-agent orchestration, memory layer, RAG, tool connectors, voice AI, guardrails, and observability",
+    "Enables agents to connect to documents, databases, websites, and live data sources",
+    "Applies guardrails for toxicity detection, PII redaction, prompt-injection blocking, and hallucination reduction",
+    "Traces every agent run step by step with latency metrics for each step"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Full-stack infrastructure for building, evaluating, deploying, and governing AI agents as a unified platform.",
+   "confidence": "low"
+  },
+  "page_madison": {
+   "id": "page_madison",
+   "kind": "capability",
+   "title": "Madison overview",
+   "url": "https://madison.lyzr-ai.com/",
+   "topics": [
+    "madison",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "banking",
+   "functions": [
+    "compliance",
+    "it operations"
+   ],
+   "problem": [
+    "Banks need to deploy AI agents while maintaining regulatory controls",
+    "Financial institutions require staged promotion workflows for agent deployment",
+    "Organizations must balance speed with compliance requirements"
+   ],
+   "built": [
+    "Deploys governed AI agents with compliance gates and controls",
+    "Manages staged promotion of agents through compliance checkpoints",
+    "Enforces regulatory controls during agent deployment and operation"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "Deploying and governing AI agents in banking operations with compliance oversight and staged promotion controls.",
+   "confidence": "low"
+  },
+  "page_it_operations": {
+   "id": "page_it_operations",
+   "kind": "offer",
+   "title": "IT operations: what we do",
+   "url": "https://www.lyzr.ai/it-operations/",
+   "topics": [
+    "it_operations",
+    "it operations",
+    "by_function"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "it operations",
+   "functions": [
+    "it operations"
+   ],
+   "problem": [
+    "Thousands of alerts across monitoring tools obscure actionable incidents",
+    "On-call engineers start incident response from scratch at 2am",
+    "SRE teams spend most time firefighting instead of improving reliability",
+    "Production deployments lack blast radius assessment before landing"
+   ],
+   "built": [
+    "Correlates signals across metrics, logs, traces and events into actionable incidents",
+    "Builds live incident context brief with affected services, root cause, blast radius and remediation",
+    "Executes autonomous remediation within guardrails without paging humans",
+    "Runs change risk assessment against CMDB and incident history before deployment"
+   ],
+   "systems": [
+    "Datadog",
+    "Dynatrace",
+    "ServiceNow",
+    "PagerDuty",
+    "Jira",
+    "AWS",
+    "Azure",
+    "GCP"
+   ],
+   "results": [],
+   "sellable_as": "IT operations orchestration layer that correlates monitoring signals and automates incident response and change management.",
+   "confidence": "high"
+  },
+  "page_venture_capital": {
+   "id": "page_venture_capital",
+   "kind": "offer",
+   "title": "Private equity & VC: what we do",
+   "url": "https://www.lyzr.ai/private-equity/",
+   "topics": [
+    "venture_capital",
+    "private equity & vc",
+    "by_industry"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "private equity",
+   "functions": [
+    "finance",
+    "operations"
+   ],
+   "problem": [
+    "Analysts spend 60-70% of diligence time gathering data rather than analysing it.",
+    "Portfolio monitoring across multiple holdings lacks real-time visibility into KPI changes and cash runway issues.",
+    "Deal screening is a bottleneck that limits deal coverage without expanding headcount.",
+    "LP reporting consumes entire quarters with teams spending more time finding data than telling the story."
+   ],
+   "built": [
+    "Ingests data room documents, financials, contracts and market data to extract key metrics, flag risk clauses and produce structured diligence memos.",
+    "Connects to portfolio company systems and monitors 40+ KPIs per holding continuously with root cause analysis and recommended actions.",
+    "Scores deal flow continuously against fund thesis and surfaces highest-conviction targets with ranked rationale.",
+    "Automates quarterly LP report generation pulling performance data and variance commentary from live sources."
+   ],
+   "systems": [
+    "DealCloud",
+    "Salesforce",
+    "PitchBook",
+    "Capital IQ"
+   ],
+   "results": [],
+   "sellable_as": "Private equity operations platform that automates diligence, portfolio monitoring and LP reporting to accelerate investment decision velocity.",
+   "confidence": "high"
+  },
+  "page_madison_grc": {
+   "id": "page_madison_grc",
+   "kind": "capability",
+   "title": "Madison GRC overview",
+   "url": "https://www.madison.lyzr.ai/",
+   "topics": [
+    "madison_grc",
+    "madison grc",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "banking",
+   "functions": [
+    "compliance",
+    "it operations"
+   ],
+   "problem": [
+    "Regulatory change takes months to trace through all policies, procedures and controls",
+    "Teams hold disconnected pieces of the compliance map with no links between them",
+    "Testing one control takes two weeks mainly from asking four teams which procedure owns it",
+    "Hundreds of examination items arrive on two week clock with institution's standing attached"
+   ],
+   "built": [
+    "Agents monitor regulatory feeds and trace rule changes to every affected obligation, policy, procedure and control",
+    "Agents link examination requests back to underlying obligations and evidence in the chain",
+    "Named people attest changes against specific object versions with signatures on record",
+    "Agents surface what regulatory text changed and tag everything it touches"
+   ],
+   "systems": [
+    "Federal Register",
+    "agency sites"
+   ],
+   "results": [],
+   "sellable_as": "Operating a connected regulatory obligation and control model with continuous agent-assisted tracing and attestation.",
+   "confidence": "high"
+  },
+  "page_dwight": {
+   "id": "page_dwight",
+   "kind": "offer",
+   "title": "Dwight, AI RFP Scout: what we do",
+   "url": "https://www.lyzr.ai/dwight-ai-rfp-scout/",
+   "topics": [
+    "dwight",
+    "dwight, ai rfp scout",
+    "named_agent"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "sales"
+   ],
+   "problem": [
+    "Bid teams miss qualified RFPs because no one has time to scout across public, private and gated portals",
+    "Win probability unknown before spending hours drafting responses",
+    "RFP discovery, scoring and drafting consume capacity that could scale",
+    "Response process breaks as pipeline grows without headcount increases"
+   ],
+   "built": [
+    "Scouts public, private and gated RFP portals continuously, applying custom filters for geography, industry, budget and contract type",
+    "Scores every RFP against your strengths, history and capacity to surface win probability before drafting begins",
+    "Pulls templates and past wins to produce structured first draft in minutes",
+    "Routes RFP alerts to Slack, email and CRM so right stakeholders move fast",
+    "Tracks submission outcomes, response times and content reuse to improve each cycle"
+   ],
+   "systems": [
+    "Salesforce",
+    "HubSpot",
+    "SharePoint",
+    "Slack",
+    "AWS",
+    "Azure",
+    "GCP"
+   ],
+   "results": [],
+   "sellable_as": "Running autonomous RFP discovery, scoring and first-draft generation as continuous background agents feeding your bid desk.",
+   "confidence": "high"
+  },
+  "page_agent_blocks": {
+   "id": "page_agent_blocks",
+   "kind": "capability",
+   "title": "Agent Blocks overview",
+   "url": "https://www.lyzr.ai/agentblocks/",
+   "topics": [
+    "agent_blocks",
+    "agent blocks",
+    "product"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "",
+   "functions": [],
+   "problem": [
+    "Building agent platform infrastructure requires tenant isolation, deployment, governance, identity, and reliability capabilities",
+    "Creating production-ready infrastructure for agents takes 12 to 18 months of engineering work",
+    "Enterprise platforms need audit logs, approvals, policy enforcement, usage metering and cost controls",
+    "Shipping agent platforms requires managing tenant boundaries, request isolation, environment separation and failure isolation"
+   ],
+   "built": [
+    "Provides white-labeled build, governance and runtime layer for agent platforms",
+    "Supplies tenant isolation, deployment, governance, identity and reliability infrastructure",
+    "Delivers modular blocks for tenant boundaries, request isolation, environment separation and durable execution",
+    "Enables deployment across customer VPC, private cloud, Kubernetes and on-premises environments",
+    "Manages audit logs, approvals, policy enforcement, usage metering and tenant limits",
+    "Connects to existing frameworks, models, cloud, IAM, CI/CD and telemetry through adapters"
+   ],
+   "systems": [],
+   "results": [],
+   "sellable_as": "White-labeled agent platform infrastructure with tenant isolation, governance and multi-cloud deployment for platform vendors.",
+   "confidence": "high"
+  },
+  "page_kathy": {
+   "id": "page_kathy",
+   "kind": "offer",
+   "title": "Kathy, AI competitor analyst: what we do",
+   "url": "https://www.lyzr.ai/kathy/",
+   "topics": [
+    "kathy",
+    "kathy, ai competitor analyst",
+    "named_agent"
+   ],
+   "headline_result": "",
+   "client": "",
+   "industry": "cross-industry",
+   "functions": [
+    "marketing",
+    "sales"
+   ],
+   "problem": [
+    "Most teams react to competitor moves after they break rather than spotting them early",
+    "Competitor launches and market shifts are discovered late, losing strategic advantage",
+    "Teams lack unified visibility into competitor activity across multiple channels and signals",
+    "Market intelligence requires a week of research when executives need answers in minutes"
+   ],
+   "built": [
+    "Monitors product pages, release notes, press, social and hiring signals continuously to detect launches",
+    "Tracks competitor narratives across blogs, social, ads, podcasts and reports traction not just volume",
+    "Delivers on-demand market briefs synthesized from live signals including funding, hiring and GTM moves",
+    "Flags new competitive moves, models impact and suggests counter-strategies while monitoring ongoing",
+    "Reads live data pipelines to return ranked execution plans with reasoning tied to objectives"
+   ],
+   "systems": [
+    "HubSpot",
+    "GA4",
+    "Search Console",
+    "Ads",
+    "Slack",
+    "Semrush",
+    "Apollo",
+    "Clay",
+    "WordPress",
+    "Salesforce",
+    "LangChain",
+    "CrewAI",
+    "Agentforce",
+    "OpenAI",
+    "Anthropic",
+    "Google"
+   ],
+   "results": [],
+   "sellable_as": "Continuous competitive monitoring and market intelligence platform that surfaces competitor moves and market shifts with strategic implications delivered to leadership and sales teams.",
+   "confidence": "low"
   }
  }
 }

@@ -4,11 +4,23 @@ You read one Lyzr customer story and record what was actually delivered.
 
 ## Goal
 
-Turn the page into a record the opportunity engine can reason over: who the customer was,
-what was wrong, what the agents actually do, what systems they touch, and what changed.
+Turn the page into a record the opportunity engine can reason over: what was wrong, what
+the agents actually do, what systems they touch, and what changed.
 
 This is the engine's evidence of what Lyzr can really deliver. Everything downstream is
 argued from these records, so a record that overstates the page is worse than a thin one.
+
+**Three kinds of page come through here, and the header tells you which.**
+
+- `delivered`: a customer story. Something that was built, for someone, with an outcome.
+- `offer`: a solution page. A packaged offer for a function or an industry, describing what
+  Lyzr does in that area rather than one engagement.
+- `capability`: a product page. What a piece of the platform does.
+
+An `offer` or a `capability` page **has no customer and no outcome**. Leave `client` empty
+and **leave `results` empty**, even where the page states a figure: a number on a product
+page is a marketing claim, not a measured result, and downstream it would be shown to a
+partner as proof. The engine knows the difference and will not ask these records for proof.
 
 ## Instructions
 
@@ -19,10 +31,11 @@ noise. Ignore everything that is not the story.
    not on the page. If the page does not name the customer, say what kind of company it was
    in `client`, in the page's own words ("a Fortune 50 CPG company"). Never guess a name.
 2. **`problem` is what was wrong before**, 2 to 4 lines, each under 18 words, in business
-   terms. "Supplier onboarding ran on manual coordination across several teams and systems",
+   terms. On an `offer` or `capability` page, it is the problem the page says this is for. "Supplier onboarding ran on manual coordination across several teams and systems",
    not "inefficient processes".
-3. **`built` is what the agents actually do**, 2 to 5 lines, each under 20 words. Verbs, not
-   categories: "Matches invoices against purchase orders and routes only the exceptions"
+3. **`built` is what the agents actually do**, 2 to 5 lines, each under 20 words. On an
+   `offer` or `capability` page it is what the product or the offer does, in the same
+   terms. Verbs, not categories: "Matches invoices against purchase orders and routes only the exceptions"
    beats "intelligent document processing". This is the most important field.
 4. **`systems`**: the named platforms, applications or data sources involved, as the page
    names them (SAP, Salesforce, ServiceNow, an ERP, a CRM). Empty list if the page names
@@ -38,9 +51,10 @@ noise. Ignore everything that is not the story.
    could sell to its own clients off the back of this work**. Not what Lyzr sold. "Running
    supplier onboarding and approvals as a managed workflow inside the client's ERP". This is
    the line the opportunity engine builds on, so it has to describe work, not a product.
-9. **`confidence`**: `high` when the page describes the build and the outcome concretely,
-   `low` when it is mostly marketing and you are recording the little that is there. Say
-   `low` freely. A record marked `low` is used differently downstream, not thrown away.
+9. **`confidence`**: `high` when the page describes concretely what the thing does, and,
+   on a customer story, its outcome too. `low` when the page is mostly marketing and you
+   are recording the little that is there. Say `low` freely. A record marked `low` is used
+   differently downstream, not thrown away.
 
 ## House style (every field, every agent)
 

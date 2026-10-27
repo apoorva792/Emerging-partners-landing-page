@@ -12,19 +12,33 @@ the angle.
 
 ## Instructions
 
-You get a company profile, the answers the visitor gave, a set of **customer stories**
-describing what Lyzr has really built and what changed, a set of **engagement patterns**
-describing how this kind of work is actually sold and delivered, and the **products** a
-partner would build on and demo.
+You get a company profile, the answers the visitor gave, a set of **records of what Lyzr
+can really do**, a set of **engagement patterns** describing how this kind of work is
+actually sold and delivered, and the **products** a partner would build on and demo.
+
+The records come in three kinds, and the difference matters:
+
+- `delivered`: a customer story. Something built for a real customer, with a measured
+  outcome. The strongest evidence there is, and the only kind that carries a number.
+- `offer`: a packaged solution for a function or an industry. Not one engagement, but a
+  shape of work we sell. Usually the best material for a `win` line, because it is already
+  packaged enough to lead with somewhere new.
+- `capability`: what a piece of the platform does. A partner can build on it whether or not
+  we have written up a customer story about it yet.
 
 A line is a service *this firm* sells to *its own clients*. Never a thing Lyzr sells them.
 
-1. **Every line has to cite the stories it stands on.** `cites` holds the ids of the
-   customer stories that prove Lyzr can deliver this. **At least one cited story must be
-   marked `solid`.** A line you cannot cite is a line we cannot stand behind, so do not
-   write it, however good it sounds. Cite two or three where the evidence really is
-   there; citing a story that is only loosely about the same work is worse than citing one.
-2. **Build the line out of what the stories say was built**, not out of their headline. The
+1. **Every line has to cite the records it stands on**, by id, and they have to be about
+   the same work. A line you cannot cite is a line we cannot stand behind, so do not write
+   it, however good it sounds. Citing a record that is only loosely about the same work is
+   worse than citing one.
+   - Cite a `delivered` record whenever one really is about this work. The card then
+     carries its result, which is the strongest thing on the page.
+   - Where none is, an `offer` or a `capability` is enough to propose the line. The card
+     will say what the thing does and link the page, and will claim no outcome. **Do not
+     stretch an unrelated customer story to get a number**: a line standing honestly on a
+     capability beats a line standing falsely on a result.
+2. **Build the line out of what the records say was built**, not out of their headline. The
    `built` list is the real material: it says what the agents actually do. A line that any
    AI vendor could have written has failed.
 3. **Why this firm.** `angle` is the single most specific reason this firm could sell this,

@@ -39,12 +39,19 @@ const resources = JSON.parse(fs.readFileSync(SRC, 'utf8')).resources;
  * love, the about page. They read as a story and extract as mush, so they never become
  * records. */
 const INDEX_PAGE = /^story_(case_studies|customers|wall_of_love|about_us|lyzr_analyst_recognition)$/;
-const stories = resources.filter((r) => (r.type === 'case_study' || r.type === 'story') && r.url && !INDEX_PAGE.test(r.id));
+/* Three kinds of evidence, because a partner's question is "what can I build with Lyzr"
+ * and the answer is not only "what Lyzr has already built for someone else". A customer
+ * story proves delivery and carries the numbers. A solution page is a packaged offer,
+ * which is the shape of work a partner leads with at a client they do not have yet. A
+ * product page is a capability, which is what they build on. Lines generated only from
+ * customer stories could never propose anything we had not already shipped twice. */
+const KIND = { case_study: 'delivered', story: 'delivered', solution_page: 'offer', product_page: 'capability' };
+const stories = resources.filter((r) => KIND[r.type] && r.url && !INDEX_PAGE.test(r.id));
 const existing = args.force ? {} : (fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')).records : {});
 let todo = stories.filter((r) => !existing[r.id]);
 if (args.limit) todo = todo.slice(0, Number(args.limit));
 
-console.log(`${stories.length} customer stories, ${Object.keys(existing).length} already read, ${todo.length} to do`);
+console.log(`${stories.length} pages, ${Object.keys(existing).length} already read, ${todo.length} to do`);
 
 const records = { ...existing };
 const failed = [];
@@ -55,18 +62,25 @@ async function one(r) {
     const { html } = await get(r.url);
     const text = body(strip(html));
     if (text.length < 400) throw new Error(`page gave only ${text.length} characters`);
+    const kind = KIND[r.type];
     const out = await ask('partner_catalog', [
-      `# Customer story: ${r.title}`, '', text,
+      `# Page kind: ${kind}`, `# Title: ${r.title}`, '', text,
     ].join('\n'));
     records[r.id] = {
       id: r.id,
+      kind,
       title: r.title,
       url: r.url,
       topics: r.topics ?? [],
-      headline_result: r.blurb ?? '',
+      headline_result: kind === 'delivered' ? (r.blurb ?? '') : '',
       ...out,
+      /* A figure on a product or solution page is a marketing claim. The prompt says to
+       * leave it out; this makes sure of it, because downstream a result is shown to a
+       * partner as proof. */
+      results: kind === 'delivered' ? (out.results ?? []) : [],
+      client: kind === 'delivered' ? out.client : '',
     };
-    console.log(`  ${String(++done).padStart(3)}/${todo.length}  ${out.confidence.padEnd(4)} ${out.sellable_as.slice(0, 68)}`);
+      console.log(`  ${String(++done).padStart(3)}/${todo.length}  ${kind.padEnd(10)} ${out.confidence.padEnd(4)} ${out.sellable_as.slice(0, 56)}`);
   } catch (e) {
     failed.push({ id: r.id, url: r.url, error: e.message });
     console.log(`  ${String(++done).padStart(3)}/${todo.length}  FAIL ${r.id}: ${e.message.slice(0, 60)}`);

@@ -409,7 +409,12 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
       ${detail ? row('Start with', up(c.first_step ?? '')) : ''}
     </dl>
     ${pr.result ? `<p class="playproof">${m ? `<b>${esc(m[1].trim())}</b> ${esc(m[2])}` : esc(pr.result)},
-      ${esc(pr.customer ?? '')}${pr.url ? ` · <a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'case study')}</a>` : ''}</p>` : ''}
+      ${esc(pr.customer ?? '')}${pr.url ? ` · <a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'case study')}</a>` : ''}</p>`
+      /* No customer story is about this work yet, so there is no number to show. What the
+       * thing is, and where it is documented, said plainly rather than dressed as proof. */
+      : (c.reference ? `<p class="playproof"><span class="noproof">Built on</span>
+          <a href="${encodeURI(c.reference.url)}" target="_blank" rel="noopener">${esc(c.reference.title)}</a>,
+          no customer story published for this one yet.</p>` : '')}
     ${meeting ? `<div class="kit">
       <p class="kitlab">Take this into the meeting</p>
       ${c.first_conversation ? `<p class="kitask">${esc(c.first_conversation)}</p>` : ''}
