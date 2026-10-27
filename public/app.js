@@ -274,7 +274,7 @@ async function askQ() {
 
 function prefetchLines() {
   const answers = [...S.answers];
-  S.pending.found = post('/api/discover', { profile: S.profile, answers, partial: true })
+  S.pending.found = post('/api/discover', { id: S.id, profile: S.profile, answers, partial: true })
     .then((r) => (r?.picks?.length ? r : null))
     .catch(() => null);
 }

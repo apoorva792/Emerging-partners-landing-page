@@ -83,19 +83,52 @@ lands before qualification and consent precedes the account question, rather tha
 prompt holds across a long chat.
 
 ```
-lib/crawl.js      home page + the pages that say what a services firm sells
+lib/crawl.js      two stages: the nav, then the individual pieces of delivered work
+lib/evidence.js   those pages → structured records → the firm's capability map
 lib/apollo.js     org enrich by domain, person match by email (never reveals email/phone)
-lib/profile.js    crawl ∥ apollo → partner_profiler → profile
+lib/profile.js    crawl ∥ apollo ∥ search → partner_profiler ∥ evidence pass → profile
 lib/catalog.js    what Lyzr has delivered, scored against the profile in code
-data/catalog.json 62 customer stories, read off their own pages by scripts/build-catalog.js
-data/patterns.json 6 engagement shapes: the first offer, the durations, the team
+lib/score.js      the weighted score, and the evidence gate that is separate from it
+lib/research.js   one targeted search for a strong candidate we could not evidence
+lib/verify.js     the last pass before anything reaches a partner
+lib/words.js      which words mean anything when matching two pieces of work
+data/catalog.json 104 Lyzr records, read off their own pages by scripts/build-catalog.js
+data/patterns.json 7 engagement shapes: the first offer, the durations, the team
 data/products.json what a partner builds on, and the agents they can demo
 lib/knowledge.js  retrieval against the partner_program KB
 lib/journey.js    the three steps
 api/*.js          one endpoint per step (Vercel functions; server.js serves them locally)
 public/index.html the whole UI, one file, no framework
-runs/<id>.json    the run record, including the internal note
+runs/<id>.json    the run record: the shortlist, the quality report, the internal note
+tests/            node --test, for the rules that are code rather than prompt
 ```
+
+### Where an opportunity comes from
+
+Opportunities are generated from what **the partner** has delivered, not from what Lyzr has
+delivered. The chain is fixed and every candidate has to walk it:
+
+```
+verified capability → adjacent customer problem → buyer → paid service
+                    → Lyzr advantage → expansion path
+```
+
+The capability map is built by reading their individual pieces of work, each fact carrying
+the page it came from and a quote that is checked against that page before the record
+counts. Lyzr's own catalogue enters only at the fourth step, to establish that there is
+something real for Lyzr to contribute: a candidate with no defensible Lyzr advantage is
+rejected rather than dressed up.
+
+Five to seven candidates are generated, scored on five weighted dimensions (demonstrated
+fit 30%, commercial potential 25%, Lyzr advantage 20%, buyer and problem clarity 15%,
+delivery feasibility 10%) and then put through a **separate** evidence gate. The two are
+deliberately not combined: scored together, a compelling idea drags its own evidence up
+with it, which is how a brief once recommended investment modelling to an SAP integration
+shop. Up to three commercially distinct candidates survive.
+
+A firm that publishes no engagement write-ups still gets a brief. The map falls back to
+what they say they sell, still read off their own pages and still quote-checked, and every
+customer problem built on it is marked a hypothesis to confirm on the first call.
 
 ### Guardrails that are code, not prompt
 
@@ -109,6 +142,11 @@ Some rules were asked for politely and broken anyway, so they are enforced in `l
   name. `isRoleAddress` blocks the person lookup for `hello@`, `info@`, `sales@` and friends.
 - **Proof is overwritten from `data/proof.json`**, so a mis-copied case-study URL can never
   reach a visitor.
+- **A quote that is not on the page is not evidence.** Every extracted fact carries an
+  excerpt, and `quoted()` checks it against the page text before the record may be cited.
+- **A result may only be printed under work of the same kind.** Backing an argument is one
+  bar, carrying a number measured at another customer is a higher one. Without that split a
+  procurement card went out quoting an outbound sales result.
 - **"Passed over" can't name a card we showed** — checked and dropped if it collides.
 - **The internal note never leaves the server.** `api/assess.js` returns the two briefs and withholds `internal`.
 
