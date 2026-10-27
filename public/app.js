@@ -451,7 +451,11 @@ function renderDetail() {
    * they end up not choosing is one wasted call; a minute of staring at a progress bar is
    * worse. Cached by card id, so switching tabs and coming back costs nothing. */
   clearTimeout(S.pending.peek);
-  S.pending.peek = setTimeout(() => startBrief(S.picked.map((i) => S.cards[i])), 2500);
+  /* The same selection the button above would build, card on screen included. Prefetching
+   * S.picked alone only ever paid off for the visitor who took the first card untouched;
+   * anyone who opened a second one got a key that missed and waited out the whole call. */
+  S.pending.peek = setTimeout(() => startBrief(
+    [...new Set([...S.picked, S.pick])].sort((a, b) => a - b).map((i) => S.cards[i])), 2500);
 }
 
 /* One request per card, kept so a second look costs nothing. */
