@@ -1,0 +1,2652 @@
+{
+ "built": "2026-10-27T13:57:09.746Z",
+ "records": {
+  "cs_innovation_idea_evaluation": {
+   "id": "cs_innovation_idea_evaluation",
+   "title": "Global Professional Services Firm | Lyzr Case Study",
+   "url": "https://www.lyzr.ai/case-studies/innovation-idea-evaluation/",
+   "topics": [
+    "professional services",
+    "research & strategy",
+    "operations",
+    "agent studio"
+   ],
+   "headline_result": "Evaluation time cut from 1 to 2 weeks to 15 to 20 minutes per idea",
+   "client": "A Fortune 500 global professional services firm",
+   "industry": "Professional services",
+   "functions": [
+    "operations"
+   ],
+   "problem": [
+    "A dedicated team manually researched and evaluated every submitted idea, redoing the same work each time",
+    "Each evaluation took 1 to 2 weeks, regardless of idea complexity",
+    "Manual assessment across 4 dimensions varied in depth and consistency from reviewer to reviewer",
+    "Slow evaluation cycles prevented leadership from moving quickly on priority ideas"
+   ],
+   "built": [
+    "Four AI agents conduct sequential research on market potential, competitive intensity, scalability, and ecosystem fit",
+    "A summary agent consolidates findings and produces numerical scores across the 4 metrics",
+    "Conversational intake validates submissions before research begins",
+    "A weighted scoring model computes pillar-level scores and a consolidated readiness score consistently",
+    "Innovation Review Team reviews every report and makes the final decision, with nothing auto-approved"
+   ],
+   "systems": [],
+   "results": [
+    "Evaluation time reduced from 1 to 2 weeks to 15 to 20 minutes per idea",
+    "~99% reduction in evaluation time per idea",
+    "100% of submissions fully scored",
+    "4 dimensions researched and scored automatically",
+    "One consolidated score from 4 research passes"
+   ],
+   "sellable_as": "Automating idea evaluation against standardized criteria through sequential research agents, with leadership review of scored reports.",
+   "confidence": "high"
+  },
+  "cs_multicultural_audience_intelligence": {
+   "id": "cs_multicultural_audience_intelligence",
+   "title": "Audience Intelligence Automation for a Multicultural Media Agency",
+   "url": "https://www.lyzr.ai/case-studies/multicultural-audience-intelligence/",
+   "topics": [
+    "media & advertising",
+    "marketing",
+    "research & strategy",
+    "agent studio",
+    "agent_studio"
+   ],
+   "headline_result": "Up to 5x more research volume per planner",
+   "client": "An independent media and marketing strategy agency focused on multicultural audiences",
+   "industry": "Media and marketing strategy",
+   "functions": [
+    "marketing"
+   ],
+   "problem": [
+    "Every campaign needed fresh audience research but analysts restarted research from scratch each time",
+    "Manual research was slow and inconsistent across different analysts",
+    "Syndicated panel data lagged 12 to 18 months, making plans built on outdated audience information",
+    "Off-the-shelf tools ignored cultural over-indexing and treated multicultural audiences as general market"
+   ],
+   "built": [
+    "Reads a media brief and cross-checks evidence across multiple independent research sources",
+    "Detects multicultural over-indexing to isolate what makes an audience distinctive against general population",
+    "Scores every trait, channel and inventory line for confidence and traces back to named source",
+    "Returns a channel-mix recommendation and curated, vetted inventory package ready for activation",
+    "Flags findings where data confidence is thin rather than presenting guesses as facts"
+   ],
+   "systems": [],
+   "results": [
+    "Research base grew from one syndicated panel to four sources merged under one weighting model",
+    "Up to 5x more research volume per planner",
+    "9K+ data points tracked per audience",
+    "90% of briefs completed without increasing headcount",
+    "Speed per brief compressed from days to minutes, consistent across team",
+    "One click turns a completed brief into a channel-ready plan"
+   ],
+   "sellable_as": "Running multicultural audience intelligence and media planning as a governed, evidence-traced workflow that merges multiple research sources and scores every recommendation for confidence and source.",
+   "confidence": "high"
+  },
+  "cs_agentic_procurement": {
+   "id": "cs_agentic_procurement",
+   "title": "$10B+ Global Advisory Firm | Lyzr Case Study",
+   "url": "https://www.lyzr.ai/case-studies/agentic-procurement/",
+   "topics": [
+    "professional services",
+    "procurement",
+    "operations",
+    "compliance & risk",
+    "finance",
+    "agent studio"
+   ],
+   "headline_result": "Up to 55% wider reach in supplier discovery",
+   "client": "One of the world's largest professional services firms",
+   "industry": "Professional services and advisory",
+   "functions": [
+    "procurement",
+    "supply chain"
+   ],
+   "problem": [
+    "Supplier onboarding tracked over email with no shared status across teams and systems",
+    "Risk assessments rebuilt from scratch for every engagement with different standards and no audit trail",
+    "Process knowledge lived in individual analysts and was not transferable across the organization",
+    "Every new client engagement started from zero with no shared infrastructure carried over"
+   ],
+   "built": [
+    "Intake agent reads requests in plain English and routes them to the correct specialist flow",
+    "Risk analysis agent selects appropriate questions by category, region and risk profile, then scores responses against standardized 5-area framework",
+    "Sourcing agent pulls spend data from dashboards and generates RFQ recommendations automatically, comparing bids inside the platform",
+    "Performance agent configures monitoring cadences, KPI definitions and alert thresholds per supplier",
+    "All agent decisions are logged with trigger, data used and decision made for audit trail"
+   ],
+   "systems": [],
+   "results": [
+    "Up to 2x faster supplier onboarding",
+    "Half the time to complete a sourcing cycle",
+    "Up to 70% higher supplier service levels",
+    "30% greater supply chain efficiency",
+    "Up to 55% wider reach in supplier discovery",
+    "8 sourcing steps now agent-assisted",
+    "One use case made live in 12 weeks"
+   ],
+   "sellable_as": "Operating layer spanning full procurement lifecycle with connected agents that route work automatically, applying standardized risk assessment and reusable templates across client engagements.",
+   "confidence": "high"
+  },
+  "cs_analyst_database_intelligence": {
+   "id": "cs_analyst_database_intelligence",
+   "title": "AI Analyst Research Automation | Lyzr Case Study",
+   "url": "https://www.lyzr.ai/case-studies/analyst-database-intelligence/",
+   "topics": [
+    "manufacturing",
+    "technology & it services",
+    "marketing",
+    "research & strategy",
+    "agent studio",
+    "agent_studio"
+   ],
+   "headline_result": "12 weeks from discovery to a live, production system",
+   "client": "A global leader in industrial technology and infrastructure with approximately $10B in annual revenue",
+   "industry": "Industrial technology and infrastructure",
+   "functions": [
+    "sales"
+   ],
+   "problem": [
+    "Analyst research ran manually one website and one LinkedIn profile at a time",
+    "Contact records went stale quickly as analysts changed roles or firms",
+    "Records were incomplete and inconsistent, missing basic information like title and email",
+    "Building targeted analyst lists for events was slow and unreliable without complete data"
+   ],
+   "built": [
+    "Agent identifies relevant industry analysts from public analyst sites and LinkedIn",
+    "Extracts standardized fields for every analyst: name, title, firm, email, and source URL",
+    "Checks new records against existing database to catch duplicates before adding them",
+    "Runs on schedule or on demand with logging and monitoring of all activity"
+   ],
+   "systems": [
+    "Apollo.io",
+    "LinkedIn",
+    "MongoDB",
+    "FastAPI backend"
+   ],
+   "results": [
+    "100% automated analyst list generation without manual research",
+    "5x more research coverage from the same workflow",
+    "24/7 coverage without additional research headcount",
+    "Records kept current through scheduled or on-demand runs"
+   ],
+   "sellable_as": "Automated discovery and de-duplicated maintenance of analyst and advisor contact databases using structured extraction from public sources.",
+   "confidence": "high"
+  },
+  "cs_enterprise_ai_governance": {
+   "id": "cs_enterprise_ai_governance",
+   "title": "$200 Mn+ Revenue Global Enterprise | Lyzr Case Study",
+   "url": "https://www.lyzr.ai/case-studies/enterprise-ai-governance/",
+   "topics": [
+    "professional services",
+    "it operations",
+    "compliance & risk",
+    "operations",
+    "research & strategy",
+    "responsible ai",
+    "agentic os",
+    "agentic_os",
+    "responsible_ai"
+   ],
+   "headline_result": "$100M joint go-to-market value across a three-year partnership",
+   "client": "a global growth and creative consulting firm",
+   "industry": "consulting",
+   "functions": [
+    "operations"
+   ],
+   "problem": [
+    "Multiple AI models operated independently with different teams following different approaches for similar work",
+    "Valuable consulting expertise developed in individual engagements was difficult to reuse elsewhere",
+    "AI workflows developed independently across teams, limiting consistency across the consulting organization",
+    "Decentralized adoption made oversight and operational visibility increasingly difficult"
+   ],
+   "built": [
+    "Provides consultants access to multiple frontier and open-source models through one governed interface",
+    "Surfaces the firm's best frameworks and methodologies for every engagement, not just the one that created them",
+    "Standardizes consulting workflows while preserving flexibility for different kinds of work",
+    "Applies role-based access, centralized administration and auditability across the platform",
+    "Logs every action and model interaction for oversight"
+   ],
+   "systems": [],
+   "results": [
+    "600+ consultants standardized on one common platform",
+    "Knowledge became discoverable and reusable enterprise-wide",
+    "Workflow consistency became repeatable across similar consulting activities",
+    "Governance became centralized and auditable",
+    "AI's role shifted from individual productivity tool to firm capability and client-facing product",
+    "$100M joint go-to-market value, three-year partnership"
+   ],
+   "sellable_as": "Operating enterprise AI as a governed platform across a consulting organization with centralized workflows, knowledge reuse and auditability.",
+   "confidence": "high"
+  },
+  "cs_payments_support_automation": {
+   "id": "cs_payments_support_automation",
+   "title": "Global Payments & Commerce Platform | Lyzr Case Study",
+   "url": "https://www.lyzr.ai/case-studies/payments-support-automation/",
+   "topics": [
+    "fintech",
+    "e-commerce",
+    "customer service",
+    "operations",
+    "knowledge base",
+    "e_commerce",
+    "customer_service",
+    "knowledge_base"
+   ],
+   "headline_result": "16.17% reduction in average handle time in the first trial cohort",
+   "client": "A global leader in payment and commerce technology with 30M+ devices deployed across 150+ countries",
+   "industry": "payments and commerce technology",
+   "functions": [
+    "customer service"
+   ],
+   "problem": [
+    "No single source of truth for customer records, device identity, site configuration, product documentation and troubleshooting procedures",
+    "Agents moved between 5 or 6 interfaces before troubleshooting could start, while customers waited on hold",
+    "Experienced agents spent significant portions of the day on routine L1 inquiries, reducing availability for complex escalations",
+    "Support operating cost of roughly $20 million annually scaled directly with volume growth and headcount"
+   ],
+   "built": [
+    "Conversational assistant reads customer intent and resolves basic troubleshooting, product questions and standard workflows",
+    "Real-time agent assistance transcribes calls and surfaces product data, device config and troubleshooting steps in one panel",
+    "Escalates unresolved issues to agents with full conversation, device and account context attached",
+    "System grounds all answers in the client's own knowledge base, not generic sources"
+   ],
+   "systems": [
+    "CRM",
+    "telephony",
+    "device systems"
+   ],
+   "results": [
+    "10 min time recovered per agent per working day",
+    "832.5 min time recovered per agent per year",
+    "16.17% reduction in average handle time in first trial cohort",
+    "$166,500 estimated annualized net savings",
+    "Organization-wide rollout cleared by leadership following trial results"
+   ],
+   "sellable_as": "Running customer support triage and real-time agent assistance across existing telephony and systems platforms without migration.",
+   "confidence": "high"
+  },
+  "cs_professional_services_innovation_evaluation": {
+   "id": "cs_professional_services_innovation_evaluation",
+   "title": "Professional Services AI Innovation Evaluation Case Study | Lyzr AI",
+   "url": "https://www.lyzr.ai/case-studies/professional-services-innovation-evaluation/",
+   "topics": [
+    "professional services",
+    "research & strategy",
+    "operations",
+    "product",
+    "agent studio"
+   ],
+   "headline_result": "Every idea now moves through the same defined pillars and the same weighted scoring",
+   "client": "A global professional services and consulting firm",
+   "industry": "Professional services and consulting",
+   "functions": [
+    "operations",
+    "research"
+   ],
+   "problem": [
+    "Manual research across four evaluation pillars required hours of desk work per idea",
+    "Evaluation quality varied between reviewers without a standardized process",
+    "Manual effort limited the number of ideas the team could realistically evaluate",
+    "Decision-making across the innovation pipeline slowed due to manual bottlenecks"
+   ],
+   "built": [
+    "Conversational chatbot captures idea details and validates inputs in real time",
+    "Specialized agents research TAM, Scalability, Ecosystem Fit, and Competitive Intensity automatically",
+    "Weighted scoring model converts research findings into pillar-level and consolidated readiness scores",
+    "System generates structured reports with executive summary, insights, and strategic recommendations"
+   ],
+   "systems": [
+    "AWS",
+    "AWS Bedrock",
+    "ECS Fargate"
+   ],
+   "results": [
+    "Every idea moves through the same defined pillars and weighted scoring model",
+    "Turnaround time targeted for significant reduction from submission to reviewable scored report",
+    "More ideas can be evaluated without added analyst load",
+    "Innovation Review Team works from standardized report and readiness score for structured decisions"
+   ],
+   "sellable_as": "Automating innovation idea evaluation and readiness scoring through agents that research market opportunity and competitive intensity.",
+   "confidence": "high"
+  },
+  "cs_case_studies_professional_services_value_pool_evaluation": {
+   "id": "cs_case_studies_professional_services_value_pool_evaluation",
+   "title": "Professional Services AI Value Pool Evaluation Case Study | Lyzr AI",
+   "url": "https://www.lyzr.ai/case-studies/case-studies-professional-services-value-pool-evaluation/",
+   "topics": [
+    "professional services",
+    "research & strategy",
+    "operations",
+    "agent studio"
+   ],
+   "headline_result": "Standardized scoring across 12 dimensions",
+   "client": "a global professional services and consulting firm",
+   "industry": "professional services and consulting",
+   "functions": [
+    "operations",
+    "research"
+   ],
+   "problem": [
+    "Manual research across 12 evaluation dimensions for each submitted value pool",
+    "Evaluation quality varied between reviewers without standardized process",
+    "Manual effort limited how many ideas could be evaluated in depth at once",
+    "Decision-making on ideas slowed by manual research and scoring work"
+   ],
+   "built": [
+    "Accepts value pool submissions via form or template with 17 structured fields",
+    "Runs parallel research agents on selected evaluation dimensions using web-based research",
+    "Validates and structures findings from each dimension into JSON format",
+    "Scores each dimension out of 4 using predefined weighted logic",
+    "Compiles executive summary, dimension insights, market assessment, and strategic recommendations",
+    "Stores and retrieves reports via API by value pool ID"
+   ],
+   "systems": [
+    "AWS VPC",
+    "AWS WAF",
+    "AWS EKS",
+    "Amazon DocumentDB",
+    "AWS CloudTrail",
+    "AWS IAM",
+    "AWS Secrets Manager",
+    "AWS KMS"
+   ],
+   "results": [
+    "Value pool evaluation became structured and consistent across all submissions",
+    "Evaluation scales with submission volume by removing manual bottleneck",
+    "Parallel agent research designed to move value pools from submission to scored output faster than manual research",
+    "Reports retrievable via API for self-serve programmatic access"
+   ],
+   "sellable_as": "Automating end-to-end value pool and business idea evaluation with standardized scoring across multiple dimensions and self-serve API access to reports.",
+   "confidence": "high"
+  },
+  "cs_insurance_billing": {
+   "id": "cs_insurance_billing",
+   "title": "Fortune Global 500 Insurance Brokerage Case Study | Lyzr AI",
+   "url": "https://www.lyzr.ai/case-studies/insurance-billing/",
+   "topics": [
+    "insurance",
+    "finance",
+    "operations",
+    "compliance & risk"
+   ],
+   "headline_result": "80% reduction in manual data entry per billing activity",
+   "client": "One of the world's largest insurance brokerages",
+   "industry": "Insurance brokerage",
+   "functions": [
+    "finance"
+   ],
+   "problem": [
+    "Every billing activity took 18 minutes of manual work across five disconnected systems",
+    "Nineteen fields were manually re-keyed from PDFs and emails for each activity",
+    "Routing rules and banking references lived outside the main workflow, causing rework and compliance issues",
+    "No audit trail existed for activity status or changes"
+   ],
+   "built": [
+    "Activity Parser reads notes and extracts policy IDs and document links",
+    "Document Retrieval Agent locates and downloads billing documents from SharePoint",
+    "OCR Agent converts PDFs and emails to machine-readable text",
+    "Key Value Extraction pulls all 19 billing fields with confidence scores",
+    "Validation Agent cross-checks extracted data against policy records",
+    "Industry Mapper classifies policies by department, profit centre and GLOB type",
+    "Routing Validation checks for special invoice routing instructions",
+    "Payment Validation confirms premium payable entity and banking reference",
+    "Dashboard Summary produces outcomes and recommended actions for the biller to review and sign"
+   ],
+   "systems": [
+    "AMS",
+    "SharePoint"
+   ],
+   "results": [
+    "1,000 billing activities processed per working day",
+    "Handling time reduced from 18 minutes to 4 minutes per activity",
+    "80% reduction in manual data entry per billing activity",
+    "96 analyst hours recovered per day",
+    "$2.5M annualized value of analyst time released",
+    "$9,600 recovered per working day",
+    "~10× return on the engagement, annualized",
+    "Live in production within 8 weeks"
+   ],
+   "sellable_as": "Running insurance billing operations through agentic workflow that extracts and validates data from multiple systems, presenting billers with confidence-scored outcomes for review and approval.",
+   "confidence": "high"
+  },
+  "cs_global_advertising_media_planning": {
+   "id": "cs_global_advertising_media_planning",
+   "title": "Media Planning Research Agent Built for a Global Advertising Group",
+   "url": "https://www.lyzr.ai/case-studies/global-advertising-media-planning/",
+   "topics": [
+    "media & advertising",
+    "research & strategy",
+    "marketing",
+    "agent studio"
+   ],
+   "headline_result": "Research insights went from hours to on-demand",
+   "client": "a global advertising and marketing group",
+   "industry": "advertising and marketing",
+   "functions": [
+    "marketing"
+   ],
+   "problem": [
+    "Research was fragmented across multiple third-party sources with no unified query method",
+    "Synthesizing data into planning-ready summaries required significant manual effort from strategists",
+    "Insight quality and depth varied depending on which analyst performed the analysis",
+    "Slow research phase delayed strategy teams from beginning actual planning work"
+   ],
+   "built": [
+    "Agent queries multiple third-party research sources simultaneously and returns synthesized insight summary",
+    "Planners describe research needs in plain language and agent handles data pull and analysis",
+    "Agent generates standardized output structure consistently across all research requests"
+   ],
+   "systems": [
+    "third-party research platforms"
+   ],
+   "results": [
+    "Research insights went from hours to on-demand generation",
+    "Planning teams moved faster with research synthesis bottleneck removed",
+    "Insight quality became consistent across all team members regardless of experience level"
+   ],
+   "sellable_as": "Running media planning research synthesis as an on-demand agent querying multiple sources simultaneously.",
+   "confidence": "low"
+  },
+  "cs_competitive_intelligence_digital_trust": {
+   "id": "cs_competitive_intelligence_digital_trust",
+   "title": "Digital Trust & Security Provider Automated Competitive Intelligence with Lyzr",
+   "url": "https://www.lyzr.ai/case-studies/competitive-intelligence-digital-trust/",
+   "topics": [
+    "technology & it services",
+    "research & strategy",
+    "marketing",
+    "product",
+    "agent studio"
+   ],
+   "headline_result": "70–80% reduction in manual research effort",
+   "client": "A digital trust and security provider",
+   "industry": "Security and trust",
+   "functions": [
+    "marketing",
+    "sales"
+   ],
+   "problem": [
+    "Analysts manually gathered competitive data from review platforms, professional networks, and company pages with no unified workflow",
+    "Reports varied in quality and consistency depending on which analyst created them",
+    "Reports frequently ran behind schedule, delivering outdated intelligence"
+   ],
+   "built": [
+    "Agent pulls competitor data from review platforms, professional networks, and company pages simultaneously",
+    "Agent structures all competitive intelligence reports in consistent format and depth",
+    "Agent triggers report generation on regular cadence to ensure timely delivery"
+   ],
+   "systems": [],
+   "results": [
+    "Manual research effort cut by 70-80%",
+    "Reporting became consistent across the team",
+    "Intelligence arrived on time, not after the fact"
+   ],
+   "sellable_as": "Automating competitive intelligence research and report generation across multiple data sources into consistent, timely outputs.",
+   "confidence": "high"
+  },
+  "cs_how_a_technology_services_firm_optimized_resource_allocation_with_lyzr": {
+   "id": "cs_how_a_technology_services_firm_optimized_resource_allocation_with_lyzr",
+   "title": "Technology Services Firm Optimized Resource Allocation with Lyzr",
+   "url": "https://www.lyzr.ai/case-studies/how-a-technology-services-firm-optimized-resource-allocation-with-lyzr/",
+   "topics": [
+    "technology & it services",
+    "professional services",
+    "human resources",
+    "operations",
+    "it operations",
+    "agent studio",
+    "human_resources"
+   ],
+   "headline_result": "60–75% reduction in manual resource planning effort (targeted)",
+   "client": "a global technology services firm",
+   "industry": "technology services",
+   "functions": [
+    "operations",
+    "hr"
+   ],
+   "problem": [
+    "Resource allocation relied on spreadsheets and manual coordination across teams",
+    "Project managers lacked real-time visibility into employee skills, availability, and workload",
+    "Manual planning resulted in over-utilized and under-utilized employees",
+    "Finding and assigning the right resources delayed project staffing"
+   ],
+   "built": [
+    "Recommends best-fit resources based on skills, availability, and workload",
+    "Provides unified view of workforce capacity, utilization, and availability",
+    "Analyzes workforce data to help managers make faster staffing decisions",
+    "Balances workloads across teams to improve utilization"
+   ],
+   "systems": [],
+   "results": [
+    "Targets 60-75% reduction in manual resource planning effort",
+    "Real-time workforce insights significantly reduce time to allocate resources",
+    "AI-driven recommendations match right people to right projects",
+    "Balanced workloads improve workforce efficiency and reduce over- and under-utilization"
+   ],
+   "sellable_as": "Running resource allocation and workforce planning as an AI-powered optimization system inside the client's systems.",
+   "confidence": "low"
+  },
+  "cs_how_a_global_enterprise_built_an_ai_powered_procurement_operating_system_with_lyzr": {
+   "id": "cs_how_a_global_enterprise_built_an_ai_powered_procurement_operating_system_with_lyzr",
+   "title": "AI-Powered Procurement Operating System Built for a Global Enterprise",
+   "url": "https://www.lyzr.ai/case-studies/how-a-global-enterprise-built-an-ai-powered-procurement-operating-system-with-lyzr/",
+   "topics": [
+    "manufacturing",
+    "logistics",
+    "cross-industry",
+    "procurement",
+    "operations",
+    "compliance & risk",
+    "agent studio"
+   ],
+   "headline_result": "Up to 50% faster supplier onboarding",
+   "client": "A global enterprise",
+   "industry": "cross-industry",
+   "functions": [
+    "procurement",
+    "supply chain"
+   ],
+   "problem": [
+    "Supplier onboarding, sourcing, contract management, and procurement operations relied on manual coordination across multiple teams and systems.",
+    "Disconnected tools limited visibility across the supplier-to-payment process, creating inefficiencies and delays.",
+    "Supplier discovery, evaluations, negotiations, and approvals required significant manual effort, extending procurement timelines.",
+    "Teams lacked a unified view of supplier performance, compliance, and procurement activities."
+   ],
+   "built": [
+    "Automates supplier discovery and expands sourcing opportunities using intelligent search and recommendations.",
+    "Streamlines supplier onboarding, compliance monitoring, negotiation support, and procurement workflows.",
+    "Provides centralized platform with end-to-end visibility across sourcing, supplier management, and procurement execution.",
+    "Logs every procurement action and AI-assisted decision for complete traceability."
+   ],
+   "systems": [],
+   "results": [
+    "Platform targets up to 50% faster supplier onboarding.",
+    "AI-assisted workflows reduce sourcing cycle times by 30-50%.",
+    "Organizations can achieve up to 70% better supplier service levels.",
+    "Platform targets 30% improvement in supply chain efficiency and up to 55% broader supplier discovery."
+   ],
+   "sellable_as": "Building an AI-powered procurement operating system automating supplier-to-payment workflows with centralized visibility and compliance controls.",
+   "confidence": "low"
+  },
+  "cs_global_enterprise_streamlined_hr_engineering_qa_with_lyzr": {
+   "id": "cs_global_enterprise_streamlined_hr_engineering_qa_with_lyzr",
+   "title": "Global Enterprise Streamlined HR, Engineering & QA with Lyzr",
+   "url": "https://www.lyzr.ai/case-studies/global-enterprise-streamlined-hr-engineering-qa-with-lyzr/",
+   "topics": [
+    "technology & it services",
+    "human resources",
+    "engineering",
+    "it operations",
+    "agent studio",
+    "human_resources"
+   ],
+   "headline_result": "75% reduction in HR workload",
+   "client": "a global enterprise operating across multiple time zones",
+   "industry": "cross-industry",
+   "functions": [
+    "hr",
+    "engineering",
+    "operations"
+   ],
+   "problem": [
+    "HR teams fielded the same employee questions around the clock across time zones, consuming significant bandwidth.",
+    "As the codebase grew, maintaining consistency and finding the right context slowed development cycles and introduced avoidable errors.",
+    "Manual regression testing took up to eight weeks per cycle with coverage gaps that let production bugs slip through.",
+    "Repetitive, manual tasks across all three functions consumed time that did not require human judgment."
+   ],
+   "built": [
+    "HR Agent resolves employee questions across time zones automatically, covering policies, benefits, processes, and common requests.",
+    "Development Agent helps developers find relevant context within large codebases and maintain consistency across contributions.",
+    "QA Agent automates regression testing workflows, identifies coverage gaps, and surfaces issues earlier in the cycle."
+   ],
+   "systems": [],
+   "results": [
+    "HR reclaimed five full-time roles worth of capacity with 75% reduction in HR workload.",
+    "95% query resolution rate across more than 2,000 monthly interactions in HR function.",
+    "Development velocity increased by 50% by reducing time on codebase navigation and consistency checks.",
+    "QA cycle time compressed from 8 weeks to 2.5 weeks, a reduction of two-thirds.",
+    "Production bugs reduced by 35% through automated regression testing and earlier issue detection."
+   ],
+   "sellable_as": "Automating HR queries, developer codebase navigation, and QA regression testing with purpose-built agents across enterprise functions.",
+   "confidence": "high"
+  },
+  "cs_how_a_global_bpm_company_standardized_account_research_with_lyzr": {
+   "id": "cs_how_a_global_bpm_company_standardized_account_research_with_lyzr",
+   "title": "Account Research Agent Built for a Global BPM Company",
+   "url": "https://www.lyzr.ai/case-studies/how-a-global-bpm-company-standardized-account-research-with-lyzr/",
+   "topics": [
+    "professional services",
+    "revenue & sales",
+    "operations",
+    "agent studio",
+    "responsible ai",
+    "revenue"
+   ],
+   "headline_result": "Account snapshots on demand",
+   "client": "a global business-process management organization with a large sales team",
+   "industry": "business process management",
+   "functions": [
+    "sales"
+   ],
+   "problem": [
+    "Reps manually pulled financials, company strategy, and organizational context from multiple disconnected sources before planning sessions and executive reviews.",
+    "Account research depth and quality varied by rep with no standard format or process.",
+    "High-value sales time was spent assembling account context instead of outreach, relationships, and closing."
+   ],
+   "built": [
+    "Agent produces a structured account snapshot covering financials, company strategy, and organizational context on demand.",
+    "Snapshot delivers consistent sections and depth every time it is triggered, regardless of which rep pulls it.",
+    "Reps trigger the agent and receive a ready-to-use snapshot in seconds instead of manually cross-referencing sources."
+   ],
+   "systems": [
+    "AWS"
+   ],
+   "results": [
+    "Reps no longer spend time assembling account context from scratch before planning sessions, outreach, or executive reviews.",
+    "Every account snapshot now covers the same ground at the same depth regardless of which rep pulls it.",
+    "Mid-five-figure annual time savings across the Sales Research Suite with the Account Research Agent and two sibling agents."
+   ],
+   "sellable_as": "Running account research and snapshot generation as an on-demand agent within a sales organization's workflow.",
+   "confidence": "high"
+  },
+  "cs_how_a_90_person_sales_team_standardized_meeting_readiness_with_lyzr": {
+   "id": "cs_how_a_90_person_sales_team_standardized_meeting_readiness_with_lyzr",
+   "title": "First-Meeting Brief Agent for a 90-Person Sales Team",
+   "url": "https://www.lyzr.ai/case-studies/how-a-90-person-sales-team-standardized-meeting-readiness-with-lyzr/",
+   "topics": [
+    "technology & it services",
+    "professional services",
+    "revenue & sales",
+    "agent studio",
+    "revenue"
+   ],
+   "headline_result": "~1 hour saved per rep, per week",
+   "client": "a 90-person sales organization",
+   "industry": "cross-industry",
+   "functions": [
+    "sales"
+   ],
+   "problem": [
+    "Assembling attendee research, account history, and discovery questions from multiple disconnected sources consumed rep time each week.",
+    "Meeting preparation quality varied widely across the team, with newer reps at greatest disadvantage.",
+    "Sales leadership lacked a consistent baseline to coach or diagnose why some deals stalled early."
+   ],
+   "built": [
+    "Agent pulls attendee context, account background, discovery angles, and proposed agenda from CRM, LinkedIn, email history, and internal notes.",
+    "Formats brief into four consistent sections that reps can scan quickly and trust like a CRM record.",
+    "Surfaces discovery angles as suggestions, not scripts, letting reps retain judgment on how to use the information."
+   ],
+   "systems": [
+    "CRM",
+    "LinkedIn",
+    "email",
+    "internal notes"
+   ],
+   "results": [
+    "Approximately 1 hour saved per rep, per week.",
+    "Consistent preparation quality across all 90 reps regardless of tenure or calendar pressure.",
+    "Newer reps achieved same structured preparation as experienced reps from day one."
+   ],
+   "sellable_as": "Automating first-meeting brief assembly from CRM, email, and LinkedIn to standardize sales rep preparation and save research time.",
+   "confidence": "high"
+  },
+  "cs_how_lyzr_reduced_financial_model_preparation_from_10_hours_to_under_5_minutes": {
+   "id": "cs_how_lyzr_reduced_financial_model_preparation_from_10_hours_to_under_5_minutes",
+   "title": "Lyzr Reduced Financial Model Preparation From 10 Hours to Under 5 Minutes",
+   "url": "https://www.lyzr.ai/case-studies/how-lyzr-reduced-financial-model-preparation-from-10-hours-to-under-5-minutes/",
+   "topics": [
+    "private equity & vc",
+    "professional services",
+    "banking",
+    "finance",
+    "research & strategy",
+    "responsible ai",
+    "venture_capital"
+   ],
+   "headline_result": "Financial model preparation dropped from 6–10 hours to under 5 minutes per target",
+   "client": "A leading investment and advisory firm",
+   "industry": "investment and advisory",
+   "functions": [
+    "finance"
+   ],
+   "problem": [
+    "Financial data arrived in inconsistent formats from acquisition targets",
+    "Spreadsheet preparation consumed 6-10 hours per target before analysis could begin",
+    "Manual workflows introduced formula errors and analyst-dependent processes",
+    "Existing LBO templates and review processes could not be disrupted"
+   ],
+   "built": [
+    "AI agents automatically identified financial data and standardized categories across reporting periods",
+    "Agents consolidated information across multiple reporting periods into normalized formats",
+    "Agents created structured financial workbooks with live formulas and standardized formatting",
+    "Platform enabled analysts to review outputs, adjust mappings, and validate recommendations before generating final workbooks"
+   ],
+   "systems": [],
+   "results": [
+    "Financial model preparation dropped from 6-10 hours to under 5 minutes per target",
+    "Category normalization and financial mapping became consistent across every deal",
+    "Automated formulas and structured workflows minimized manual errors",
+    "Analysts spent less time preparing spreadsheets and more time evaluating businesses"
+   ],
+   "sellable_as": "Automating financial data extraction and model preparation for investment due diligence workflows.",
+   "confidence": "high"
+  },
+  "cs_global_organization_scaled_crisis_simulations_with_lyzr": {
+   "id": "cs_global_organization_scaled_crisis_simulations_with_lyzr",
+   "title": "Global Organization Scaled Crisis Simulations with Lyzr",
+   "url": "https://www.lyzr.ai/case-studies/global-organization-scaled-crisis-simulations-with-lyzr/",
+   "topics": [
+    "professional services",
+    "education",
+    "operations",
+    "research & strategy",
+    "cross-function",
+    "agent studio",
+    "orchestration as a service",
+    "knowledge base",
+    "orchestration_as_a_service",
+    "knowledge_base"
+   ],
+   "headline_result": "Lyzr replaced manual crisis-workshop execution for a global strategy organization with",
+   "client": "A global strategy and workshop organization",
+   "industry": "Strategy and management consulting",
+   "functions": [
+    "operations"
+   ],
+   "problem": [
+    "Facilitators manually created scenarios, managed evolving situations, coordinated participant roles, and ran debrief sessions with significant execution variation between sessions.",
+    "Scenarios, stakeholder configurations, and simulation parameters required repeated recreation for each client, increasing setup time and reducing consistency.",
+    "Multi-participant sessions required facilitators to constantly manage changing scenarios, participant actions, and live events manually.",
+    "Workshop intelligence, decision patterns, and historical outcomes were distributed across documents and facilitator experience instead of being stored in a reusable system."
+   ],
+   "built": [
+    "Delivered a centralized platform where facilitators configure clients, create scenarios, launch sessions, and manage live workshops through a unified interface.",
+    "Built a multi-agent framework with specialized agents managing simulations, stakeholder interactions, onboarding, and client intelligence within a shared workflow.",
+    "Integrated retrieval-based knowledge systems with public and private information repositories to generate simulation outcomes and responses using organization-specific context.",
+    "Enabled real-time collaboration where participants join shared simulations through QR or session codes while facilitators manage live events, roles, and decisions.",
+    "Created reusable client configurations, editable scenario libraries, stakeholder definitions, and simulation templates with AI-assisted onboarding to automatically create new client environments."
+   ],
+   "systems": [
+    "Microsoft Entra SSO",
+    "AWS"
+   ],
+   "results": [
+    "Reusable templates and AI-assisted setup reduced repeated manual configuration work.",
+    "Sessions followed a structured workflow regardless of facilitator or client setup.",
+    "Live orchestration features shifted facilitator effort from coordination tasks toward participant engagement and decision guidance.",
+    "Events, decisions, outcomes, and debrief reports are stored and available for future review.",
+    "A single platform supports different organizations, scenarios, and workshop formats while maintaining consistency across deployments."
+   ],
+   "sellable_as": "Building and scaling crisis simulation platforms with multi-agent orchestration and persistent knowledge for enterprise workshop delivery.",
+   "confidence": "high"
+  },
+  "cs_how_a_large_scale_enterprise_client_built_a_procurement_agentic_os_with_lyzr": {
+   "id": "cs_how_a_large_scale_enterprise_client_built_a_procurement_agentic_os_with_lyzr",
+   "title": "Procurement Agentic OS Built for a Large-Scale Enterprise Client",
+   "url": "https://www.lyzr.ai/case-studies/how-a-large-scale-enterprise-client-built-a-procurement-agentic-os-with-lyzr/",
+   "topics": [
+    "manufacturing",
+    "professional services",
+    "cross-industry",
+    "procurement",
+    "operations",
+    "compliance & risk",
+    "agentic os",
+    "hallucination manager",
+    "responsible ai",
+    "agentic_os",
+    "hallucination_manager"
+   ],
+   "headline_result": "Onboarding moved from email chains to a fully tracked, automated workflow",
+   "client": "a large-scale enterprise client operating procurement across multiple business units, categories, and regions",
+   "industry": "cross-industry",
+   "functions": [
+    "procurement"
+   ],
+   "problem": [
+    "Onboarding, risk assessments, and sourcing events required significant manual effort before procurement work could begin.",
+    "Every engagement started from scratch with no standardized process or reusable infrastructure.",
+    "Risk due diligence was inconsistent. Different analysts applied different standards and scoring was subjective.",
+    "Spend data could not drive action. Turning insights into sourcing events required hours of manual work."
+   ],
+   "built": [
+    "Buyers initiate procurement requests in plain language. Platform handles duplicate checks, approvals, and questionnaire dispatch automatically.",
+    "Configurable scoring engine applies weighted questionnaires across financial stability, data security, legal compliance, ESG, and operational capability.",
+    "Market Analyzer surfaces opportunities from invoice and PO data and flows directly into supplier discovery, RFQ creation, and bid analysis.",
+    "Dedicated agents own each step: intake routing, questionnaire selection, risk scoring, and performance monitoring with full logging."
+   ],
+   "systems": [],
+   "results": [
+    "Onboarding moved from email chains to a tracked workflow visible at every stage.",
+    "Risk assessments became consistent and auditable with standardized scoring and full audit trail.",
+    "Sourcing teams now flow from insight to RFQ without switching systems.",
+    "Procurement knowledge became institutional through versioned workflows and models.",
+    "One infrastructure powers all client deployments without rebuilding processes each time."
+   ],
+   "sellable_as": "Running procurement from supplier onboarding through sourcing execution and risk assessment as a unified agentic workflow across business units and categories.",
+   "confidence": "high"
+  },
+  "cs_how_lyzr_helped_an_eyewear_brand_turn_online_shopping_into_a_guided_buying_experience": {
+   "id": "cs_how_lyzr_helped_an_eyewear_brand_turn_online_shopping_into_a_guided_buying_experience",
+   "title": "Lyzr Helped an Eyewear Brand Turn Online Shopping Into a Guided Buying Experience",
+   "url": "https://www.lyzr.ai/case-studies/how-lyzr-helped-an-eyewear-brand-turn-online-shopping-into-a-guided-buying-experience/",
+   "topics": [
+    "e-commerce",
+    "retail",
+    "customer service",
+    "revenue & sales",
+    "agent studio",
+    "responsible ai",
+    "e_commerce",
+    "customer_service"
+   ],
+   "headline_result": "Lyzr built a conversational shopping agent for a direct-to-consumer eyewear brand that",
+   "client": "a leading direct-to-consumer eyewear brand",
+   "industry": "eyewear retail",
+   "functions": [
+    "sales",
+    "customer service"
+   ],
+   "problem": [
+    "Online shopping lacked guidance as customers faced too many choices without assistance",
+    "Traditional recommendation engines felt rigid and transactional rather than conversational",
+    "Discovery, checkout, and support operated separately, forcing customers to repeat information",
+    "Support requests increased due to tracking issues, damaged products, and delivery queries"
+   ],
+   "built": [
+    "Created a conversational shopping agent that guides customers through product discovery using natural dialogue",
+    "Connected discovery, checkout, and support into one continuous conversational workflow",
+    "Deployed AI-driven support across web, voice, SMS, and email channels",
+    "Automated repetitive support queries while routing complex cases to human teams with context"
+   ],
+   "systems": [
+    "AWS"
+   ],
+   "results": [
+    "Customers could discover products through guided conversations instead of static ecommerce flows",
+    "Recommendations, checkout, and support created a smoother end-to-end buying experience",
+    "AI agent automated repetitive support queries while routing complex cases to human teams",
+    "Company established a scalable AI layer capable of supporting high-volume customer interactions"
+   ],
+   "sellable_as": "Building conversational shopping experiences and omnichannel support into ecommerce platforms for guided customer discovery and support at scale.",
+   "confidence": "low"
+  },
+  "cs_yugabyte_built_an_ai_driven_gtm_intelligence_engine_with_lyzr": {
+   "id": "cs_yugabyte_built_an_ai_driven_gtm_intelligence_engine_with_lyzr",
+   "title": "Yugabyte built an AI-driven GTM intelligence engine with Lyzr",
+   "url": "https://www.lyzr.ai/case-studies/yugabyte-built-an-ai-driven-gtm-intelligence-engine-with-lyzr/",
+   "topics": [
+    "technology & it services",
+    "revenue & sales",
+    "marketing",
+    "agent studio"
+   ],
+   "headline_result": "Yugabyte used Lyzr to replace manual account research and outreach preparation with",
+   "client": "a B2B software company",
+   "industry": "software",
+   "functions": [
+    "sales",
+    "marketing"
+   ],
+   "problem": [
+    "GTM teams spent hours researching accounts and preparing outreach before customer conversations",
+    "Account prioritization lacked consistency across different sales representatives",
+    "Sales teams manually created engagement summaries and outreach sequences for every account",
+    "Leadership teams lacked centralized visibility into account prioritization and GTM execution"
+   ],
+   "built": [
+    "Analyzes engagement signals, CRM activity, and usage data to surface prioritized accounts with contextual reasoning",
+    "Generates engagement summaries, stakeholder insights, personalized email drafts, and outreach recommendations automatically",
+    "Routes execution-ready workflows directly from account signals to GTM teams",
+    "Provides centralized administrative layer for leadership to monitor prioritization and platform usage"
+   ],
+   "systems": [
+    "Salesforce",
+    "BigQuery",
+    "Apollo"
+   ],
+   "results": [
+    "Reduced manual effort required for weekly GTM preparation",
+    "Created more contextual outbound engagement without increasing operational workload",
+    "Improved consistency across AE and SDR operations",
+    "Leadership teams gained centralized visibility into account prioritization and workflow outputs"
+   ],
+   "sellable_as": "Building AI-driven GTM intelligence platforms that automate account research and prioritization for sales teams.",
+   "confidence": "high"
+  },
+  "cs_global_infrastructure_leader_scaled_inbound_sdr_operations": {
+   "id": "cs_global_infrastructure_leader_scaled_inbound_sdr_operations",
+   "title": "Global AI Infrastructure Leader Scaled Inbound SDR Operations",
+   "url": "https://www.lyzr.ai/case-studies/global-infrastructure-leader-scaled-inbound-sdr-operations/",
+   "topics": [
+    "technology & it services",
+    "revenue & sales",
+    "agent studio",
+    "knowledge graph",
+    "responsible ai",
+    "knowledge_graph"
+   ],
+   "headline_result": "Faster first response times",
+   "client": "a global leader in AI infrastructure and accelerated computing",
+   "industry": "AI infrastructure",
+   "functions": [
+    "sales",
+    "customer service"
+   ],
+   "problem": [
+    "Inbound leads ranged from low-intent to high-value, overwhelming SDR teams and slowing response times",
+    "Critical information scattered across CRM systems, sales enablement platforms, and documentation",
+    "Manual triage led to uneven qualification quality and delayed handoffs to sales teams"
+   ],
+   "built": [
+    "AI agents classified and responded to inbound inquiries based on intent and urgency",
+    "Enriched inbound leads in real time using CRM data to improve qualification accuracy",
+    "Unified public product content and internal enablement material through GraphRAG for consistent answers",
+    "Routed low-confidence or high-risk responses to SDRs with full reasoning transparency",
+    "Tested different response formats and channels to optimize inbound engagement rates"
+   ],
+   "systems": [
+    "CRM systems",
+    "sales enablement platforms"
+   ],
+   "results": [
+    "Inbound inquiries received immediate, context-aware responses, significantly reducing wait times",
+    "Automated triage and real-time enrichment ensured consistent qualification",
+    "System met strict enterprise security and compliance requirements while scaling globally"
+   ],
+   "sellable_as": "Running inbound SDR triage and lead enrichment as an automated workflow integrated with customer CRM systems.",
+   "confidence": "high"
+  },
+  "cs_leading_retail_company_re_imagined_customer_support": {
+   "id": "cs_leading_retail_company_re_imagined_customer_support",
+   "title": "AI Customer Support Agent for a Leading Retail E-commerce Company",
+   "url": "https://www.lyzr.ai/case-studies/leading-retail-company-re-imagined-customer-support/",
+   "topics": [
+    "retail",
+    "e-commerce",
+    "customer service",
+    "operations",
+    "hallucination manager",
+    "hallucination_manager"
+   ],
+   "headline_result": "Lyzr built a retail support agent that answers order questions instantly",
+   "client": "a leading retail company specializing in e-commerce operations",
+   "industry": "retail e-commerce",
+   "functions": [
+    "customer service"
+   ],
+   "problem": [
+    "Customers frequently needed updates on their orders and expected quick responses.",
+    "Support agents manually investigated reasons for delays, which slowed response times.",
+    "Complex queries required escalation, creating bottlenecks in the support process."
+   ],
+   "built": [
+    "Provides real-time order status updates via chat and voice channels.",
+    "Automatically raises support tickets for queries the agent cannot resolve.",
+    "Routes routine order inquiries to AI, freeing human agents for complex cases."
+   ],
+   "systems": [
+    "e-commerce platform",
+    "support portal"
+   ],
+   "results": [
+    "Customers receive immediate, accurate answers for common order-related questions.",
+    "Automated escalation reduces manual workload for support agents.",
+    "Customers experience the same quality of support on chat and voice platforms.",
+    "Quicker resolutions and reliable responses lead to higher overall satisfaction."
+   ],
+   "sellable_as": "Automated customer support agent handling order inquiries and ticket escalation across chat and voice channels.",
+   "confidence": "low"
+  },
+  "cs_mentorcloud": {
+   "id": "cs_mentorcloud",
+   "title": "Multi-agent mentorship engine built for MentorCloud on AWS",
+   "url": "https://www.lyzr.ai/case-studies/mentorcloud/",
+   "topics": [
+    "education",
+    "technology & it services",
+    "human resources",
+    "operations",
+    "product",
+    "responsible ai",
+    "knowledge base"
+   ],
+   "headline_result": "80% profiling reduction",
+   "client": "MentorCloud, an enterprise mentorship platform",
+   "industry": "Human Resources",
+   "functions": [
+    "hr"
+   ],
+   "problem": [
+    "Manual resume and LinkedIn profile review capped onboarding at 250 users per month",
+    "60% of mentee recommendations misaligned with stated goals, causing disengagement",
+    "Mentors spent up to one hour per session gathering background information from fragmented sources"
+   ],
+   "built": [
+    "Agents extract and structure profile data from resumes and LinkedIn into summaries",
+    "Agents distill program documents into goals, themes, and evaluation criteria",
+    "Agents match mentors and mentees based on structured profiles and program context",
+    "Agents enable personalized mentor-mentee conversations with participant background context"
+   ],
+   "systems": [
+    "AWS ECS",
+    "AWS Lambda",
+    "AWS API Gateway",
+    "AWS S3",
+    "AWS CloudWatch"
+   ],
+   "results": [
+    "Match alignment increased to 92%, cutting mismatches by two-thirds",
+    "Onboarding capacity expanded from 250 to 1,400 users per month with two FTEs",
+    "New enterprise programs deployed in under three weeks, down from 2-3 months"
+   ],
+   "sellable_as": "Running mentor-mentee matching and program onboarding as an automated workflow on AWS with enterprise compliance.",
+   "confidence": "high"
+  },
+  "cs_movate": {
+   "id": "cs_movate",
+   "title": "Movate Built an AI Pod for SDLC Automation with Lyzr",
+   "url": "https://www.lyzr.ai/case-studies/movate/",
+   "topics": [
+    "technology & it services",
+    "engineering",
+    "it operations",
+    "product",
+    "agent studio",
+    "knowledge graph"
+   ],
+   "headline_result": "25–35% faster impact checks",
+   "client": "a global technology services and engineering firm",
+   "industry": "software engineering services",
+   "functions": [
+    "engineering",
+    "operations",
+    "it operations"
+   ],
+   "problem": [
+    "Engineering teams manually traced dependencies across multiple systems to understand code change impact",
+    "QA teams spent hours converting user stories into test cases with incomplete context",
+    "Requirements, code, documents, and tests scattered across platforms slowed delivery"
+   ],
+   "built": [
+    "Ingested Jira, GitHub, SharePoint, TestRail, and Rally into a single relationship-aware data layer",
+    "Impact analysis agent automatically identified affected services, APIs, tests, and dependencies",
+    "Test case generator produced complete test scenarios from requirements and user stories",
+    "Code intelligence agent delivered semantic code search and pattern discovery",
+    "Manager agent orchestrated requests, maintained context, and coordinated specialized agents"
+   ],
+   "systems": [
+    "Jira",
+    "GitHub",
+    "SharePoint",
+    "TestRail",
+    "Rally"
+   ],
+   "results": [
+    "25-35% faster impact checks",
+    "30-40% quicker test preparation",
+    "Consistent code patterns enforced automatically",
+    "Shared knowledge graph replaced scattered data reducing duplicated work"
+   ],
+   "sellable_as": "Running software development lifecycle automation with centralized agents orchestrating Jira, GitHub, and test systems.",
+   "confidence": "high"
+  },
+  "cs_japanese_bank_automated_customer_onboarding": {
+   "id": "cs_japanese_bank_automated_customer_onboarding",
+   "title": "Automated Customer Onboarding for a Leading Japanese Bank",
+   "url": "https://www.lyzr.ai/case-studies/japanese-bank-automated-customer-onboarding/",
+   "topics": [
+    "banking",
+    "operations",
+    "compliance & risk",
+    "customer service",
+    "responsible ai"
+   ],
+   "headline_result": "Lyzr deployed a governed multi-agent system for one of Japan's largest banks",
+   "client": "One of Japan's largest financial institutions",
+   "industry": "Financial services",
+   "functions": [
+    "operations",
+    "compliance"
+   ],
+   "problem": [
+    "Customer applications arrived handwritten and required manual transcription or OCR conversion, causing delays and inconsistencies",
+    "Core platforms eWAC Flow, Temenos, and Customer Management operated independently, creating fragmented workflows",
+    "Mandatory compliance checks such as Mareva injunction verification required manual handling, slowing processing"
+   ],
+   "built": [
+    "Extracted handwritten and physical form data with OCR, flagging uncertain entries for manual review",
+    "Automated Mareva injunction checks for company and owner validation to ensure compliance consistency",
+    "Coordinated agents, triggered human review for exceptions, and routed approvals across departments",
+    "Initiated account setup in Temenos and synchronized records across all connected systems",
+    "Delivered real-time dashboard showing onboarding progress, pending tasks, and compliance checkpoints"
+   ],
+   "systems": [
+    "eWAC Flow",
+    "Temenos",
+    "Customer Management databases"
+   ],
+   "results": [
+    "End-to-end automation reduced manual intervention and improved turnaround time across departments",
+    "Each workflow step maintained full auditability and compliance with SOC2, ISO 27001, and HIPAA standards",
+    "Multi-agent architecture created a secure, extensible base for future process automation"
+   ],
+   "sellable_as": "Automating customer onboarding document processing and compliance verification inside core banking systems.",
+   "confidence": "high"
+  },
+  "cs_global_bank_reimagined_customer_experience": {
+   "id": "cs_global_bank_reimagined_customer_experience",
+   "title": "Multi-Agent System Reimagines Customer Onboarding for a Global Bank",
+   "url": "https://www.lyzr.ai/case-studies/global-bank-reimagined-customer-experience/",
+   "topics": [
+    "banking",
+    "customer service",
+    "operations",
+    "compliance & risk",
+    "responsible ai",
+    "hallucination manager"
+   ],
+   "headline_result": "Reduced drop-offs and improved onboarding completion rates through real-time engagement",
+   "client": "a global financial institution with a strong digital footprint",
+   "industry": "banking",
+   "functions": [
+    "customer service"
+   ],
+   "problem": [
+    "High app downloads but low onboarding completion rates due to rigid workflows",
+    "Users dropped off during KYC, verification, or setup steps",
+    "Static communication and uniform experiences failed to respond to user preferences",
+    "No automated follow-ups for users who paused onboarding"
+   ],
+   "built": [
+    "Guided users through KYC, verification, and setup via chat-based interaction",
+    "Built detailed customer profiles by combining internal and public data",
+    "Reached out to inactive users across WhatsApp, voice, and email to resume onboarding",
+    "Monitored journey patterns, drop-offs, and engagement trends for optimization",
+    "Detected user mood and purpose, routing interactions for faster responses"
+   ],
+   "systems": [],
+   "results": [
+    "Real-time engagement and personalized nudges reduced drop-offs and improved onboarding completion rates",
+    "Behavioral and sentiment analysis provided visibility into user needs and friction points",
+    "System now supports continuous learning and personalization across digital ecosystem"
+   ],
+   "sellable_as": "Multi-agent customer onboarding system that guides KYC and verification, profiles users, recovers drop-offs, and analyzes sentiment for adaptive engagement.",
+   "confidence": "low"
+  },
+  "cs_ftv_capital": {
+   "id": "cs_ftv_capital",
+   "title": "Portfolio-wide AI SDR and Voice Agent system built for FTV Capital",
+   "url": "https://www.lyzr.ai/case-studies/ftv-capital/",
+   "topics": [
+    "private equity & vc",
+    "fintech",
+    "healthcare",
+    "revenue & sales",
+    "operations",
+    "compliance & risk",
+    "jazon"
+   ],
+   "headline_result": "Lyzr deployed a portfolio-wide AI SDR and Voice Agent system for FTV Capital that",
+   "client": "A global growth equity firm investing in enterprise tech, fintech, and vertical software",
+   "industry": "investment and venture capital",
+   "functions": [
+    "sales",
+    "marketing",
+    "operations"
+   ],
+   "problem": [
+    "Portfolio companies relied on manual prospecting and founder-led selling, leading to inconsistent outreach",
+    "Lead qualification bottlenecks as small SDR teams struggled to maintain pace",
+    "Valuable leads went cold due to slow responses and unclear lead prioritization",
+    "Rising customer acquisition costs from growing teams without efficiency gains"
+   ],
+   "built": [
+    "Autonomous SDR agents managed outreach, follow-ups, qualification, and CRM updates 24/7",
+    "Voice AI agents handled credential reminders and nurse screening calls for healthcare companies",
+    "System synced qualified leads with Salesforce, HubSpot, Apollo, and internal RevOps systems",
+    "Real-time sales dashboards provided live insights into engagement, conversion, and pipeline performance",
+    "Compliance guardrails enforced secure data handling, tone moderation, and message validation"
+   ],
+   "systems": [
+    "Salesforce",
+    "HubSpot",
+    "Apollo",
+    "internal RevOps systems",
+    "AWS"
+   ],
+   "results": [
+    "Consistent outbound execution delivered higher qualified meeting rates and faster conversions",
+    "Single automation model now deploys across portfolio companies regardless of sector or stage",
+    "Enterprise-grade compliance achieved with PII redaction, usage logging, and secure AWS architecture"
+   ],
+   "sellable_as": "Portfolio-wide sales development automation with voice agents, CRM integration, and enterprise compliance guardrails for growth equity firms.",
+   "confidence": "high"
+  },
+  "cs_accenture_ad_generator": {
+   "id": "cs_accenture_ad_generator",
+   "title": "Lyzr AI agent case study - Accenture ad generator",
+   "url": "https://www.lyzr.ai/case-studies/accenture-ad-generator/",
+   "topics": [
+    "professional services",
+    "media & advertising",
+    "marketing",
+    "agent studio",
+    "responsible ai"
+   ],
+   "headline_result": "Posts and visuals generated in under two minutes",
+   "client": "A leading enterprise marketing team",
+   "industry": "Marketing",
+   "functions": [
+    "marketing"
+   ],
+   "problem": [
+    "Manual content drafting required multiple team members to brainstorm, draft, and format content, slowing campaign execution.",
+    "Without automated review, content could violate brand guidelines or regulatory standards, risking legal and reputational issues.",
+    "Generating campaign visuals relied on separate tools or designers, causing delays and inconsistent alignment between text and images."
+   ],
+   "built": [
+    "Brainstormer agent refines initial prompts into structured, detailed briefs.",
+    "Post Generator creates formatted, engaging social media posts.",
+    "Compliance Check ensures posts follow brand and regulatory guidelines.",
+    "Image Description agent converts text content into visual prompts for DALL-E.",
+    "DALL-E produces high-quality images, automatically stored and linked for campaign use."
+   ],
+   "systems": [
+    "DALL-E",
+    "AWS"
+   ],
+   "results": [
+    "AI workflows generate posts and visuals in under two minutes.",
+    "Automated reviews detect potential brand guideline or regulatory violations.",
+    "Supports multiple campaigns simultaneously with session tracking and enhanced prompt enrichment."
+   ],
+   "sellable_as": "Automated social media content creation with compliance review and integrated image generation for marketing campaigns.",
+   "confidence": "high"
+  },
+  "cs_lion_medical_ai": {
+   "id": "cs_lion_medical_ai",
+   "title": "Lyzr AI agent case study - Lion Medical AI",
+   "url": "https://www.lyzr.ai/case-studies/lion-medical-ai/",
+   "topics": [
+    "healthcare",
+    "operations",
+    "compliance & risk",
+    "research & strategy",
+    "responsible ai",
+    "hallucination manager",
+    "sovereign ai",
+    "sovereign_ai"
+   ],
+   "headline_result": "Case reviews completed up to 60% faster",
+   "client": "a healthcare provider delivering diagnostic support across 16 medical specialties",
+   "industry": "healthcare",
+   "functions": [
+    "operations",
+    "customer service"
+   ],
+   "problem": [
+    "Rising complexity in patient care requires nuanced decisions across diverse multi-condition cases",
+    "Medical data is vast, fragmented, and spread across multiple systems",
+    "Manual reviews and specialist coordination slow down diagnosis and treatment"
+   ],
+   "built": [
+    "Analyzes symptoms, history, test results, and imaging data together for complete patient view",
+    "Routes cases to specialized agents for diagnosis, guidelines, ECG, radiology, and medication review",
+    "Generates detailed PDF reports aligned with ESC and AHA/ACC clinical guidelines",
+    "Supports rapid case evaluation for emergency and cardiology teams while keeping clinicians in control"
+   ],
+   "systems": [],
+   "results": [
+    "Case reviews completed up to 60% faster with continuous access to specialist-level insights",
+    "Most diagnoses achieve high confidence, with alerts for moderate and low-confidence cases",
+    "Detailed PDF reports generated within minutes for clinical use",
+    "Eliminated report failures",
+    "Achieved HIPAA-grade compliance"
+   ],
+   "sellable_as": "Running multi-specialty diagnostic review and case coordination as medical-grade AI agents inside the provider's clinical workflow.",
+   "confidence": "high"
+  },
+  "cs_ai_powered_customer_support": {
+   "id": "cs_ai_powered_customer_support",
+   "title": "AI-Powered Customer Support Agent for a Global Insurance Provider",
+   "url": "https://www.lyzr.ai/case-studies/ai-powered-customer-support/",
+   "topics": [
+    "insurance",
+    "customer service",
+    "operations",
+    "knowledge base",
+    "hallucination manager",
+    "responsible ai"
+   ],
+   "headline_result": "70–80% of average requests resolved without human intervention",
+   "client": "a global insurance provider",
+   "industry": "insurance",
+   "functions": [
+    "customer service"
+   ],
+   "problem": [
+    "All clients handled identically, leaving premium customers underserved and routine queries unnecessarily escalated.",
+    "Manual triaging slowed resolution times, especially for urgent scenarios like hospitalization or time-sensitive policy issues.",
+    "Support agents spent valuable time answering FAQs instead of focusing on high-value or critical cases."
+   ],
+   "built": [
+    "Identifies customer segments (high-value, average, emergency) and tailors responses accordingly.",
+    "Classifies queries automatically by type and urgency, routing critical cases instantly to senior managers.",
+    "Handles routine policy questions using the knowledge base without human intervention.",
+    "Generates detailed escalation tickets with client profile, query history, and chat transcripts."
+   ],
+   "systems": [],
+   "results": [
+    "Routine queries automated, 70-80% of average requests resolved without human intervention.",
+    "Response times for urgent cases reduced by 50%.",
+    "Clients received personalized, context-aware responses, reducing follow-ups and improving trust."
+   ],
+   "sellable_as": "Running intelligent customer support triage and personalized query handling as an agent inside a carrier's support platform.",
+   "confidence": "high"
+  },
+  "cs_culture_code_agent": {
+   "id": "cs_culture_code_agent",
+   "title": "AI-Powered Culture Code Agent for Accenture and Accubate",
+   "url": "https://www.lyzr.ai/case-studies/culture-code-agent/",
+   "topics": [
+    "professional services",
+    "technology & it services",
+    "human resources",
+    "agent studio",
+    "responsible ai"
+   ],
+   "headline_result": "Lyzr built a Culture Code Agent for Accenture that fully automates employee",
+   "client": "Accenture, in partnership with Accubate",
+   "industry": "Enterprise services",
+   "functions": [
+    "hr"
+   ],
+   "problem": [
+    "Manual feedback collection via Excel sheets was slow, inconsistent, and difficult to scale globally",
+    "Managers and employees struggled to identify cultural strengths, uncover gaps, or track improvements over time",
+    "Sensitive feedback processing lacked security and compliance safeguards, creating privacy risks"
+   ],
+   "built": [
+    "Automated survey scheduling, distribution, and collection across global teams on set intervals",
+    "Summarizes employee feedback, grades cultural attributes, and generates actionable recommendations",
+    "Routes team-level insights to managers and personalized growth guidance to employees",
+    "Triggers AI pipeline on each new submission to keep dashboards current with real-time reporting"
+   ],
+   "systems": [],
+   "results": [
+    "Automated surveys and AI-generated insights are repeatable and scalable across regions",
+    "Manual overhead eliminated, enabling managers to respond to feedback trends in real-time",
+    "Structured feedback empowers teams to focus on strengths, address weaknesses, and celebrate progress"
+   ],
+   "sellable_as": "Running automated employee feedback collection and insight generation as a managed culture analytics service inside the client's HR systems.",
+   "confidence": "high"
+  },
+  "cs_ai_driven_email_triage": {
+   "id": "cs_ai_driven_email_triage",
+   "title": "Lyzr AI agent case study - AI-Driven Email Triage",
+   "url": "https://www.lyzr.ai/case-studies/ai-driven-email-triage/",
+   "topics": [
+    "insurance",
+    "customer service",
+    "operations",
+    "responsible ai"
+   ],
+   "headline_result": "Lyzr built an AI email triage system for a leading global insurer that",
+   "client": "a global insurance provider",
+   "industry": "insurance",
+   "functions": [
+    "customer service"
+   ],
+   "problem": [
+    "Service agents manually read, classified, and routed each email, delaying workflows and creating long customer wait times",
+    "Customers did not receive instant acknowledgment or updates, reducing trust and satisfaction",
+    "Cases in Salesforce were not always created or updated accurately, leading to tracking gaps and routing delays"
+   ],
+   "built": [
+    "Manager Agent sends immediate acknowledgment to customers upon email arrival",
+    "Email Classification Agent categorizes emails by type, assigns urgency and confidence scores, extracts policy numbers and invoice references",
+    "Salesforce Agent updates existing cases or creates new ones in real time with token-based authentication",
+    "System automatically sends customers confirmations, estimated timelines, and next steps, routes cases to specialist teams"
+   ],
+   "systems": [
+    "Salesforce"
+   ],
+   "results": [
+    "Emails are acknowledged automatically upon arrival, removing delays from manual triage",
+    "Cases in Salesforce are updated or created in real time, eliminating gaps",
+    "Customers receive timely confirmations and clear next steps"
+   ],
+   "sellable_as": "Running email triage and case management as automated workflow inside Salesforce for insurance customer service teams.",
+   "confidence": "high"
+  },
+  "cs_agentic_cvc": {
+   "id": "cs_agentic_cvc",
+   "title": "World's First Agentic CVC Platform Built for a Corporate Venture Team",
+   "url": "https://www.lyzr.ai/case-studies/agentic-cvc/",
+   "topics": [
+    "private equity & vc",
+    "professional services",
+    "research & strategy",
+    "finance",
+    "knowledge graph",
+    "responsible ai"
+   ],
+   "headline_result": "Research and scoring timelines reduced from weeks to minutes",
+   "client": "a leading corporate venture team",
+   "industry": "venture capital",
+   "functions": [
+    "procurement"
+   ],
+   "problem": [
+    "Evaluating hundreds of startups required weeks of effort with analysts spending hours across multiple databases.",
+    "Manual scoring across 88 parameters led to delays, inconsistencies, and difficulty justifying recommendations.",
+    "Strategic signals were often missed, limiting proactive decisions in a fast-moving environment."
+   ],
+   "built": [
+    "AI agents analyze hundreds of startups in minutes, applying an 88-point scoring framework with explainable outputs.",
+    "Specialized agents track market trends, competitor moves, and emerging technologies, feeding real-time updates into a knowledge graph.",
+    "Investor-ready decks, SWOT analyses, and dashboards are generated instantly."
+   ],
+   "systems": [],
+   "results": [
+    "Research and scoring timelines reduced from weeks to minutes.",
+    "Explainable, score-based evaluations improved confidence in recommendations.",
+    "System handled tens of thousands of startups, giving continuous oversight across industries."
+   ],
+   "sellable_as": "Automated venture startup research and evaluation with transparent 88-point scoring and real-time competitive intelligence monitoring.",
+   "confidence": "high"
+  },
+  "cs_emudhra": {
+   "id": "cs_emudhra",
+   "title": "Lyzr AI agent case study - eMudhra",
+   "url": "https://www.lyzr.ai/case-studies/emudhra/",
+   "topics": [
+    "fintech",
+    "technology & it services",
+    "customer service",
+    "revenue & sales",
+    "marketing",
+    "knowledge base",
+    "hallucination manager"
+   ],
+   "headline_result": "Response rates tripled from 2.7% to 8.3%",
+   "client": "eMudhra, a digital signature and e-signature solutions provider",
+   "industry": "Digital signature and authentication",
+   "functions": [
+    "customer service",
+    "sales",
+    "marketing"
+   ],
+   "problem": [
+    "Manual support teams struggled to deliver contextual answers across multiple websites and product lines.",
+    "No automated way to identify leads during support interactions, resulting in missed opportunities.",
+    "Product information was siloed across separate websites and support documents."
+   ],
+   "built": [
+    "Chatbot engages users in real-time, categorizes queries as domestic or global, and captures intent.",
+    "Routes high-intent visitors to HubSpot forms, automatically triggering CRM onboarding.",
+    "Agent aggregates knowledge from multiple product sites to deliver context-aware answers.",
+    "Tracks conversation trends and lead conversions via live dashboard for continuous optimization."
+   ],
+   "systems": [
+    "AWS Lambda",
+    "HubSpot",
+    "AWS"
+   ],
+   "results": [
+    "Response rates tripled from 2.7% to 8.3%.",
+    "Users receive accurate, personalized responses instantly across multiple websites.",
+    "Weekly dashboards provide actionable analytics on conversations and lead opportunities."
+   ],
+   "sellable_as": "Running a multi-product support chatbot with automated lead capture and CRM routing on AWS.",
+   "confidence": "high"
+  },
+  "cs_leading_support_agent": {
+   "id": "cs_leading_support_agent",
+   "title": "AI-Powered Customer Support Agent for a Leading Insurance Provider",
+   "url": "https://www.lyzr.ai/case-studies/leading-support-agent/",
+   "topics": [
+    "insurance",
+    "customer service",
+    "operations",
+    "knowledge base",
+    "responsible ai"
+   ],
+   "headline_result": "70–80% of average requests resolved without human intervention",
+   "client": "A global insurance provider",
+   "industry": "insurance",
+   "functions": [
+    "customer service"
+   ],
+   "problem": [
+    "All clients handled identically, leaving premium customers underserved and routine queries escalated unnecessarily",
+    "Manual triaging delayed resolution times, especially in emergencies like hospitalization or urgent claims",
+    "Support agents spent time on FAQs instead of focusing on high-value or urgent cases"
+   ],
+   "built": [
+    "Agent recognizes customer segments and adjusts responses accordingly for personalized assistance",
+    "Classifies queries by urgency and type, routing critical cases to senior support managers",
+    "Resolves routine policy questions instantly through knowledge base, freeing agents for complex issues",
+    "Generates detailed escalation tickets with client profiles, query history, and chat transcripts"
+   ],
+   "systems": [],
+   "results": [
+    "70-80% of average requests resolved without human intervention",
+    "Response times for urgent cases cut by half",
+    "Clients received personalized, context-aware responses, reducing follow-ups"
+   ],
+   "sellable_as": "Managing insurance customer support through AI-driven triage and personalized agent responses based on client segment and urgency.",
+   "confidence": "high"
+  },
+  "cs_saksoft_code": {
+   "id": "cs_saksoft_code",
+   "title": "AI Coding Agent for Saksoft to accelerate code retrieval and delivery",
+   "url": "https://www.lyzr.ai/case-studies/saksoft-code/",
+   "topics": [
+    "technology & it services",
+    "engineering",
+    "it operations",
+    "knowledge base"
+   ],
+   "headline_result": "Freed 5 HR FTEs",
+   "client": "a global digital transformation company specializing in enterprise solutions, data management, and cloud modernization",
+   "industry": "software and services",
+   "functions": [
+    "engineering"
+   ],
+   "problem": [
+    "Developers spent hours locating functions, classes, or variables across sprawling repositories, slowing down feature delivery.",
+    "Traditional search returned irrelevant or incomplete results, forcing manual context piecing together.",
+    "New functionality required rework as developers struggled to align with project-specific styles and conventions."
+   ],
+   "built": [
+    "Parses functions, classes, and variables from GitHub repositories and structures data for intelligent search.",
+    "Accepts plain English queries and retrieves precise, context-aware code snippets with file paths and line numbers.",
+    "Generates new code snippets aligned with existing logic, structure, and project conventions.",
+    "Processes project documentation in chunks to strengthen contextual understanding for code retrieval and generation."
+   ],
+   "systems": [
+    "GitHub",
+    "AWS ECS",
+    "DocumentDB"
+   ],
+   "results": [
+    "Developers instantly locate code elements, reducing search time from hours to minutes.",
+    "Boosted dev velocity by 50%.",
+    "Cut QA time from 8 weeks to 2.5 weeks.",
+    "Freed 5 HR FTEs."
+   ],
+   "sellable_as": "Running intelligent code search and generation as a managed service inside enterprise GitHub repositories.",
+   "confidence": "high"
+  },
+  "cs_sns_global": {
+   "id": "cs_sns_global",
+   "title": "AI Resource Optimization Agent for SNS Global",
+   "url": "https://www.lyzr.ai/case-studies/sns-global/",
+   "topics": [
+    "technology & it services",
+    "professional services",
+    "human resources",
+    "operations",
+    "research & strategy",
+    "agent studio",
+    "responsible ai"
+   ],
+   "headline_result": "Automated allocation reduced mismatches and delays",
+   "client": "a technology solutions provider",
+   "industry": "technology services",
+   "functions": [
+    "operations",
+    "hr"
+   ],
+   "problem": [
+    "Manual resource allocation across multiple systems caused mismatches and delays",
+    "Certain employees overloaded while others underutilized, reducing team effectiveness",
+    "Leaders could not simulate scenarios or forecast risks before issues emerged"
+   ],
+   "built": [
+    "Agents parse natural language queries and recommend available resources with matching skills",
+    "System balances workloads across teams while considering immediate project fit and long-term development",
+    "Agents simulate project scenarios and flag skill gaps or risks proactively"
+   ],
+   "systems": [
+    "AWS",
+    "DocumentDB"
+   ],
+   "results": [
+    "Automated allocation reduced mismatches and delays by matching skills and availability",
+    "Workload redistribution improved team utilization and morale",
+    "Scenario simulations reduced last-minute project adjustments"
+   ],
+   "sellable_as": "Running resource allocation and workload balancing as an automated workflow within a client's project management infrastructure.",
+   "confidence": "high"
+  },
+  "cs_novitium": {
+   "id": "cs_novitium",
+   "title": "Lyzr AI agent case study - Novitium",
+   "url": "https://www.lyzr.ai/case-studies/novitium/",
+   "topics": [
+    "technology & it services",
+    "professional services",
+    "revenue & sales",
+    "marketing",
+    "jazon"
+   ],
+   "headline_result": "Campaign launch time reduced by 85% (3 days to 4 hours)",
+   "client": "an AI-first sales enablement company",
+   "industry": "sales enablement software",
+   "functions": [
+    "sales",
+    "marketing"
+   ],
+   "problem": [
+    "Teams spent 40+ hours per week on repetitive outreach, slowing pipeline generation",
+    "Generic messaging and lack of real-time analytics led to low response rates",
+    "High risk of sender reputation loss due to missed compliance checks, putting millions in pipeline revenue at risk"
+   ],
+   "built": [
+    "Automates personalized outreach sequences and tracks engagement across every step",
+    "Pre-checks all campaigns for GDPR and CAN-SPAM compliance before launch",
+    "Triggers eligibility checks and next-best-action workflows in real-time",
+    "Routes replies and campaign pushes instantly regardless of load",
+    "Manages DKIM, bounce handling, and sender reputation automatically at scale"
+   ],
+   "systems": [
+    "AWS ECS",
+    "Amazon DocumentDB",
+    "AWS Amplify",
+    "Amazon SES",
+    "AWS Lambda",
+    "Amazon SNS",
+    "ALB"
+   ],
+   "results": [
+    "Campaign launch time reduced by 85%, from 3 days to 4 hours",
+    "Response rates tripled from 2.7% to 8.3%",
+    "100% of campaigns pre-checked for GDPR and CAN-SPAM compliance before launch"
+   ],
+   "sellable_as": "Automating B2B outreach campaigns with compliance checks, personalization, and real-time engagement tracking built on AWS.",
+   "confidence": "high"
+  },
+  "cs_accenture_accubate": {
+   "id": "cs_accenture_accubate",
+   "title": "AI-Powered Startup Onboarding Platform Built for Accenture Accubate",
+   "url": "https://www.lyzr.ai/case-studies/accenture-accubate/",
+   "topics": [
+    "professional services",
+    "technology & it services",
+    "operations",
+    "compliance & risk",
+    "procurement",
+    "responsible ai",
+    "hallucination manager"
+   ],
+   "headline_result": "Reduced onboarding timelines from weeks to days",
+   "client": "Accenture, a global professional services company",
+   "industry": "professional services",
+   "functions": [
+    "operations",
+    "compliance"
+   ],
+   "problem": [
+    "Startups faced extended onboarding times due to manual due diligence and document verification.",
+    "Information about startups was spread across multiple systems, making tracking and validation difficult.",
+    "As startup volume grew, Accenture needed to handle onboarding without increasing operational overhead."
+   ],
+   "built": [
+    "Agents analyze contracts, compliance documents, and business details automatically.",
+    "Agents extract, validate, and enrich startup data for faster decision-making.",
+    "Agents handle approvals, compliance checks, and partner integration in end-to-end workflows."
+   ],
+   "systems": [
+    "AWS"
+   ],
+   "results": [
+    "Reduced onboarding timelines from weeks to days.",
+    "Cut manual efforts in due diligence and compliance checks significantly.",
+    "Enabled onboarding higher volume of startups without increasing overhead."
+   ],
+   "sellable_as": "Automating startup due diligence and onboarding verification through document processing and data enrichment workflows.",
+   "confidence": "high"
+  },
+  "cs_saksoft": {
+   "id": "cs_saksoft",
+   "title": "Multi-agent HR, coding, and QA automation for Saksoft",
+   "url": "https://www.lyzr.ai/case-studies/saksoft/",
+   "topics": [
+    "technology & it services",
+    "human resources",
+    "engineering",
+    "it operations",
+    "operations",
+    "knowledge base",
+    "responsible ai"
+   ],
+   "headline_result": "60% cut in operational costs",
+   "client": "a global IT services company with over 1,300 employees across 20 countries",
+   "industry": "IT services",
+   "functions": [
+    "hr",
+    "engineering",
+    "operations"
+   ],
+   "problem": [
+    "75% of HR time lost to repetitive queries, causing 48-hour delays across global teams",
+    "Developers lost 40% productivity due to code search inefficiencies, leading to 6-month release cycles",
+    "8-week QA cycles with only 60% test coverage, causing post-release bugs and client dissatisfaction"
+   ],
+   "built": [
+    "HR agent ingests policies, benefits, payroll data and resolves employee queries 24/7 via natural language chat",
+    "Coding agent analyzes GitHub repositories to enable natural language code search and auto-generate code aligned with project conventions",
+    "Testing agent converts user stories into detailed test cases and auto-generates API, database, security, and story-based tests"
+   ],
+   "systems": [
+    "AWS",
+    "Amazon Bedrock",
+    "GitHub",
+    "HRMS APIs",
+    "CI/CD pipelines"
+   ],
+   "results": [
+    "Saved $2.8M annually with 60% cut in operational costs through automation",
+    "Freed 5 HR FTEs, boosted dev velocity by 50%, and cut QA time from 8 weeks to 2.5 weeks",
+    "Achieved 95% HR query resolution, 92% test coverage, 35% fewer bugs, and 45% faster feature releases"
+   ],
+   "sellable_as": "Running HR, development, and QA operations as automated multi-agent workflows within customer's cloud infrastructure.",
+   "confidence": "high"
+  },
+  "cs_altrius": {
+   "id": "cs_altrius",
+   "title": "AI Voice and CRM Outreach Agents for Altrius Advisors",
+   "url": "https://www.lyzr.ai/case-studies/altrius/",
+   "topics": [
+    "insurance",
+    "financial services",
+    "revenue & sales",
+    "customer service",
+    "operations",
+    "agent studio"
+   ],
+   "headline_result": "14,000+ dormant clients re-engaged through personalized automation",
+   "client": "A leading health insurance advisory firm",
+   "industry": "Health insurance advisory",
+   "functions": [
+    "sales",
+    "customer service"
+   ],
+   "problem": [
+    "Staff manually checked insurance portals for doctor and medication coverage, slow and error-prone.",
+    "14,000+ clients inactive in Capsule CRM for over 2 years, causing revenue loss.",
+    "Policy renewals and qualifying life events were not proactively managed."
+   ],
+   "built": [
+    "AI agents validate insurance coverage when clients submit doctor and medication information via web portal.",
+    "Voice AI contacts dormant clients with 3-4 call attempts over 7 days, followed by SMS and email.",
+    "Positive responses route to advisors; neutral responses schedule 3-month follow-up; do-not-contact requests handled.",
+    "Call transcripts, tags, and outcomes auto-log to Capsule CRM with real-time sync across channels.",
+    "Google Calendar sync enables direct scheduling from voice interactions."
+   ],
+   "systems": [
+    "Capsule CRM",
+    "AWS",
+    "BCBS",
+    "UHC",
+    "Priority Health",
+    "Net Express",
+    "ElevenLabs",
+    "Google Calendar"
+   ],
+   "results": [
+    "Re-engaged 14,000+ dormant clients through personalized automation.",
+    "Eliminated hours of manual work for staff.",
+    "CRM compliance improved to 100%."
+   ],
+   "sellable_as": "Automating insurance coverage validation and dormant client re-engagement through multi-channel voice and CRM workflows.",
+   "confidence": "high"
+  },
+  "cs_move": {
+   "id": "cs_move",
+   "title": "Lyzr AI agent case study - Move",
+   "url": "https://www.lyzr.ai/case-studies/move/",
+   "topics": [
+    "travel & hospitality",
+    "marketing",
+    "agent studio"
+   ],
+   "headline_result": "Article production time reduced significantly, eliminating manual delays in",
+   "client": "a leading low-cost airline serving over 165 destinations across Asia and beyond",
+   "industry": "airline travel",
+   "functions": [
+    "marketing"
+   ],
+   "problem": [
+    "Manual keyword research through third-party tools delayed topic ideation and reduced consistency in content planning",
+    "Live travel data in AI-generated drafts risked outdated or incorrect details, requiring significant human fact-checking",
+    "Ideation, drafting, formatting, and visual tagging were split across tools, creating bottlenecks and reducing scalability"
+   ],
+   "built": [
+    "Research and sufficiency agents validated facts before drafting to minimize outdated information",
+    "AI agents generated SEO-ready alt text, captions, and tags for all visuals",
+    "Agents handled ideation, outlining, and formatting while marketers reviewed final drafts",
+    "Specialized accuracy checks ensured travel data accuracy in generated content"
+   ],
+   "systems": [
+    "Google Cloud Platform",
+    "Cloud Run",
+    "Firestore",
+    "Firebase"
+   ],
+   "results": [
+    "Article production time reduced significantly, eliminating manual delays in research, outlining, and formatting",
+    "Fact-checking agents minimized outdated or incorrect information, increasing trust in AI-generated drafts",
+    "The repeatable workflow allowed quick replication for new topics without starting from scratch"
+   ],
+   "sellable_as": "Running SEO content production and fact-checking as an agent-led workflow with human editorial review inside a marketing platform.",
+   "confidence": "high"
+  },
+  "cs_artha99": {
+   "id": "cs_artha99",
+   "title": "Lyzr AI agent case study - Artha99",
+   "url": "https://www.lyzr.ai/case-studies/artha99/",
+   "topics": [
+    "private equity & vc",
+    "manufacturing",
+    "marketing",
+    "research & strategy",
+    "knowledge base",
+    "skott"
+   ],
+   "headline_result": "Lyzr built a fully autonomous AI Marketing Agent for Artha99 that",
+   "client": "a thematic investment firm focused on India's manufacturing-led growth",
+   "industry": "investment and research",
+   "functions": [
+    "marketing",
+    "sales"
+   ],
+   "problem": [
+    "Publishing deep-domain content required heavy manual research and effort, limiting consistency and output",
+    "Engaging niche readers like LPs and sector VCs demanded precision SEO and platform-specific content tuning",
+    "Real-time policy updates, funding news, and metrics were hard to integrate quickly into publishable insights"
+   ],
+   "built": [
+    "Generates expert-level content from sector-specific research using a custom knowledge base",
+    "Auto-generates news roundups, metric explainers, deep dives, and Twitter threads with consistent tone",
+    "Taps into live policy, funding, and sector updates using Nova Pro and Sonar Reasoning Pro",
+    "Formatter agents fine-tune tone and length for LinkedIn and Twitter",
+    "Runs entire workflow in no-code interface powered by AWS infrastructure"
+   ],
+   "systems": [
+    "AWS",
+    "Nova Pro",
+    "Sonar Reasoning Pro"
+   ],
+   "results": [
+    "Posts are auto-optimized for each channel, driving more views, better SEO, and deeper investor engagement",
+    "Publishes insights faster and with greater accuracy through always-on access to dynamic industry data"
+   ],
+   "sellable_as": "Autonomous content creation and multi-platform optimization for thematic investment firms targeting niche investor audiences.",
+   "confidence": "low"
+  },
+  "cs_hfs_research": {
+   "id": "cs_hfs_research",
+   "title": "HFS Research builds multi-agent reasoning system for complex queries",
+   "url": "https://www.lyzr.ai/case-studies/hfs-research/",
+   "topics": [
+    "professional services",
+    "technology & it services",
+    "research & strategy",
+    "it operations",
+    "knowledge base",
+    "hallucination manager",
+    "responsible ai"
+   ],
+   "headline_result": "Queries are now resolved in seconds with precise, verified responses",
+   "client": "HFS Research, a leading global analyst firm",
+   "industry": "Research and Analytics",
+   "functions": [
+    "research"
+   ],
+   "problem": [
+    "Conventional search retrieved isolated documents but failed to interpret query intent or synthesize insights across findings",
+    "Incomplete or missing metadata tags for authors, publish dates, and research types made filtering unreliable",
+    "System could not adapt responses to varied query types: author lookups, recency-sensitive searches, summaries, deep dives"
+   ],
+   "built": [
+    "Classified queries by intent and routed them to specialized knowledge bases for summaries, deep dives, or author-specific lookups",
+    "Parsed 4,000+ documents, auto-tagged 29 parameters, and fixed missing metadata fields",
+    "Combined freshness scoring with semantic matching to balance recent and relevant research results",
+    "Logged user behaviour to refine routing and response generation"
+   ],
+   "systems": [
+    "AWS"
+   ],
+   "results": [
+    "Queries resolved in seconds with precise, verified responses",
+    "Balanced retrieval ensures both latest and contextually relevant insights are returned",
+    "Metadata enrichment and multi-agent design enable expansion across new content types and domains"
+   ],
+   "sellable_as": "Building multi-agent reasoning systems that classify queries and route them to specialized knowledge bases for precise research discovery.",
+   "confidence": "high"
+  },
+  "cs_curatal": {
+   "id": "cs_curatal",
+   "title": "AI-Powered Interview Evaluation Agent for Curatal",
+   "url": "https://www.lyzr.ai/case-studies/curatal/",
+   "topics": [
+    "technology & it services",
+    "human resources",
+    "jazon",
+    "responsible ai",
+    "hallucination manager"
+   ],
+   "headline_result": "Significantly reduced time to conduct and evaluate interviews, enabling recruiters to",
+   "client": "Curatal, an AI-powered hiring platform",
+   "industry": "recruitment technology",
+   "functions": [
+    "hr"
+   ],
+   "problem": [
+    "Manual interview processes lacked standardization and were time-intensive, leading to inconsistent candidate assessments",
+    "Recruiters struggled to objectively measure technical and behavioral competencies without grading framework or real-time assessment",
+    "Growing volume of applicants made it difficult to maintain fairness, reduce bias, and ensure quality hiring outcomes"
+   ],
+   "built": [
+    "Conducts adaptive interviews using generative AI, tailoring questions in real time based on candidate responses",
+    "Automates grading and evaluation using structured rubrics and scoring logic for technical and behavioral interviews",
+    "Integrates real-time coding assessments via Judge0, enabling automatic execution and evaluation of technical challenges"
+   ],
+   "systems": [
+    "Amazon Bedrock",
+    "EC2",
+    "ECS",
+    "RDS",
+    "DocumentDB",
+    "Judge0"
+   ],
+   "results": [
+    "AI-driven automation significantly reduced the time to conduct and evaluate interviews",
+    "Recruiters can process more candidates in less time",
+    "Adaptive questioning and standardized workflows supported fair, skill-based evaluations",
+    "Continuous monitoring and feedback loops enabled refinement of question logic and agent performance"
+   ],
+   "sellable_as": "AI-powered interview automation and evaluation system that standardizes candidate assessments and reduces hiring cycle time.",
+   "confidence": "high"
+  },
+  "cs_yardstick": {
+   "id": "cs_yardstick",
+   "title": "Policy Coverage Review Assistant built for Yardstick (RegTech)",
+   "url": "https://www.lyzr.ai/case-studies/yardstick/",
+   "topics": [
+    "fintech",
+    "banking",
+    "legal",
+    "compliance & risk",
+    "research & strategy",
+    "responsible ai",
+    "hallucination manager",
+    "knowledge base"
+   ],
+   "headline_result": "Internal policy and standards review processes accelerated from days to hours",
+   "client": "Yardstick, a RegTech initiative backed by FinPACT",
+   "industry": "regulatory technology",
+   "functions": [
+    "compliance",
+    "legal",
+    "risk"
+   ],
+   "problem": [
+    "Regulatory language is complex and inconsistent across jurisdictions, making interpretation difficult",
+    "Teams lack a structured way to identify areas where internal documents may not fully cover regulatory expectations",
+    "Maintaining traceability and transparency in reviews is time-consuming and prone to oversight"
+   ],
+   "built": [
+    "Extracts metadata and interprets content from regulatory and internal documents",
+    "Breaks down regulation documents to generate review prompts and mapping cues",
+    "Analyzes internal documents to assess coverage depth and identify unaddressed areas",
+    "Provides structured outputs including evidence excerpts, explanation summaries, relevance scores, and section references"
+   ],
+   "systems": [
+    "AWS"
+   ],
+   "results": [
+    "Policy and standards review processes were accelerated from days to hours",
+    "System surfaces which regulatory themes are fully addressed, partially addressed, or missing in internal documents",
+    "Outputs include supporting evidence, relevant document sections, and alignment scores for review teams"
+   ],
+   "sellable_as": "Running policy coverage reviews and regulatory gap analysis as a managed workflow inside compliance and risk teams.",
+   "confidence": "high"
+  },
+  "cs_witzeal": {
+   "id": "cs_witzeal",
+   "title": "AI-Powered Chat Support Agent Built for Witzeal",
+   "url": "https://www.lyzr.ai/case-studies/witzeal/",
+   "topics": [
+    "e-commerce",
+    "technology & it services",
+    "customer service",
+    "operations",
+    "agent studio",
+    "responsible ai"
+   ],
+   "headline_result": "AI-human handoff rate kept below 10–15%",
+   "client": "Witzeal, a leading gaming technology company",
+   "industry": "gaming technology",
+   "functions": [
+    "customer service"
+   ],
+   "problem": [
+    "Handled 3,000-3,500 daily chat sessions requiring scalable support system",
+    "Manual customer support led to long wait times and delayed responses",
+    "Required custom API integrations, AI-human handoff, and automated query tracking"
+   ],
+   "built": [
+    "AI chat agent automates responses to customer queries in real time",
+    "Routes queries to human agents when AI cannot resolve them",
+    "Tracks sessions and personalizes responses based on user context"
+   ],
+   "systems": [
+    "AWS infrastructure",
+    "Agent Factory Servers",
+    "RAG Servers",
+    "MongoDB",
+    "Qdrant"
+   ],
+   "results": [
+    "AI-assisted chatbots reduced wait times significantly",
+    "AI automation reduced dependency on human agents and cut operational costs",
+    "Improved user engagement through seamless query resolution and session tracking"
+   ],
+   "sellable_as": "Deploying an AI-powered chat support agent that handles high-volume customer queries with intelligent routing to human agents.",
+   "confidence": "high"
+  },
+  "cs_accenture": {
+   "id": "cs_accenture",
+   "title": "Lyzr AI agent case study - Accenture",
+   "url": "https://www.lyzr.ai/case-studies/accenture/",
+   "topics": [
+    "manufacturing",
+    "energy & utilities",
+    "professional services",
+    "it operations",
+    "operations",
+    "engineering",
+    "responsible ai",
+    "knowledge base"
+   ],
+   "headline_result": "Reduced downtime through automated data gathering and analysis",
+   "client": "a top industrial AI solutions provider",
+   "industry": "industrial AI solutions",
+   "functions": [
+    "operations",
+    "it operations"
+   ],
+   "problem": [
+    "Human engineers manually consult multiple data sources, slowing critical fixes.",
+    "Missing one data point can escalate hazards in offshore or industrial settings.",
+    "No streamlined method to share root-cause analyses and troubleshooting steps for future incidents."
+   ],
+   "built": [
+    "Pulls from diverse knowledge documents and APIs to automate troubleshooting.",
+    "Generates custom guides for each incident with step-by-step fix instructions.",
+    "Performs root-cause analysis if first fix fails and updates central knowledge base."
+   ],
+   "systems": [
+    "AWS",
+    "knowledge base APIs"
+   ],
+   "results": [
+    "Reduced downtime through faster issue resolution via automated data gathering and analysis.",
+    "Enhanced safety by preventing human errors in hazardous environments.",
+    "Continuous improvement as root-cause analysis updates feed into the knowledge base."
+   ],
+   "sellable_as": "Automated industrial troubleshooting and root-cause analysis running on customer knowledge bases and operational APIs.",
+   "confidence": "low"
+  },
+  "cs_customer_service_leader": {
+   "id": "cs_customer_service_leader",
+   "title": "AI Multi-Agent Invoice Automation Built for NPD Powered",
+   "url": "https://www.lyzr.ai/case-studies/customer-service-leader/",
+   "topics": [
+    "energy & utilities",
+    "finance",
+    "procurement",
+    "operations"
+   ],
+   "headline_result": "Reduced manual effort by eliminating routine checks and data entry tasks",
+   "client": "NPD Powered, a leading innovator in energy solutions",
+   "industry": "energy solutions",
+   "functions": [
+    "procurement",
+    "finance"
+   ],
+   "problem": [
+    "Vendor management team spent hours checking invoices against POs",
+    "Invoices had to be reconciled in both QuickBooks and SAP",
+    "Addressing vendor queries regarding invoices or purchase orders was time-intensive"
+   ],
+   "built": [
+    "Validates incoming vendor invoices against purchase orders",
+    "Coordinates with vendors for corrections",
+    "Updates QuickBooks and SAP upon approval",
+    "Manages real-time vendor chat support for query resolution"
+   ],
+   "systems": [
+    "QuickBooks",
+    "SAP"
+   ],
+   "results": [
+    "Eliminates routine checks and data entry tasks",
+    "Accelerates invoice reconciliation and payment approvals",
+    "Automated support ensures prompt responses to invoice queries"
+   ],
+   "sellable_as": "Running vendor invoice validation and reconciliation as an automated workflow across QuickBooks and SAP with integrated vendor support.",
+   "confidence": "high"
+  },
+  "cs_rising_financial_provider": {
+   "id": "cs_rising_financial_provider",
+   "title": "AI-Driven Refund System for a Midsize Bank",
+   "url": "https://www.lyzr.ai/case-studies/rising-financial-provider/",
+   "topics": [
+    "banking",
+    "customer service",
+    "compliance & risk",
+    "finance",
+    "responsible ai",
+    "hallucination manager"
+   ],
+   "headline_result": "Reduced ticket volume: ambiguous queries resolved by AI-driven chat, lowering customer",
+   "client": "a midsize bank",
+   "industry": "financial services",
+   "functions": [
+    "customer service",
+    "finance",
+    "compliance"
+   ],
+   "problem": [
+    "Existing chat system could not handle ambiguous customer queries, causing high support ticket volumes.",
+    "Refund approvals required robust fraud screening to prevent financial losses.",
+    "Open-source AI frameworks presented security vulnerabilities; bank needed enterprise-grade solution."
+   ],
+   "built": [
+    "Generative AI agent conducts natural language conversations to resolve ambiguous refund queries.",
+    "SQL agent looks up transaction details to support refund decisions.",
+    "Predictive ML agent screens refund requests against historical fraud patterns.",
+    "System processes refunds only when confidence scores exceed security thresholds."
+   ],
+   "systems": [
+    "AWS"
+   ],
+   "results": [
+    "Ambiguous queries resolved by AI-driven chat, reducing customer support ticket volume.",
+    "Automated fraud checks leverage historical data for higher detection accuracy.",
+    "Customers experience faster refunds and natural conversation interactions."
+   ],
+   "sellable_as": "Running AI-driven refund processing with embedded fraud detection as a managed service inside the bank's customer support workflow.",
+   "confidence": "high"
+  },
+  "cs_major_banking_institution": {
+   "id": "cs_major_banking_institution",
+   "title": "Regulatory Compliance Multi-Agent System Built for a Large Bank",
+   "url": "https://www.lyzr.ai/case-studies/major-banking-institution/",
+   "topics": [
+    "banking",
+    "compliance & risk",
+    "product",
+    "operations",
+    "responsible ai"
+   ],
+   "headline_result": "30,000+ hours saved by minimizing manual guideline tracking across 30+ products",
+   "client": "a large bank offering a full spectrum of financial services",
+   "industry": "financial services",
+   "functions": [
+    "compliance",
+    "operations",
+    "engineering"
+   ],
+   "problem": [
+    "Product teams manually monitored regulatory changes from governing body websites",
+    "Missed updates or misinterpretations created non-compliance risk in product features",
+    "Building new products under changing guidelines was labor-intensive and delayed"
+   ],
+   "built": [
+    "Scans governing body websites automatically for regulatory rule changes",
+    "Alerts product managers to new rules and suggests necessary product updates",
+    "Serves as brainstorming assistant for new feature development ensuring compliance"
+   ],
+   "systems": [],
+   "results": [
+    "30,000+ hours saved through minimized manual guideline tracking across 30+ products",
+    "Reduced non-compliance risk through timely notifications and actionable insights",
+    "Faster product development via real-time guidance and brainstorming tools"
+   ],
+   "sellable_as": "Automated regulatory monitoring and product compliance guidance for financial institutions managing multiple regulated products.",
+   "confidence": "high"
+  },
+  "cs_hr_workforce_leader": {
+   "id": "cs_hr_workforce_leader",
+   "title": "AI Coaching Agents for Psychometric Insights, Built for SurePeople",
+   "url": "https://www.lyzr.ai/case-studies/hr-workforce-leader/",
+   "topics": [
+    "technology & it services",
+    "education",
+    "human resources",
+    "responsible ai"
+   ],
+   "headline_result": "Enhanced employee engagement through tailored, real-time insights",
+   "client": "a global provider of intelligent learning and talent performance solutions",
+   "industry": "human resources technology",
+   "functions": [
+    "hr"
+   ],
+   "problem": [
+    "Psychometric assessments provided static reports without personalized ongoing support",
+    "Employees lacked real-time guidance on effective workplace interaction with colleagues and managers",
+    "SurePeople needed generative AI capability to remain competitive in psychometry"
+   ],
+   "built": [
+    "AI Coach agent delivers personalized communication and conflict resolution tips based on psychometric profile",
+    "AI Meeting Assistant provides context-aware guidance during workplace interactions",
+    "AI Relationship Coach offers team collaboration recommendations integrated with user psychometric data"
+   ],
+   "systems": [
+    "AWS"
+   ],
+   "results": [
+    "Employees receive tailored insights in real time, boosting satisfaction with HR tools",
+    "AI-driven recommendations foster better alignment and communication across the organization",
+    "Clients benefit from deeper, more actionable psychometric support"
+   ],
+   "sellable_as": "Deploying AI coaching agents that integrate psychometric profiles to deliver personalized guidance on workplace communication, conflict resolution, and team collaboration.",
+   "confidence": "high"
+  },
+  "cs_industrial_manufacturing_firm": {
+   "id": "cs_industrial_manufacturing_firm",
+   "title": "AI Meeting Translation and Note-Taking Agent Built for Nelson Global",
+   "url": "https://www.lyzr.ai/case-studies/industrial-manufacturing-firm/",
+   "topics": [
+    "manufacturing",
+    "operations",
+    "it operations",
+    "responsible ai"
+   ],
+   "headline_result": "Improved collaboration through real-time translations that reduce errors",
+   "client": "Nelson Global, a global leader in manufacturing clean, efficient sub-systems for agriculture, construction, and power generation",
+   "industry": "manufacturing",
+   "functions": [
+    "operations"
+   ],
+   "problem": [
+    "Teams in US and China struggled with language barriers during daily meetings",
+    "Manual transcription and translation slowed project alignment and risked misinterpretation",
+    "Consistent, clear communication was essential for timely decision-making in manufacturing"
+   ],
+   "built": [
+    "Automatically transcribes live meeting audio into multiple languages",
+    "Generates bilingual meeting notes for US and Chinese teams",
+    "Translates meeting content in real-time to ensure shared understanding"
+   ],
+   "systems": [],
+   "results": [
+    "Real-time translations ensure everyone shares the same understanding, reducing errors",
+    "Automated notes free up employees from manual transcription, boosting productivity",
+    "Nelson Global plans to build more AI agents for research tasks"
+   ],
+   "sellable_as": "Running live meeting transcription and translation as an automated agent generating bilingual notes for distributed teams.",
+   "confidence": "high"
+  },
+  "story_accenture_invests_in_lyzr_to_bring_agentic_ai_to_banking_and_insurance_companies": {
+   "id": "story_accenture_invests_in_lyzr_to_bring_agentic_ai_to_banking_and_insurance_companies",
+   "title": "Accenture: why it invested in Lyzr for banking and insurance",
+   "url": "https://newsroom.accenture.com/news/2025/accenture-invests-in-lyzr-to-bring-agentic-ai-to-banking-and-insurance-companies",
+   "topics": [
+    "accenture",
+    "investor",
+    "backs"
+   ],
+   "headline_result": "",
+   "client": "Accenture",
+   "industry": "banking and insurance",
+   "functions": [
+    "finance",
+    "operations"
+   ],
+   "problem": [
+    "Manual processes in banking and insurance workflows are slow and inefficient",
+    "Decision automation across workflows lacks security, explainability and compliance"
+   ],
+   "built": [
+    "Agents automate decisions across workflows in regulated financial services environments",
+    "Agents create secure, explainable and compliant AI automation for banking and insurance clients"
+   ],
+   "systems": [],
+   "results": [
+    "Helps companies modernize slow manual processes",
+    "Enhances operational efficiency in heavily regulated industries"
+   ],
+   "sellable_as": "Building secure, explainable AI agents that automate decisions across banking and insurance workflows while maintaining regulatory compliance.",
+   "confidence": "low"
+  },
+  "cs_leading_energy_provider": {
+   "id": "cs_leading_energy_provider",
+   "title": "AI Work-Order Agent Built for Dairyland Power",
+   "url": "https://www.lyzr.ai/case-studies/leading-energy-provider/",
+   "topics": [
+    "energy & utilities",
+    "operations",
+    "compliance & risk",
+    "it operations",
+    "responsible ai",
+    "hallucination manager"
+   ],
+   "headline_result": "70,000+ hours saved annually",
+   "client": "A leading energy cooperative",
+   "industry": "Energy utilities",
+   "functions": [
+    "operations"
+   ],
+   "problem": [
+    "Foremen spent 1-2 hours per work order researching multiple safety guidelines",
+    "Manual data entry in Dynamics 365 was inefficient in harsh weather conditions",
+    "100+ daily work orders caused significant lost productivity and morale"
+   ],
+   "built": [
+    "AI agent gathers relevant safety clauses from various sources and updates work orders",
+    "Agent submits completed work orders for foreman approval",
+    "Human-in-loop oversight ensures accuracy in hazardous conditions"
+   ],
+   "systems": [
+    "Dynamics 365"
+   ],
+   "results": [
+    "70,000+ hours saved",
+    "Equivalent to $1.5 million in cost savings per year",
+    "Foremen spend less time on laptops in extreme weather",
+    "Consistently accurate inclusion of all required guidelines"
+   ],
+   "sellable_as": "Running work-order safety compliance and updates as an AI agent with human approval inside the client's Dynamics 365 system.",
+   "confidence": "high"
+  },
+  "cs_ntt_data": {
+   "id": "cs_ntt_data",
+   "title": "AI-Powered Incident Prediction and Change Management for NTT Data",
+   "url": "https://www.lyzr.ai/case-studies/ntt-data/",
+   "topics": [
+    "technology & it services",
+    "it operations",
+    "operations",
+    "compliance & risk",
+    "responsible ai"
+   ],
+   "headline_result": "70,000+ Hours Saved",
+   "client": "NTT Data, a global digital business and IT services leader",
+   "industry": "digital services and IT",
+   "functions": [
+    "it operations"
+   ],
+   "problem": [
+    "Thousands of daily change entries overwhelmed manual review, causing bottlenecks and oversights",
+    "Engineers struggled to proactively predict which change logs might trigger incidents",
+    "Surfacing the right resolution guidelines from historical data was time-consuming and inconsistent"
+   ],
+   "built": [
+    "Machine learning model analyzes change logs and generates confidence score on incident risk",
+    "Vector similarity search across historical incidents surfaces relevant past cases and resolutions",
+    "AI model transforms predictions into actionable incident descriptions and remedial steps"
+   ],
+   "systems": [
+    "ReactJS UI",
+    "Qdrant",
+    "GPT-4o-mini",
+    "Okta SAML",
+    "Microsoft Azure Cosmos DB",
+    "Microsoft Azure"
+   ],
+   "results": [
+    "70,000+ hours saved",
+    "AI models proactively assess change logs, cutting down manual risk assessments",
+    "Engineers receive AI-generated next steps, improving response times and minimizing incident fallout",
+    "Automation frees teams to focus on complex, value-added tasks"
+   ],
+   "sellable_as": "Incident prediction and remediation guidance for change management using AI-driven risk analysis and historical case matching.",
+   "confidence": "high"
+  },
+  "story_how_we_generated_400m_interest_for_our_series_b_funding": {
+   "id": "story_how_we_generated_400m_interest_for_our_series_b_funding",
+   "title": "How our own agent, SivaClaw, ran investor relations",
+   "url": "https://www.lyzr.ai/webinar/how-we-generated-400m-interest-for-our-series-b-funding/",
+   "topics": [
+    "funding",
+    "raised",
+    "investors",
+    "funded",
+    "series",
+    "valuation"
+   ],
+   "headline_result": "",
+   "client": "Lyzr, a software company",
+   "industry": "software",
+   "functions": [
+    "finance",
+    "sales"
+   ],
+   "problem": [
+    "Founder spent significant time answering repetitive investor questions before substantive discussions could begin",
+    "Manual investor communications created bottleneck filtering hundreds of initial inquiries"
+   ],
+   "built": [
+    "Agent answers investor questions about product, team, traction, and company history in pre-due diligence phase",
+    "Generates personalized investment memos on request from investor inquiries",
+    "Answers detailed due-diligence questions on financials, ARR, customer lists, cap table, and GTM in data room",
+    "Cites source knowledge files for all factual claims to prevent hallucination on numbers"
+   ],
+   "systems": [
+    "GitAgent",
+    "data room"
+   ],
+   "results": [
+    "Filtered roughly 200+ investor conversations down to 30-35 substantive product due-diligence conversations",
+    "Reduced founder pre-call preparation time by handling repetitive informational questions upfront",
+    "Same approach used successfully in $8M Series A fundraise"
+   ],
+   "sellable_as": "Running investor relations and data room Q&A through an agent that cites sources and filters inquiries before founder calls.",
+   "confidence": "high"
+  },
+  "story_lyzr_and_accenture": {
+   "id": "story_lyzr_and_accenture",
+   "title": "Lyzr and Accenture: what we build together",
+   "url": "https://www.lyzr.ai/lyzr-and-accenture/",
+   "topics": [
+    "accenture",
+    "investor",
+    "backs"
+   ],
+   "headline_result": "",
+   "client": "Accenture",
+   "industry": "cross-industry",
+   "functions": [
+    "finance",
+    "marketing",
+    "customer service",
+    "engineering",
+    "operations"
+   ],
+   "problem": [
+    "Enterprise AI initiatives stuck in pilots, not reaching production",
+    "Multi-agent workflows require deep engineering dependency for deployment",
+    "Lack of auditable governance and compliance controls in agent systems",
+    "Complex system integrations across CRM, ERP, and legacy platforms demand manual coordination"
+   ],
+   "built": [
+    "Multi-agent orchestration platform handling agent coordination, memory, and tool access from single control plane",
+    "Governance layer embedding hallucination controls, role-based access, audit trails before production access",
+    "AutoRAG pipelines self-optimizing retrieval strategy and chunk size per use case",
+    "Low-code Agent Studio enabling domain leads to configure and extend agents without engineering dependency"
+   ],
+   "systems": [
+    "Lyzr Orchestration Engine",
+    "Lyzr Agent Studio",
+    "CRM",
+    "ERP",
+    "OMS",
+    "HRIS",
+    "Jira",
+    "GitHub",
+    "Slack",
+    "Salesforce",
+    "AWS"
+   ],
+   "results": [
+    "3 joint customer solutions in documented production",
+    "95% response time down",
+    "40+ live environments",
+    "10x improvement in personalisation coverage for WTW Retirement Advisory System"
+   ],
+   "sellable_as": "Building production-ready multi-agent systems with embedded governance and compliance controls deployed on private cloud infrastructure.",
+   "confidence": "high"
+  },
+  "cs_telecom_order_automation": {
+   "id": "cs_telecom_order_automation",
+   "title": "$4.3B Telecom Infrastructure Leader | Lyzr Case Study",
+   "url": "https://www.lyzr.ai/case-studies/telecom-order-automation/",
+   "topics": [
+    "telecom",
+    "operations",
+    "it operations",
+    "it_operations"
+   ],
+   "headline_result": "Document extraction time reduced from 30 min to 3 min (90% faster than incumbent platform)",
+   "client": "A global leader in wireless infrastructure, ~$4.3B annual revenue",
+   "industry": "wireless communications infrastructure",
+   "functions": [
+    "operations",
+    "supply chain"
+   ],
+   "problem": [
+    "Incumbent automation vendor cancelled its product, forcing reversion to manual order entry",
+    "Without replacement, 3 people would need reassignment to order support at direct headcount cost",
+    "Prior automation took 57 minutes per order with 2+ day full cycles due to batching and queue delays",
+    "Replacement had to match accuracy of cancelled system while improving speed"
+   ],
+   "built": [
+    "Order Processing Agent extracts and validates order data from RFDS documents, applies configuration rules, routes structured data onward",
+    "Business Rule Updater Agent keeps site and equipment configuration rules current in the data store",
+    "API connectors deliver validated order data into existing site and logistics management systems",
+    "Agent processes orders as they arrive instead of batching"
+   ],
+   "systems": [
+    "ticketing system",
+    "RPA platform",
+    "site management system"
+   ],
+   "results": [
+    "Document extraction time reduced from 30 minutes to 3 minutes",
+    "Orders process immediately instead of waiting for scheduled batch",
+    "3 analysts freed from manual order support",
+    "83% reduction in manual stages per order",
+    "90% faster document extraction than incumbent platform",
+    "75% fewer systems needed to process an order"
+   ],
+   "sellable_as": "Running order automation and document extraction as an agentic workflow inside existing site management and logistics systems.",
+   "confidence": "high"
+  },
+  "cs_cpg_ai_governance": {
+   "id": "cs_cpg_ai_governance",
+   "title": "AI Agent Governance Control Plane for a Fortune 50 CPG Company",
+   "url": "https://www.lyzr.ai/case-studies/cpg-ai-governance/",
+   "topics": [
+    "cpg",
+    "it operations",
+    "compliance & risk",
+    "engineering",
+    "opencontroller",
+    "responsible ai",
+    "responsible_ai",
+    "it_operations"
+   ],
+   "headline_result": "One registry for every agent, any cloud or framework",
+   "client": "A Fortune 50 CPG company",
+   "industry": "CPG: beverages and convenient foods",
+   "functions": [
+    "it operations"
+   ],
+   "problem": [
+    "Teams built agents across 3 clouds with separate tooling and no shared visibility",
+    "No single registry to register, discover or manage agents across frameworks or clouds",
+    "Logs, traces and cost data sat separately in each cloud with no unified view",
+    "Teams needed to stay on existing platforms; any solution requiring migration was not viable"
+   ],
+   "built": [
+    "Registers every agent in one central place regardless of cloud or framework",
+    "Aggregates logs, traces and cost data from every cloud into a single view",
+    "Routes agent deployments through unified governance checks on every cloud",
+    "Rolls back any deployment from the UI without manual intervention"
+   ],
+   "systems": [
+    "Kubernetes",
+    "CI/CD pipeline",
+    "Container scanning"
+   ],
+   "results": [
+    "One registry for every agent, any cloud or framework replaces siloed per-cloud agent management",
+    "Aggregated cross-cloud view of logs, traces and cost replaces per-cloud silos",
+    "Same 5 deployment controls applied on every cloud replaces varying per-cloud governance",
+    "Teams keep existing tools with no migration required"
+   ],
+   "sellable_as": "Building a unified AI agent governance and control plane across multiple cloud environments with central registry, observability and rollback capability.",
+   "confidence": "high"
+  },
+  "cs_venture_screening": {
+   "id": "cs_venture_screening",
+   "title": "Fortune 500 Global Professional Services Case Study | Lyzr AI",
+   "url": "https://www.lyzr.ai/case-studies/venture-screening/",
+   "topics": [
+    "professional services",
+    "private equity & vc",
+    "research & strategy",
+    "finance",
+    "knowledge graph",
+    "agents as a service",
+    "agents_as_a_service",
+    "knowledge_graph",
+    "venture_capital"
+   ],
+   "headline_result": "Research time per startup reduced from 2 to 4 weeks to a few minutes",
+   "client": "A Fortune 500 global professional services firm",
+   "industry": "Professional services",
+   "functions": [
+    "sales"
+   ],
+   "problem": [
+    "Screening 40,000 startups yearly took 2 to 4 weeks per company, with analysts splitting time across 5 to 10 databases before evaluation could begin.",
+    "Evaluation framework was applied inconsistently by hand across thousands of companies, creating delays and inconsistencies.",
+    "Analysts spent 30 to 40 percent of time building reports and decks rather than interpreting data and investment signals.",
+    "Competitor moves and market shifts were difficult to track continuously across the full scope of startups."
+   ],
+   "built": [
+    "Agents conduct research across 5 to 10 external databases plus internal data and populate a knowledge graph in one place.",
+    "Evaluation agent applies the same framework consistently to every startup, with reasoning attached to every score.",
+    "Competitive monitoring agent tracks competitor moves and market signals in real time continuously.",
+    "Investment memo writer and deck generator auto-create reports and presentations ready for investment committee review.",
+    "Orchestration agent takes analyst requests and routes them to specialized research, evaluation and monitoring agents."
+   ],
+   "systems": [
+    "Knowledge graph"
+   ],
+   "results": [
+    "Research time per startup reduced from 2 to 4 weeks to a few minutes.",
+    "Analyst time on reporting reduced from 30 to 40 percent to automated.",
+    "Screening coverage expanded from business hours to continuous 24 hours a day.",
+    "3,640 hours per year of analyst time reclaimed from manual reporting team-wide.",
+    "3.4 million plus individual evaluations run per year across the pipeline.",
+    "85 plus evaluative metrics applied per target via agentic orchestration.",
+    "5 billion relationships mapped in the knowledge graph.",
+    "3x to 4x more targets sourced and screened daily.",
+    "Platform went live in 12 weeks."
+   ],
+   "sellable_as": "Building a knowledge graph and agentic platform for continuous startup screening and evaluation inside a venture team's existing data stack.",
+   "confidence": "high"
+  }
+ }
+}
