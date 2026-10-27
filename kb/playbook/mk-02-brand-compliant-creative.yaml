@@ -19,6 +19,20 @@ first_offer:
   name: Brand rules audit
   shape: 2-3 weeks, one asset family
   ends_with: the brand book turned into rules a machine can check, and a pilot on that asset family
+first_conversation: "How many assets does your team reject for brand reasons, and how late in the process does that happen?"
+mechanism:
+  - The brand book is encoded as rules a machine can check
+  - Agent generates assets to the brief inside those rules
+  - Every asset is checked against the rules before a human sees it
+  - Failures come back with the rule they broke, not a general rejection
+discovery:
+  - How many assets a month, across how many SKUs, markets or formats
+  - Whether the brand book is current and specific enough to encode
+  - Who has final sign-off, and what they check for
+  - Which legal or regulatory claims apply to the category
+roles:
+  partner: Brand guardianship, the brand book, the creative lead, and client trust
+  lyzr: Agent Studio for generation, Responsible AI for the compliance checks
 proof:
   case: cs_campaign_photography_automation
   customer: a German manufacturer of premium passenger vehicles

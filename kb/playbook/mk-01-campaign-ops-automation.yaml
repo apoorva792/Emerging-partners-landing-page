@@ -19,6 +19,20 @@ first_offer:
   name: Campaign operations teardown
   shape: 2 weeks, one campaign type
   ends_with: brief-to-live timed step by step, and a pilot on the stage that costs the most hours
+first_conversation: "From signed brief to live, where do the days actually go?"
+mechanism:
+  - Agent produces the variants and localisations the brief calls for
+  - Checks each one against channel specs and the brand rules
+  - Prepares trafficking files and the QA checklist for the ops team
+  - Reports what is ready, what failed a check, and why
+discovery:
+  - Campaigns a month, and how many markets or variants each one spans
+  - Which stage takes the most elapsed time today
+  - Which systems hold assets, specs and approvals
+  - Who signs off a variant before it goes live
+roles:
+  partner: The brief, the channel relationships, the brand rules, and the ops team
+  lyzr: Agent Studio and Agent Architect for the production and QA agents
 proof:
   case: cs_novitium
   customer: Novitium

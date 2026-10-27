@@ -210,6 +210,34 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
  * checks us on, not the parts we sell with. */
 .caveat{margin:22px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:15px;line-height:1.5;color:var(--muted)}
 .caveat b{color:var(--soft);font-weight:400}
+/* The question that opens the meeting, and the mail they send afterwards. Both are meant
+ * to be taken off the screen and used, so both are set apart from the prose around them. */
+.ask{margin:0;font-size:19px;line-height:1.45;padding-left:16px;border-left:2px solid var(--accent)}
+.mail{background:var(--fill);border-radius:var(--r);padding:18px 20px 16px}
+.mail p{margin:0 0 14px;font-size:16px;line-height:1.55;white-space:pre-wrap}
+.mail button{background:var(--surface);border:1px solid var(--line);border-radius:var(--rb);
+  padding:7px 14px;font-size:14px;color:var(--soft);cursor:pointer}
+.mail button:hover{color:var(--ink);border-color:var(--muted)}
+
+/* ---------- the sales kit inside the brief ---------- */
+/* The half of a play the partner uses in the room rather than reads at a desk. Set on a
+ * tint so it survives being printed, photocopied and put on a table. */
+.kit{background:var(--fill);border-radius:var(--r);padding:16px 18px;margin:16px 0 0}
+.kitlab{margin:0 0 10px;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted)}
+.kitlab2{margin:16px 0 8px;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted)}
+.kitsteps{counter-reset:k;list-style:none;margin:0;padding:0}
+.kitsteps li{counter-increment:k;position:relative;padding:0 0 8px 26px;font-size:14.5px;line-height:1.45}
+.kitsteps li::before{content:counter(k,decimal-leading-zero);position:absolute;left:0;top:1px;
+  font-family:var(--mono);font-size:10.5px;color:var(--accent)}
+.kitchecks{list-style:none;margin:0;padding:0}
+.kitchecks li{position:relative;padding:0 0 7px 18px;font-size:14.5px;line-height:1.45;color:var(--soft)}
+.kitchecks li::before{content:'';position:absolute;left:0;top:10px;width:9px;height:1px;background:var(--accent)}
+.kitask{margin:0 0 14px;font-size:16px;line-height:1.45;padding-left:14px;border-left:2px solid var(--accent)}
+.kitmail{margin:0;font-size:14.5px;line-height:1.55;white-space:pre-wrap;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--rb);padding:14px 16px}
+.playproof .note{display:block;margin-top:4px;font-size:12.5px;color:var(--muted)}
 .proofline{font-size:19px;line-height:1.5;margin:0 0 10px}
 .proofline b{color:var(--accent);font-weight:600}
 .dfoot{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
@@ -323,6 +351,10 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
   .sh-sect{break-inside:avoid;page-break-inside:avoid;margin-bottom:26pt}
   .sh-sect>h3{break-after:avoid;page-break-after:avoid}
   .quote,.offer,.panel,.lands li,.track li,.steps li,.play{break-inside:avoid;page-break-inside:avoid}
+  /* The kit is what gets carried into the meeting, so it must not be split by a page
+   * break: half a discovery checklist at the bottom of page three is useless. */
+  .kit,.kitmail{break-inside:avoid;page-break-inside:avoid}
+  .kit{background:#F6F5F3 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .panel{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .sh-head{font-size:26pt;line-height:1.1}
   .sh-top{position:running(head)}
@@ -397,6 +429,7 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
     <h1>Have customers in mind?</h1>
     <p class="sub">Name the clients you'd think of first and we'll put them in order on your brief, with what to open with. Three is plenty. These go to the Lyzr partner team only — nobody is contacted without your say-so.</p>
     <div id="accts"></div>
+    <p class="small" id="acctnote" hidden style="margin:2px 0 10px">We filled these in from the clients named on your own site. They are public references, not accounts we know are ready. Change them freely.</p>
     <button class="ghost" id="addacct">+ Add another</button>
     <div class="row"><button class="go" id="acctgo">Build my brief</button><button class="ghost" id="acctskip">Skip this</button></div>
   </section>

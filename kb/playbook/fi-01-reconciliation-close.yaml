@@ -19,6 +19,20 @@ first_offer:
   name: Close process assessment
   shape: 2-3 weeks, one legal entity
   ends_with: a map of which month-end reconciliations are agent-ready, and a scoped pilot on the noisiest one
+first_conversation: "Which reconciliations does your team rebuild from scratch every month, and who signs off the exceptions?"
+mechanism:
+  - Agent pulls the ledger, bank and sub-ledger extracts on a schedule
+  - Matches transactions and writes the ones it cannot match into an exception queue with the reason
+  - Chases the owner of each exception and records what they said
+  - Drafts the close checklist with evidence attached to every line
+discovery:
+  - How many entities close on the same calendar, and how long does the slowest take
+  - Which reconciliations are already rule-based, and which need judgement
+  - Where the source data sits: ERP tables, bank files, spreadsheets
+  - Who approves an exception today and how it reaches them
+roles:
+  partner: Chart of accounts, close calendar, the controls their auditor expects, and the finance staff who review
+  lyzr: Agent Studio for the matching and exception agents, OpenController for the audit trail
 proof:
   case: cs_insurance_billing
   customer: A Fortune Global 500 insurance brokerage

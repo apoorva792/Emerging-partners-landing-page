@@ -20,6 +20,20 @@ first_offer:
   name: Workflow automation assessment
   shape: 3 weeks, one process
   ends_with: the process mapped end to end with the manual steps costed, and a scoped pilot on one of them
+first_conversation: "Which step in this process do your people still do by hand because the system cannot?"
+mechanism:
+  - Agent takes the intake, whatever form it arrives in
+  - Runs the checks the process requires against the systems of record
+  - Routes exceptions to the right approver with the evidence attached
+  - Writes the result back through the platform's supported interface
+discovery:
+  - Transactions a month, and the share needing manual handling
+  - Where the manual steps actually are, and who does them
+  - Which systems hold the data the checks need
+  - What the client requires before an automated step can write back
+roles:
+  partner: The platform knowledge, the process map, the integration, and the delivery team
+  lyzr: Agent Studio and Agent Architect for the workflow agents
 proof:
   case: cs_saksoft
   customer: Saksoft

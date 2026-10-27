@@ -18,6 +18,20 @@ first_offer:
   name: Delivery visibility review
   shape: 2 weeks, your own bench
   ends_with: where utilisation forecasting actually breaks, and an internal pilot you can later resell
+first_conversation: "How long does your staffing meeting take, and how much of it is rebuilding the picture rather than making decisions?"
+mechanism:
+  - Agent keeps the view of who is on what, from the systems that already hold it
+  - Matches open roles to available people on skills, cost and location
+  - Flags bench risk and projects running short of people before the week starts
+  - Keeps the utilisation forecast current without anyone editing a spreadsheet
+discovery:
+  - Where allocation lives today: PSA tool, spreadsheet or a person
+  - How often the forecast is wrong, and what that has cost
+  - Who decides an allocation and on what basis
+  - Whether skills data exists in any usable form
+roles:
+  partner: Their own bench and staffing process, which is also the demo
+  lyzr: Agent Studio for the planning agents
 proof:
   case: cs_how_a_technology_services_firm_optimized_resource_allocation_with_lyzr
   customer: a global technology services firm

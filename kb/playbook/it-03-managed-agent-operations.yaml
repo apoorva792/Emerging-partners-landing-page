@@ -19,6 +19,20 @@ first_offer:
   name: Agent operations review
   shape: 2 weeks, their current estate
   ends_with: what is running, what is unmonitored, what has already broken, and a takeover plan
+first_conversation: "As your teams deploy more agents, who is accountable for monitoring, access and incident response?"
+mechanism:
+  - Every agent in the client's estate is inventoried with its owner and its access
+  - Failures, cost and performance are monitored against an agreed service level
+  - Incidents are triaged and rolled back by the partner's existing support team
+  - A monthly report says what ran, what broke, what changed and what it cost
+discovery:
+  - What is already running, who built it, and what it can reach
+  - Whether anything has already failed in production, and who noticed
+  - What the current support contract covers and what it excludes
+  - Which environments the agents run in
+roles:
+  partner: The support desk, the on-call rota, the client SLA, and the renewal conversation
+  lyzr: OpenController for the registry and monitoring, Responsible AI for policy enforcement
 proof:
   case: cs_movate
   customer: Movate

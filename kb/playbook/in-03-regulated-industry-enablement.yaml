@@ -20,6 +20,20 @@ first_offer:
   name: Regulated workflow review
   shape: 3 weeks, one workflow
   ends_with: that workflow mapped against the rules it answers to, and a pilot that leaves an audit trail
+first_conversation: "Which regulated process is still manual because nobody can explain an automated decision to the regulator?"
+mechanism:
+  - Agent handles the case or check within the rules the process answers to
+  - Every decision records which rule it applied and what evidence it used
+  - Anything outside the rules goes to a named human, with the file assembled
+  - The audit trail is produced in the format the regulator already asks for
+discovery:
+  - Which rulebook or circular governs the process, and how often it changes
+  - Volume a month, and the current handling time and error rate
+  - What the regulator has asked for in the last two inspections
+  - Who inside the client signs off on an automated decision
+roles:
+  partner: The sector credential, the rulebook knowledge, and the domain specialists
+  lyzr: Agent Studio for the case agents, OpenController and Responsible AI for explainability and control
 proof:
   case: cs_major_banking_institution
   customer: a large bank

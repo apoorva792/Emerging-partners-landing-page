@@ -20,6 +20,20 @@ first_offer:
   name: Procure-to-pay workflow review
   shape: 3 weeks, one approval chain
   ends_with: the three approval steps costing the most time, and a scoped pilot on the worst
+first_conversation: "Which procurement decisions and exceptions still happen outside the ERP, in email or spreadsheets?"
+mechanism:
+  - Agent reads the supplier request or invoice and pulls out what the approval needs
+  - Checks it against the purchase order, contract terms and supplier record
+  - Routes only the exceptions, with the evidence attached, to the right approver
+  - Writes the approved result back through the ERP's supported interface
+discovery:
+  - How many purchase requests and invoices a month, and what share need manual intervention
+  - How many approval steps a typical request passes through
+  - Which systems hold the contract, the supplier record and the PO
+  - Whether the audit function requires a specific evidence format
+roles:
+  partner: The approval chains they already mapped, the ERP integration, and the client relationship
+  lyzr: Agent Studio and Agent Architect for the intake and matching agents, OpenController for policy and logs
 proof:
   case: cs_how_a_global_enterprise_built_an_ai_powered_procurement_operating_system_with_lyzr
   customer: a global enterprise

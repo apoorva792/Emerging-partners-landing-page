@@ -19,6 +19,20 @@ first_offer:
   name: Onboarding journey audit
   shape: 2 weeks, one hiring flow
   ends_with: every handoff from offer to first day timed, and a scoped pilot on the slowest stretch
+first_conversation: "Between offer accepted and first day, how many people chase a new hire, and what are they chasing?"
+mechanism:
+  - Agent sends and tracks every document the hire owes, in their language and timezone
+  - Runs the verification and background checks the role requires, and records the result
+  - Raises account, device and access requests to the systems that grant them
+  - Reports which hires are at risk of missing day one, and why
+discovery:
+  - How many hires a month, across how many countries
+  - Which checks are mandatory by role and which are discretionary
+  - Which HRMS and ITSM systems hold the records
+  - Who is accountable today when a hire shows up without a laptop
+roles:
+  partner: The hiring process they already run, the country compliance knowledge, and the HR team
+  lyzr: Agent Studio and Agent Architect for the document, verification and provisioning agents
 proof:
   case: cs_accenture_accubate
   customer: Accenture

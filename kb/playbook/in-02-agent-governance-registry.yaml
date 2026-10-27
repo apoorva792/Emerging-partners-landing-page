@@ -20,6 +20,20 @@ first_offer:
   name: Agent estate assessment
   shape: 3 weeks, one business unit
   ends_with: an inventory of every agent and copilot running, what each can reach, and a registry pilot
+first_conversation: "Who can tell you how many AI agents are running in your business right now, and what each one can reach?"
+mechanism:
+  - Every agent and copilot in the estate is registered, with its owner and its permissions
+  - Each one's activity, cost and failures are visible in one place, whoever built it
+  - Policy is applied centrally: what an agent may access, and what needs a human
+  - Incidents have a trace, a rollback and a report the risk function accepts
+discovery:
+  - How many teams have deployed something, and on how many different platforms
+  - Whether anyone owns AI risk formally, and who they report to
+  - What the audit or regulator has already asked for
+  - Which cloud environments are in scope
+roles:
+  partner: The governance engagement, the risk relationship, and the consultants who run the assessment
+  lyzr: OpenController for the registry and controls, Responsible AI and Hallucination Manager for the policy layer
 proof:
   case: cs_enterprise_ai_governance
   customer: a global growth and creative consulting firm

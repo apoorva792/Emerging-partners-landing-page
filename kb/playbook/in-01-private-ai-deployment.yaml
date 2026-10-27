@@ -19,6 +19,20 @@ first_offer:
   name: Deployment readiness review
   shape: 3-4 weeks, one target environment
   ends_with: hosting, data residency and hardware settled in writing, and a scoped sovereign pilot
+first_conversation: "Which AI projects have stalled because the data cannot leave your environment?"
+mechanism:
+  - The agent platform is deployed inside the client's own data centre or national cloud
+  - Models run on infrastructure the client controls, with no call leaving the boundary
+  - Access, logging and retention follow the controls already in place there
+  - The partner operates it under the same support arrangement as the rest of the estate
+discovery:
+  - Which regulation or policy sets the boundary, and who interprets it
+  - What hardware is available, and whether GPUs are already in place
+  - Which workloads are blocked today and what they are worth
+  - Who signs off a new system inside the perimeter
+roles:
+  partner: The environment, the hardware, the clearances, and the operations team
+  lyzr: Agentic OS and Optimus for the in-boundary deployment, OpenController for control and visibility
 proof:
   case: cs_cpg_ai_governance
   customer: a Fortune 50 CPG company

@@ -18,6 +18,20 @@ first_offer:
   name: Diligence workflow review
   shape: 2 weeks, against one closed deal
   ends_with: a rerun of that deal showing what the analyst would have started from, and a pilot on a live one
+first_conversation: "How many targets does your team screen before one reaches the investment committee, and what does the first pass cost you?"
+mechanism:
+  - Agent collects filings, decks and data room documents for the target
+  - Extracts the line items the firm's own model template expects
+  - Builds a first-pass model and flags every number it could not source
+  - Scores the target against the screening criteria the firm already uses
+discovery:
+  - How many targets are screened a quarter and by how many analysts
+  - Whether one model template is used across deals or each partner has their own
+  - Where the source documents arrive: data room, email, portal
+  - What the firm requires before a number can go in front of a client
+roles:
+  partner: The model template, the screening criteria, and the analyst who checks the draft
+  lyzr: Agent Studio for the extraction and modelling agents
 proof:
   case: cs_how_lyzr_reduced_financial_model_preparation_from_10_hours_to_under_5_minutes
   customer: a leading investment and advisory firm

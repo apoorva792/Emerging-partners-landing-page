@@ -19,6 +19,20 @@ first_offer:
   name: Screening consistency review
   shape: 2 weeks, one role family
   ends_with: the same shortlist scored two ways, and a pilot on that role family
+first_conversation: "For your hardest role to fill, how long does it take to go from applications to a shortlist you trust?"
+mechanism:
+  - Agent screens applications against the role's actual requirements, not keywords
+  - Runs a structured first interview and records the answers
+  - Scores every candidate the same way and shows its reasoning per criterion
+  - Hands the recruiter a ranked shortlist with the evidence behind each rank
+discovery:
+  - Applicants per role, and how many reach a human today
+  - Whether the scorecard is written down or lives in the recruiter's head
+  - Which ATS holds the pipeline
+  - What the client's policy is on automated assessment and candidate consent
+roles:
+  partner: The scorecard, the role knowledge, and the recruiters who own the shortlist
+  lyzr: Agent Studio for the screening and interview agents
 proof:
   case: cs_curatal
   customer: Curatal

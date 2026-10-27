@@ -19,6 +19,20 @@ first_offer:
   name: Employee query baseline
   shape: 2-3 weeks, one quarter of tickets
   ends_with: the queries that never needed a human, and a pilot on the top twenty
+first_conversation: "What are the top twenty questions your HR team answers every week, and how many of them have a policy answer?"
+mechanism:
+  - Agent answers policy, leave and payroll questions from the client's own documents
+  - Pulls the employee's own record when the answer depends on it
+  - Generates standard letters and confirmations on request
+  - Escalates to a human with the full thread when the policy does not cover it
+discovery:
+  - Ticket volume a quarter, and the share that are repeat questions
+  - Whether policies are current, versioned and in one place
+  - Which HRMS holds leave balances and payroll data
+  - What the client requires before an agent may state a policy to an employee
+roles:
+  partner: The HRMS configuration they built, the policy set, and the HR shared services team
+  lyzr: Agent Studio for the service desk agents, Responsible AI for what the agent may and may not answer
 proof:
   case: cs_global_enterprise_streamlined_hr_engineering_qa_with_lyzr
   customer: a global enterprise

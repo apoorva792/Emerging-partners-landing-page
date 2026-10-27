@@ -20,6 +20,20 @@ first_offer:
   name: Integration feasibility proof
   shape: 2 weeks, one document type
   ends_with: a working extraction running against their real documents, and a plan for the next interface
+first_conversation: "Which data does your team still rekey because the old system cannot hand it over?"
+mechanism:
+  - Agent reads the document, email or terminal screen the old system produces
+  - Extracts the fields the new system needs and validates them against reference data
+  - Sends anything it is unsure about to a reviewer, with the source shown
+  - Pushes clean records into the target system through its supported interface
+discovery:
+  - Which document or screen types carry the volume
+  - How many records a month and what rekeying costs today
+  - What accuracy the business needs before it will trust the output
+  - Whether the target system has an API or needs a file drop
+roles:
+  partner: The integration work they already sell, the knowledge of both systems, and the engineers
+  lyzr: Agent Studio for the extraction agents, OpenController for monitoring in production
 proof:
   case: cs_telecom_order_automation
   customer: a global leader in wireless communications infrastructure

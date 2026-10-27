@@ -19,6 +19,20 @@ first_offer:
   name: Research request audit
   shape: 2 weeks, one quarter of briefs
   ends_with: where planners' questions actually go and what they cost, and a pilot on their own sources
+first_conversation: "When a planner needs an answer about an audience, what happens next and how long does it take?"
+mechanism:
+  - Agent answers planner questions from the firm's own research and licensed sources
+  - Every answer cites the source and the date it came from
+  - Contradictions between sources are surfaced rather than averaged away
+  - The planner can interrogate the answer instead of taking it on trust
+discovery:
+  - How many research requests a quarter, and what a sprint costs today
+  - Which sources are licensed, and what the licence allows
+  - Whether past research is stored anywhere searchable
+  - What a planner needs before they will put a number in a client deck
+roles:
+  partner: The source set, the planners, and the client relationship
+  lyzr: Agent Studio for the research agents
 proof:
   case: cs_multicultural_audience_intelligence
   customer: An independent media and marketing strategy agency
