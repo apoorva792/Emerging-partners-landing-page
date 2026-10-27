@@ -1,5 +1,20 @@
 [
  {
+  "note": "hero headline — the race is about the revenue, not the delivery",
+  "find": "The race to deliver<br>AI services is on.<br>Make sure you're ahead.",
+  "replace": "The race to capture<br>AI services revenue is on.<br>Get ahead with Lyzr."
+ },
+ {
+  "note": "agent section heading — name the outcome; million-dollar must not break across lines",
+  "find": "See what your business could build with Lyzr.",
+  "replace": "See where your next <span style=\\\"white-space:nowrap\\\">million-dollar</span> services opportunity could come from."
+ },
+ {
+  "note": "agent section standfirst — the opportunity is inside the clients they already have",
+  "find": "Share your company website, and we'll show you how Lyzr could help you expand your services, create new offerings, and grow your business.",
+  "replace": "Discover new AI services revenue opportunities within your existing client base, and how Lyzr can help you turn them into business."
+ },
+ {
   "note": "drop the prototype badge",
   "find": ">Prototype · simulated results<",
   "replace": "><"
@@ -148,5 +163,20 @@
   "note": "",
   "find": "Add five customer accounts to unlock the $5,000 activation package. You can still talk to the partner team now.",
   "replace": "Add five customer accounts to unlock the activation package. You can still talk to the partner team now."
+ },
+ {
+  "note": "the longer heading needs a smaller size or it rags over six lines",
+  "find": "h2 id=\\\"agent-h\\\" style=\\\"margin:24px 0 0;font-weight:400;font-size:clamp(40px,4.6vw,68px);line-height:1;",
+  "replace": "h2 id=\\\"agent-h\\\" style=\\\"margin:24px 0 0;font-weight:400;font-size:clamp(32px,3.2vw,50px);line-height:1.06;"
+ },
+ {
+  "note": "the panel was sized for a deck upload row and a closing line this build removes",
+  "find": "min-height:420px",
+  "replace": "min-height:300px"
+ },
+ {
+  "note": "the prototype badge is emptied above; without this its dashed outline stays, an empty box in the panel header",
+  "find": "padding:5px 9px;border:1px dashed #CFCCC7;border-radius:4px",
+  "replace": "display:none"
  }
 ]
