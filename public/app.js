@@ -393,6 +393,7 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
       <ol class="kitsteps">${c.mechanism.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
     </div>` : ''}
     <dl class="kv">
+      ${row('What this is', c.offering)}
       ${detail && (c.stands_on ?? []).length ? `<dt>Where you have done this</dt><dd>${c.stands_on
         .map((e) => `<a href="${encodeURI(e.url)}" target="_blank" rel="noopener">${esc(e.what)}</a>`)
         .join('<br>')}</dd>` : ''}

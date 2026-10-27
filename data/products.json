@@ -1,27 +1,174 @@
 {
-  "note": "What a partner actually builds on and demos. `platform` is the thing the service runs on; `agents` are pre-built agents a partner can show a client next week rather than describe. `for` is matched against the function a line sits in.",
-  "platform": [
-    { "id": "agent_studio", "name": "Agent Studio", "does": "Build, test and run the agents, with the workflow and the integrations around them", "default": true },
-    { "id": "architect", "name": "Architect", "does": "Build agents and apps in one flow, including by describing them, so a business user can shape the workflow" },
-    { "id": "opencontroller", "name": "OpenController", "does": "Register every agent, apply policy centrally, and keep the audit trail", "for": ["compliance", "it operations", "risk"] },
-    { "id": "responsible_ai", "name": "Responsible AI", "does": "Evaluation, guardrails and the evidence a risk function asks for", "for": ["compliance", "risk"] },
-    { "id": "hallucination_manager", "name": "Hallucination Manager", "does": "Catch and score wrong answers before they reach the client's user", "for": ["compliance", "customer service", "risk"] },
-    { "id": "knowledge_base", "name": "Knowledge Base", "does": "Ground the agents in the client's own documents and records" },
-    { "id": "knowledge_graph", "name": "Knowledge Graph", "does": "Hold the relationships between entities when the answer spans several records", "for": ["research", "finance", "legal"] },
-    { "id": "agent_memory", "name": "AI Agent Memory", "does": "Carry context across a long-running case rather than a single exchange", "for": ["customer service", "sales"] },
-    { "id": "optimus", "name": "Lyzr Optimus", "does": "Run the agents, models and governance on an appliance inside their own data centre, air-gapped", "for": ["it operations"] },
-    { "id": "sovereign_ai", "name": "Sovereign AI", "does": "Deploy where the data is required to stay, including on-premise and in-country", "for": ["compliance", "it operations"] },
-    { "id": "agents_as_a_service", "name": "Agents as a Service", "does": "Lyzr runs the agents so the partner sells the outcome rather than the infrastructure", "for": ["operations", "customer service"] },
-    { "id": "orchestration_as_a_service", "name": "Orchestration as a Service", "does": "Coordinate agents across systems the client already runs", "for": ["it operations", "operations"] }
-  ],
-  "agents": [
-    { "id": "jazon", "name": "Jazon", "does": "AI SDR: researches an account, writes the outreach and books the meeting", "for": ["sales"] },
-    { "id": "skott", "name": "Skott", "does": "AI marketer: produces campaign content on brand and on schedule", "for": ["marketing"] },
-    { "id": "jeff", "name": "Jeff", "does": "AI support agent: resolves tickets inside the client's helpdesk", "for": ["customer service"] },
-    { "id": "diane", "name": "Diane", "does": "AI HR agent: answers employee questions and runs the people-ops workflows", "for": ["hr"] },
-    { "id": "kathy", "name": "Kathy", "does": "AI competitor analyst: tracks a market and reports what moved", "for": ["research", "marketing"] },
-    { "id": "dwight", "name": "Dwight", "does": "AI RFP scout: finds the tenders worth bidding and drafts the response", "for": ["sales", "procurement"] },
-    { "id": "benjie", "name": "Benjie", "does": "Insurance agents: claims, underwriting and policy servicing", "for": ["insurance", "operations"] },
-    { "id": "madison", "name": "Madison GRC", "does": "Governance, risk and compliance agent for controls and evidence", "for": ["compliance", "risk", "legal"] }
-  ]
+ "note": "What a partner actually builds on and demos. `platform` is the thing the service runs on; `agents` are pre-built agents a partner can show a client next week rather than describe. `for` is matched against the function a line sits in.",
+ "platform": [
+  {
+   "id": "agent_studio",
+   "name": "Agent Studio",
+   "does": "Build, test and run the agents, with the workflow and the integrations around them",
+   "default": true
+  },
+  {
+   "id": "architect",
+   "name": "Architect",
+   "does": "Build agents and apps in one flow, including by describing them, so a business user can shape the workflow"
+  },
+  {
+   "id": "opencontroller",
+   "name": "OpenController",
+   "does": "Register every agent, apply policy centrally, and keep the audit trail",
+   "for": [
+    "compliance",
+    "it operations",
+    "risk"
+   ]
+  },
+  {
+   "id": "responsible_ai",
+   "name": "Responsible AI",
+   "does": "Evaluation, guardrails and the evidence a risk function asks for",
+   "for": [
+    "compliance",
+    "risk"
+   ]
+  },
+  {
+   "id": "hallucination_manager",
+   "name": "Hallucination Manager",
+   "does": "Catch and score wrong answers before they reach the client's user",
+   "for": [
+    "compliance",
+    "customer service",
+    "risk"
+   ]
+  },
+  {
+   "id": "knowledge_base",
+   "name": "Knowledge Base",
+   "does": "Ground the agents in the client's own documents and records"
+  },
+  {
+   "id": "knowledge_graph",
+   "name": "Knowledge Graph",
+   "does": "Hold the relationships between entities when the answer spans several records",
+   "for": [
+    "research",
+    "finance",
+    "legal"
+   ]
+  },
+  {
+   "id": "agent_memory",
+   "name": "AI Agent Memory",
+   "does": "Carry context across a long-running case rather than a single exchange",
+   "for": [
+    "customer service",
+    "sales"
+   ]
+  },
+  {
+   "id": "optimus",
+   "name": "Lyzr Optimus",
+   "does": "Run the agents, models and governance on an appliance inside their own data centre, air-gapped",
+   "for": [
+    "it operations"
+   ]
+  },
+  {
+   "id": "sovereign_ai",
+   "name": "Sovereign AI",
+   "does": "Deploy where the data is required to stay, including on-premise and in-country",
+   "for": [
+    "compliance",
+    "it operations"
+   ]
+  },
+  {
+   "id": "agents_as_a_service",
+   "name": "Agents as a Service",
+   "does": "Lyzr runs the agents so the partner sells the outcome rather than the infrastructure",
+   "for": [
+    "operations",
+    "customer service"
+   ]
+  },
+  {
+   "id": "orchestration_as_a_service",
+   "name": "Orchestration as a Service",
+   "does": "Coordinate agents across systems the client already runs",
+   "for": [
+    "it operations",
+    "operations"
+   ]
+  }
+ ],
+ "agents": [
+  {
+   "id": "jazon",
+   "name": "Jazon",
+   "does": "AI SDR: researches an account, writes the outreach and books the meeting",
+   "for": [
+    "sales"
+   ]
+  },
+  {
+   "id": "skott",
+   "name": "Skott",
+   "does": "AI marketer: produces campaign content on brand and on schedule",
+   "for": [
+    "marketing"
+   ]
+  },
+  {
+   "id": "jeff",
+   "name": "Jeff",
+   "does": "AI support agent: resolves tickets inside the client's helpdesk",
+   "for": [
+    "customer service"
+   ]
+  },
+  {
+   "id": "diane",
+   "name": "Diane",
+   "does": "AI HR agent: answers employee questions and runs the people-ops workflows",
+   "for": [
+    "hr"
+   ]
+  },
+  {
+   "id": "kathy",
+   "name": "Kathy",
+   "does": "AI competitor analyst: tracks a market and reports what moved",
+   "for": [
+    "research",
+    "marketing"
+   ]
+  },
+  {
+   "id": "dwight",
+   "name": "Dwight",
+   "does": "AI RFP scout: finds the tenders worth bidding and drafts the response",
+   "for": [
+    "sales",
+    "procurement"
+   ]
+  },
+  {
+   "id": "benjie",
+   "name": "Benjie",
+   "does": "Insurance agents: claims, underwriting and policy servicing",
+   "for": [
+    "insurance"
+   ]
+  },
+  {
+   "id": "madison",
+   "name": "Madison GRC",
+   "does": "Governance, risk and compliance agent for controls and evidence",
+   "for": [
+    "compliance",
+    "risk",
+    "legal"
+   ]
+  }
+ ]
 }

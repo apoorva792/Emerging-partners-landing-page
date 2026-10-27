@@ -2521,7 +2521,7 @@
     "backs"
    ],
    "headline_result": "",
-   "client": "Accenture",
+   "client": "",
    "industry": "cross-industry",
    "functions": [
     "finance",
@@ -2555,15 +2555,10 @@
     "Salesforce",
     "AWS"
    ],
-   "results": [
-    "3 joint customer solutions in documented production",
-    "95% response time down",
-    "40+ live environments",
-    "10x improvement in personalisation coverage for WTW Retirement Advisory System"
-   ],
+   "results": [],
    "sellable_as": "Building production-ready multi-agent systems with embedded governance and compliance controls deployed on private cloud infrastructure.",
    "confidence": "high",
-   "kind": "delivered"
+   "kind": "capability"
   },
   "cs_telecom_order_automation": {
    "id": "cs_telecom_order_automation",
