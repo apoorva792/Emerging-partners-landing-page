@@ -353,10 +353,11 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
   const o = c.first_offer ?? {}, pr = c.proof ?? {}, h = c.how_to_sell ?? {};
   const res = (c.resources ?? []).filter((r) => !seen || (!seen.has(r.url) && seen.add(r.url)));
   const m = /^([\d.,]+(?:[–-][\d.,]+)?\s*(?:%|x|\+)?)\s+(.{4,})$/i.exec(pr.result ?? '');
-  const obj = detail ? (c.objections ?? []) : [];
   const row = (dt, dd) => (dd ? `<dt>${esc(dt)}</dt><dd>${esc(dd)}</dd>` : '');
-  const meeting = c.first_conversation || (c.qualify ?? []).length || obj.length
-    || (c.discovery ?? []).length || c.client_email;
+  /* The room half of the play belongs in the document they take away, not on the screen
+   * where they are still choosing between three of them. */
+  const meeting = !detail && (c.first_conversation || (c.qualify ?? []).length
+    || (c.discovery ?? []).length || c.client_email);
 
   return `<article class="play">
     ${num ? `<p class="playnum">${esc(num)}</p>` : ''}
@@ -389,13 +390,10 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
       <p class="kitlab">Take this into the meeting</p>
       ${c.first_conversation ? `<p class="kitask">${esc(c.first_conversation)}</p>` : ''}
       ${(c.qualify ?? []).length ? `<ol class="kitsteps">${c.qualify.map((q) => `<li>${esc(q)}</li>`).join('')}</ol>` : ''}
-      ${obj.length ? `<p class="kitlab2">What they will say back</p>
-        ${obj.map((x) => `<div class="qa"><b>&ldquo;${esc(x.objection)}&rdquo;</b><p>${esc(x.answer)}</p></div>`).join('')}` : ''}
       ${(c.discovery ?? []).length ? `<p class="kitlab2">Before you scope it, find out</p>
         <ul class="kitchecks">${c.discovery.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
       ${c.client_email ? `<p class="kitlab2">Send this to a client you already have</p>
-        <p class="kitmail"${detail ? ' id="mailtext"' : ''}>${esc(c.client_email)}</p>
-        ${detail ? '<button type="button" class="kitcopy" id="mailcopy">Copy</button>' : ''}` : ''}
+        <p class="kitmail">${esc(c.client_email)}</p>` : ''}
     </div>` : ''}
     ${res.length ? `<div class="reading">
       <p class="readlab">Send with it</p>
@@ -409,17 +407,6 @@ function renderDetail() {
 
   $('detail').innerHTML = playBlock(c, { detail: true })
     + `<div class="dfoot"><button class="go accent" id="build">Build my brief &rarr;</button></div>`;
-
-  const copy = $('mailcopy');
-  if (copy) {
-    copy.onclick = async () => {
-      try {
-        await navigator.clipboard.writeText($('mailtext').textContent);
-        copy.textContent = 'Copied';
-        setTimeout(() => { copy.textContent = 'Copy'; }, 1800);
-      } catch { copy.textContent = 'Select and copy'; }
-    };
-  }
   /* The card they are reading always counts, ticked or not — having to tick the one on
    * screen before the button means anything is a step nobody expects. */
   $('build').onclick = () => {
@@ -639,7 +626,7 @@ function exportPdf(sheetId, title, btn) {
    they are restated unconditionally here for the preview the dialog shows. */
 body{background:#fff;margin:0}
 .sheet{border:none;border-radius:0;padding:0}
-.copy,.tabs,.kitcopy{display:none}
+.copy,.tabs{display:none}
 </style></head><body>${sheet.outerHTML}</body></html>`);
   doc.close();
 

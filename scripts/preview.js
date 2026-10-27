@@ -59,7 +59,7 @@ addEventListener('load', () => {
     var sheet = document.querySelector('#s9.on #sheet-client') || document.querySelector('#s8.on #sheet-partner');
     if (!sheet) { console.error('print: no sheet on screen'); return; }
     document.body.innerHTML = '<div class="wrap">' + sheet.outerHTML + '</div>';
-    document.querySelectorAll('.copy,.tabs,.kitcopy').forEach(function (el) { el.remove(); });
+    document.querySelectorAll('.copy,.tabs').forEach(function (el) { el.remove(); });
   }, 7000);
 });
 <\/script>`;
