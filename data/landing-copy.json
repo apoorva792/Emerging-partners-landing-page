@@ -188,5 +188,25 @@
   "note": "hero subtext above the email field; the form tightens up to make room for it",
   "find": "<form sc-camel-on-submit=\\\"{{ heroGo }}\\\" sc-camel-no-validate=\\\"{{ true }}\\\" style=\\\"margin-top:clamp(28px,3vw,40px);",
   "replace": "<p style=\\\"margin:clamp(18px,2.1vw,26px) 0 0;max-width:min(600px,100%);font-size:clamp(16px,1.2vw,19px);line-height:1.55;letter-spacing:-.005em;color:rgba(255,255,255,.9);text-shadow:0 1px 14px rgba(0,0,0,.3)\\\">Capture new markets, win bigger deals, and unlock new revenue streams. <span style=\\\"color:rgba(255,255,255,.76)\\\">Build and deliver enterprise AI solutions on Lyzr’s AI agent platform.<\\u002Fspan><\\u002Fp>\\n    <form sc-camel-on-submit=\\\"{{ heroGo }}\\\" sc-camel-no-validate=\\\"{{ true }}\\\" style=\\\"margin-top:clamp(20px,2.3vw,30px);"
+ },
+ {
+  "note": "nav bar: the gap closes on a narrow screen so the CTA is not pushed off the edge",
+  "find": "display:flex;align-items:center;gap:24px;background:{{ navBg }}",
+  "replace": "display:flex;align-items:center;gap:clamp(10px,2.4vw,24px);background:{{ navBg }}"
+ },
+ {
+  "note": "nav logo lockup: allowed to shrink rather than holding its full width",
+  "find": "style=\\\"display:flex;align-items:center;gap:14px;flex:none;color:inherit\\\"",
+  "replace": "style=\\\"display:flex;align-items:center;gap:clamp(8px,1.6vw,14px);flex:0 1 auto;min-width:0;color:inherit\\\""
+ },
+ {
+  "note": "nav CTA: may shrink rather than be clipped by the bar",
+  "find": "flex:none;height:42px;padding:0 18px;border:0;border-radius:4px;background:#FE4B1E",
+  "replace": "flex:0 1 auto;min-width:0;height:42px;padding:0 18px;border:0;border-radius:4px;background:#FE4B1E"
+ },
+ {
+  "note": "phone nav: the section links and the Emerging Partners chip come out of the bar, which is what pushed the CTA off the right edge",
+  "find": "a,button{font:inherit}\\n::placeholder{color:#9A9C9F}\\n",
+  "replace": "a,button{font:inherit}\\n::placeholder{color:#9A9C9F}\\n@media (max-width:760px){\\n  nav[aria-label=\\\"Main\\\"]>div{display:none !important}\\n  nav[aria-label=\\\"Main\\\"]>a>span{display:none}\\n  nav[aria-label=\\\"Main\\\"]>button{margin-left:auto}\\n}\\n"
  }
 ]

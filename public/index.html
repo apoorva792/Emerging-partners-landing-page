@@ -375,11 +375,16 @@ a:hover{color:#FE4B1E}
 *:focus-visible{outline:2px solid #FE4B1E;outline-offset:3px}
 input,select,textarea,button{font:inherit}
 ::placeholder{color:#9A9C9F}
+@media (max-width:760px){
+  nav[aria-label="Main"]>div{display:none !important}
+  nav[aria-label="Main"]>a>span{display:none}
+  nav[aria-label="Main"]>button{margin-left:auto}
+}
 </style>
 </helmet>
 
-<nav aria-label="Main" style="position:fixed;top:0;left:0;right:0;z-index:50;height:72px;box-sizing:border-box;padding:0 clamp(20px,4vw,56px);display:flex;align-items:center;gap:24px;background:{{ navBg }};border-bottom:1px solid {{ navBorder }};color:{{ navFg }};transition:background .25s, color .25s">
-  <a href="#top" aria-label="Lyzr Emerging Partners, back to top" style="display:flex;align-items:center;gap:14px;flex:none;color:inherit">
+<nav aria-label="Main" style="position:fixed;top:0;left:0;right:0;z-index:50;height:72px;box-sizing:border-box;padding:0 clamp(20px,4vw,56px);display:flex;align-items:center;gap:clamp(10px,2.4vw,24px);background:{{ navBg }};border-bottom:1px solid {{ navBorder }};color:{{ navFg }};transition:background .25s, color .25s">
+  <a href="#top" aria-label="Lyzr Emerging Partners, back to top" style="display:flex;align-items:center;gap:clamp(8px,1.6vw,14px);flex:0 1 auto;min-width:0;color:inherit">
     <img loading="lazy" decoding="async" src="/assets/12579fb1-269d-4450-a755-e4ebaa7825e6.png" alt="Lyzr" style="height:28px;width:auto;display:block;filter:{{ logoFilter }}">
     <span style="font-family:'JetBrains Mono', monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border:1px solid {{ pillBorder }};border-radius:999px;white-space:nowrap">Emerging Partners</span>
   </a>
@@ -389,7 +394,7 @@ input,select,textarea,button{font:inherit}
     <a href="#what-you-get" style="color:inherit">What you get</a>
     <a href="#team" style="color:inherit">Team</a>
   </div>
-  <button type="button" sc-camel-on-click="{{ goAgent }}" style="flex:none;height:42px;padding:0 18px;border:0;border-radius:4px;background:#FE4B1E;color:#FFFFFF;font-family:'JetBrains Mono', monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;white-space:nowrap" style-hover="background:#E5401A">Become a partner</button>
+  <button type="button" sc-camel-on-click="{{ goAgent }}" style="flex:0 1 auto;min-width:0;height:42px;padding:0 18px;border:0;border-radius:4px;background:#FE4B1E;color:#FFFFFF;font-family:'JetBrains Mono', monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;white-space:nowrap" style-hover="background:#E5401A">Become a partner</button>
 </nav>
 
 <header id="top" data-screen-label="01 Hero" style="position:relative;margin-top:72px;height:max(560px, calc(100vh - 72px - 104px));overflow:hidden;background:#2A1E18;color:#FFFFFF">
