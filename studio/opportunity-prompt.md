@@ -9,9 +9,19 @@ the reasoning specific enough that they recognise their own business in it.
 
 ## Instructions
 
-You get a company profile, the answers the visitor gave, **one** playbook entry, and the
-`angle`: the reason this entry was chosen for this firm. Write that entry as a card. The
-choosing is already done; do not second-guess it and do not write about any other line.
+You get a company profile, the answers the visitor gave, **one service line** that has
+already been chosen, the `angle` saying why it was chosen for this firm, and the
+**customer stories it was built from**: real Lyzr engagements, with what was wrong, what
+the agents actually do, which systems they touched and what changed.
+
+Write that line as a card. The choosing is already done; do not second-guess it and do not
+write about any other line.
+
+**The customer stories are your material, not your subject.** They are the evidence that
+this work is real, and the `built` lists tell you what the agents genuinely do, which is
+what makes a card concrete. But the card is about *this firm selling this to its own
+clients*, so never describe the cited customer, never name them, and never write "Lyzr did
+this for X". Use what was built; leave who it was built for out of it.
 
 **The test every card must pass:** a founder reads it and thinks "we could actually sell
 that next quarter", not "yes, AI is interesting". If a card would make sense on any
@@ -19,7 +29,7 @@ services firm's website, it has failed.
 
 Rules:
 
-1. **Write only the entry you were given.** Never invent a service line, never blend in
+1. **Write only the line you were given.** Never invent a service line, never blend in
    another, never widen it into a category.
 2. **Build on the `angle`.** It is the specific reason this line was chosen for this firm, open from it rather than restating the entry's own description.
 3. **`why_you` is the whole card.** Rewrite the playbook's template using facts from the
@@ -29,12 +39,12 @@ Rules:
 4. **Never state a fact about them that is not in the profile.** If the profile has it as
    `inferred`, write it as an assumption ("if most of that work is on NetSuite…"), not a
    fact. A card built on a wrong assumption is worse than a generic one.
-5. **Do not write what we already hold on file.** The proof, the opening offer, who signs,
-   the delivery shape, who has to be on the team, the line they repeat to their client, how
-   the thing actually works, what to ask the client, who brings what and the products it
-   runs on are all attached from our own records after you answer, so
-   anything you type into them is discarded. Use them to *choose* and to *argue* the card, a line whose only proof is a bad fit is the wrong line, but never restate them in the
-   fields you do write.
+5. **Do not write what we already hold.** The proof, the opening engagement, who signs,
+   the delivery shape, who has to be on the team, how the thing actually works, what to ask
+   the client, who brings what and the products it runs on are all attached afterwards from
+   the engagement pattern and the cited stories, so anything you type into them is
+   discarded. Use them to *argue* the card, but never restate them in the fields you
+   do write.
 6. **Never put a number on the money.** No deal size, no day rate, no margin, no ROI
    figure, we do not publish them and a guess in a partner's hands is worse than silence.
 7. **`lyzr_role` is what Lyzr does, not what Lyzr is.** One line, concrete, in terms of
@@ -50,25 +60,14 @@ Rules:
 10. **`headline`** is what the partner would put on their own website, in their words, not
    Lyzr's. No "agentic", no "leverage", no "transform".
 
-11. **`fit` is the part a senior partner lead would have written by hand.** It is three
-    separate claims and each one has to survive being read back to them:
-    - `attaches_to`: the service they *already sell* that this hangs off, named as they
-      name it. They told us what they deliver; use their words, not the playbook's.
-      "Your NetSuite support retainers", not "your finance practice".
-    - `evidence`: what in their profile or their own answers makes this real. Point at the
-      thing: a platform on their site, an industry their work keeps landing in, a client
-      they name, the demand they reported. One specific, not three vague ones.
+11. **`attaches_to` is the part a senior partner lead would have written by hand.** The
+    service they *already sell* that this hangs off, named as they name it. They told us
+    what they deliver; use their words. "Your NetSuite support retainers", not "your
+    finance practice". It has to survive being read back to them.
 
 12. **`where_it_lands` is the first account, not the market.** The kind of client of
     *theirs* this is sellable into first, and why that one before the others. Name a client
     only if their own profile names it.
-
-13. **`objections`: exactly two, and they must be the hard ones.** The objection is what
-    their *client* says back, in the client's voice, not what a sceptic says about AI. The
-    answer is what the partner says next, a move, not a reassurance. "We tried a chatbot
-    and it was useless" → "Agreed, and this is not that: it works inside your ERP with a
-    reviewer on every exception. Start with one entity and check the error rate yourself."
-    No answer may be "educate them" or "show them the ROI".
 
 14. **`qualify`: three questions the partner asks their client**, in a real meeting, that
     reveal whether this is live. Each one has an answer that would change what they do
@@ -96,13 +95,12 @@ visitor is choosing between these on one screen and then taking one into a clien
 so every field is one or two sentences and none is a paragraph: `what_it_is` at most 35
 words, `why_you` at most 45, `first_step` at most 40, `lyzr_role` at most 25,
 `how_to_sell.trigger` and `how_to_sell.expansion` at most 20 each, `where_it_lands` at most 30,
-each part of `fit` at most 30, each `qualify` question at most
-20, and each `objection` and `answer` at most 25. Write short sentences and cut the second
-example.
+`attaches_to` at most 30, and each `qualify` question at most 20. Write short sentences
+and cut the second example.
 
 **The whole card is longer than it was, and that is not licence to say more.** Every field
-you add has to carry something the others do not. Repeating `why_you` inside `fit.evidence`,
-or the trigger inside an objection, costs the card more than leaving the field thin, a reader who catches you padding stops believing the parts that are real.
+you add has to carry something the others do not. Repeating `why_you` inside `attaches_to`,
+or the trigger inside the first step, costs the card more than leaving the field thin, a reader who catches you padding stops believing the parts that are real.
 
 **Second person, without exception.** "You already hold…", never "GoML already holds…".
 They are reading this about their own company, and their name in the third person reads
@@ -182,21 +180,13 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "headline", "what_it_is", "why_you", "fit", "where_it_lands", "lyzr_role", "how_to_sell", "objections", "qualify", "client_email", "first_step"],
+  "required": ["id", "headline", "what_it_is", "why_you", "attaches_to", "where_it_lands", "lyzr_role", "how_to_sell", "qualify", "client_email", "first_step"],
   "properties": {
     "id": { "type": "string" },
     "headline": { "type": "string" },
     "what_it_is": { "type": "string" },
     "why_you": { "type": "string" },
-    "fit": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["attaches_to", "evidence"],
-      "properties": {
-        "attaches_to": { "type": "string" },
-        "evidence": { "type": "string" }
-      }
-    },
+    "attaches_to": { "type": "string" },
     "where_it_lands": { "type": "string" },
     "lyzr_role": { "type": "string" },
     "how_to_sell": {
@@ -208,18 +198,6 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
         "expansion": { "type": "string" }
       }
     },
-    "objections": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["objection", "answer"],
-        "properties": {
-          "objection": { "type": "string" },
-          "answer": { "type": "string" }
-        }
-      }
-    },
     "qualify": { "type": "array", "items": { "type": "string" } },
     "client_email": { "type": "string" },
     "first_step": { "type": "string" }
@@ -229,7 +207,7 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
 
 ## What the backend does
 
-Runs one of these per shortlisted entry, all at once, and renders them as the cards on the
+Runs one of these per surviving line, all at once, and renders them as the cards on the
 Explore screen. `proof`, `first_offer`, `who_buys`, `delivery`, `team_needed`,
 `client_pitch`, `lyzr_products` and the related resources are attached from our
-own files afterwards, and `objections` and `qualify` are cut to two and three. The visitor can select more than one card to carry into their brief.
+own files afterwards, and `qualify` is cut to three. The visitor can select more than one card to carry into their brief.

@@ -17,8 +17,10 @@ const STATE = path.join(ROOT, 'studio', '.load-state.json');
 
 const RAG_API = 'https://rag-prod.studio.lyzr.ai/v3';
 const AGENT_API = 'https://agent-prod.studio.lyzr.ai/v3';
-const KBS = ['partner_playbook', 'partner_program'];
-const DIR = { partner_playbook: 'playbook', partner_program: 'program' };
+/* partner_playbook is gone: the opportunity step reads data/catalog.json, which is
+ * built from what Lyzr has actually delivered, not from sixteen entries written by hand. */
+const KBS = ['partner_program'];
+const DIR = { partner_program: 'program' };
 const BATCH = 20;
 
 const env = Object.fromEntries(
@@ -168,6 +170,15 @@ const AGENTS = {
     description: 'Picks the 3 playbook entries worth writing up, and the angle for each.',
     file: 'shortlist-prompt.md',
     /* Haiku: this is matching entries to a profile, not judging how to argue them. */
+    model: 'anthropic/claude-haiku-4-5',
+  },
+  partner_discovery: {
+    name: 'Partner opportunity discovery (Emerging Partner Program)',
+    description: 'Finds the service lines a firm could sell, out of what Lyzr has actually delivered, and cites the evidence.',
+    file: 'discovery-prompt.md',
+    /* Haiku, in the slot the shortlist used to hold, so the rewrite costs no latency. It
+     * is reading fourteen records against a profile and matching them to patterns, which
+     * is closer to selection than to argument. */
     model: 'anthropic/claude-haiku-4-5',
   },
   partner_opportunity: {

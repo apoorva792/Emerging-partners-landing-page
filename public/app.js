@@ -265,6 +265,18 @@ async function askQ() {
   });
   $('qback').hidden = S.qi === 0;
   show('s3');
+  /* Finding the lines takes about ten seconds and needs almost nothing the last question
+   * adds, so it starts while the visitor is reading that question rather than after they
+   * answer it. If they change an earlier answer it is thrown away, and if it fails the
+   * server simply does the work itself. */
+  if (S.qi === n - 1 && S.profile && !S.pending.found) prefetchLines();
+}
+
+function prefetchLines() {
+  const answers = [...S.answers];
+  S.pending.found = post('/api/discover', { profile: S.profile, answers, partial: true })
+    .then((r) => (r?.picks?.length ? r : null))
+    .catch(() => null);
 }
 
 const answerFor = (field) => S.answers.find((a) => a.field === field)?.answer;
@@ -282,7 +294,8 @@ function nextQ() {
   const free = $('qfree').value.trim();
   recordAnswer(q, [...picked, free].filter(Boolean).join(' · '));
   S.qi++;
-  /* Changing an answer invalidates anything built on the old one. */
+  /* Changing an answer invalidates anything built on the old one, the prefetched lines
+   * included. */
   S.cards = []; S.pending = { profile: S.pending.profile };
   askQ();
 }
@@ -308,7 +321,10 @@ async function recommend() {
   ], 48);
   try {
     if (S.cards.length) { renderExplorer(); done(); return show('s5'); }   // coming back
-    const r = await post('/api/recommend', { id: S.id, profile: S.profile, answers: S.answers });
+    /* Whatever the prefetch got, if it got anything. The server falls back to running
+     * discovery itself, so a failed or missing prefetch costs time and nothing else. */
+    const found = await (S.pending.found ?? Promise.resolve(null)).catch(() => null);
+    const r = await post('/api/recommend', { id: S.id, profile: S.profile, answers: S.answers, found });
     done();
     S.cards = r.cards; S.pick = 0; S.picked = [0];
     $('opening').textContent = r.opening ?? '';
@@ -384,6 +400,7 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
       ${row('Lyzr brings', c.roles?.lyzr)}
       ${detail ? row('What Lyzr does', up(c.lyzr_role ?? '')) : ''}
       ${detail ? row('Runs on', (c.lyzr_products ?? []).join(' · ')) : ''}
+      ${(c.demo ?? []).length ? `<dt>Demo to them</dt><dd>${c.demo.map((d) => `<b>${esc(d.name)}</b>, ${esc(d.does.replace(/^[^:]*:\s*/, ''))}`).join('<br>')}</dd>` : ''}
       ${o.name ? `<dt>Sell first</dt><dd><b>${esc(o.name)}</b>${o.shape ? ` · ${esc(o.shape)}` : ''}${o.ends_with ? `<br>Ends with ${esc(o.ends_with)}.` : ''}</dd>` : ''}
       ${row('Raise it when', up(h.trigger ?? ''))}
       ${row('Then it grows into', up(h.expansion ?? ''))}
