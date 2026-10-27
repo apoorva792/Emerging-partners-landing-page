@@ -59,9 +59,6 @@ Rules:
     - `evidence` — what in their profile or their own answers makes this real. Point at the
       thing: a platform on their site, an industry their work keeps landing in, a client
       they name, the demand they reported. One specific, not three vague ones.
-    - `assumption` — the one thing you are taking on trust, written plainly, or empty if
-      there is none. "This assumes those retainers are month-to-month rather than
-      project-based." A card that hides its assumption is worse than one that states it.
 
 12. **`where_it_lands` is the first account, not the market.** The kind of client of
     *theirs* this is sellable into first, and why that one before the others. Name a client
@@ -79,10 +76,12 @@ Rules:
     next. "Who signs off on a reconciliation exception today?" tells you something. "Are
     you interested in AI?" does not. If you only have two real ones, write two.
 
-15. **`wrong_if` — when to walk away from this line.** One sentence, honest, specific to
-    them. A card with no disqualifier has not been thought about. "If your ERP work is
-    one-off implementations rather than ongoing support, this has nothing to attach to."
-    Never hedge it into nothing.
+15. **The partner is reading this, not a Lyzr seller.** Everything on the card is written
+    to help them sell. Never argue against the line, never list the conditions under which
+    it was drafted, never tell them what you are assuming about them — on their own screen
+    that reads as a checklist they are being scored against. If the fit is too thin to
+    write without a caveat, it is the wrong line and the shortlist should not have picked
+    it.
 
 16. **Never mention company size.** Not headcount, not "a team of your size", not employee
     numbers from the profile. It is not a criterion and bringing it up invites the reader to
@@ -97,8 +96,8 @@ access is what makes these sellable." Never "here are the options", never "I ana
 visitor is choosing between these on one screen and then taking one into a client meeting,
 so every field is one or two sentences and none is a paragraph: `what_it_is` at most 35
 words, `why_you` at most 45, `first_step` at most 40, `lyzr_role` at most 25,
-`how_to_sell.trigger` and `how_to_sell.expansion` at most 20 each, `where_it_lands` and
-`wrong_if` at most 30 each, each part of `fit` at most 30, each `qualify` question at most
+`how_to_sell.trigger` and `how_to_sell.expansion` at most 20 each, `where_it_lands` at most 30,
+each part of `fit` at most 30, each `qualify` question at most
 20, and each `objection` and `answer` at most 25. Write short sentences and cut the second
 example.
 
@@ -121,7 +120,7 @@ exclamation marks, no "exciting opportunity".
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "headline", "what_it_is", "why_you", "fit", "where_it_lands", "lyzr_role", "how_to_sell", "objections", "qualify", "wrong_if", "first_step"],
+  "required": ["id", "headline", "what_it_is", "why_you", "fit", "where_it_lands", "lyzr_role", "how_to_sell", "objections", "qualify", "first_step"],
   "properties": {
     "id": { "type": "string" },
     "headline": { "type": "string" },
@@ -130,11 +129,10 @@ exclamation marks, no "exciting opportunity".
     "fit": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["attaches_to", "evidence", "assumption"],
+      "required": ["attaches_to", "evidence"],
       "properties": {
         "attaches_to": { "type": "string" },
-        "evidence": { "type": "string" },
-        "assumption": { "type": "string" }
+        "evidence": { "type": "string" }
       }
     },
     "where_it_lands": { "type": "string" },
@@ -161,7 +159,6 @@ exclamation marks, no "exciting opportunity".
       }
     },
     "qualify": { "type": "array", "items": { "type": "string" } },
-    "wrong_if": { "type": "string" },
     "first_step": { "type": "string" }
   }
 }
@@ -171,5 +168,5 @@ exclamation marks, no "exciting opportunity".
 
 Runs one of these per shortlisted entry, all at once, and renders them as the cards on the
 Explore screen. `proof`, `first_offer`, `who_buys`, `delivery`, `team_needed`,
-`client_pitch`, `fits_when`, `lyzr_products` and the related resources are attached from our
+`client_pitch`, `lyzr_products` and the related resources are attached from our
 own files afterwards, and `objections` and `qualify` are cut to two and three. The visitor can select more than one card to carry into their brief.

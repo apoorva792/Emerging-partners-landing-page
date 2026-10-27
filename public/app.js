@@ -389,10 +389,6 @@ function renderDetail() {
         ${fact('Why we think so', fit.evidence)}
         ${fact('Where it lands first', up(c.where_it_lands ?? ''))}
       </dl>
-      ${block('This line was drafted for firms that', (c.fits_when ?? []).length
-        ? `<ul class="checks">${c.fits_when.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : '')}
-      ${fit.assumption ? `<p class="caveat"><b>Taking on trust:</b> ${esc(fit.assumption)}</p>` : ''}
-      ${c.wrong_if ? `<p class="caveat"><b>The wrong line if:</b> ${esc(c.wrong_if.replace(/^(if|when)\s+/i, ''))}</p>` : ''}
     </div>
 
     <div class="pane" data-p="sell">

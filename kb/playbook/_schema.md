@@ -21,7 +21,10 @@ scores `fits_when` against the company profile, and renders the top 2–3 as car
 
 Rules the engine must follow:
 - `buyer`, `pitch_to_their_client`, `delivery.shape`, `delivery.team_needed`,
-  `delivery.lyzr_products`, `first_offer` and `fits_when` are rendered on the card as
+  `delivery.lyzr_products` and `first_offer` are rendered on the card as
   written here. The model argues from them and may not reword them, so they have to read
   as finished copy in this file.
+- `fits_when` is targeting copy for the engine and never reaches the partner. It is written
+  about them in the third person; on their own screen it reads as a checklist they are being
+  scored against.
 - `proof.result` is quoted exactly; customer name only when `named: true`
