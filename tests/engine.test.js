@@ -150,3 +150,17 @@ test('only a thin-evidence candidate with real commercial weight is worth a seco
   assert.equal(got.length, 1);
   assert.equal(got[0], thin);
 });
+
+/* ---- a site we could not read at all ---- */
+
+test('with no readable site a candidate stands on the profile alone, at the floor', () => {
+  const got = fitScore(opp(), null);
+  assert.equal(got.profileOnly, true);
+  assert.equal(got.score, 2);
+  assert.equal(gate(opp(), got, { score: 4 }).pass, true, 'a dead end is worse than a hypothesis');
+  assert.equal(gate(opp(), got, { score: 0 }).pass, false, 'but the Lyzr side is still checked');
+});
+
+test('an empty capability map is treated the same as none', () => {
+  assert.equal(fitScore(opp(), { basis: 'delivered', capabilities: [], evidence: [] }).profileOnly, true);
+});

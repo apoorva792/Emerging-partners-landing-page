@@ -31,6 +31,13 @@ node scripts/fixtures.js goml.io                     # one real run, saved to ru
 node scripts/preview.js                              # then /_preview.html?to=validate|focus|explore|accounts|brief|client
 ```
 
+**Restart anything already running after a prompt push.** The prompts live in Studio, not
+in this repo, so `--only=agents` changes the schema every running process is talking to.
+A dev server started before the push keeps parsing the old shape, gets nothing back, and
+fails with "No service lines could be written for this profile." The code and the prompts
+are one version; they have to move together.
+
+
 `scripts/fixtures.js` + `scripts/preview.js` render any finished screen from a saved run,
 so the design can be checked without burning two minutes of live calls each time.
 
