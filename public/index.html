@@ -81,6 +81,13 @@
    * work email. The agent derives the website from its domain, so there is nothing else
    * to collect here. */
   function intercept(e) {
+    /* A click only counts when it lands on the submit button. Binding the whole form was
+     * opening the agent the moment anyone clicked back into the field to correct their
+     * address, which made the email impossible to edit once it was valid. */
+    if (e.type === 'click') {
+      var btn = e.target.closest && e.target.closest('button,input[type="submit"]');
+      if (!btn || btn.type === 'button' || btn.type === 'reset') return;
+    }
     var form = e.type === 'submit' ? e.target : (e.target.closest && e.target.closest('form'));
     if (!form || !form.querySelector) return;
     var input = form.querySelector('#hero-email') || form.querySelector('#site');
