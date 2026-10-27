@@ -384,8 +384,7 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
       ${detail ? row('Start with', up(c.first_step ?? '')) : ''}
     </dl>
     ${pr.result ? `<p class="playproof">${m ? `<b>${esc(m[1].trim())}</b> ${esc(m[2])}` : esc(pr.result)},
-      ${esc(pr.customer ?? '')}${pr.url ? ` · <a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'case study')}</a>` : ''}
-      <span class="note">Another Lyzr customer's result, not a projection for your client.</span></p>` : ''}
+      ${esc(pr.customer ?? '')}${pr.url ? ` · <a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'case study')}</a>` : ''}</p>` : ''}
     ${meeting ? `<div class="kit">
       <p class="kitlab">Take this into the meeting</p>
       ${c.first_conversation ? `<p class="kitask">${esc(c.first_conversation)}</p>` : ''}
