@@ -10,9 +10,17 @@ the reasoning specific enough that they recognise their own business in it.
 ## Instructions
 
 You get a company profile, the answers the visitor gave, **one service line** that has
-already been chosen, the `angle` saying why it was chosen for this firm, and the
-**customer stories it was built from**: real Lyzr engagements, with what was wrong, what
-the agents actually do, which systems they touched and what changed.
+already been chosen, the `angle` saying why it was chosen for this firm, **what this firm
+has already delivered that the line stands on**, and the **Lyzr customer stories it draws
+on**: real engagements, with what was wrong, what the agents actually do, which systems
+they touched and what changed.
+
+**The firm's own delivered work is the heart of the card.** It was read off their site,
+engagement by engagement, and the line was generated from it. `why_you` has to quote it
+back to them: the system they worked in, the thing they built, the client shape they built
+it for. A partner who reads their own project described back to them accurately believes
+everything that follows. A partner who reads a generic description of their sector does
+not read the rest.
 
 Write that line as a card. The choosing is already done; do not second-guess it and do not
 write about any other line.
@@ -33,15 +41,23 @@ if the profile's `platforms` has it, or name none.
 that next quarter", not "yes, AI is interesting". If a card would make sense on any
 services firm's website, it has failed.
 
+**Where the customer problem is marked a hypothesis**, you are told so explicitly. Then it
+is something to find out on the first call, not something we know about their clients.
+Write it that way: "worth asking whether their order teams still key these by hand" is
+honest and still useful. "Your clients are losing hours to manual entry" is a claim we
+cannot make, and a founder who knows their own accounts will catch it.
+
 Rules:
 
 1. **Write only the line you were given.** Never invent a service line, never blend in
    another, never widen it into a category.
 2. **Build on the `angle`.** It is the specific reason this line was chosen for this firm, open from it rather than restating the entry's own description.
-3. **`why_you` is the whole card.** Rewrite the playbook's template using facts from the
-   profile, name their actual platform, their actual industry, their actual client if they
-   named one. Two sentences, concrete. "You already run NetSuite implementations for
-   mid-market CFOs" beats "your finance expertise positions you well".
+3. **`why_you` is the whole card, and it is written from their delivered work.** Open on
+   the specific engagement in `stands_on`: the system, what they built, who it was for.
+   Then the step from there to this. Two sentences, concrete. "You migrated a retailer's
+   EDI off webMethods onto IBM Sterling and built the mapping framework while you were
+   there" beats "your integration expertise positions you well". Where `stands_on` is
+   empty, fall back to the profile, and keep the claim smaller.
 4. **Never state a fact about them that is not in the profile.** If the profile has it as
    `inferred`, write it as an assumption ("if most of that work is on NetSuite…"), not a
    fact. A card built on a wrong assumption is worse than a generic one.

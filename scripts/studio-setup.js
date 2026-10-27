@@ -186,6 +186,14 @@ const AGENTS = {
     description: 'Picks 2-3 sellable AI service lines from the playbook and argues them from the firm\'s own profile.',
     file: 'opportunity-prompt.md',
   },
+  partner_evidence: {
+    name: 'Partner evidence extractor (Emerging Partner Program)',
+    description: 'Turns one page of a partner\'s website into a structured record of what it proves.',
+    file: 'evidence-prompt.md',
+    /* Haiku: extraction against a schema, from a page in front of it, run a dozen times
+     * in parallel while the profiler is still thinking. */
+    model: 'anthropic/claude-haiku-4-5',
+  },
   partner_catalog: {
     name: 'Partner catalog extractor (Emerging Partner Program)',
     description: 'Turns one Lyzr customer story page into a structured record of what was delivered.',
