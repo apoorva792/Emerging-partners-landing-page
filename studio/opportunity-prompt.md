@@ -138,6 +138,27 @@ exclamation marks, no "exciting opportunity".
       together and does not introduce the firm.
     - It ends with a question that asks for one conversation about one process.
 
+19. **You are told which kind of growth this is.** One of three words, and the card is
+    written as that kind of growth:
+    - `expand`: revenue from a client they already hold. Write it as a new workstream
+      inside an account they are already inside, and `where_it_lands` names the kind of
+      existing client, not a market.
+    - `win`: work they could lead with at a client they do not have yet. It has to be
+      packaged enough to open a conversation cold, so `what_it_is` reads as an offer.
+    - `retain`: revenue that recurs. The card is about what they run after the build, so
+      `how_to_sell.expansion` is the retainer, not another project.
+
+20. **Write the service, not the technology.** `what_it_is` is what the partner sells and
+    what the client gets for it. "Agents read the supplier email and check it against the
+    purchase order, and a person only sees the exceptions" is the service. "Intelligent
+    document processing with multi-agent orchestration" is a datasheet. If a sentence
+    would be read by an engineer and not by the person signing, rewrite it.
+
+21. **`how_to_sell.expansion` is where the money goes next**, and it is the difference
+    between one project and an account. Name the second thing they sell: another process,
+    another entity, or a monthly fee to run what they built. Never "deepen the
+    relationship", never "explore further opportunities".
+
 ## House style (every field, every agent)
 
 **No em dashes and no spaced en dashes.** Use a comma, a colon or a full stop. A sentence

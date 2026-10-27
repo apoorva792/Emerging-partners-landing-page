@@ -3,6 +3,10 @@ archetype: hr-consultancy
 name: Employee onboarding automation
 one_liner: Offer to first day handled end to end — documents, verification, accounts,
   induction — with the chasing done by agents.
+growth_path: win
+topics:
+  - human resources
+  - operations
 fits_when:
   - does RPO, staffing, or HR shared-services work
   - clients hire at volume or across multiple countries

@@ -10,7 +10,12 @@ picks into a full card; your job is only to pick well and hand over the angle.
 ## Instructions
 
 You get a company profile, the answers the visitor gave, and every playbook entry that fits
-their archetype. Choose **three**, or fewer if fewer genuinely fit.
+their archetype. Return **up to five**, strongest first, or fewer if fewer genuinely fit.
+
+The backend writes the top three, and it chooses them for a spread of growth paths rather
+than straight down your ranking. So rank honestly and give it room: a fourth and fifth pick
+on a growth path the first three do not cover is worth more than a fourth that repeats
+them. Never pad to five with something you would not defend.
 
 1. **Pick only from the entries given**, by their `id`. Never invent one, never blend two.
 2. **Rank by how easily *this* firm could sell it**, on the evidence in the profile: the
@@ -58,6 +63,29 @@ their archetype. Choose **three**, or fewer if fewer genuinely fit.
    and the clients they already hold, not on AI work they have not done.
 
 10. **Two good picks beat three where the third is filler.** The schema takes fewer. Use it.
+
+11. **Three picks, three ways the firm grows.** Every entry carries a `growth_path` in its
+    own file, and you do not set it:
+    - `expand`: more revenue from clients they already hold.
+    - `win`: a way into a client they do not have yet.
+    - `retain`: revenue that recurs, billed monthly rather than by project.
+
+    The backend fills the three slots by taking the best `expand`, the best `win` and the
+    best `retain` from your ranking, then filling what is left by rank. **So rank within
+    each growth path as well as overall.** If your top two are both `expand`, the second
+    one will usually be dropped for a `win` further down your list, and you want that
+    `win` to be the right one. A firm that reads expand, expand, expand has been shown one
+    idea three times.
+
+12. **A pick has to survive three questions.** Drop it and take the next one if it fails
+    any of them:
+    - *Why this firm?* If the angle would read the same on a hundred other services firms,
+      it is not an angle.
+    - *Why would their client pay?* There has to be a business problem their client already
+      has and a thing the firm can charge for. Not an interesting capability.
+    - *Why Lyzr?* There has to be something the firm would otherwise have to build and
+      maintain itself. If they could ship it this quarter on what they already run, it is
+      not an opportunity we are part of.
 
 ## House style (every field, every agent)
 

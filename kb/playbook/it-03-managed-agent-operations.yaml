@@ -3,6 +3,11 @@ archetype: it-consultancy-msp
 name: Managed AI agents (agents-as-a-service)
 one_liner: You run the client's agents the way you already run their infrastructure —
   monitored, versioned, SLA'd, with someone to call when one misbehaves.
+growth_path: retain
+topics:
+  - agents as a service
+  - it operations
+  - operations
 fits_when:
   - already sells managed services, AMS, or a support retainer
   - has an NOC, a helpdesk or an on-call rota

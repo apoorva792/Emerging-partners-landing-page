@@ -3,6 +3,11 @@ archetype: marketing-agency
 name: Campaign operations agents
 one_liner: The brief-to-live path — variants, localisation, trafficking, QA — run by
   agents, so a launch takes hours instead of days.
+growth_path: expand
+topics:
+  - marketing
+  - media & advertising
+  - operations
 fits_when:
   - runs campaigns across multiple channels or markets
   - mentions localisation, always-on, or high campaign volume

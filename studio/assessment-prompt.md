@@ -29,12 +29,17 @@ No flattery, no exclamation marks, no restating the question.
 **Length is the design.** These fields drop into fixed boxes:
 
 - `headline`: one sentence, max 20 words. The thing that is true about their business that
-  makes all of this possible, stated as a fact. Not a slogan, not a question. This is the
+  makes all of this possible, stated as a fact, **and pointed at the revenue it opens**.
+  "You already run agents inside Infor CloudSuite. Now you sell that as a service" beats
+  "You have strong Infor CloudSuite capability". Not a slogan, not a question. This is the
   biggest text in the document, so it has to earn it.
 - `the_case`: **two or three sentences, 45 to 70 words.** The opening paragraph, and the
   only prose in the document. It names what they already have, why that matters now, and
-  what it opens up, in that order. It must read as though written by someone who knows
-  this firm. Never list the service lines by name here; they are on the page already.
+  **what new work it could be sold as**, in that order. The reader is deciding whether
+  there is business here, so the third beat is commercial: new projects inside accounts
+  they hold, work they could lead with somewhere new, or something that bills monthly.
+  Name no figure and promise no outcome. It must read as though written by someone who
+  knows this firm. Never list the service lines by name here; they are on the page already.
 - `you_today`: exactly 3 items, max 6 words each. What they already have that makes this
   work. Fragments, not sentences: "AWS + Bedrock certified", "Inside enterprise compliance
   teams".
@@ -54,7 +59,23 @@ No flattery, no exclamation marks, no restating the question.
   chose more than one line, these steps are about getting the **first** one moving.
 - `how_lyzr_helps`: exactly 3 items, max 10 words each, specific to what they chose. What
   Lyzr actually does in the delivery: the platform, the enablement, the support.
-- `the_ask`: one sentence, max 18 words. What happens next, as an invitation, not a close.
+- `why_lyzr`: exactly 3 pairs. **The section that answers the only question a capable
+  firm actually has: we already build this sort of thing, so what does Lyzr add?**
+  - `you_have`: max 8 words, something this firm demonstrably already has. From their
+    profile, in their terms: "AWS and Bedrock engineering", "Enterprise delivery
+    relationships", "Agents already running for clients".
+  - `lyzr_adds`: max 14 words, what partnering adds **on top of that**, not instead of it.
+    It has to be something they would otherwise build and maintain themselves, or
+    something only a vendor can give: the platform layer, the governance and audit trail,
+    the templates, the enablement, joint go-to-market.
+  Never pair a strength with something they already have. Never imply they should replace
+  what they run today. If a row would read the same for any firm, it is the wrong row.
+- `next_moves`: exactly 3 items, max 11 words each. What happens after they read this,
+  in order, each one a thing a person does: "Walk the strongest line through with the
+  partner team", "Pick the first client to test it on". Not "align", not "explore
+  synergies", not "schedule a strategy session".
+- `the_ask`: one sentence, max 18 words. The closing line under those three. An invitation
+  to one conversation, not a close and not a summary of the document.
 
 Hard rules:
 
@@ -109,11 +130,23 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
     "brief": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["headline", "the_case", "you_today", "how_they_connect", "ideal_customer", "what_to_ask", "first_30_days", "how_lyzr_helps", "the_ask"],
+      "required": ["headline", "the_case", "you_today", "why_lyzr", "how_they_connect", "ideal_customer", "what_to_ask", "first_30_days", "how_lyzr_helps", "next_moves", "the_ask"],
       "properties": {
         "headline": { "type": "string" },
         "the_case": { "type": "string" },
         "you_today": { "type": "array", "items": { "type": "string" } },
+        "why_lyzr": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["you_have", "lyzr_adds"],
+            "properties": {
+              "you_have": { "type": "string" },
+              "lyzr_adds": { "type": "string" }
+            }
+          }
+        },
         "how_they_connect": { "type": "string" },
         "ideal_customer": {
           "type": "object",
@@ -139,6 +172,7 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
           }
         },
         "how_lyzr_helps": { "type": "array", "items": { "type": "string" } },
+        "next_moves": { "type": "array", "items": { "type": "string" } },
         "the_ask": { "type": "string" }
       }
     },
@@ -160,7 +194,7 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
 ## What the backend does
 
 Renders a one-page document: the lockup, your `headline` and `the_case`, the `you_today`
-pills, then **every** service line they chose in full, name, what it is, why it fits them,
+pills, then the `why_lyzr` table, then **every** service line they chose in full, name, what it is, why it fits them,
 who buys it, the opening engagement, the proof and the reading to send with it, all from
 our own records, then `how_they_connect`, who to take it to, `what_to_ask`, the accounts
 they named, the thirty days and what Lyzr brings. `internal` goes to the run record and is

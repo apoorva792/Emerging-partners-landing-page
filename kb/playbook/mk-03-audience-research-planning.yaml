@@ -3,6 +3,11 @@ archetype: marketing-agency
 name: Audience research and media planning agents
 one_liner: Planners ask a question and get a sourced answer, instead of commissioning
   a two-week research sprint.
+growth_path: win
+topics:
+  - media & advertising
+  - research & strategy
+  - marketing
 fits_when:
   - sells strategy, planning or insights as a line item
   - mentions audience, segmentation, media planning or market research

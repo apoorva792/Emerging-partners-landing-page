@@ -232,6 +232,23 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
 .play{padding:0 0 26px;margin-bottom:26px;border-bottom:1px solid var(--line)}
 .play:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0}
 .playnum{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.playnum span{color:var(--muted);margin-left:10px}
+/* What they already have, against what partnering adds to it. Two columns so the reader
+   can run down the left and check we read them right before they look at the right. */
+.adds{display:grid;grid-template-columns:1fr 1.25fr;gap:0 28px}
+.addlab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 10px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+.addhave,.addgain{margin:0;padding:13px 0;font-size:15px;line-height:1.45;border-top:1px solid var(--line)}
+.adds .addhave:first-of-type,.adds .addgain:first-of-type{border-top:none}
+.addhave{color:var(--soft)}
+.addgain{color:var(--ink)}
+/* The three things that happen after they put the document down. */
+.movelab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.62);margin:22px 0 10px}
+.moves{list-style:none;margin:0 0 18px;padding:0;counter-reset:mv}
+.moves li{counter-increment:mv;position:relative;padding:7px 0 7px 30px;font-size:15.5px;line-height:1.4}
+.moves li::before{content:counter(mv,decimal-leading-zero);position:absolute;left:0;top:8px;
+  font-family:var(--mono);font-size:11px;color:#FE4B1E}
 .play>h3{font-size:19px;letter-spacing:-.018em;margin:0 0 10px;border:0;padding:0}
 .playwhy{border-left:2px solid var(--accent);padding-left:14px;margin:0 0 16px;font-size:15px;line-height:1.5;max-width:60ch}
 .play .kv{margin-bottom:16px}
@@ -285,7 +302,7 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
   letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
 .sh-foot .by{display:flex;align-items:center;gap:12px}
 .sh-foot img{height:26px;width:auto}
-@media(max-width:620px){.sheet{padding:28px 22px}.kv{grid-template-columns:1fr;gap:4px 0}.kv dd{margin-bottom:12px}}
+@media(max-width:620px){.sheet{padding:28px 22px}.adds{grid-template-columns:1fr;gap:0}.adds .addlab:last-of-type{display:none}.addgain{border-top:0;padding-top:0;margin-bottom:8px}.kv{grid-template-columns:1fr;gap:4px 0}.kv dd{margin-bottom:12px}}
 @media print{
   .rail,.row,.note,.tabs,.copy{display:none!important}
   body{background:#fff;font-size:11pt}

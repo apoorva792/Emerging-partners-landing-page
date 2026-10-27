@@ -4,6 +4,11 @@ also_fits: [it-consultancy-msp]
 name: AI governance and agent registry (OpenController)
 one_liner: One place where every agent in the enterprise is registered, permissioned,
   monitored and explainable — whoever built it, wherever it runs.
+growth_path: retain
+topics:
+  - compliance & governance
+  - responsible ai
+  - opencontroller
 fits_when:
   - clients are regulated, or have an internal audit / risk function
   - mentions governance, compliance, risk, ISO/SOC, or model risk

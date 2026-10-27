@@ -3,6 +3,10 @@ archetype: finance-accounting-firm
 name: Reconciliation and close automation agents
 one_liner: Agents match transactions, chase the exceptions and draft the close
   checklist, so the month-end team reviews instead of reconstructs.
+growth_path: expand
+topics:
+  - finance
+  - operations
 fits_when:
   - does bookkeeping, controllership, audit support or CFO services
   - implements or supports an ERP (NetSuite, SAP, Dynamics, Tally, QuickBooks)

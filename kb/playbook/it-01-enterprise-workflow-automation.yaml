@@ -3,6 +3,11 @@ archetype: it-consultancy-msp
 name: Enterprise workflow automation with agents
 one_liner: Replace the manual steps inside a client's core process — intake, checks,
   routing, approvals — with agents that do the work and leave an audit trail.
+growth_path: expand
+topics:
+  - ai & automation
+  - operations
+  - it & platform
 fits_when:
   - implements or supports an enterprise platform (SAP, ServiceNow, Salesforce, Oracle, Dynamics)
   - describes "process improvement", "digital transformation" or "operational excellence"

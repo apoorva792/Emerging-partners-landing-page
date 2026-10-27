@@ -3,6 +3,10 @@ archetype: hr-consultancy
 name: Candidate screening and interview agents
 one_liner: Agents screen, structure the interview and score consistently, so recruiters
   spend their time on the shortlist rather than building it.
+growth_path: win
+topics:
+  - human resources
+  - research & strategy
 fits_when:
   - is a recruitment, search or RPO business
   - handles high applicant volume or hard-to-fill technical roles

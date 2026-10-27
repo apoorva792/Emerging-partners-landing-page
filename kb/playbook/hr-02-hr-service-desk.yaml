@@ -3,6 +3,10 @@ archetype: hr-consultancy
 name: HR operations and employee service desk agents
 one_liner: Policy questions, leave, payroll queries and letters answered on the spot,
   with escalation to a human only when it genuinely needs one.
+growth_path: win
+topics:
+  - human resources
+  - customer service
 fits_when:
   - implements or supports an HRMS (Workday, SuccessFactors, Darwinbox, Zoho People)
   - clients have 1000+ employees

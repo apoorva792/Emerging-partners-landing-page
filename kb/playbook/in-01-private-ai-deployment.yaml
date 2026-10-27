@@ -3,6 +3,11 @@ archetype: infrastructure-sovereignty
 name: Private and sovereign AI deployments
 one_liner: The whole agent stack inside the client's own data centre or national
   cloud — no data leaving the boundary, no foreign SaaS in the audit.
+growth_path: win
+topics:
+  - sovereign ai
+  - security
+  - it & platform
 fits_when:
   - operates or resells data centre, private cloud or GPU capacity
   - clients are government, defence, banking, healthcare or telecom

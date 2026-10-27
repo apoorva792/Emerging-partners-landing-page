@@ -319,12 +319,20 @@ async function recommend() {
   } catch (e) { done(); fail(e.message); }
 }
 
-const KIND = ['Industry play', 'Cross-industry play', 'Capability play', 'Delivery play'];
+/* The three picks are three different ways to grow, and the shortlist says which is
+ * which. The eyebrow used to be assigned by position, so the second card was always
+ * "Cross-industry play" whatever it actually was. */
+const GROWTH = {
+  expand: 'Account expansion',
+  win: 'New business',
+  retain: 'Recurring revenue',
+};
+const growthOf = (c) => GROWTH[c?.growth_path] ?? 'Opportunity';
 
 function renderExplorer() {
   $('optabs').innerHTML = S.cards.map((c, i) => `
     <button class="optab${S.picked.includes(i) ? ' on' : ''}${i === S.pick ? ' open' : ''}" data-i="${i}">
-      <em>${esc(KIND[i] ?? 'Play')}</em>
+      <em>${esc(growthOf(c))}</em>
       <strong>${esc(c.headline)}</strong>
       <span class="pickbox"><span class="box">${S.picked.includes(i) ? '✓' : ''}</span>${S.picked.includes(i) ? 'Selected' : 'Add to my brief'}</span>
     </button>`).join('');
@@ -360,7 +368,7 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
     || (c.discovery ?? []).length || c.client_email);
 
   return `<article class="play">
-    ${num ? `<p class="playnum">${esc(num)}</p>` : ''}
+    <p class="playnum">${esc(growthOf(c))}${num ? ` <span>${esc(num)}</span>` : ''}</p>
     ${detail ? `<h2 class="playhead">${esc(c.headline)}</h2>` : `<h3>${esc(c.headline)}</h3>`}
     <p class="sh-body">${esc(c.what_it_is)}</p>
     <p class="playwhy">${esc(c.why_you)}</p>
@@ -370,7 +378,7 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
     </div>` : ''}
     <dl class="kv">
       ${row('Who buys it', c.who_buys)}
-      ${detail ? row('Delivery shape', c.delivery) : ''}
+      ${row('Delivery shape', c.delivery)}
       ${row('Who you need on it', c.team_needed)}
       ${row('You bring', c.roles?.partner)}
       ${row('Lyzr brings', c.roles?.lyzr)}
@@ -378,7 +386,7 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
       ${detail ? row('Runs on', (c.lyzr_products ?? []).join(' · ')) : ''}
       ${o.name ? `<dt>Sell first</dt><dd><b>${esc(o.name)}</b>${o.shape ? ` · ${esc(o.shape)}` : ''}${o.ends_with ? `<br>Ends with ${esc(o.ends_with)}.` : ''}</dd>` : ''}
       ${row('Raise it when', up(h.trigger ?? ''))}
-      ${row('Then', up(h.expansion ?? ''))}
+      ${row('Then it grows into', up(h.expansion ?? ''))}
       ${detail ? row('The line to repeat', c.client_pitch) : ''}
       ${detail ? row('Where it lands first', up(c.where_it_lands ?? '')) : ''}
       ${detail ? row('Start with', up(c.first_step ?? '')) : ''}
@@ -548,6 +556,14 @@ function partnerSheet() {
       <div class="pills">${(b.you_today ?? []).map((x) => `<span class="pill">${esc(x)}</span>`).join('')}</div>
     </section>
 
+    ${(b.why_lyzr ?? []).length ? `<section class="sh-sect">
+      <h3>What partnering with Lyzr adds</h3>
+      <div class="adds">
+        <p class="addlab">What you already have</p><p class="addlab">What Lyzr adds to it</p>
+        ${b.why_lyzr.map((r) => `<p class="addhave">${esc(r.you_have)}</p><p class="addgain">${esc(r.lyzr_adds)}</p>`).join('')}
+      </div>
+    </section>` : ''}
+
     <section class="sh-sect">
       <h3>${many ? `The ${['two', 'three', 'four'][plays.length - 2] ?? plays.length} you picked` : 'The play'}</h3>
       ${plays.map(play).join('')}
@@ -583,6 +599,8 @@ function partnerSheet() {
       <div class="panel">
         <h3>What Lyzr puts behind it</h3>
         <ul>${(b.how_lyzr_helps ?? []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+        ${(b.next_moves ?? []).length ? `<p class="movelab">Your next move</p>
+          <ol class="moves">${b.next_moves.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}
         <p>${esc(b.the_ask)}</p>
       </div>
     </section>

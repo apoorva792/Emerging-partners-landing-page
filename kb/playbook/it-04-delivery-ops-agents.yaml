@@ -3,6 +3,11 @@ archetype: it-consultancy-msp
 name: Resource planning and delivery-ops agents
 one_liner: Agents that match people to projects, flag bench risk and keep utilisation
   forecasts current without a weekly spreadsheet ritual.
+growth_path: expand
+topics:
+  - professional services
+  - operations
+  - it operations
 fits_when:
   - is itself a people business billing by the hour or by the seat
   - mentions utilisation, bench, staffing or capacity anywhere on the site

@@ -3,6 +3,11 @@ archetype: finance-accounting-firm
 name: Diligence and financial modelling agents
 one_liner: Agents pull the filings, build the first-pass model and score the target,
   so analysts start from a draft instead of a blank sheet.
+growth_path: win
+topics:
+  - private equity & vc
+  - finance
+  - research & strategy
 fits_when:
   - does transaction advisory, valuation, M&A support or investor services
   - clients are PE, VC, family offices or corp dev teams

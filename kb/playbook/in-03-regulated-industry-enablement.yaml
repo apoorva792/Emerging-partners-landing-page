@@ -4,6 +4,12 @@ also_fits: [it-consultancy-msp]
 name: Regulated-industry AI enablement (banking, insurance, public sector)
 one_liner: KYC, compliance monitoring and case handling as agents that work inside
   the regulator's rules and can explain every decision they made.
+growth_path: win
+topics:
+  - banking
+  - insurance
+  - compliance & risk
+  - government
 fits_when:
   - clients are banks, insurers, regulators or government departments
   - mentions KYC, AML, compliance, claims, licensing or citizen services

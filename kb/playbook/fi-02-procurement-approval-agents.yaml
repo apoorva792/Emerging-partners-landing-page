@@ -4,6 +4,11 @@ also_fits: [it-consultancy-msp]
 name: Procurement and approval workflow agents
 one_liner: Supplier onboarding, PO matching and approval chasing handled by agents,
   with every decision logged for audit.
+growth_path: expand
+topics:
+  - procurement
+  - operations
+  - finance
 fits_when:
   - advises on finance operations, P2P, shared services or spend control
   - clients have multi-step approvals and a supplier base in the hundreds

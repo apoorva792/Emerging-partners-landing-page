@@ -4,6 +4,11 @@ also_fits: [infrastructure-sovereignty]
 name: Brownfield integration agents
 one_liner: Agents that read the documents and screens the old system can't expose —
   PDFs, emails, green-screen terminals — and push clean data into the new one.
+growth_path: expand
+topics:
+  - it operations
+  - orchestration as a service
+  - ai & automation
 fits_when:
   - mentions legacy modernisation, migration, mainframe, EDI, or "integration"
   - clients in telecom, logistics, manufacturing, insurance or public sector
