@@ -149,8 +149,12 @@ with no marketing adjectives.
     test is a thing with a name, a customer, or a date.
 
 14. **`recent_moves`: at most three, newest first.** A launch, a partnership, an
-    acquisition, a named customer win, each with its date and source. A move older than
-    about eighteen months is not recent and is not worth the line.
+    acquisition, a named customer win, each with its source URL. A move older than about
+    eighteen months is not recent and is not worth the line.
+    `when` is whatever you can establish: a month and year from the page, a year from the
+    URL, otherwise the single word `undated`. A missing date is not a reason to drop a
+    move, and an invented one is worse than `undated`. Returning an empty list when the
+    pages you were given clearly announce something is a mistake.
 
 ## House style (every field, every agent)
 
