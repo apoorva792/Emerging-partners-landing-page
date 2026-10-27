@@ -183,5 +183,10 @@
   "note": "nav CTA — the ask is to join the program, not to run the agent again",
   "find": ">Find your opportunity<",
   "replace": ">Become a partner<"
+ },
+ {
+  "note": "hero subtext above the email field; the form tightens up to make room for it",
+  "find": "<form sc-camel-on-submit=\\\"{{ heroGo }}\\\" sc-camel-no-validate=\\\"{{ true }}\\\" style=\\\"margin-top:clamp(28px,3vw,40px);",
+  "replace": "<p style=\\\"margin:clamp(18px,2.1vw,26px) 0 0;max-width:min(600px,100%);font-size:clamp(16px,1.2vw,19px);line-height:1.55;letter-spacing:-.005em;color:rgba(255,255,255,.9);text-shadow:0 1px 14px rgba(0,0,0,.3)\\\">Capture new markets, win bigger deals, and unlock new revenue streams. <span style=\\\"color:rgba(255,255,255,.76)\\\">Build and deliver enterprise AI solutions on Lyzr’s AI agent platform.<\\u002Fspan><\\u002Fp>\\n    <form sc-camel-on-submit=\\\"{{ heroGo }}\\\" sc-camel-no-validate=\\\"{{ true }}\\\" style=\\\"margin-top:clamp(20px,2.3vw,30px);"
  }
 ]
