@@ -73,6 +73,13 @@ A line is a service *this firm* sells to *its own clients*. Never a thing Lyzr s
 10. **`headline`** is what the partner would put on their own website, in their words, not
    Lyzr's. Second person. No "agentic", no "leverage", no "transform". Max 16 words.
 
+   **Name only systems this firm actually works in.** The cited stories ran in some other
+   company's stack, and that stack is not this firm's. If the story was built in Dynamics
+   365 and this firm implements Infor, the line is about Infor, or it names no platform at
+   all. Putting the wrong platform in a headline tells a partner we did not read them, and
+   it is the most visible mistake this step can make. The profile's `platforms` is the
+   only list you may name from.
+
 11. **Each line has to survive three questions.** Drop it if it fails any:
     - *Why this firm?* If the angle would read the same on a hundred other services firms,
       it is not an angle.

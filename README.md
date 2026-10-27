@@ -24,7 +24,7 @@ Other things you can run:
 ```bash
 node scripts/try.js goml.io brainlabsdigital.com     # profile any companies, no browser
 node scripts/run.js goml.io                          # the whole journey end to end in the terminal
-node scripts/ask.js partner_playbook "a netsuite shop"   # check what the KB retrieves
+node scripts/build-catalog.js                           # re-read the customer stories
 node scripts/studio-setup.js                         # push KB + prompt changes to Studio
 node scripts/studio-setup.js --only=agents           # just the prompts (after editing studio/*.md)
 node scripts/fixtures.js goml.io                     # one real run, saved to runs/fixtures/
@@ -86,7 +86,10 @@ prompt holds across a long chat.
 lib/crawl.js      home page + the pages that say what a services firm sells
 lib/apollo.js     org enrich by domain, person match by email (never reveals email/phone)
 lib/profile.js    crawl ∥ apollo → partner_profiler → profile
-lib/playbook.js   reads kb/playbook/*.yaml directly, filtered by archetype
+lib/catalog.js    what Lyzr has delivered, scored against the profile in code
+data/catalog.json 62 customer stories, read off their own pages by scripts/build-catalog.js
+data/patterns.json 6 engagement shapes: the first offer, the durations, the team
+data/products.json what a partner builds on, and the agents they can demo
 lib/knowledge.js  retrieval against the partner_program KB
 lib/journey.js    the three steps
 api/*.js          one endpoint per step (Vercel functions; server.js serves them locally)
@@ -145,13 +148,20 @@ is still on disk if it is ever wanted back; it is no longer in `AGENTS` or the f
 
 | | What | Where |
 |---|---|---|
-| `partner_playbook` | 16 service lines across 5 archetypes, each with a scoped `first_offer` and a real case study | `kb/playbook/` |
 | `partner_program` | the $5k package, eligibility, guardrails, FAQ | `kb/program/` |
 
-The opportunity engine reads the playbook **files** directly (there are only sixteen, and a
-card is useless with half its fields). The KB serves program answers and ad-hoc questions.
+Opportunities are **not** retrieved from a knowledge base and not chosen from a written
+list. `data/catalog.json` holds what Lyzr has actually delivered, 62 customer stories read
+off their own pages by `scripts/build-catalog.js`. `lib/catalog.js` scores them against the
+profile in code, and `partner_discovery` proposes the lines, each citing the stories it
+stands on. Rebuild the catalog with `node scripts/build-catalog.js` whenever
+`data/resources.json` gains customer stories.
 
-The playbook carries no commercials. Deal sizes, margins and day rates are deliberately
+This replaced sixteen hand-written service lines filtered by five archetypes, on
+2026-10-27. Sixteen was the quality ceiling: every IT consultancy chose from the same six,
+so two firms that looked nothing alike got near-identical cards.
+
+The catalog and the patterns carry no commercials. Deal sizes, margins and day rates are deliberately
 absent from the entries and the agent is told never to put a number on the money — we do
 not publish those figures, and a guessed one in a partner's hands is worse than silence.
 `kb/program/_OPEN-QUESTIONS.md` holds the five commercial questions the agent currently

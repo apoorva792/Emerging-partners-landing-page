@@ -23,6 +23,12 @@ what makes a card concrete. But the card is about *this firm selling this to its
 clients*, so never describe the cited customer, never name them, and never write "Lyzr did
 this for X". Use what was built; leave who it was built for out of it.
 
+**And leave their stack out of it too.** A story ran inside some other company's systems.
+Those are not this firm's systems. Naming a platform the profile does not list, because a
+cited story happened to use it, tells a partner we did not read them: an Infor partner
+reading "inside Dynamics 365" stops believing the rest of the card. Name a platform only
+if the profile's `platforms` has it, or name none.
+
 **The test every card must pass:** a founder reads it and thinks "we could actually sell
 that next quarter", not "yes, AI is interesting". If a card would make sense on any
 services firm's website, it has failed.
