@@ -344,96 +344,71 @@ function renderExplorer() {
   renderDetail();
 }
 
+/* One card, drawn once. The explore screen and the printed brief render the same blocks
+ * in the same order with the same labels, because the thing they read while choosing
+ * should be the thing they end up holding. `detail` is the on-screen version: it adds the
+ * rows the brief leaves out and the copy button on the email. `num` and `seen` belong to
+ * the brief, where plays are numbered and a link is not worth printing twice. */
+function playBlock(c, { num = '', seen = null, detail = false } = {}) {
+  const o = c.first_offer ?? {}, pr = c.proof ?? {}, h = c.how_to_sell ?? {};
+  const res = (c.resources ?? []).filter((r) => !seen || (!seen.has(r.url) && seen.add(r.url)));
+  const m = /^([\d.,]+(?:[–-][\d.,]+)?\s*(?:%|x|\+)?)\s+(.{4,})$/i.exec(pr.result ?? '');
+  const obj = detail ? (c.objections ?? []) : [];
+  const row = (dt, dd) => (dd ? `<dt>${esc(dt)}</dt><dd>${esc(dd)}</dd>` : '');
+  const meeting = c.first_conversation || (c.qualify ?? []).length || obj.length
+    || (c.discovery ?? []).length || c.client_email;
+
+  return `<article class="play">
+    ${num ? `<p class="playnum">${esc(num)}</p>` : ''}
+    ${detail ? `<h2 class="playhead">${esc(c.headline)}</h2>` : `<h3>${esc(c.headline)}</h3>`}
+    <p class="sh-body">${esc(c.what_it_is)}</p>
+    <p class="playwhy">${esc(c.why_you)}</p>
+    ${(c.mechanism ?? []).length ? `<div class="kit">
+      <p class="kitlab">What the client actually gets</p>
+      <ol class="kitsteps">${c.mechanism.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
+    </div>` : ''}
+    <dl class="kv">
+      ${row('Who buys it', c.who_buys)}
+      ${detail ? row('Delivery shape', c.delivery) : ''}
+      ${row('Who you need on it', c.team_needed)}
+      ${row('You bring', c.roles?.partner)}
+      ${row('Lyzr brings', c.roles?.lyzr)}
+      ${detail ? row('What Lyzr does', up(c.lyzr_role ?? '')) : ''}
+      ${detail ? row('Runs on', (c.lyzr_products ?? []).join(' · ')) : ''}
+      ${o.name ? `<dt>Sell first</dt><dd><b>${esc(o.name)}</b>${o.shape ? ` · ${esc(o.shape)}` : ''}${o.ends_with ? `<br>Ends with ${esc(o.ends_with)}.` : ''}</dd>` : ''}
+      ${row('Raise it when', up(h.trigger ?? ''))}
+      ${row('Then', up(h.expansion ?? ''))}
+      ${detail ? row('The line to repeat', c.client_pitch) : ''}
+      ${detail ? row('Where it lands first', up(c.where_it_lands ?? '')) : ''}
+      ${detail ? row('Start with', up(c.first_step ?? '')) : ''}
+    </dl>
+    ${pr.result ? `<p class="playproof">${m ? `<b>${esc(m[1].trim())}</b> ${esc(m[2])}` : esc(pr.result)},
+      ${esc(pr.customer ?? '')}${pr.url ? ` · <a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'case study')}</a>` : ''}
+      <span class="note">Another Lyzr customer's result, not a projection for your client.</span></p>` : ''}
+    ${meeting ? `<div class="kit">
+      <p class="kitlab">Take this into the meeting</p>
+      ${c.first_conversation ? `<p class="kitask">${esc(c.first_conversation)}</p>` : ''}
+      ${(c.qualify ?? []).length ? `<ol class="kitsteps">${c.qualify.map((q) => `<li>${esc(q)}</li>`).join('')}</ol>` : ''}
+      ${obj.length ? `<p class="kitlab2">What they will say back</p>
+        ${obj.map((x) => `<div class="qa"><b>&ldquo;${esc(x.objection)}&rdquo;</b><p>${esc(x.answer)}</p></div>`).join('')}` : ''}
+      ${(c.discovery ?? []).length ? `<p class="kitlab2">Before you scope it, find out</p>
+        <ul class="kitchecks">${c.discovery.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
+      ${c.client_email ? `<p class="kitlab2">Send this to a client you already have</p>
+        <p class="kitmail"${detail ? ' id="mailtext"' : ''}>${esc(c.client_email)}</p>
+        ${detail ? '<button type="button" class="kitcopy" id="mailcopy">Copy</button>' : ''}` : ''}
+    </div>` : ''}
+    ${res.length ? `<div class="reading">
+      <p class="readlab">Send with it</p>
+      <ul>${res.map((r) => `<li><a href="${encodeURI(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> <span>${esc(r.kind)}</span></li>`).join('')}</ul>
+    </div>` : ''}
+  </article>`;
+}
+
 function renderDetail() {
   const c = S.cards[S.pick];
-  const o = c.first_offer ?? {}, h = c.how_to_sell ?? {}, pr = c.proof ?? {};
-  const m = /^([\d.,]+(?:[–-][\d.,]+)?\s*(?:%|x|\+)?)\s+(.{4,})$/i.exec(pr.result ?? '');
 
-  /* Sections only exist when they have something in them: a labelled empty block reads
-   * as a feature we shipped half of. */
-  const fit = c.fit ?? {};
-  const block = (label, body) => (body ? `<div class="block"><em>${esc(label)}</em>${body}</div>` : '');
-  const fact = (dt, dd) => (dd ? `<div class="fact"><dt>${esc(dt)}</dt><dd>${esc(dd)}</dd></div>` : '');
-
-  $('detail').innerHTML = `
-    <h2>${esc(c.headline)}</h2>
-    <p class="fits">${esc(c.why_you)}</p>
-
-    <div class="tabs" id="dtabs">
-      <button class="on" data-p="ov">Overview</button>
-      <button data-p="fit">Why it fits you</button>
-      <button data-p="sell">In the room</button>
-      <button data-p="proof">Proof</button>
-    </div>
-
-    <div class="pane on" data-p="ov">
-      <p class="lede" style="margin-bottom:26px">${esc(c.what_it_is)}</p>
-      <div class="offer">
-        <em>What you sell first</em>
-        <h3>${esc(o.name ?? '')}</h3>
-        <p class="shape">${esc(o.shape ?? '')}</p>
-        <p>Ends with ${esc(o.ends_with ?? '')}.</p>
-      </div>
-      ${block('What the client actually gets', (c.mechanism ?? []).length
-        ? `<ol class="qlist">${c.mechanism.map((m) => `<li>${esc(m)}</li>`).join('')}</ol>` : '')}
-      <dl class="facts">
-        ${fact('Who buys it', c.who_buys)}
-        ${fact('Delivery shape', c.delivery)}
-        ${fact('Who you need on it', c.team_needed)}
-        ${fact('What Lyzr does', up(c.lyzr_role ?? ''))}
-        ${fact('Runs on', (c.lyzr_products ?? []).join(' · '))}
-        ${fact('You bring', c.roles?.partner)}
-        ${fact('Lyzr brings', c.roles?.lyzr)}
-      </dl>
-    </div>
-
-    <div class="pane" data-p="fit">
-      ${block('What it attaches to', fit.attaches_to ? `<p class="lede">${esc(up(fit.attaches_to))}</p>` : '')}
-      <dl class="facts">
-        ${fact('Why we think so', fit.evidence)}
-        ${fact('Where it lands first', up(c.where_it_lands ?? ''))}
-      </dl>
-    </div>
-
-    <div class="pane" data-p="sell">
-      ${c.client_pitch ? `<p class="pull"><span>The line to repeat</span>${esc(c.client_pitch)}</p>` : ''}
-      ${block('When to raise it', h.trigger ? `<p class="lede">${esc(up(h.trigger))}</p>` : '')}
-      ${block('Open with', c.first_conversation ? `<p class="ask">${esc(c.first_conversation)}</p>` : '')}
-      ${block('Then ask them', (c.qualify ?? []).length
-        ? `<ol class="qlist">${c.qualify.map((q) => `<li>${esc(q)}</li>`).join('')}</ol>` : '')}
-      ${block("What they'll say back", (c.objections ?? []).length
-        ? c.objections.map((ob) => `<div class="qa"><b>&ldquo;${esc(ob.objection)}&rdquo;</b><p>${esc(ob.answer)}</p></div>`).join('') : '')}
-      ${block('Before you scope it, find out', (c.discovery ?? []).length
-        ? `<ul class="checks">${c.discovery.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : '')}
-      ${c.client_email ? `<div class="block"><em>Send this to a client you already have</em>
-        <div class="mail"><p id="mailtext">${esc(c.client_email)}</p>
-        <button type="button" class="ghost" id="mailcopy">Copy</button></div></div>` : ''}
-      <dl class="facts">
-        ${fact('The first thing to do', up(c.first_step ?? ''))}
-        ${fact('Where it goes next', up(h.expansion ?? ''))}
-      </dl>
-    </div>
-
-    <div class="pane" data-p="proof">
-      <p class="proofline">${m ? `<b>${esc(m[1].trim())}</b> ${esc(m[2])}` : esc(pr.result ?? '')}</p>
-      <p class="small" style="margin-bottom:8px">${esc(pr.customer ?? '')}</p>
-      <p class="caveat" style="margin-top:0;border:0;padding:0">Another Lyzr customer's result, not a projection for your client.</p>
-      ${pr.teaser && pr.teaser.toLowerCase() !== `${(pr.customer ?? '').toLowerCase()}: ${(pr.result ?? '').toLowerCase()}`
-        ? `<p style="margin-bottom:14px">${esc(pr.teaser)}</p>` : ''}
-      ${pr.url ? `<p style="margin-bottom:30px"><a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'Read the case study')} &#8599;</a></p>` : ''}
-
-      ${(c.resources ?? []).length ? `
-        <h3>What else you can put in front of them</h3>
-        <ul class="reslist">
-          ${c.resources.map((r) => `<li>
-            <em>${esc(r.kind)}</em>
-            <a href="${encodeURI(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>
-            ${r.blurb ? `<p>${esc(r.blurb)}</p>` : ''}
-          </li>`).join('')}
-        </ul>` : ''}
-    </div>
-
-    <div class="dfoot"><button class="go accent" id="build">Build my brief &rarr;</button></div>`;
+  $('detail').innerHTML = playBlock(c, { detail: true })
+    + `<div class="dfoot"><button class="go accent" id="build">Build my brief &rarr;</button></div>`;
 
   const copy = $('mailcopy');
   if (copy) {
@@ -445,14 +420,6 @@ function renderDetail() {
       } catch { copy.textContent = 'Select and copy'; }
     };
   }
-
-  const tabs = $('dtabs');
-  [...tabs.children].forEach((b) => {
-    b.onclick = () => {
-      [...tabs.children].forEach((x) => x.classList.toggle('on', x === b));
-      $('detail').querySelectorAll('.pane').forEach((p) => p.classList.toggle('on', p.dataset.p === b.dataset.p));
-    };
-  });
   /* The card they are reading always counts, ticked or not — having to tick the one on
    * screen before the button means anything is a step nobody expects. */
   $('build').onclick = () => {
@@ -576,46 +543,10 @@ function partnerSheet() {
    * description written for the brief. This is what makes choosing three worth anything. */
   /* A link that already appeared under an earlier play is not worth repeating. */
   const seenRes = new Set();
-  const play = (c, i) => {
-    const o = c.first_offer ?? {}, pr = c.proof ?? {};
-    const res = (c.resources ?? []).filter((r) => !seenRes.has(r.url) && seenRes.add(r.url));
-    const m = /^([\d.,]+(?:[–-][\d.,]+)?\s*(?:%|x|\+)?)\s+(.{4,})$/i.exec(pr.result ?? '');
-    return `<article class="play">
-      ${many ? `<p class="playnum">Play ${String(i + 1).padStart(2, '0')} of ${plays.length}</p>` : ''}
-      <h3>${esc(c.headline)}</h3>
-      <p class="sh-body">${esc(c.what_it_is)}</p>
-      <p class="playwhy">${esc(c.why_you)}</p>
-      ${(c.mechanism ?? []).length ? `<div class="kit">
-        <p class="kitlab">What the client actually gets</p>
-        <ol class="kitsteps">${c.mechanism.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
-      </div>` : ''}
-      <dl class="kv">
-        <dt>Who buys it</dt><dd>${esc(c.who_buys)}</dd>
-        ${c.team_needed ? `<dt>Who you need on it</dt><dd>${esc(c.team_needed)}</dd>` : ''}
-        ${c.roles?.partner ? `<dt>You bring</dt><dd>${esc(c.roles.partner)}</dd>` : ''}
-        ${c.roles?.lyzr ? `<dt>Lyzr brings</dt><dd>${esc(c.roles.lyzr)}</dd>` : ''}
-        <dt>Sell first</dt><dd><b>${esc(o.name ?? '')}</b>${o.shape ? ` · ${esc(o.shape)}` : ''}${o.ends_with ? `<br>Ends with ${esc(o.ends_with)}.` : ''}</dd>
-        ${c.how_to_sell?.trigger ? `<dt>Raise it when</dt><dd>${esc(up(c.how_to_sell.trigger))}</dd>` : ''}
-        ${c.how_to_sell?.expansion ? `<dt>Then</dt><dd>${esc(up(c.how_to_sell.expansion))}</dd>` : ''}
-      </dl>
-      ${pr.result ? `<p class="playproof">${m ? `<b>${esc(m[1].trim())}</b> ${esc(m[2])}` : esc(pr.result)},
-        ${esc(pr.customer ?? '')}${pr.url ? ` · <a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'case study')}</a>` : ''}
-        <span class="note">Another Lyzr customer's result, not a projection for your client.</span></p>` : ''}
-      ${c.first_conversation || (c.discovery ?? []).length || c.client_email ? `<div class="kit">
-        <p class="kitlab">Take this into the meeting</p>
-        ${c.first_conversation ? `<p class="kitask">${esc(c.first_conversation)}</p>` : ''}
-        ${(c.qualify ?? []).length ? `<ol class="kitsteps">${c.qualify.map((q) => `<li>${esc(q)}</li>`).join('')}</ol>` : ''}
-        ${(c.discovery ?? []).length ? `<p class="kitlab2">Before you scope it, find out</p>
-          <ul class="kitchecks">${c.discovery.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
-        ${c.client_email ? `<p class="kitlab2">Send this to a client you already have</p>
-          <p class="kitmail">${esc(c.client_email)}</p>` : ''}
-      </div>` : ''}
-      ${res.length ? `<div class="reading">
-        <p class="readlab">Send with it</p>
-        <ul>${res.map((r) => `<li><a href="${encodeURI(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> <span>${esc(r.kind)}</span></li>`).join('')}</ul>
-      </div>` : ''}
-    </article>`;
-  };
+  const play = (c, i) => playBlock(c, {
+    num: many ? `Play ${String(i + 1).padStart(2, '0')} of ${plays.length}` : '',
+    seen: seenRes,
+  });
 
   return `<div class="sheet" id="sheet-partner">
     <header class="sh-top">
@@ -708,7 +639,7 @@ function exportPdf(sheetId, title, btn) {
    they are restated unconditionally here for the preview the dialog shows. */
 body{background:#fff;margin:0}
 .sheet{border:none;border-radius:0;padding:0}
-.copy,.tabs{display:none}
+.copy,.tabs,.kitcopy{display:none}
 </style></head><body>${sheet.outerHTML}</body></html>`);
   doc.close();
 

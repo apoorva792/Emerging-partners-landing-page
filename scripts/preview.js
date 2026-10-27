@@ -35,7 +35,7 @@ addEventListener('load', () => {
     document.getElementById('email').value = 'hello@goml.io';
     click('#start');
   });
-  if (seq >= 2) for (let i = 0; i < 4; i++) at(250, () => { click('#qopts .opt'); click('#qnext'); });
+  if (seq >= 2) for (let i = 0; i < 5; i++) at(250, () => { click('#qopts .opt'); click('#qnext'); });
   /* Tick a second card so the preview exercises the multi-play brief. */
   if (seq >= 3) at(900, () => document.querySelectorAll('.optab')[1]?.querySelector('.pickbox')?.click());
   if (seq >= 3) at(250, () => click('#build'));
@@ -52,10 +52,6 @@ addEventListener('load', () => {
   const openN = new URLSearchParams(location.search).get('open');
   if (openN) at(1200, () => document.querySelectorAll('.optab')[+openN]?.querySelector('strong')?.click());
 
-  /* &tab=sell|proof opens that tab on the explorer for a screenshot. */
-  const tab = new URLSearchParams(location.search).get('tab');
-  if (tab) at(1200, () => document.querySelector('#dtabs [data-p="' + tab + '"]')?.click());
-
   /* ?print=1 strips the page down to the document alone — exactly what the PDF export
      puts in its iframe — so the printed result can be checked. Its own timer, not chained
      to the sequence, so it cannot be skipped. */
@@ -63,7 +59,7 @@ addEventListener('load', () => {
     var sheet = document.querySelector('#s9.on #sheet-client') || document.querySelector('#s8.on #sheet-partner');
     if (!sheet) { console.error('print: no sheet on screen'); return; }
     document.body.innerHTML = '<div class="wrap">' + sheet.outerHTML + '</div>';
-    document.querySelectorAll('.copy,.tabs').forEach(function (el) { el.remove(); });
+    document.querySelectorAll('.copy,.tabs,.kitcopy').forEach(function (el) { el.remove(); });
   }, 7000);
 });
 <\/script>`;

@@ -148,49 +148,24 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
 .optab strong{font-size:16.5px;line-height:1.3;letter-spacing:-.012em;font-weight:600}
 .detail{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:32px}
 .detail>h2{max-width:26ch}
-.fits{font-size:18px;line-height:1.5;color:var(--ink);border-left:2px solid var(--accent);
-  padding-left:18px;margin:0 0 26px;max-width:62ch}
-.tabs{display:flex;gap:26px;border-bottom:1px solid var(--line);margin:0 0 26px}
-.tabs button{background:none;color:var(--muted);padding:0 0 13px;font-size:16.5px;border-radius:0;
-  border-bottom:2px solid transparent;margin-bottom:-1px}
-.tabs button:hover{color:var(--ink)}
-.tabs button.on{color:var(--accent);border-bottom-color:var(--accent)}
-.pane{display:none;animation:in .26s ease both}
-.pane.on{display:block}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin:0}
-.fact{padding:14px 0;border-top:1px solid var(--line)}
-.fact dt{font-size:15px;color:var(--muted);margin-bottom:3px}
-.fact dd{margin:0;font-size:17px;line-height:1.4}
-.offer{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:0 0 26px}
-.offer em{font-style:normal;font-size:15px;color:var(--accent);display:block;margin-bottom:8px}
-.offer h3{margin:0 0 4px}
-.offer .shape{font-family:var(--mono);font-size:13.5px;color:var(--soft);margin:0 0 10px}
-.offer p:last-child{margin:0;font-size:16.5px}
-.quote{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:0 0 14px}
-.quote p{margin:0;font-size:17px;line-height:1.55}
-.copy{background:none;border:1px solid var(--line);color:var(--soft);font-size:14px;padding:7px 14px;margin-top:14px}
-.copy:hover{color:var(--ink);border-color:var(--ink)}
-.qlist{list-style:none;margin:0 0 26px;padding:0}
-.qlist li{padding:12px 0;border-top:1px solid var(--line);font-size:17px}
-.reslist{list-style:none;margin:0;padding:0}
-.reslist li{padding:15px 0;border-top:1px solid var(--line)}
-.reslist em{font-style:normal;font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;
-  text-transform:uppercase;color:var(--muted);display:block;margin-bottom:5px}
-.reslist a{display:block;font-size:17px;font-weight:500;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
-.reslist a:hover{color:var(--accent)}
-.reslist p{margin:4px 0 0;font-size:15px;color:var(--soft)}
-/* ---------- the consult half of a card ---------- */
-/* Sections inside a pane, each under a quiet mono label: the card now carries enough that
- * unlabelled paragraphs would run together into an essay. */
-.block{margin:0 0 28px}
-.block:last-child{margin-bottom:0}
-.facts+.block{margin-top:28px}
-.block>em{font-style:normal;display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--muted);margin:0 0 11px}
-/* The one line they repeat in the meeting, which is ours and not the model's. */
-.pull{margin:0 0 26px;padding:18px 22px;background:var(--fill);border-radius:var(--r);font-size:19px;line-height:1.5}
-.pull span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--muted);margin-bottom:9px}
+/* The card on screen is the brief's play block, a little larger because it is being read
+   on its own rather than printed three to a page. */
+.detail a{color:var(--navy)}
+.playhead{font-size:clamp(22px,2.5vw,28px);line-height:1.14;letter-spacing:-.025em;margin:0 0 12px;max-width:28ch}
+.detail .sh-body{font-size:16.5px;margin-bottom:16px}
+.detail .playwhy{font-size:16px;margin-bottom:20px}
+.detail .kv{font-size:15.5px;margin:20px 0}
+.detail .kit{padding:18px 20px;margin-top:20px}
+.detail .kitsteps li,.detail .kitchecks li{font-size:15px}
+.detail .kitmail{font-size:15px}
+.detail .playproof{font-size:15px;padding-top:16px}
+.detail .reading li{font-size:15px}
+.kit .qa{border-top-color:var(--line);padding:12px 0}
+.kit .qa b{font-size:15px;margin-bottom:6px}
+.kit .qa p{font-size:14.5px}
+.kitcopy{background:var(--surface);border:1px solid var(--line);border-radius:var(--rb);
+  color:var(--soft);font-size:13px;padding:7px 13px;margin-top:10px}
+.kitcopy:hover{color:var(--ink);border-color:var(--muted)}
 .qlist{list-style:none;margin:0;padding:0;counter-reset:q}
 .qlist li{counter-increment:q;position:relative;padding:13px 0 13px 34px;border-top:1px solid var(--line);
   font-size:17px;line-height:1.45}
@@ -203,21 +178,6 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
 .qa:first-of-type{border-top:none;padding-top:0}
 .qa b{display:block;font-weight:400;font-size:17px;line-height:1.4;margin-bottom:8px}
 .qa p{margin:0;padding-left:16px;border-left:2px solid var(--accent);font-size:16px;line-height:1.5;color:var(--soft)}
-.checks{list-style:none;margin:0;padding:0}
-.checks li{position:relative;padding:8px 0 8px 22px;font-size:16px;line-height:1.45;color:var(--soft)}
-.checks li::before{content:'';position:absolute;left:0;top:15px;width:10px;height:1px;background:var(--accent)}
-/* The assumption and the disqualifier. Quiet on purpose — they are the parts a reader
- * checks us on, not the parts we sell with. */
-.caveat{margin:22px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:15px;line-height:1.5;color:var(--muted)}
-.caveat b{color:var(--soft);font-weight:400}
-/* The question that opens the meeting, and the mail they send afterwards. Both are meant
- * to be taken off the screen and used, so both are set apart from the prose around them. */
-.ask{margin:0;font-size:19px;line-height:1.45;padding-left:16px;border-left:2px solid var(--accent)}
-.mail{background:var(--fill);border-radius:var(--r);padding:18px 20px 16px}
-.mail p{margin:0 0 14px;font-size:16px;line-height:1.55;white-space:pre-wrap}
-.mail button{background:var(--surface);border:1px solid var(--line);border-radius:var(--rb);
-  padding:7px 14px;font-size:14px;color:var(--soft);cursor:pointer}
-.mail button:hover{color:var(--ink);border-color:var(--muted)}
 
 /* ---------- the sales kit inside the brief ---------- */
 /* The half of a play the partner uses in the room rather than reads at a desk. Set on a
@@ -238,10 +198,8 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
 .kitmail{margin:0;font-size:14.5px;line-height:1.55;white-space:pre-wrap;background:var(--surface);
   border:1px solid var(--line);border-radius:var(--rb);padding:14px 16px}
 .playproof .note{display:block;margin-top:4px;font-size:12.5px;color:var(--muted)}
-.proofline{font-size:19px;line-height:1.5;margin:0 0 10px}
-.proofline b{color:var(--accent);font-weight:600}
 .dfoot{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
-@media(max-width:860px){.optabs{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.detail{padding:24px}}
+@media(max-width:860px){.optabs{grid-template-columns:1fr}.detail{padding:24px}}
 
 /* ---------- accounts ---------- */
 /* The relationship select carries a long label, so it gets room rather than a
