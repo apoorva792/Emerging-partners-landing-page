@@ -378,63 +378,68 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
   const res = (c.resources ?? []).filter((r) => !seen || (!seen.has(r.url) && seen.add(r.url)));
   const m = /^([\d.,]+(?:[–-][\d.,]+)?\s*(?:%|x|\+)?)\s+(.{4,})$/i.exec(pr.result ?? '');
   const row = (dt, dd) => (dd ? `<dt>${esc(dt)}</dt><dd>${esc(dd)}</dd>` : '');
-  /* The room half of the play belongs in the document they take away, not on the screen
-   * where they are still choosing between three of them. */
-  const meeting = !detail && (c.first_conversation || (c.qualify ?? []).length
-    || (c.discovery ?? []).length || c.client_email);
+  const by = { see: [], build: [], sell: [] };
+  for (const r of res) (by[r.shelf] ?? by.build).push(r);
+  const shelf = (key, label) => (by[key].length ? `<div class="shelf"><p class="shlab">${label}</p>
+    <ul>${by[key].map((r) => `<li><a href="${encodeURI(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></li>`).join('')}</ul></div>` : '');
 
   return `<article class="play">
-    <p class="playnum">${esc(growthOf(c))}${num ? ` <span>${esc(num)}</span>` : ''}</p>
+    <p class="playnum">${esc(MOTIONS[c.motion] ?? growthOf(c))}${num ? ` <span>${esc(num)}</span>` : ''}</p>
     ${detail ? `<h2 class="playhead">${esc(c.headline)}</h2>` : `<h3>${esc(c.headline)}</h3>`}
     <p class="sh-body">${esc(c.what_it_is)}</p>
+
+    <p class="shlab">Why you</p>
     <p class="playwhy">${esc(c.why_you)}</p>
+    ${detail && (c.stands_on ?? []).length ? `<p class="playcite">You have done this: ${c.stands_on
+      .map((e) => `<a href="${encodeURI(e.url)}" target="_blank" rel="noopener">${esc(e.what)}</a>`).join(' · ')}</p>` : ''}
+
+    ${c.product ? `<p class="shlab">What Lyzr brings</p>
+      <p class="sh-body"><b>${esc(c.product.name)}</b> ${esc(c.product.does.replace(/^./, (x) => x.toLowerCase()))}
+      ${c.lyzr_advantage ? ` ${esc(c.lyzr_advantage)}` : ''}</p>`
+      : c.roles?.lyzr ? `<p class="shlab">What Lyzr brings</p><p class="sh-body">${esc(c.roles.lyzr)}</p>` : ''}
+
+    ${(c.sellable_services ?? []).length ? `<p class="shlab">What you could sell</p>
+      <ul class="sells">${c.sellable_services.map((x) => `<li><b>${esc(x.name)}</b>${x.client_gets ? ` <span>${esc(x.client_gets)}</span>` : ''}</li>`).join('')}</ul>` : ''}
+
     ${(c.mechanism ?? []).length ? `<div class="kit">
-      <p class="kitlab">What the client actually gets</p>
+      <p class="kitlab">What the client ends up with</p>
       <ol class="kitsteps">${c.mechanism.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>
     </div>` : ''}
+
     <dl class="kv">
-      ${c.product ? `<dt>Built on</dt><dd><b>${esc(c.product.name)}</b>, ${esc(c.product.does.replace(/^./, (x) => x.toLowerCase()))}</dd>` : ''}
-      ${row('What this is', c.offering)}
-      ${detail && (c.stands_on ?? []).length ? `<dt>Where you have done this</dt><dd>${c.stands_on
-        .map((e) => `<a href="${encodeURI(e.url)}" target="_blank" rel="noopener">${esc(e.what)}</a>`)
-        .join('<br>')}</dd>` : ''}
       ${row('Who buys it', c.who_buys)}
-      ${row('Delivery shape', c.delivery)}
-      ${row('Who you need on it', c.team_needed)}
-      ${row('You bring', c.roles?.partner)}
-      ${row('Lyzr brings', c.roles?.lyzr)}
-      ${detail ? row('What Lyzr does', up(c.lyzr_role ?? '')) : ''}
-      ${detail ? row('Runs on', (c.lyzr_products ?? []).join(' · ')) : ''}
-      ${(c.demo ?? []).length ? `<dt>Demo to them</dt><dd>${c.demo.map((d) => `<b>${esc(d.name)}</b>, ${esc(d.does.replace(/^[^:]*:\s*/, ''))}`).join('<br>')}</dd>` : ''}
-      ${o.name ? `<dt>Sell first</dt><dd><b>${esc(o.name)}</b>${o.shape ? ` · ${esc(o.shape)}` : ''}${o.ends_with ? `<br>Ends with ${esc(o.ends_with)}.` : ''}</dd>` : ''}
-      ${row('Raise it when', up(h.trigger ?? ''))}
-      ${row('Then it grows into', up(h.expansion ?? ''))}
-      ${detail ? row('The line to repeat', c.client_pitch) : ''}
+      ${row('What makes them buy now', up(h.trigger ?? ''))}
+      ${row('How you earn', c.monetisation)}
       ${detail ? row('Where it lands first', up(c.where_it_lands ?? '')) : ''}
-      ${detail ? row('Start with', up(c.first_step ?? '')) : ''}
     </dl>
+
     ${pr.result ? `<p class="playproof">${m ? `<b>${esc(m[1].trim())}</b> ${esc(m[2])}` : esc(pr.result)},
       ${esc(pr.customer ?? '')}${pr.url ? ` · <a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'case study')}</a>` : ''}</p>`
-      /* No customer story is about this work yet, so there is no number to show. What the
-       * thing is, and where it is documented, said plainly rather than dressed as proof. */
       : (c.reference ? `<p class="playproof"><span class="noproof">Built on</span>
           <a href="${encodeURI(c.reference.url)}" target="_blank" rel="noopener">${esc(c.reference.title)}</a>,
           no customer story published for this one yet.</p>` : '')}
-    ${meeting ? `<div class="kit">
-      <p class="kitlab">Take this into the meeting</p>
-      ${c.first_conversation ? `<p class="kitask">${esc(c.first_conversation)}</p>` : ''}
-      ${(c.qualify ?? []).length ? `<ol class="kitsteps">${c.qualify.map((q) => `<li>${esc(q)}</li>`).join('')}</ol>` : ''}
-      ${(c.discovery ?? []).length ? `<p class="kitlab2">Before you scope it, find out</p>
-        <ul class="kitchecks">${c.discovery.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
-      ${c.client_email ? `<p class="kitlab2">Send this to a client you already have</p>
-        <p class="kitmail">${esc(c.client_email)}</p>` : ''}
-    </div>` : ''}
+
+    ${(c.assumptions ?? []).length ? `<p class="playassume"><span>To confirm with a client:</span> ${c.assumptions.map(esc).join(' · ')}</p>` : ''}
+
     ${res.length ? `<div class="reading">
-      <p class="readlab">Send with it</p>
-      <ul>${res.map((r) => `<li><a href="${encodeURI(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a> <span>${esc(r.kind)}</span></li>`).join('')}</ul>
+      ${shelf('see', 'See it')}${shelf('build', 'Build it')}${shelf('sell', 'Sell it')}
     </div>` : ''}
+
+    ${detail && o.name ? `<p class="playfirst"><span>First move</span> ${esc(c.first_step || o.name)}</p>` : ''}
+    ${!detail && c.first_step ? `<p class="playfirst"><span>First move</span> ${esc(c.first_step)}</p>` : ''}
   </article>`;
 }
+
+/* How the money is actually made, as a label a reader recognises. */
+const MOTIONS = {
+  new_implementation: 'New implementation',
+  product_deployment: 'Product deployment',
+  productization: 'Productised offer',
+  account_expansion: 'Account expansion',
+  managed_service: 'Managed service',
+  embedding: 'Embedded in your product',
+};
+
 
 function renderDetail() {
   const c = S.cards[S.pick];
@@ -610,21 +615,12 @@ function partnerSheet() {
       </dl>
     </section>
 
-    <section class="sh-sect">
-      <h3>What to ask them</h3>
-      <ul class="qlist" style="margin-bottom:0">${(b.what_to_ask ?? []).map((q) => `<li>${esc(q)}</li>`).join('')}</ul>
-    </section>
-
     ${lands.length ? `<section class="sh-sect">
       <h3>Where it lands first</h3>
       <p class="sh-body" style="margin-top:-6px">Accounts to test, some taken from the clients named on your own site. Public references, not verified pipeline.</p>
       <ol class="lands">${lands.map((l, i) => `<li><span class="r">${String(i + 1).padStart(2, '0')}</span><span><b>${esc(l.account)}</b><span>${esc(l.why)}</span></span></li>`).join('')}</ol>
     </section>` : ''}
 
-    <section class="sh-sect">
-      <h3>Your first thirty days</h3>
-      <ol class="track">${(b.first_30_days ?? []).map((d) => `<li><em>${esc(d.when)}</em>${esc(d.what)}</li>`).join('')}</ol>
-    </section>
 
     <section class="sh-sect">
       <div class="panel">
