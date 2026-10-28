@@ -564,7 +564,6 @@ function lockup() {
 
 function partnerSheet() {
   const b = S.brief, co = S.profile.company.name || '';
-  const ic = b.ideal_customer ?? {};
   const lands = b.where_it_lands ?? [];
   const plays = S.chosen ?? [];
   const many = plays.length > 1;
@@ -606,14 +605,6 @@ function partnerSheet() {
       ${many && b.how_they_connect ? `<p class="connect">${esc(b.how_they_connect)}</p>` : ''}
     </section>
 
-    <section class="sh-sect">
-      <h3>Who to take it to</h3>
-      <dl class="kv">
-        <dt>Who sponsors it</dt><dd>${esc((ic.roles ?? []).join(' · '))}</dd>
-        <dt>Where it lands</dt><dd>${esc((ic.industries ?? []).join(' · '))}</dd>
-        <dt>Raise it when</dt><dd>${(ic.triggers ?? []).map(esc).join('<br>')}</dd>
-      </dl>
-    </section>
 
     ${lands.length ? `<section class="sh-sect">
       <h3>Where it lands first</h3>

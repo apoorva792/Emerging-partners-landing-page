@@ -258,3 +258,25 @@ test('an offering\'s own services are not listed when the card is about somethin
     'the product service should read as a different subject');
   assert.equal(drifts(subject, 'Release readiness validation: each release gated on results'), null);
 });
+
+test('a price or a revenue share is never put on a card', () => {
+  for (const m of [
+    'Monthly fee per page tested, or percentage of revenue uplift from winning variants',
+    'A day rate of the usual kind plus a platform fee',
+    'Billed at $4,000 per workflow per month',
+    '20% of the savings in the first year',
+  ]) {
+    const c = card({ monetisation: m });
+    const out = run(c);
+    assert.equal(problems(out, 'commercial').length, 1, `let through: ${m}`);
+    assert.ok(!/(\$|£|€)\s?\d|%|percentage|revenue share|day rate/i.test(c.monetisation), `survived on the card: ${c.monetisation}`);
+    assert.ok(c.monetisation.length > 0, 'and something still explains how the money arrives');
+  }
+});
+
+test('a shape rather than a number passes untouched', () => {
+  const m = 'Discovery charged as an engagement, then a monthly fee per order type';
+  const c = card({ monetisation: m });
+  assert.equal(problems(run(c), 'commercial').length, 0);
+  assert.equal(c.monetisation, m);
+});
