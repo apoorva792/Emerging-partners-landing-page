@@ -71,10 +71,27 @@ test('an outreach email about a different workflow is removed, not sent', () => 
   assert.equal(c.client_email, undefined);
 });
 
-test('the discovery questions have to be about the same thing as the card', () => {
-  const c = card({ discovery: ['How many invoices are reconciled by hand each month'] });
+test('the qualifying questions have to be about the same thing as the card', () => {
+  const c = card({ qualify: ['How many invoices are reconciled by hand each month?'] });
   assert.equal(problems(run(c), 'workflow').length, 1);
-  assert.deepEqual(c.discovery, []);
+  assert.deepEqual(c.qualify, []);
+});
+
+test('text that came out of the pattern files is not second-guessed', () => {
+  /* The first engagement and the scoping questions are ours, with {work} and {unit}
+   * filled in. They are generic by design and must not be flagged as a second service. */
+  const c = card({
+    headline: 'Keep every agent your clients run inventoried and governed',
+    what_it_is: 'Every agent in production appears in one registry with an owner against it.',
+    why_you: 'You already run agents for three clients.',
+    first_offer: { name: 'Agent estate assessment', shape: '3 weeks', ends_with: 'a complete inventory of every agent, with owners' },
+    discovery: ['How many forecasts and reports depend on them'],
+    mechanism: ['Every agent in production appears in one registry', 'A policy check runs on every agent call'],
+    /* The rest of the default card is about purchase orders, which this one is not. */
+    qualify: [], client_email: '', first_step: '', where_it_lands: '',
+  });
+  assert.equal(problems(run(c), 'workflow').length, 0);
+  assert.ok(c.first_offer.ends_with);
 });
 
 test('a section that names no workflow object is unspecific, not wrong', () => {
