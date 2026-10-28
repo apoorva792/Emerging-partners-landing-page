@@ -249,3 +249,12 @@ test('a default platform page does not ride in on the platform list', () => {
   run(c);
   assert.deepEqual(c.resources.map((r) => r.id), ['r2']);
 });
+
+test('an offering\'s own services are not listed when the card is about something else', () => {
+  /* OpenController sells "agent estate discovery". A card about release testing that is
+   * built on OpenController still sells release testing, not agent discovery. */
+  const subject = objects('managed regression testing for every CloudSuite release');
+  assert.ok(drifts(subject, 'Agent estate discovery: a list of every agent running'),
+    'the product service should read as a different subject');
+  assert.equal(drifts(subject, 'Release readiness validation: each release gated on results'), null);
+});
