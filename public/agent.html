@@ -308,7 +308,9 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
   .rail,.row,.note,.tabs,.copy{display:none!important}
   body{background:#fff;font-size:11pt}
   .wrap{max-width:none;padding:0}
-  .sheet{border:none;border-radius:0;padding:0;font-size:10.5pt;line-height:1.5}
+  .sheet{border:none;border-radius:0;font-size:10.5pt;line-height:1.5;
+    /* What @page used to carry. */
+    padding:14mm 15mm 16mm}
   /* Keep a section whole on one page wherever it will fit, and never leave a heading
      stranded at the foot of a page. */
   .sh-sect{break-inside:avoid;page-break-inside:avoid;margin-bottom:26pt}
@@ -317,6 +319,19 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
   /* The kit is what gets carried into the meeting, so it must not be split by a page
    * break: half a discovery checklist at the bottom of page three is useless. */
   .kit,.kitmail{break-inside:avoid;page-break-inside:avoid}
+  /* A play is long enough that holding it whole forces a page break before almost every
+     one, which is where the empty half pages came from. Hold its parts instead. */
+  .play{break-inside:auto;page-break-inside:auto}
+  .play>h2,.play>h3,.playnum{break-after:avoid;page-break-after:avoid}
+  .kv{break-inside:auto;page-break-inside:auto}
+  .kv dt{break-after:avoid;page-break-after:avoid}
+  .kv dt,.kv dd{break-inside:avoid;page-break-inside:avoid}
+  /* The closing panel was overlapping the page number because it was the last block on a
+     page with nothing under it to push against. */
+  .panel{margin-bottom:0}
+  .sheet>*:last-child{margin-bottom:0}
+  /* Orphans and widows, so a single line never starts or ends a page on its own. */
+  p,li,dd{orphans:3;widows:3}
   .kit{background:#F6F5F3 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .panel{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .sh-head{font-size:26pt;line-height:1.1}
@@ -324,7 +339,11 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
   a{text-decoration:none}
   a[href^="http"]:after{content:' (' attr(href) ')';font-size:8pt;color:#6B675F;word-break:break-all}
 }
-@page{size:A4;margin:14mm 15mm 16mm}
+/* Zero page margin is what suppresses Chrome's own header and footer: the URL, the date
+   and "1/9" are drawn in the margin box, and with no margin box there is nowhere to draw
+   them. The page's own breathing room is restored as padding on the sheet instead, so the
+   document looks the same and carries none of the browser's furniture. */
+@page{size:A4;margin:0}
 </style>
 </head>
 <body>

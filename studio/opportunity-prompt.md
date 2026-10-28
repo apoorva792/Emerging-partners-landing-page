@@ -47,6 +47,19 @@ Write it that way: "worth asking whether their order teams still key these by ha
 honest and still useful. "Your clients are losing hours to manual entry" is a claim we
 cannot make, and a founder who knows their own accounts will catch it.
 
+**Three things that are not the same thing, and the card must not confuse them.**
+
+- **What the product does.** OpenController discovers agents and enforces policy.
+  SuperFlow journals every step. That is a fact about our software.
+- **What the partner does with it.** Configures, integrates, deploys, operates.
+- **What the client ends up with.** A named thing in their business they can see, use or
+  be billed for.
+
+`client_gets` is always the third one, never the first. "Enforces policy on every agent
+call" is a feature; "every agent touching customer data is registered, and a release
+cannot ship without a signed-off eval" is what the client gets. A line that would appear
+word for word on our product page belongs nowhere on this card.
+
 Rules:
 
 1. **Write only the line you were given.** Never invent a service line, never blend in
@@ -77,7 +90,28 @@ Rules:
      event or a condition, not a persona: "they have agents running that nobody
      inventoried", not "forward-thinking CIOs".
    - `expansion`: where the first offer goes if it lands. One line.
-9. **`first_step`** is the smallest real thing they could do in the next thirty days, one
+9. **`client_gets`: two to four things the client ends up with**, max 16 words each, for
+   **this** workflow and no other. Each is observable: someone could look at the client's
+   business afterwards and say whether it is true.
+   - Name the thing the work acts on, and keep naming the same one. If the line is about
+     purchase order validation then every item is about purchase orders. The moment one is
+     about invoices instead, the card is describing two services and the partner stops
+     believing it.
+   - Write the end state, not the machinery: "exceptions reach a buyer with the reason
+     attached, everything else posts straight through", not "an agent orchestrates the
+     validation workflow".
+   - No product names, no feature lists, no "AI-powered", no "end-to-end".
+   - Where it is a deployment rather than a build, the deliverable is still the client's:
+     for a workforce rollout, what an employee can now do and what their IT administrator
+     can now see.
+
+10. **Before you argue a product, argue the gap.** Where the card names a Lyzr product,
+    `why_you` carries four things in two sentences: what this firm already provides, what
+    is missing from it, what the product adds that they would otherwise build and
+    maintain, and what they charge for. A product recommended without a gap reads as a
+    vendor pitch, which is what a partner is most alert to.
+
+11. **`first_step`** is the smallest real thing they could do in the next thirty days, one
    client, one workflow, one conversation. Not "schedule a strategy session".
 10. **`headline`** is what the partner would put on their own website, in their words, not
    Lyzr's. No "agentic", no "leverage", no "transform".
@@ -202,12 +236,13 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "headline", "what_it_is", "why_you", "attaches_to", "where_it_lands", "lyzr_role", "how_to_sell", "qualify", "client_email", "first_step"],
+  "required": ["id", "headline", "what_it_is", "why_you", "client_gets", "attaches_to", "where_it_lands", "lyzr_role", "how_to_sell", "qualify", "client_email", "first_step"],
   "properties": {
     "id": { "type": "string" },
     "headline": { "type": "string" },
     "what_it_is": { "type": "string" },
     "why_you": { "type": "string" },
+    "client_gets": { "type": "array", "items": { "type": "string" } },
     "attaches_to": { "type": "string" },
     "where_it_lands": { "type": "string" },
     "lyzr_role": { "type": "string" },

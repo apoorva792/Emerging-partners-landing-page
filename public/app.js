@@ -673,8 +673,10 @@ function exportPdf(sheetId, title, btn) {
 /* The print rules above are scoped to @media print; the iframe is only ever printed, so
    they are restated unconditionally here for the preview the dialog shows. */
 body{background:#fff;margin:0}
-.sheet{border:none;border-radius:0;padding:0}
+.sheet{border:none;border-radius:0;padding:14mm 15mm 16mm}
 .copy,.tabs{display:none}
+/* Restated for the dialog's own preview, which does not always apply the print block. */
+@page{size:A4;margin:0}
 </style></head><body>${sheet.outerHTML}</body></html>`);
   doc.close();
 
