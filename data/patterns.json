@@ -175,6 +175,81 @@
     "partner": "The support structure, the on-call rota and the client relationship",
     "lyzr": "The platform, the observability and escalation into our engineering"
    }
+  },
+  {
+   "id": "roll-out-to-everyone",
+   "growth_path": "expand",
+   "when": "The client wants one capability in front of a whole workforce rather than one use case built well. The work is standing it up, agreeing what good looks like, and getting people to use it.",
+   "first_offer": {
+    "name": "{work} pilot department",
+    "shape": "4 weeks, one {unit}",
+    "ends_with": "one department live with usage measured and an adoption plan for the rest"
+   },
+   "delivery": {
+    "shape": "6 to 8 week rollout across the first wave, then a per seat fee to run and support it",
+    "team_needed": "1 delivery lead + 1 engineer + 1 adoption or change person"
+   },
+   "expansion": "Each further {unit} joins the same deployment, so the cost is in adoption rather than in another build",
+   "discovery": [
+    "How many people would use this, and in which {unit} first",
+    "What they use today for the same thing, approved or not",
+    "Who owns employee tooling and can make it standard",
+    "What has to be true before the policy team signs it off"
+   ],
+   "roles": {
+    "partner": "The rollout, the adoption programme, the integration into how people already work",
+    "lyzr": "The product, the governance underneath it, and support through the first wave"
+   }
+  },
+  {
+   "id": "deploy-in-their-estate",
+   "growth_path": "win",
+   "when": "The client cannot send the work anywhere else. The engagement is installing and commissioning something inside their own environment and proving the first workload on it.",
+   "first_offer": {
+    "name": "{work} deployment readiness review",
+    "shape": "3 weeks, one {unit}",
+    "ends_with": "a sited design, the prerequisites confirmed, and a commissioning plan with dates"
+   },
+   "delivery": {
+    "shape": "8 to 12 week install and commissioning, then an annual operate and support contract",
+    "team_needed": "1 infrastructure architect + 1 engineer, with the client's platform team"
+   },
+   "expansion": "Capacity grows with each further {unit} placed on the same footprint, under the same contract",
+   "discovery": [
+    "Where it would physically sit, and who owns that space",
+    "Which workload has to stay inside the estate, and why",
+    "What the network and identity boundaries look like",
+    "Who signs off a change inside that environment"
+   ],
+   "roles": {
+    "partner": "The siting, the installation, the integration into their estate and the local support",
+    "lyzr": "The appliance, the models and governance on it, and the engineering behind the commissioning"
+   }
+  },
+  {
+   "id": "embed-and-license",
+   "growth_path": "win",
+   "when": "The partner ships software of their own. The work is putting a capability inside that product, under their brand, and selling it to the customers they already have.",
+   "first_offer": {
+    "name": "{work} embedding assessment",
+    "shape": "3 weeks, one {unit}",
+    "ends_with": "the integration mapped against their architecture, and a first feature scoped against their roadmap"
+   },
+   "delivery": {
+    "shape": "10 to 12 week integration into their product, then a licence that scales with their customers",
+    "team_needed": "1 product owner + 2 engineers from their own product team"
+   },
+   "expansion": "Every customer of their product reaches the capability, so revenue follows their install base rather than their delivery hours",
+   "discovery": [
+    "What their product does today and who pays for it",
+    "Which {unit} the capability would land in first",
+    "How their release cycle and their tenancy model work",
+    "What they would have to build themselves instead, and how long it would take"
+   ],
+   "roles": {
+    "partner": "The product, the customers, the roadmap and the first line of support",
+    "lyzr": "The platform layer underneath, the tenancy and governance, and the engineering behind the integration"
+   }
   }
  ]
 }

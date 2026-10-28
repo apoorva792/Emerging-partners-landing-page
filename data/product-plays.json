@@ -1,0 +1,608 @@
+{
+  "_note": "How a services firm commercialises a Lyzr product. The second half of discovery: the capability path asks what work a partner could sell next, this one asks which Lyzr product their existing business is already shaped to resell, deploy or run. Every `capabilities` line is read off the product's own page; nothing here is written from memory. `requires` is the gate: a play may only be proposed when the partner's capability map actually shows that signal, because an industry match is not a reason to recommend a product.",
+  "plays": [
+    {
+      "id": "opencontroller",
+      "name": "OpenController",
+      "url": "https://www.lyzr.ai/opencontroller/",
+      "catalogue_id": "page_opencontroller",
+      "one_line": "The control plane over every agent a client is already running, wherever it runs.",
+      "capabilities": [
+        "Discovers agents across clouds, clusters and on-premises, including ones nobody registered",
+        "Issues workload identity to every agent through the client's existing identity provider",
+        "Enforces policy in the request path: access control, rate limits, model routing and guardrails",
+        "Gates releases on multi-turn, red-team and regression evals with evidence per version",
+        "Traces every action with cost, quality and ownership, exported to their observability tools"
+      ],
+      "partner_shapes": [
+        "ai consultancy",
+        "systems integrator",
+        "managed service provider",
+        "cloud consultancy"
+      ],
+      "complements": [
+        "Agent or GenAI delivery work already in production at clients",
+        "Cloud platform engineering and landing zone work",
+        "Security, identity or compliance practices"
+      ],
+      "requires": {
+        "families": [
+          "governance",
+          "incident",
+          "integration",
+          "engineering"
+        ],
+        "signals": [
+          "agent",
+          "agents",
+          "agentic",
+          "genai",
+          "llm",
+          "mlops",
+          "identity provider",
+          "iam",
+          "observability",
+          "kubernetes",
+          "guardrail",
+          "governance",
+          "audit",
+          "soc 2",
+          "iso 27001"
+        ],
+        "why": "A control plane is only sellable to a firm whose clients already have agents running, or who runs the platform those agents would run on."
+      },
+      "implementation": {
+        "pattern": "inventory-then-govern",
+        "offer": "Find every agent the client is running, put identity and policy on each one, and hand back an inventory with an audit trail"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Run the control plane for them: policy changes, release gating and the evidence pack their risk function asks for"
+      },
+      "buyer": "CISO, Head of Platform Engineering or Chief Risk Officer",
+      "trigger": "Agents are in production that nobody has inventoried, or an audit date is on the calendar",
+      "prerequisites": [
+        "The client has agents running somewhere, built on anything",
+        "An existing identity provider to authenticate against",
+        "Someone accountable for AI risk"
+      ],
+      "do_not_recommend_when": [
+        "The partner has never delivered anything into production for a client",
+        "Their clients have no agents and no plan for any, so there is nothing to govern",
+        "The partner only advises and does not operate anything"
+      ],
+      "resources": [
+        "page_opencontroller",
+        "res_the_cio_guide_to_ai_agent_governance",
+        "res_agent_governance_maturity_assessment"
+      ]
+    },
+    {
+      "id": "open_cowork",
+      "name": "Open Cowork",
+      "url": "https://www.lyzr.ai/open-cowork/",
+      "catalogue_id": "",
+      "one_line": "A governed AI coworker for every employee, rolled out across a workforce rather than built per use case.",
+      "capabilities": [
+        "Gives every employee an AI coworker inside the organisation's own governance",
+        "Deployed across a workforce rather than built one use case at a time"
+      ],
+      "partner_shapes": [
+        "workplace consultancy",
+        "digital workplace integrator",
+        "change management consultancy",
+        "managed service provider"
+      ],
+      "complements": [
+        "Microsoft 365, Google Workspace or intranet rollouts",
+        "Employee experience, adoption and change programmes",
+        "Service desk and internal support work"
+      ],
+      "requires": {
+        "families": [
+          "people",
+          "support",
+          "analytics",
+          "governance"
+        ],
+        "signals": [
+          "workplace",
+          "employee experience",
+          "workforce",
+          "adoption",
+          "change management",
+          "intranet",
+          "microsoft 365",
+          "sharepoint",
+          "google workspace",
+          "service desk",
+          "helpdesk",
+          "per seat",
+          "collaboration"
+        ],
+        "why": "Rolling an AI coworker out to a whole workforce is an adoption and change programme. A firm that has never run one has no business selling it."
+      },
+      "implementation": {
+        "pattern": "roll-out-to-everyone",
+        "offer": "Stand it up for one department, agree what good looks like, then roll it out across the workforce"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Run adoption, policy and the content behind it, billed per seat per month"
+      },
+      "buyer": "Chief Information Officer, Head of Digital Workplace or Chief People Officer",
+      "trigger": "Staff are using consumer AI tools the organisation cannot see, or a workforce AI policy has just been written",
+      "prerequisites": [
+        "A single sign-on directory covering the workforce",
+        "Somebody who owns employee tooling and can mandate it",
+        "An acceptable use position on AI"
+      ],
+      "do_not_recommend_when": [
+        "The partner has no record of workforce rollouts or adoption work",
+        "Their clients are small enough that a per-seat rollout is not a programme",
+        "The partner sells only to engineering teams, not to the business"
+      ],
+      "resources": []
+    },
+    {
+      "id": "agent_studio",
+      "name": "Agent Studio",
+      "url": "https://www.lyzr.ai/",
+      "catalogue_id": "page_agent_studio",
+      "one_line": "The pro-code workbench an engineering team designs, tests and ships production agents from.",
+      "capabilities": [
+        "Design, test and ship production agents from one place",
+        "Carries the workflow and the integrations rather than leaving them to be stitched together"
+      ],
+      "partner_shapes": [
+        "ai consultancy",
+        "software engineering firm",
+        "systems integrator",
+        "product studio"
+      ],
+      "complements": [
+        "Custom software and application development",
+        "Data engineering and integration work",
+        "Existing AI or ML delivery teams"
+      ],
+      "requires": {
+        "families": [
+          "engineering",
+          "integration",
+          "analytics",
+          "documents"
+        ],
+        "signals": [
+          "agent",
+          "agents",
+          "agentic",
+          "llm",
+          "machine learning",
+          "data engineering",
+          "software engineering",
+          "application development",
+          "custom software"
+        ],
+        "why": "A build platform is sold to a firm that builds. An advisory firm has nobody to put on it."
+      },
+      "implementation": {
+        "pattern": "prove-then-roll-out",
+        "offer": "Build the first agent on the client's own workflow, in production, then repeat the pattern"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Run and extend what was built, billed monthly rather than re-quoted per change"
+      },
+      "buyer": "VP Engineering, Head of Data or Chief Technology Officer",
+      "trigger": "They have agent prototypes that have not reached production, or every new use case is being rebuilt from scratch",
+      "prerequisites": [
+        "Engineers the partner can put on delivery",
+        "Access to the systems the agents have to read and write"
+      ],
+      "do_not_recommend_when": [
+        "The partner only advises and subcontracts all delivery",
+        "They already run a build platform of their own that they sell"
+      ],
+      "resources": [
+        "page_agent_studio"
+      ]
+    },
+    {
+      "id": "architect",
+      "name": "Architect",
+      "url": "https://www.lyzr.ai/",
+      "catalogue_id": "page_architect",
+      "one_line": "Business users describe an agent or an app and it gets built, with the partner's agents coming along too.",
+      "capabilities": [
+        "Build agents and apps in one flow, including by describing them",
+        "Bring existing agents with you rather than rebuilding them"
+      ],
+      "partner_shapes": [
+        "business consultancy",
+        "process consultancy",
+        "digital agency",
+        "systems integrator"
+      ],
+      "complements": [
+        "Process improvement and operating model work",
+        "Low-code and RPA practices",
+        "Business analysis teams sitting close to the client"
+      ],
+      "requires": {
+        "families": [
+          "analytics",
+          "ordering",
+          "documents",
+          "people",
+          "support"
+        ],
+        "signals": [
+          "rpa",
+          "low-code",
+          "no-code",
+          "power platform",
+          "uipath",
+          "automation anywhere",
+          "business process",
+          "process mining",
+          "business analysis",
+          "workflow automation"
+        ],
+        "why": "This is sold into the business, not into engineering. The partner has to already be in the room where processes are decided."
+      },
+      "implementation": {
+        "pattern": "assess-then-build",
+        "offer": "Map the process with the people who run it, then build the first app with them in the room"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Keep the apps current as the process changes, billed monthly"
+      },
+      "buyer": "Chief Operating Officer or a function head who owns the process",
+      "trigger": "A backlog of small automations nobody will fund individually, or an RPA estate that keeps breaking",
+      "prerequisites": [
+        "Named business owners for the processes in scope",
+        "The partner has access to the business, not only to IT"
+      ],
+      "do_not_recommend_when": [
+        "The partner sells only to engineering teams",
+        "The work in question genuinely needs a pro-code build"
+      ],
+      "resources": [
+        "page_architect",
+        "res_architect_agent_usecases"
+      ]
+    },
+    {
+      "id": "superflow",
+      "name": "SuperFlow",
+      "url": "https://www.lyzr.ai/blog/what-is-superflow/",
+      "catalogue_id": "",
+      "one_line": "Visual workflow orchestration with durable execution, so the flow that worked in the demo survives production.",
+      "capabilities": [
+        "Visual workflow building for agents, LLM pipelines, approvals and long-running processes",
+        "Durable execution: every step is journaled and a restart resumes from the point of failure",
+        "Structured approvals with typed fields and files flowing on through the workflow",
+        "Enterprise connectivity built in: OAuth2 with refresh, AWS Signature v4, JWT and mTLS",
+        "Hybrid orchestration that brings existing agents forward alongside new ones"
+      ],
+      "partner_shapes": [
+        "systems integrator",
+        "automation consultancy",
+        "ai consultancy",
+        "managed service provider"
+      ],
+      "complements": [
+        "Integration and middleware practices",
+        "Workflow and BPM work",
+        "Existing RPA or iPaaS estates"
+      ],
+      "requires": {
+        "families": [
+          "integration",
+          "ordering",
+          "documents",
+          "incident",
+          "governance"
+        ],
+        "signals": [
+          "orchestration",
+          "middleware",
+          "integration",
+          "bpm",
+          "workflow",
+          "mulesoft",
+          "boomi",
+          "webmethods",
+          "ipaas",
+          "approval workflow",
+          "etl"
+        ],
+        "why": "Durable orchestration is sold to a firm that already owns the client's process plumbing. Without that they are selling a canvas."
+      },
+      "implementation": {
+        "pattern": "prove-then-roll-out",
+        "offer": "Rebuild one brittle long-running workflow on durable execution and show it surviving a failure"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Own the orchestration layer and the runbook, billed per workflow per month"
+      },
+      "buyer": "Head of Integration, Head of Automation or an operations director",
+      "trigger": "A workflow that works in testing keeps failing in production, or approvals are being handled over email beside the system",
+      "prerequisites": [
+        "Processes long enough or branching enough to need orchestration",
+        "Access to the systems each step has to call"
+      ],
+      "do_not_recommend_when": [
+        "The work is a single model call with no steps around it",
+        "The partner has no integration or process practice to attach it to"
+      ],
+      "resources": []
+    },
+    {
+      "id": "optimus",
+      "name": "Lyzr Optimus",
+      "url": "https://optimus.lyzr-ai.com/",
+      "catalogue_id": "page_lyzr_optimus",
+      "one_line": "Lyzr's own appliance: agents, models and governance running inside the client's data centre, air-gapped.",
+      "capabilities": [
+        "Runs open-weight models entirely on-premise with no external calls",
+        "Agents operate in air-gapped environments without network connectivity",
+        "Fixed annual pricing rather than per-token metering",
+        "Custom models and fine-tunes can be imported for specialised use"
+      ],
+      "partner_shapes": [
+        "infrastructure integrator",
+        "defence or public sector integrator",
+        "regulated industry consultancy",
+        "managed service provider"
+      ],
+      "complements": [
+        "Data centre, private cloud and on-premise infrastructure work",
+        "Sovereignty, residency and classified environment delivery",
+        "Hardware procurement and installation practices"
+      ],
+      "requires": {
+        "families": [
+          "infrastructure",
+          "governance",
+          "integration"
+        ],
+        "signals": [
+          "on-premise",
+          "on premise",
+          "data centre",
+          "data center",
+          "private cloud",
+          "air-gap",
+          "airgap",
+          "air gapped",
+          "sovereign",
+          "residency",
+          "classified",
+          "colocation",
+          "bare metal",
+          "vmware",
+          "appliance"
+        ],
+        "why": "An appliance is sold by firms that already put equipment into other people's data centres. A cloud-only consultancy cannot deliver it."
+      },
+      "implementation": {
+        "pattern": "deploy-in-their-estate",
+        "offer": "Install and commission the appliance in their environment, with the first workload running on it"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Operate the appliance under an SLA: patching, model updates and capacity, billed annually"
+      },
+      "buyer": "Chief Information Security Officer, Head of Infrastructure or a programme director in a regulated body",
+      "trigger": "Data is not permitted to leave the estate, or per-token cost on an existing deployment has become unpredictable",
+      "prerequisites": [
+        "Somewhere to physically put it, with power, cooling and network",
+        "The partner can deliver into a client data centre",
+        "A workload that genuinely cannot go to a public cloud"
+      ],
+      "do_not_recommend_when": [
+        "The partner has only ever delivered in public cloud",
+        "Their clients have no residency or sovereignty requirement",
+        "The timeline is immediate: it ships Q4 2026"
+      ],
+      "resources": [
+        "page_lyzr_optimus",
+        "page_sovereign_ai"
+      ]
+    },
+    {
+      "id": "agentblocks_oem",
+      "name": "AgentBlocks OEM",
+      "url": "https://www.lyzr.ai/agentblocks/",
+      "catalogue_id": "page_agent_blocks",
+      "one_line": "White-label agent platform infrastructure a software vendor ships inside their own product, under their own name.",
+      "capabilities": [
+        "White-labeled build, governance and runtime layer for an agent platform",
+        "Tenant isolation, request isolation, environment separation and durable execution",
+        "Deployment into customer VPC, private cloud, Kubernetes or on-premises",
+        "Audit logs, approvals, policy enforcement, usage metering and tenant limits",
+        "Adapters onto existing frameworks, models, cloud, IAM, CI/CD and telemetry"
+      ],
+      "partner_shapes": [
+        "software product company",
+        "saas vendor",
+        "platform vendor",
+        "product studio"
+      ],
+      "complements": [
+        "An existing product with its own customers and its own release cycle",
+        "Multi-tenant SaaS platforms",
+        "Vertical software with a captive install base"
+      ],
+      "requires": {
+        "families": [
+          "engineering",
+          "embedding",
+          "infrastructure"
+        ],
+        "signals": [
+          "multi-tenant",
+          "multitenant",
+          "white label",
+          "white-label",
+          "oem",
+          "proprietary platform",
+          "our own product",
+          "our platform",
+          "saas product",
+          "software product",
+          "licence",
+          "license fee",
+          "embed sdk",
+          "tenant"
+        ],
+        "why": "This is sold to a firm that ships software of its own. A pure services business has no product to embed it in."
+      },
+      "implementation": {
+        "pattern": "embed-and-license",
+        "offer": "Embed the runtime behind their own product's brand and ship agent features to their existing customers"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Lyzr carries the platform layer underneath while they own the product, the roadmap and the customer"
+      },
+      "buyer": "Chief Product Officer, Chief Technology Officer or a general manager who owns the P&L for the product",
+      "trigger": "Customers are asking the product for AI features, and building the platform layer underneath would take a year",
+      "prerequisites": [
+        "A product of their own that customers already pay for",
+        "An engineering team that can integrate an SDK",
+        "A commercial model that can carry a platform cost"
+      ],
+      "do_not_recommend_when": [
+        "The partner sells only people and hours, with no product of its own",
+        "They already own a mature agent platform they sell",
+        "What they actually need is a single agent, not a platform underneath one"
+      ],
+      "resources": [
+        "page_agent_blocks"
+      ]
+    },
+    {
+      "id": "agent_blocks",
+      "name": "Agent Blocks",
+      "url": "https://www.lyzr.ai/",
+      "catalogue_id": "",
+      "one_line": "The primitives underneath, memory, tools, retrieval and orchestration, composed into something the partner is already building.",
+      "capabilities": [
+        "Memory, tools, retrieval and orchestration as composable primitives",
+        "Used piece by piece inside work the partner is already delivering"
+      ],
+      "partner_shapes": [
+        "software engineering firm",
+        "ai consultancy",
+        "product studio"
+      ],
+      "complements": [
+        "An agent or application the partner is already building for a client",
+        "Existing frameworks they do not want to replace"
+      ],
+      "requires": {
+        "families": [
+          "engineering",
+          "integration",
+          "embedding"
+        ],
+        "signals": [
+          "sdk",
+          "framework",
+          "retrieval",
+          "vector",
+          "embedding",
+          "custom agent",
+          "agent framework",
+          "langchain",
+          "llamaindex",
+          "rag"
+        ],
+        "why": "Primitives are for a team that is building something of their own. There is nothing to compose them into otherwise."
+      },
+      "implementation": {
+        "pattern": "prove-then-roll-out",
+        "offer": "Replace the part they are hand-rolling, memory or retrieval, in one build and measure what it saves"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Keep the primitives current underneath their builds as models and tooling move"
+      },
+      "buyer": "Engineering lead or solution architect on the delivery team",
+      "trigger": "They are maintaining their own memory, retrieval or orchestration code and it is drifting behind the model releases",
+      "prerequisites": [
+        "An active build, not a greenfield intention",
+        "Engineers who will work against an SDK"
+      ],
+      "do_not_recommend_when": [
+        "The partner wants a platform rather than parts: that is AgentBlocks OEM, which is a different conversation",
+        "They are not building anything themselves"
+      ],
+      "resources": []
+    },
+    {
+      "id": "open_finetuning",
+      "name": "Open Finetuning",
+      "url": "https://www.lyzr.ai/",
+      "catalogue_id": "",
+      "one_line": "Fine-tune open-weight models on the client's own data, inside the client's own environment.",
+      "capabilities": [
+        "Fine-tune open-weight models on the client's own data"
+      ],
+      "partner_shapes": [
+        "data science consultancy",
+        "ai consultancy",
+        "cloud consultancy"
+      ],
+      "complements": [
+        "Data engineering and feature pipelines",
+        "Existing machine learning practices",
+        "Sovereignty and residency work"
+      ],
+      "requires": {
+        "families": [
+          "analytics",
+          "engineering",
+          "infrastructure"
+        ],
+        "signals": [
+          "fine-tun",
+          "finetun",
+          "machine learning",
+          "data science",
+          "model training",
+          "mlops",
+          "nlp",
+          "open-weight",
+          "open weight",
+          "llm"
+        ],
+        "why": "Fine-tuning is sold by firms with data science people. Without them the engagement has nobody to run it."
+      },
+      "implementation": {
+        "pattern": "prove-then-roll-out",
+        "offer": "Fine-tune on one corpus the client owns and measure it against the general model on their own examples"
+      },
+      "managed": {
+        "pattern": "take-over-and-run",
+        "offer": "Retrain and re-evaluate on a schedule as the client's data moves"
+      },
+      "buyer": "Head of Data Science or Chief Data Officer",
+      "trigger": "A general model is not good enough on their domain language, or their data cannot be sent to a vendor",
+      "prerequisites": [
+        "Enough labelled or structured data of their own",
+        "Somewhere to run the training",
+        "A measurable task to improve"
+      ],
+      "do_not_recommend_when": [
+        "The partner has no data science capability of its own",
+        "Prompting and retrieval would get them there without training anything"
+      ],
+      "resources": []
+    }
+  ]
+}

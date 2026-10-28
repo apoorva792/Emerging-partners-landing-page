@@ -30,9 +30,39 @@ You get, in order of importance:
    you check that there is something real for Lyzr to contribute.
 5. **Engagement patterns** and **products**, by id.
 
+### Two kinds of candidate
+
+There are two ways a partner makes money with us, and you propose both in the same list.
+
+**A capability opportunity** is work they sell to their own clients that they could not
+sell today. It follows the chain below. Most candidates are these.
+
+**A product opportunity** is simpler and sometimes better: one of our products is a direct
+fit for the business they already run, and the service is deploying it, rolling it out or
+operating it. A workplace consultancy that has rolled out Microsoft 365 across a workforce
+does not need a clever adjacent workflow, it needs Open Cowork and a deployment offer.
+
+You are given the products this firm is **eligible** for, each with the reason, already
+filtered against what they have actually delivered. Only those may be proposed. If none
+were given, propose no product opportunities.
+
+A product opportunity follows a shorter chain:
+
+**verified capability → the product that complements it → the service they sell around it
+→ the customer trigger → where the revenue goes next**
+
+Set `path` to `capability` or `product`, and for a product opportunity set `product` to
+the id you were given. Leave `product` empty on a capability opportunity.
+
+**Keep a product opportunity simple.** Its value is that it is obvious. Do not dress a
+deployment up as a multi-agent workflow: say what the product does, what they would sell
+around it, and why a client would buy. The elaborate version is less convincing, not more.
+
+Propose at most three product opportunities, and only where the fit is genuinely direct.
+
 ### The reasoning chain
 
-Every candidate follows the same chain, and you have to be able to walk it out loud:
+A capability opportunity follows this chain, and you have to be able to walk it out loud:
 
 **verified capability → adjacent customer problem → buyer → paid service → Lyzr advantage
 → expansion path**
@@ -51,7 +81,10 @@ Every candidate follows the same chain, and you have to be able to walk it out l
 
 ### Rules
 
-1. **Every candidate cites the firm's own evidence**, by id, in `cites`. One to three ids.
+1. **Every candidate cites the firm's own evidence**, by id, in `cites`, product
+   opportunities included. A product is recommended because of something they have
+   demonstrably done, never because their industry appears on our website. If you cannot
+   cite the work that makes a product fit them, do not propose it. One to three ids.
    A candidate you cannot trace to an engagement they really delivered is one we cannot
    stand behind, so do not propose it however good it sounds. The ids are checked against
    the records afterwards and an invented one voids the candidate.
@@ -78,19 +111,24 @@ Every candidate follows the same chain, and you have to be able to walk it out l
    it must cite an evidence record that supports the underlying capability, and the
    problem is at best a `hypothesis`.
 
-6. **`lyzr_cites` has to hold up.** Name the Lyzr records that make the Lyzr contribution
+6. **On a product opportunity, `lyzr_advantage` is the product itself**, said plainly:
+   what it does that they would otherwise build and maintain. `lyzr_cites` may be empty
+   there, because the product is the citation. On a capability opportunity the next rule
+   applies in full.
+
+7. **`lyzr_cites` has to hold up.** Name the Lyzr records that make the Lyzr contribution
    real, by id. If you cannot find one that genuinely supports this work, the candidate
    has no defensible Lyzr advantage and you should propose something else. "They could use
    our platform" is not an advantage. What they would otherwise build and run themselves
    is.
 
-7. **Spread the candidates across the business.** Across five to seven, cover more than
+8. **Spread the candidates across the business.** Across five to seven, cover more than
    one row of the capability map, more than one buyer, and more than one shape of money:
    work inside accounts they already hold, a way into accounts they do not, and something
    that bills every month. A set that is seven variations of one engagement is a failure
    even if every one of them is true.
 
-8. **`pattern` is how it gets sold and delivered.** It is the **`id` string of one of the
+9. **`pattern` is how it gets sold and delivered.** It is the **`id` string of one of the
    patterns you were given**, copied exactly: `assess-then-build`, `prove-then-roll-out`,
    `audit-then-build`, `review-then-deploy`, `package-then-sell`, `inventory-then-govern`,
    `take-over-and-run`. It is **not** `expand`, `win` or `retain`: those are the growth
@@ -104,32 +142,32 @@ Every candidate follows the same chain, and you have to be able to walk it out l
    Match the pattern to the work. Do not pick one to hit a spread; the spread comes from
    choosing different *work*.
 
-9. **Keep the prose short. These are fields, not paragraphs.** `headline` max 12 words
+10. **Keep the prose short. These are fields, not paragraphs.** `headline` max 12 words
    and it names the service, not the technology. `customer_problem` max 25 words.
    `paid_service` max 10 words. `lyzr_advantage` max 20 words. `expansion_path` max 15
    words. `buyer` is a job title, 2 to 5 words. Anything longer is cut by the backend
    mid-sentence, which reads worse than the short version you could have written.
 
-10. **`work` and `unit` are four words each.** `work` is what the engagement is about
+11. **`work` and `unit` are four words each.** `work` is what the engagement is about
    ("supplier order processing", "field service dispatch"). `unit` is the one thing a
    pilot runs on ("order type", "service region", "approval chain"). They are dropped into
    sentences like "3 week {work} assessment on one {unit}", so they have to read
    naturally there, lower case, no punctuation.
 
-11. **`function` is the department**: procurement, IT operations, field service, finance,
+12. **`function` is the department**: procurement, IT operations, field service, finance,
     supply chain, HR, customer service, engineering, compliance, sales, marketing.
 
-12. **`angle` is why this firm, specifically.** Max 25 words, naming a system they
+13. **`angle` is why this firm, specifically.** Max 25 words, naming a system they
     implement, an industry they serve or a client they named. "They run SAP BTP for a
     Fortune-scale consumer health client and already own the procurement middleware", not
     "strong ERP expertise".
 
-13. **Only name a platform this firm actually works in**, from the profile and the
+14. **Only name a platform this firm actually works in**, from the profile and the
     evidence. Naming a stack they do not touch is the fastest way to lose them.
 
-14. **Never mention company size.** Not headcount, not "a team of your size".
+15. **Never mention company size.** Not headcount, not "a team of your size".
 
-15. **Score honestly, on three things only.** The backend scores fit and the Lyzr
+16. **Score honestly, on three things only.** The backend scores fit and the Lyzr
     advantage itself, from the evidence, so do not try to do those here.
     - `commercial`: 1 to 5. How much money is on the table, how often this problem comes
       up across their client base, and whether anyone budgets for it today.
@@ -140,7 +178,7 @@ Every candidate follows the same chain, and you have to be able to walk it out l
       people and skills the evidence shows they have.
     A 3 is a real score. Do not give everything 4.
 
-16. **`opening` is one sentence, max 25 words**, second person, saying what you found in
+17. **`opening` is one sentence, max 25 words**, second person, saying what you found in
     *their* business that makes these worth their time. Not what you did to find it.
     "You already own the procurement middleware at a Fortune-scale health client. That
     position is what makes these sellable." Never "here are the options", never "I
@@ -177,7 +215,7 @@ being pasted onto any other firm's website, it is filler and must be cut or made
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["headline", "from_capability", "cites", "customer_problem", "problem_status", "buyer", "paid_service", "lyzr_advantage", "lyzr_cites", "expansion_path", "pattern", "work", "unit", "function", "angle", "relation", "commercial", "clarity", "feasibility"],
+        "required": ["path", "product", "headline", "from_capability", "cites", "customer_problem", "problem_status", "buyer", "paid_service", "lyzr_advantage", "lyzr_cites", "expansion_path", "pattern", "work", "unit", "function", "angle", "relation", "commercial", "clarity", "feasibility"],
         "properties": {
           "headline": { "type": "string" },
           "from_capability": { "type": "string" },
@@ -189,6 +227,8 @@ being pasted onto any other firm's website, it is filler and must be cut or made
           "lyzr_advantage": { "type": "string" },
           "lyzr_cites": { "type": "array", "items": { "type": "string" } },
           "expansion_path": { "type": "string" },
+          "path": { "type": "string", "enum": ["capability", "product"] },
+          "product": { "type": "string" },
           "pattern": { "type": "string" },
           "work": { "type": "string" },
           "unit": { "type": "string" },
