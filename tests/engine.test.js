@@ -9,7 +9,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { quoted, pagesToRead } from '../lib/evidence.js';
-import { fitScore, lyzrScore, gate, total, WEIGHTS, worthResearching } from '../lib/score.js';
+import { fitScore, lyzrScore, gate, total, WEIGHTS, worthResearching, adjacency, FLOOR } from '../lib/score.js';
 
 const page = `Arohak partnered with a Fortune-scale consumer healthcare enterprise to modernise
 its procurement middleware. We migrated the integration layer onto SAP BTP and wired Ariba
@@ -131,15 +131,33 @@ test('a brilliant idea with no evidence behind it still fails', () => {
   const o = opp({ cites: [], commercial: 5, clarity: 5, feasibility: 5 });
   const fit = fitScore(o, caps);
   const lyzr = lyzrScore(o, [{ r: record(), s: 20 }]);
-  const score = total({ fit: fit.score, lyzr: lyzr.score, commercial: 5, clarity: 5, feasibility: 5 });
+  const score = total({ fit: fit.score, lyzr: lyzr.score, adjacency: 5, monetisation: 5, trigger: 5 });
   assert.ok(score >= 50, 'it scores well');
   assert.equal(gate(o, fit, lyzr).pass, false, 'and is still not shown');
 });
 
 test('the weights are the ones the brief promises', () => {
-  assert.deepEqual(WEIGHTS, { fit: 0.30, commercial: 0.25, lyzr: 0.20, clarity: 0.15, feasibility: 0.10 });
+  assert.deepEqual(WEIGHTS, { fit: 0.30, adjacency: 0.25, lyzr: 0.20, monetisation: 0.15, trigger: 0.10 });
   assert.equal(Math.round(Object.values(WEIGHTS).reduce((a, b) => a + b, 0) * 100), 100);
-  assert.equal(total({ fit: 5, commercial: 5, lyzr: 5, clarity: 5, feasibility: 5 }), 100);
+  assert.equal(total({ fit: 5, adjacency: 5, lyzr: 5, monetisation: 5, trigger: 5 }), 100);
+  /* A missing dimension costs its weight rather than defaulting to full marks. */
+  assert.equal(total({ fit: 5, adjacency: 5, lyzr: 5, monetisation: 5 }), 90);
+});
+
+test('adjacency is measured from their evidence, not asked of the model', () => {
+  const near = adjacency(opp(), caps, fitScore(opp(), caps), null);
+  const far = adjacency(
+    opp({ function: 'finance', headline: 'Investment modelling', work: 'investment modelling' }),
+    caps, fitScore(opp({ function: 'finance', cites: ['E2'] }), caps), null);
+  assert.ok(near > far, `${near} should beat ${far}`);
+});
+
+test('the floor is what stops a kit padding to three', () => {
+  assert.ok(FLOOR >= 65 && FLOOR <= 80, `an implausible floor: ${FLOOR}`);
+  const weak = total({ fit: 3, adjacency: 3, lyzr: 3, monetisation: 3, trigger: 3 });
+  assert.ok(weak < FLOOR, `a card of threes should not reach the page: ${weak}`);
+  const strong = total({ fit: 4.5, adjacency: 4, lyzr: 4, monetisation: 4, trigger: 4 });
+  assert.ok(strong >= FLOOR, `a genuinely strong card should: ${strong}`);
 });
 
 test('only a thin-evidence candidate with real commercial weight is worth a second look', () => {

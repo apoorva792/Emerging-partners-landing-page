@@ -180,11 +180,36 @@ test('the capability catalogue is untouched', async () => {
   assert.equal(Object.keys(catalog.records).length, 104);
 });
 
-test('the prompt view hides what is ours to enforce', () => {
+test('the prompt view carries what the model needs and hides what is ours to enforce', () => {
   const view = briefOf({ play: playById('optimus'), fit: eligibility(playById('optimus'), infra) });
-  assert.ok(view.product && view.deployment_offer && view.recurring_offer && view.buyer);
+  assert.ok(view.product && view.buyer && view.deployment_revenue && view.recurring_revenue);
+  assert.ok(view.customer_problems.length && view.services_you_could_sell.length);
+  /* Restrictions travel, because a ship date and an unpublished licence are things the
+   * model has to not promise. Prerequisites do not: we check those ourselves. */
+  assert.ok(view.restrictions.some((r) => /Q4 2026/.test(r)));
   assert.equal(view.prerequisites, undefined, 'prerequisites are checked by us, not weighed by the model');
   assert.equal(view.capabilities, undefined);
+});
+
+test('every offering carries the fields the kit is built from', () => {
+  for (const o of PLAYS) {
+    assert.ok(o.offering_id && o.product_id, `${o.id}: no stable ids`);
+    assert.ok(o.customer_problems.length >= 2, `${o.id}: too few customer problems`);
+    assert.ok(o.sellable_services.length >= 2, `${o.id}: too few sellable services`);
+    for (const s of o.sellable_services) assert.ok(s.name && s.client_gets, `${o.id}: a service with no outcome`);
+    assert.ok(o.revenue.implementation && o.revenue.recurring, `${o.id}: no revenue model`);
+    assert.ok(Array.isArray(o.restrictions), `${o.id}: no restrictions field`);
+  }
+});
+
+test('unpublished commercial terms are recorded as restrictions, not as promises', () => {
+  /* The two we know we must not quote: a ship date and OEM licensing. */
+  assert.ok(playById('optimus').restrictions.some((r) => /Q4 2026/i.test(r)));
+  assert.ok(playById('agentblocks_oem').restrictions.some((r) => /not published/i.test(r)));
+  /* And nothing anywhere in the file promises money. */
+  const text = JSON.stringify(PLAYS);
+  assert.ok(!/\$[\d]/.test(text), 'a figure reached the offerings file');
+  assert.ok(!/\b(discount|margin of|revenue share|\d+%\s*(margin|commission))\b/i.test(text));
 });
 
 test('the new process families classify the new offering shapes', () => {

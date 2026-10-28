@@ -1,6 +1,6 @@
 {
-  "_note": "How a services firm commercialises a Lyzr product. The second half of discovery: the capability path asks what work a partner could sell next, this one asks which Lyzr product their existing business is already shaped to resell, deploy or run. Every `capabilities` line is read off the product's own page; nothing here is written from memory. `requires` is the gate: a play may only be proposed when the partner's capability map actually shows that signal, because an industry match is not a reason to recommend a product.",
-  "plays": [
+  "_note": "How a services firm commercialises a Lyzr product. The second half of discovery: the capability path asks what work a partner could sell next, this one asks which Lyzr product their existing business is already shaped to resell, deploy or run. Every `capabilities` line is read off the product's own page; nothing here is written from memory. `requires` is the gate: a play may only be proposed when the partner's capability map actually shows that signal, because an industry match is not a reason to recommend a product. Each offering also carries the customer problems it addresses, two or three services a partner could charge for, and the commercial or technical restrictions on it. Restrictions are the line between what the product can technically do and what we are entitled to promise: unpublished licensing terms and ship dates belong there, not in a card.",
+  "offerings": [
     {
       "id": "opencontroller",
       "name": "OpenController",
@@ -75,7 +75,36 @@
         "page_opencontroller",
         "res_the_cio_guide_to_ai_agent_governance",
         "res_agent_governance_maturity_assessment"
-      ]
+      ],
+      "offering_id": "opencontroller",
+      "product_id": "opencontroller",
+      "customer_problems": [
+        "Agents are running in production that nobody has inventoried or made anyone accountable for",
+        "An audit asks who approved a model change and there is no record of it",
+        "Each team governs its own agents differently, so policy means something different in each one"
+      ],
+      "sellable_services": [
+        {
+          "name": "Agent estate discovery",
+          "client_gets": "A list of every agent running, with an owner against each one"
+        },
+        {
+          "name": "Policy and identity rollout",
+          "client_gets": "Every agent call authenticated and checked against policy before it reaches a system"
+        },
+        {
+          "name": "Managed agent operations",
+          "client_gets": "Release gating, incident triage and an evidence pack their risk function accepts"
+        }
+      ],
+      "restrictions": [
+        "Needs an identity provider to authenticate against",
+        "Governs agents wherever they run; it does not build them"
+      ],
+      "revenue": {
+        "implementation": "Find every agent the client is running, put identity and policy on each one, and hand back an inventory with an audit trail",
+        "recurring": "Run the control plane for them: policy changes, release gating and the evidence pack their risk function asks for"
+      }
     },
     {
       "id": "open_cowork",
@@ -142,7 +171,36 @@
         "Their clients are small enough that a per-seat rollout is not a programme",
         "The partner sells only to engineering teams, not to the business"
       ],
-      "resources": []
+      "resources": [],
+      "offering_id": "open_cowork",
+      "product_id": "open_cowork",
+      "customer_problems": [
+        "Staff are using consumer AI tools the organisation cannot see or govern",
+        "A workforce AI policy exists on paper with nothing to enforce it",
+        "AI pilots reach one team and never reach the other forty"
+      ],
+      "sellable_services": [
+        {
+          "name": "Workforce readiness and policy design",
+          "client_gets": "An agreed acceptable use position and a department to start with"
+        },
+        {
+          "name": "Departmental rollout",
+          "client_gets": "Employees with a governed AI coworker in the tools they already use"
+        },
+        {
+          "name": "Adoption and content operations",
+          "client_gets": "Usage visible to their IT administrator, and the content behind it kept current"
+        }
+      ],
+      "restrictions": [
+        "The product page publishes a single line of description, so scope the first engagement with the Lyzr team rather than from the page",
+        "Sold per seat across a workforce; it is not a single use case build"
+      ],
+      "revenue": {
+        "implementation": "Stand it up for one department, agree what good looks like, then roll it out across the workforce",
+        "recurring": "Run adoption, policy and the content behind it, billed per seat per month"
+      }
     },
     {
       "id": "agent_studio",
@@ -205,7 +263,35 @@
       ],
       "resources": [
         "page_agent_studio"
-      ]
+      ],
+      "offering_id": "agent_studio",
+      "product_id": "agent_studio",
+      "customer_problems": [
+        "Agent prototypes work in a demo and never reach production",
+        "Every new use case is rebuilt from scratch with its own integrations",
+        "Nobody can say what an agent did last Tuesday or why"
+      ],
+      "sellable_services": [
+        {
+          "name": "First production agent",
+          "client_gets": "One workflow running in production, with the integrations wired to their systems"
+        },
+        {
+          "name": "Agent delivery factory",
+          "client_gets": "A repeatable way to ship the next workflow without starting again"
+        },
+        {
+          "name": "Run and extend",
+          "client_gets": "Changes shipped as the process moves, without a new project each time"
+        }
+      ],
+      "restrictions": [
+        "A build platform: the partner supplies the engineers"
+      ],
+      "revenue": {
+        "implementation": "Build the first agent on the client's own workflow, in production, then repeat the pattern",
+        "recurring": "Run and extend what was built, billed monthly rather than re-quoted per change"
+      }
     },
     {
       "id": "architect",
@@ -271,7 +357,35 @@
       "resources": [
         "page_architect",
         "res_architect_agent_usecases"
-      ]
+      ],
+      "offering_id": "architect",
+      "product_id": "architect",
+      "customer_problems": [
+        "A backlog of small automations nobody will fund individually",
+        "An RPA estate that breaks whenever a screen changes",
+        "The people who understand the process cannot change the tool that runs it"
+      ],
+      "sellable_services": [
+        {
+          "name": "Process workshop and first app",
+          "client_gets": "One process mapped and a working app the business owner helped build"
+        },
+        {
+          "name": "Business user enablement",
+          "client_gets": "Their own analysts able to change the app without raising a ticket"
+        },
+        {
+          "name": "Application care",
+          "client_gets": "Apps kept current as the process changes"
+        }
+      ],
+      "restrictions": [
+        "Aimed at business users; genuinely engineering-heavy work belongs on Agent Studio"
+      ],
+      "revenue": {
+        "implementation": "Map the process with the people who run it, then build the first app with them in the room",
+        "recurring": "Keep the apps current as the process changes, billed monthly"
+      }
     },
     {
       "id": "superflow",
@@ -338,7 +452,35 @@
         "The work is a single model call with no steps around it",
         "The partner has no integration or process practice to attach it to"
       ],
-      "resources": []
+      "resources": [],
+      "offering_id": "superflow",
+      "product_id": "superflow",
+      "customer_problems": [
+        "A workflow that passes testing keeps failing somewhere in production",
+        "Approvals happen over email beside the system, so nobody can reconstruct a decision",
+        "A crash mid-run means the whole process is restarted by hand"
+      ],
+      "sellable_services": [
+        {
+          "name": "Workflow resilience review",
+          "client_gets": "The failure points in one long-running process, named and costed"
+        },
+        {
+          "name": "Durable workflow rebuild",
+          "client_gets": "A process that resumes from the point of failure instead of starting again"
+        },
+        {
+          "name": "Orchestration managed service",
+          "client_gets": "Someone accountable for the workflows and a runbook when one stops"
+        }
+      ],
+      "restrictions": [
+        "Orchestration, not a single model call: work with no steps around it does not need it"
+      ],
+      "revenue": {
+        "implementation": "Rebuild one brittle long-running workflow on durable execution and show it surviving a failure",
+        "recurring": "Own the orchestration layer and the runbook, billed per workflow per month"
+      }
     },
     {
       "id": "optimus",
@@ -411,7 +553,36 @@
       "resources": [
         "page_lyzr_optimus",
         "page_sovereign_ai"
-      ]
+      ],
+      "offering_id": "optimus",
+      "product_id": "optimus",
+      "customer_problems": [
+        "Data is not permitted to leave the estate, so nothing can go to a public cloud",
+        "Per-token cost on an existing deployment has become impossible to forecast",
+        "A workload has to run with no network connectivity at all"
+      ],
+      "sellable_services": [
+        {
+          "name": "Deployment readiness review",
+          "client_gets": "A sited design with the power, network and identity prerequisites confirmed"
+        },
+        {
+          "name": "Install and commissioning",
+          "client_gets": "The appliance running in their own data centre with the first workload on it"
+        },
+        {
+          "name": "Operate and support",
+          "client_gets": "Patching, model updates and capacity handled under an agreed service level"
+        }
+      ],
+      "restrictions": [
+        "Ships Q4 2026, so it cannot be committed to an earlier date",
+        "Needs somewhere physical to put it, with power, cooling and network"
+      ],
+      "revenue": {
+        "implementation": "Install and commission the appliance in their environment, with the first workload running on it",
+        "recurring": "Operate the appliance under an SLA: patching, model updates and capacity, billed annually"
+      }
     },
     {
       "id": "agentblocks_oem",
@@ -483,7 +654,36 @@
       ],
       "resources": [
         "page_agent_blocks"
-      ]
+      ],
+      "offering_id": "agentblocks_oem",
+      "product_id": "agentblocks_oem",
+      "customer_problems": [
+        "Customers are asking the product for AI features and the platform layer underneath would take a year to build",
+        "Each enterprise customer wants their own tenancy, their own keys and their own audit trail",
+        "The product team is maintaining agent infrastructure instead of the product"
+      ],
+      "sellable_services": [
+        {
+          "name": "Embedding assessment",
+          "client_gets": "The integration mapped against their own architecture and release cycle"
+        },
+        {
+          "name": "Product integration",
+          "client_gets": "Agent features shipping inside their product, under their own brand"
+        },
+        {
+          "name": "Platform care",
+          "client_gets": "The layer underneath kept current while they own the roadmap"
+        }
+      ],
+      "restrictions": [
+        "Commercial and licensing terms are not published: take them to the Lyzr partner team rather than quoting any",
+        "For a firm that ships software of its own; a pure services business has nothing to embed it in"
+      ],
+      "revenue": {
+        "implementation": "Embed the runtime behind their own product's brand and ship agent features to their existing customers",
+        "recurring": "Lyzr carries the platform layer underneath while they own the product, the roadmap and the customer"
+      }
     },
     {
       "id": "agent_blocks",
@@ -542,7 +742,31 @@
         "The partner wants a platform rather than parts: that is AgentBlocks OEM, which is a different conversation",
         "They are not building anything themselves"
       ],
-      "resources": []
+      "resources": [],
+      "offering_id": "agent_blocks",
+      "product_id": "agent_blocks",
+      "customer_problems": [
+        "A team is maintaining its own memory, retrieval and orchestration code",
+        "That code drifts behind each model release",
+        "Rebuilding the same primitives on every engagement"
+      ],
+      "sellable_services": [
+        {
+          "name": "Primitive replacement",
+          "client_gets": "One hand-rolled piece replaced, with the maintenance that went with it"
+        },
+        {
+          "name": "Reference architecture",
+          "client_gets": "A shape their team reuses on the next build"
+        }
+      ],
+      "restrictions": [
+        "Parts, not a platform: a firm that wants the whole platform wants AgentBlocks OEM"
+      ],
+      "revenue": {
+        "implementation": "Replace the part they are hand-rolling, memory or retrieval, in one build and measure what it saves",
+        "recurring": "Keep the primitives current underneath their builds as models and tooling move"
+      }
     },
     {
       "id": "open_finetuning",
@@ -602,7 +826,36 @@
         "The partner has no data science capability of its own",
         "Prompting and retrieval would get them there without training anything"
       ],
-      "resources": []
+      "resources": [],
+      "offering_id": "open_finetuning",
+      "product_id": "open_finetuning",
+      "customer_problems": [
+        "A general model is not good enough on their domain language",
+        "Their data is not permitted to be sent to a model vendor",
+        "Prompt engineering has stopped improving the result"
+      ],
+      "sellable_services": [
+        {
+          "name": "Baseline and feasibility",
+          "client_gets": "A measured gap between the general model and what the task needs"
+        },
+        {
+          "name": "Fine-tune and evaluate",
+          "client_gets": "A model tuned on their own data, scored against their own examples"
+        },
+        {
+          "name": "Retrain on a schedule",
+          "client_gets": "Performance held as their data moves"
+        }
+      ],
+      "restrictions": [
+        "Needs enough of their own data and somewhere to run the training",
+        "Where prompting and retrieval would get there, they are the cheaper answer"
+      ],
+      "revenue": {
+        "implementation": "Fine-tune on one corpus the client owns and measure it against the general model on their own examples",
+        "recurring": "Retrain and re-evaluate on a schedule as the client's data moves"
+      }
     }
   ]
 }

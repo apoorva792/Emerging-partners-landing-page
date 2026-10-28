@@ -167,15 +167,39 @@ A capability opportunity follows this chain, and you have to be able to walk it 
 
 15. **Never mention company size.** Not headcount, not "a team of your size".
 
-16. **Score honestly, on three things only.** The backend scores fit and the Lyzr
+16. **`motion` is how the money is actually made.** One of:
+    `new_implementation` (they build something they have not built before),
+    `product_deployment` (they stand our product up in a client's estate),
+    `productization` (something they have built more than once becomes a priced offer),
+    `account_expansion` (more work inside clients they already hold),
+    `managed_service` (they run it and bill every month),
+    `embedding` (it goes inside a product of their own).
+    Pick the one the engagement really is. A deployment labelled as a new implementation
+    makes the partner budget for a build they do not need.
+
+17. **`sellable_services`: two or three things they could charge for**, max 9 words each.
+    On a product opportunity, take them from the services you were given rather than
+    inventing new ones. On a capability opportunity, name them yourself. These are
+    services, not features: "Agent estate discovery", not "shadow agent detection".
+
+18. **`monetisation` is one sentence, max 18 words**: how the money arrives and what makes
+    it grow. Never a figure, never a rate, never a percentage.
+
+19. **`assumptions`: one or two things a client would have to confirm**, max 14 words
+    each, where the case rests on something we cannot see from outside. "That their
+    planners still set purchase orders by hand." Leave it empty where everything rests on
+    evidence. These are printed as things to check, which is what makes the rest
+    credible.
+
+20. **Score honestly, on three things only.** The backend scores fit and the Lyzr
     advantage itself, from the evidence, so do not try to do those here.
-    - `commercial`: 1 to 5. How much money is on the table, how often this problem comes
-      up across their client base, and whether anyone budgets for it today.
-    - `clarity`: 1 to 5. How sharply the buyer and the problem are defined. A named role
-      with a problem they would recognise is 5. "Operations leadership" with "efficiency
-      challenges" is 1.
-    - `feasibility`: 1 to 5. Whether this firm could deliver the first engagement with the
-      people and skills the evidence shows they have.
+    - `commercial`: 1 to 5. How much money is on the table and how often this problem
+      comes up across their client base.
+    - `monetisation`: 1 to 5. How obvious it is what they charge for. A named service with
+      a clear first invoice is 5; "efficiency gains" is 1.
+    - `trigger`: 1 to 5. Whether anything makes a client buy this now rather than later.
+      A date on a calendar, an audit, a release, a cost that has become unpredictable, is
+      5. "They should modernise" is 1.
     A 3 is a real score. Do not give everything 4.
 
 17. **`opening` is one sentence, max 25 words**, second person, saying what you found in
@@ -215,7 +239,7 @@ being pasted onto any other firm's website, it is filler and must be cut or made
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["path", "product", "headline", "from_capability", "cites", "customer_problem", "problem_status", "buyer", "paid_service", "lyzr_advantage", "lyzr_cites", "expansion_path", "pattern", "work", "unit", "function", "angle", "relation", "commercial", "clarity", "feasibility"],
+        "required": ["path", "product", "headline", "from_capability", "cites", "customer_problem", "problem_status", "buyer", "paid_service", "lyzr_advantage", "lyzr_cites", "expansion_path", "pattern", "work", "unit", "function", "angle", "relation", "commercial", "monetisation", "trigger", "motion", "sellable_services", "monetisation_note", "assumptions"],
         "properties": {
           "headline": { "type": "string" },
           "from_capability": { "type": "string" },
@@ -236,8 +260,12 @@ being pasted onto any other firm's website, it is filler and must be cut or made
           "angle": { "type": "string" },
           "relation": { "type": "string", "enum": ["new", "extends", "scales", "governs"] },
           "commercial": { "type": "integer" },
-          "clarity": { "type": "integer" },
-          "feasibility": { "type": "integer" }
+          "monetisation": { "type": "integer" },
+          "trigger": { "type": "integer" },
+          "motion": { "type": "string", "enum": ["new_implementation", "product_deployment", "productization", "account_expansion", "managed_service", "embedding"] },
+          "sellable_services": { "type": "array", "items": { "type": "string" } },
+          "monetisation_note": { "type": "string" },
+          "assumptions": { "type": "array", "items": { "type": "string" } }
         }
       }
     }
