@@ -206,3 +206,46 @@ test('a deliverable that reads like a product page never reaches the card', () =
   for (const line of marketing) assert.ok(FEATURE_TALK.test(line), line);
   assert.ok(!FEATURE_TALK.test('Every purchase order line is checked against master data before it posts'));
 });
+
+/* ---- 5. commercial entitlement, demand assumptions, incremental revenue ---- */
+
+test('a ship date we have not reached is not promised away', () => {
+  const c = card({
+    restrictions: ['Ships Q4 2026, so it cannot be committed to an earlier date'],
+    monetisation: 'Install and commission this quarter, then an annual operate contract',
+  });
+  const out = run(c);
+  assert.equal(problems(out, 'restriction').length, 1);
+  assert.ok(!out.cards.includes(c) || out.degraded);
+});
+
+test('unpublished licensing terms are not quoted', () => {
+  const c = card({
+    restrictions: ['Commercial and licensing terms are not published'],
+    why_you: 'You ship your own product today. A licence fee of the usual kind applies.',
+  });
+  assert.equal(problems(run(c), 'restriction').length, 1);
+});
+
+test('a card with no account of how the money arrives is flagged', () => {
+  assert.equal(problems(run(card({ monetisation: '' })), 'commercial').length, 1);
+  assert.equal(problems(run(card({ monetisation: 'Billed per order type, monthly' })), 'commercial').length, 0);
+});
+
+test('an inferred customer problem has to come with something to confirm', () => {
+  assert.equal(problems(run(card({ problem_status: 'hypothesis', assumptions: [] })), 'assumption').length, 1);
+  assert.equal(problems(run(card({ problem_status: 'hypothesis', assumptions: ['That buyers still key these by hand'] })), 'assumption').length, 0);
+  assert.equal(problems(run(card({ problem_status: 'attested', assumptions: [] })), 'assumption').length, 0);
+});
+
+test('a default platform page does not ride in on the platform list', () => {
+  const c = card({
+    lyzr_products: ['Agent Studio', 'Knowledge Base'],
+    resources: [
+      { id: 'r1', title: 'Knowledge Base overview', url: 'https://x/1', shelf: 'see' },
+      { id: 'r2', title: 'Procurement automation: 90-day guide', url: 'https://x/2', shelf: 'build' },
+    ],
+  });
+  run(c);
+  assert.deepEqual(c.resources.map((r) => r.id), ['r2']);
+});
