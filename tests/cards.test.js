@@ -280,3 +280,43 @@ test('a shape rather than a number passes untouched', () => {
   assert.equal(problems(run(c), 'commercial').length, 0);
   assert.equal(c.monetisation, m);
 });
+
+/* ---- 6. the library is only as useful as its classification ---- */
+
+test('most of the knowledge base classifies as some kind of work', async () => {
+  /* Resources are classified from their words and their tags. Reading only the words
+   * left 101 of 174 classifying as nothing, and since a case study has to match
+   * positively, none of those could ever be sent with anything: the shelves looked like
+   * a thin library when they were a blind matcher. */
+  const { familiesIn } = await import('../lib/resources.js');
+  const { default: lib } = await import('../data/resources.json', { with: { type: 'json' } });
+  const unclassified = lib.resources.filter((r) => !familiesIn(r).size);
+  assert.ok(unclassified.length < lib.resources.length * 0.3,
+    `${unclassified.length} of ${lib.resources.length} classify as nothing`);
+  /* And the ones that do not are the genuinely cross-cutting kind, not case studies. */
+  const stories = unclassified.filter((r) => ['case_study', 'story'].includes(r.type));
+  assert.ok(stories.length <= 12, `${stories.length} case studies can never be sent with anything`);
+});
+
+test('every shape of card finds something to send', async () => {
+  const { relatedTo, shelves } = await import('../lib/resources.js');
+  const shapes = [
+    ['procurement', ['ordering'], 'purchase order validation'],
+    ['it operations', ['testing'], 'release regression testing'],
+    ['it operations', ['governance'], 'agent estate discovery and audit'],
+    ['marketing', ['outreach'], 'content scaling and search visibility'],
+    ['customer service', ['support'], 'ticket deflection for support desks'],
+  ];
+  for (const [fn, fam, topic] of shapes) {
+    const got = relatedTo({ topics: [topic], functions: [fn], families: fam, domains: ['manufacturing'] });
+    assert.ok(got.length >= 1, `nothing at all for a ${fn} card about ${topic}`);
+    const by = shelves(got);
+    assert.ok(by.see.length + by.build.length + by.sell.length === got.length);
+  }
+});
+
+test('a governance assessment is not handed to a marketing client', async () => {
+  const { relatedTo } = await import('../lib/resources.js');
+  const got = relatedTo({ topics: ['content scaling'], functions: ['marketing'], families: ['outreach'], domains: ['retail'] });
+  assert.ok(!got.some((r) => /governance|compliance/i.test(r.title)), JSON.stringify(got.map((r) => r.title)));
+});
