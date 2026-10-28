@@ -38,16 +38,26 @@
           "agentic",
           "genai",
           "llm",
-          "mlops",
-          "identity provider",
+          "governance",
+          "compliance",
+          "regulated",
+          "audit",
+          "audit trail",
+          "risk",
+          "identity",
           "iam",
           "observability",
-          "kubernetes",
-          "guardrail",
-          "governance",
-          "audit",
           "soc 2",
-          "iso 27001"
+          "iso 27001",
+          "controls",
+          "oversight",
+          "mlops",
+          "kubernetes",
+          "platform engineering",
+          "production",
+          "deployment",
+          "devops",
+          "sre"
         ],
         "why": "A control plane is only sellable to a firm whose clients already have agents running, or who runs the platform those agents would run on."
       },
@@ -138,6 +148,7 @@
           "workplace",
           "employee experience",
           "workforce",
+          "employees",
           "adoption",
           "change management",
           "intranet",
@@ -147,7 +158,8 @@
           "service desk",
           "helpdesk",
           "per seat",
-          "collaboration"
+          "collaboration",
+          "productivity"
         ],
         "why": "Rolling an AI coworker out to a whole workforce is an adoption and change programme. A firm that has never run one has no business selling it."
       },
@@ -236,10 +248,19 @@
           "agentic",
           "llm",
           "machine learning",
+          "software",
+          "platform",
+          "application",
+          "integration",
+          "api",
+          "development",
+          "engineering",
+          "automation",
+          "workflow",
+          "mlops",
           "data engineering",
-          "software engineering",
-          "application development",
-          "custom software"
+          "custom software",
+          "product engineering"
         ],
         "why": "A build platform is sold to a firm that builds. An advisory firm has nobody to put on it."
       },
@@ -332,7 +353,9 @@
           "business process",
           "process mining",
           "business analysis",
-          "workflow automation"
+          "workflow automation",
+          "citizen developer",
+          "self-service"
         ],
         "why": "This is sold into the business, not into engineering. The partner has to already be in the room where processes are decided."
       },
@@ -425,12 +448,16 @@
           "integration",
           "bpm",
           "workflow",
+          "workflows",
           "mulesoft",
           "boomi",
           "webmethods",
           "ipaas",
-          "approval workflow",
-          "etl"
+          "approval",
+          "approvals",
+          "etl",
+          "straight-through",
+          "processing"
         ],
         "why": "Durable orchestration is sold to a firm that already owns the client's process plumbing. Without that they are selling a canvas."
       },
@@ -521,12 +548,15 @@
           "airgap",
           "air gapped",
           "sovereign",
+          "sovereignty",
           "residency",
           "classified",
           "colocation",
           "bare metal",
           "vmware",
-          "appliance"
+          "appliance",
+          "self-hosted",
+          "hosted in"
         ],
         "why": "An appliance is sold by firms that already put equipment into other people's data centres. A cloud-only consultancy cannot deliver it."
       },
@@ -620,15 +650,17 @@
           "white label",
           "white-label",
           "oem",
-          "proprietary platform",
+          "proprietary",
           "our own product",
           "our platform",
-          "saas product",
+          "saas",
           "software product",
+          "product suite",
           "licence",
-          "license fee",
-          "embed sdk",
-          "tenant"
+          "license",
+          "embed",
+          "tenant",
+          "isv"
         ],
         "why": "This is sold to a firm that ships software of its own. A pure services business has no product to embed it in."
       },
@@ -720,7 +752,11 @@
           "agent framework",
           "langchain",
           "llamaindex",
-          "rag"
+          "rag",
+          "build our own",
+          "kubernetes",
+          "microservice",
+          "architecture"
         ],
         "why": "Primitives are for a team that is building something of their own. There is nothing to compose them into otherwise."
       },
@@ -803,7 +839,11 @@
           "nlp",
           "open-weight",
           "open weight",
-          "llm"
+          "llm",
+          "models",
+          "kubernetes",
+          "gpu",
+          "training"
         ],
         "why": "Fine-tuning is sold by firms with data science people. Without them the engagement has nobody to run it."
       },

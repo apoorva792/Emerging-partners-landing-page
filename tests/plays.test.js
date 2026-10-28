@@ -236,3 +236,71 @@ test('a kind-of-work match alone is not enough, nor is one word', () => {
   const oneWord = firm({ one_line: 'We build things.', services: ['Software'], capabilities: [], evidence: [] });
   assert.equal(eligibility(playById('agent_studio'), oneWord).ok, false);
 });
+
+/* ---- the solution tier ---- */
+
+test('industry solutions and named agents are offerings, not just footnotes', () => {
+  const ids = PLAYS.map((p) => p.offering_id);
+  /* These existed in the catalogue as supporting evidence and could never be
+   * recommended, which is why a regulated communications firm serving banks was never
+   * shown the banking GRC solution sitting in its own candidate pool. */
+  for (const id of ['sol_madison_grc', 'sol_fintech', 'sol_insurance', 'sol_healthcare', 'sol_customer_service']) {
+    assert.ok(ids.includes(id), `missing solution offering: ${id}`);
+  }
+  assert.ok(PLAYS.filter((p) => p.tier === 'product').length === 9);
+  assert.ok(PLAYS.filter((p) => p.tier === 'solution').length >= 20);
+});
+
+test('a firm whose clients are banks is shown the banking solution', () => {
+  const bankish = {
+    company: { one_line: 'We run regulated customer communications for financial institutions.' },
+    services: [{ name: 'Customer communications management' }, { name: 'Compliance operations' }],
+    industries: [{ name: 'Financial Services' }, { name: 'Banks' }, { name: 'Credit Unions' }],
+    capabilities: {
+      basis: 'advertised',
+      capabilities: [],
+      evidence: [{ id: 'E1', what: 'Regulated communications platform', function: 'compliance', grounded: true, work: ['Ran the audit trail'], stack: [] }],
+      advertised_only: ['CCM automation for regulated teams'],
+      industries: ['financial services'],
+      technologies: [],
+    },
+  };
+  const got = playsFor(bankish);
+  assert.ok(got.some((x) => /madison/i.test(x.play.name)), `no banking GRC solution: ${got.map((x) => x.play.name)}`);
+  /* And the industry reason is stated, because that is what makes it credible. */
+  const madison = got.find((x) => /madison/i.test(x.play.name));
+  assert.match(madison.fit.why, /banking/i);
+});
+
+test('an industry match is only claimed where the offering declares one', () => {
+  /* Reading industries off the description's words reported a firm's clients as being in
+   * "connected" and in "building". Only the declared industry counts. */
+  const manufacturer = {
+    company: { one_line: 'We deliver ERP programmes.' },
+    services: [{ name: 'ERP delivery' }],
+    industries: [{ name: 'Manufacturing' }, { name: 'Distribution' }],
+    capabilities: { basis: 'delivered', capabilities: [], evidence: [{ id: 'E1', what: 'ERP rollout', function: 'operations', grounded: true, work: ['Deployed the ERP'], stack: ['SAP'] }], advertised_only: [], industries: ['manufacturing'], technologies: ['SAP'] },
+  };
+  for (const { play, fit } of playsFor(manufacturer)) {
+    for (const i of fit.onIndustry ?? []) {
+      assert.ok(i && i.length > 3 && !/connected|building|their/i.test(i), `invented an industry: ${i}`);
+    }
+  }
+});
+
+test('both tiers get room in the list', () => {
+  const broad = {
+    company: { one_line: 'We build production AI agents and run compliance programmes for banks.' },
+    services: [{ name: 'Agent development' }, { name: 'Compliance operations' }],
+    industries: [{ name: 'Banks' }, { name: 'Financial Services' }],
+    capabilities: {
+      basis: 'delivered',
+      capabilities: [{ function: 'compliance', service: 'Governance delivery', projects: 2, confidence: 'high', stack: ['AWS'], work: ['Built the audit trail'], outcomes: [] }],
+      evidence: [{ id: 'E1', what: 'Agent governance programme', function: 'compliance', grounded: true, work: ['Built the audit trail'], stack: ['AWS'] }],
+      advertised_only: [], industries: ['banking'], technologies: ['AWS', 'Kubernetes'],
+    },
+  };
+  const got = playsFor(broad);
+  assert.ok(got.some((x) => x.play.tier === 'product'), 'no platform product offered');
+  assert.ok(got.some((x) => x.play.tier === 'solution'), 'no packaged solution offered');
+});
