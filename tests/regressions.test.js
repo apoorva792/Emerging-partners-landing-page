@@ -224,3 +224,25 @@ test('a sound opportunity still passes all of it', () => {
   const score = total({ fit: fit.score, lyzr: lyzr.score, adjacency: adjacency(good, integrator, fit, null), monetisation: 4, trigger: 4 });
   assert.ok(score >= FLOOR, `a sound opportunity scored ${score}, below the floor`);
 });
+
+test('the department cap is strict where we could read departments, and honest where we could not', () => {
+  /* On a case study we know which department it served, so a candidate claiming another
+   * one is the Arohak failure and stays below the gate. On a service page we do not, so
+   * holding a firm to a resolution we never had just punishes it for its website. */
+  const wrongDept = opp({ function: 'finance', headline: 'Investment modelling', work: 'investment modelling', cites: ['E2'] });
+  assert.equal(gate(wrongDept, fitScore(wrongDept, integrator), { score: 5 }).pass, false);
+
+  const advertisedOnly = {
+    basis: 'advertised',
+    capabilities: [],
+    technologies: [],
+    evidence: [{ id: 'E1', what: 'Customer communications platform', function: 'customer service', grounded: true, basis: 'advertised', work: ['Runs the communications platform'], stack: [], problem: '', outcomes: [] }],
+  };
+  const otherDept = opp({ function: 'finance', cites: ['E1'] });
+  const fit = fitScore(otherDept, advertisedOnly);
+  assert.equal(fit.advertised, true);
+  assert.ok(fit.score >= 2 && fit.score <= 3, `advertised fit was ${fit.score}`);
+  assert.equal(gate(otherDept, fit, { score: 4 }).pass, true);
+  /* And it still cannot outrank a firm we could actually read. */
+  assert.ok(fit.score < fitScore(opp(), integrator).score);
+});
