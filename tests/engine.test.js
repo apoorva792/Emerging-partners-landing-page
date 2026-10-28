@@ -9,7 +9,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { quoted, pagesToRead } from '../lib/evidence.js';
-import { fitScore, lyzrScore, gate, total, WEIGHTS, worthResearching, adjacency, FLOOR } from '../lib/score.js';
+import { fitScore, lyzrScore, gate, total, WEIGHTS, worthResearching, adjacency, FLOOR, floorFor } from '../lib/score.js';
 
 const page = `Arohak partnered with a Fortune-scale consumer healthcare enterprise to modernise
 its procurement middleware. We migrated the integration layer onto SAP BTP and wired Ariba
@@ -181,4 +181,19 @@ test('with no readable site a candidate stands on the profile alone, at the floo
 
 test('an empty capability map is treated the same as none', () => {
   assert.equal(fitScore(opp(), { basis: 'delivered', capabilities: [], evidence: [] }).profileOnly, true);
+});
+
+test('the floor moves with how much of their site we could read', () => {
+  const delivered = { basis: 'delivered', evidence: [{ id: 'E1' }] };
+  const advertised = { basis: 'advertised', evidence: [{ id: 'E1' }] };
+  assert.equal(floorFor(delivered), 70);
+  assert.ok(floorFor(advertised) < floorFor(delivered),
+    'a firm that publishes no engagements has a lower ceiling and needs a lower bar');
+  assert.ok(floorFor(null) < floorFor(advertised), 'and a firm whose site we could not read at all, lower still');
+
+  /* The ceiling is the reason. Fit is capped at 3 on an advertised basis and the
+   * projects and outcomes points cannot be earned, so the best reachable score is well
+   * under what a documented firm reaches on a middling candidate. */
+  const bestAdvertised = total({ fit: 3, adjacency: 4, lyzr: 5, monetisation: 5, trigger: 5 });
+  assert.ok(bestAdvertised < 90 && bestAdvertised >= floorFor(advertised));
 });

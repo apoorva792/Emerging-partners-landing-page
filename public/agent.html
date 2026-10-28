@@ -291,6 +291,10 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
 .panel h3{color:#fff;margin:0 0 14px;font-size:19px}
 .panel ul{list-style:none;margin:0 0 18px;padding:0}
 .panel li{font-size:15px;padding:9px 0;border-top:1px solid rgba(255,255,255,.18)}
+/* The numbered list inside the panel keeps its own indent. `.panel li` lands later in
+   this file at the same specificity, so it was flattening the left padding the counter
+   is positioned against, and every number printed on top of its own first word. */
+.panel .moves li{padding-left:30px}
 .panel li:first-child{border-top:none}
 .panel p{margin:0;font-size:16px;color:rgba(255,255,255,.92)}
 .closing{margin-top:44px;border:1px solid var(--line);border-radius:var(--r);padding:30px 32px;background:var(--surface)}
