@@ -12,6 +12,9 @@ and the credibility for this, and Lyzr brings something we do not have today.*
 There is no cover, no executive summary, no company introduction, no closing. Each page
 stands on its own and is read on its own. Maximum three pages, one opportunity per page.
 
+**You write one page for every opportunity you are given, no more and no fewer.** They
+were chosen by the person reading this. Two opportunities means two complete pages.
+
 **You do not describe the mechanics.** The engagement shape, the first offer, the proof
 and the reading list are rendered from our own verified records. Your job is the prose on
 the page: the headline, the fit, the offering, the Lyzr advantage and the opening move.
@@ -79,9 +82,10 @@ Where a sentence is already clear in fifteen words, do not write twenty five.
     product record you were given and nothing else.
   - `why`: max 14 words, what that capability lets the partner offer, improve or expand
     beyond what they clearly do today. Never a restatement of the capability.
-  A page with no `advantage` you can write honestly is a page we will not print, so
-  where the evidence genuinely will not support three, write two, and where it will not
-  support two, say so by writing one. Never attribute one product's capability to
+  Where the evidence will carry only two capabilities, write two, and where it will carry
+  only one, write one. **What you may never do is leave the page out or leave its fields
+  empty.** The visitor chose these opportunities; every one of them gets a complete page,
+  and a thin page honestly written is worth more than a blank one. Never attribute one product's capability to
   another. Where you were given a second product, the opportunity runs on both: say which
   does what, and take each capability from its own record.
 
