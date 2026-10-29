@@ -235,7 +235,21 @@ test('a card with no account of how the money arrives is flagged', () => {
 test('an inferred customer problem has to come with something to confirm', () => {
   assert.equal(problems(run(card({ problem_status: 'hypothesis', assumptions: [] })), 'assumption').length, 1);
   assert.equal(problems(run(card({ problem_status: 'hypothesis', assumptions: ['That buyers still key these by hand'] })), 'assumption').length, 0);
-  assert.equal(problems(run(card({ problem_status: 'attested', assumptions: [] })), 'assumption').length, 0);
+
+  /* "Attested" means a customer said so. Evidence that states the problem carries it. */
+  const attested = card({
+    problem_status: 'attested',
+    assumptions: [],
+    stands_on: [{ id: 'E1', what: 'Order capture integration', url: 'https://x/1', problem: 'Buyers were keying every purchase order line by hand and catching errors after they posted' }],
+  });
+  assert.equal(problems(run(attested), 'assumption').length, 0);
+
+  /* The partner being capable is not the customer having a problem. A card claiming one
+   * on nothing but their own capability is put back to a hypothesis and flagged. */
+  const asserted = card({ problem_status: 'attested', assumptions: [] });
+  const flagged = problems(run(asserted), 'assumption');
+  assert.equal(flagged.length, 2, JSON.stringify(flagged));
+  assert.equal(asserted.problem_status, 'hypothesis', 'it should be demoted, not left asserting');
 });
 
 test('a default platform page does not ride in on the platform list', () => {

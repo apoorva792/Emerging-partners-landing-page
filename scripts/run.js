@@ -35,28 +35,81 @@ for (const c of s2.cards) {
   console.log(`   send:  ${(c.resources ?? []).map((r) => r.title).join(' | ') || '(nothing on point)'}`);
 }
 
+/* The whole stack, and what became of each part of it. The point of the change is that a
+ * product can now be considered and consciously turned down, so the turning down has to
+ * be visible or the reviewer is back to guessing. */
+const st = s2.stack ?? {};
+console.log(`\n== THE STACK CONSIDERED (${(st.eligible ?? []).length} eligible) ==`);
+for (const e of st.eligible ?? []) console.log(`  ${e.product.padEnd(34)} ${String(e.motion).padEnd(20)} ${e.why}`);
+console.log('\n== SELECTED ==');
+for (const c of st.chosen ?? []) {
+  console.log(`  ${c.product} (${c.motion}) [score ${c.score}, not used to pick]`);
+  console.log(`     ${c.headline}`);
+  console.log(`     because: ${c.because || '(model gave no reason)'}`);
+  console.log(`     Lyzr adds: ${c.adds || '(not stated)'}`);
+}
+console.log('\n== REJECTED ==');
+for (const r of st.rejected ?? []) console.log(`  ${String(r.product).padEnd(34)} ${r.why}`);
+
 console.log(`\n== QUALITY: ${s2.quality.issues.length} issues, ${s2.quality.blocking} blocking${s2.quality.degraded ? ' DEGRADED' : ''} ==`);
 for (const i of s2.quality.issues) console.log(`  [${i.severity}] ${i.check}: ${i.detail}`);
 console.log('\n== PASSED OVER ==');
-for (const n of s2.not_recommended ?? []) console.log(`  ${n.score} ${n.headline}\n      ${n.why.join('; ')}`);
+for (const n of s2.not_recommended ?? []) console.log(`  ${n.score} ${n.headline}${n.product ? ` [${n.product}]` : ''}\n      ${n.why.join('; ')}`);
 
 const accounts = [
   { name: 'Acme Insurance', strength: 'Champion inside' },
   { name: 'Northwind Logistics', strength: 'Warm' },
   { name: 'Rivera Health', strength: 'Dormant' },
 ];
+/* Up to three, because the brief is a document about a set of lines and the parts that
+ * only appear with more than one, the summary table and the recommendation between them,
+ * are exactly the parts worth seeing in a dry run. */
+const picked = s2.cards.slice(0, 3);
+const tBrief = Date.now();
 const [s3, ranked] = await Promise.all([
-  step3({ profile: s1.profile, answers, chosen: [s2.cards[0]], cards: s2.cards }),
-  rankAccounts(s1.profile, s2.cards[0], accounts),
+  step3({ profile: s1.profile, answers, chosen: picked, cards: s2.cards }),
+  rankAccounts(s1.profile, picked[0], accounts),
 ]);
 const b = s3.brief;
-console.log(`\n== BRIEF ==\n"${b.headline}"\n${b.the_case}`);
-console.log(`\nyou today: ${b.you_today.join(' · ')}`);
-console.log('why lyzr:'); for (const r of b.why_lyzr) console.log(`  ${r.you_have} -> ${r.lyzr_adds}`);
-console.log(`ask: ${b.the_ask}`);
-console.log(`accounts: ${ranked.map((r) => r.account).join(', ')}`);
+const wrap = (t, w = 92) => String(t ?? '').replace(new RegExp(`(.{1,${w}})(\\\\s|$)`, 'g'), '$1\n').trimEnd();
+
+console.log('\n== BRIEF ==');
+const words = (t) => String(t ?? '').trim().split(/\s+/).filter(Boolean).length;
+for (const [i, pg] of (b.pages ?? []).entries()) {
+  const c = picked.find((x) => x.id === pg.id);
+  /* The word count is the point of the redesign, so the dry run prints it: a page over
+   * roughly 200 words of narrative is one that will not sit on a single A4 sheet. */
+  const narrative = [pg.why_fits, pg.the_opportunity, ...(pg.benefits ?? []),
+    ...(pg.advantage ?? []).flatMap((x) => [x.capability, x.why]), pg.start?.conversation]
+    .reduce((n, t) => n + words(t), 0);
+  console.log(`\n-- page ${String(i + 1).padStart(2, '0')} of ${(b.pages ?? []).length}  [${narrative} words] --`);
+  console.log(`  "${pg.headline}"`);
+  console.log(`  powered by:  ${c?.product?.name ?? '(no product)'}`);
+  console.log(`  offering:    ${pg.offering_name}`);
+  console.log(`  why fits:    ${wrap(pg.why_fits)}`);
+  console.log(`  opportunity: ${wrap(pg.the_opportunity)}`);
+  for (const x of pg.benefits ?? []) console.log(`     + ${x}`);
+  console.log('  lyzr advantage:');
+  for (const x of pg.advantage ?? []) console.log(`     ${x.capability} :: ${x.why}`);
+  console.log(`  start with:  ${pg.start?.who || '(no account)'} / ${pg.start?.buyer}`);
+  console.log(`  ${wrap(pg.start?.conversation)}`);
+  console.log(`  resources:   ${(c?.resources ?? []).length + (c?.proof?.url ? 1 : 0)} links`);
+}
+console.log(`\naccounts ranked (not printed on the sheets): ${ranked.map((r) => r.account).join(', ')}`);
 
 console.log(`\n== INTERNAL (never shown) ==\nfit: ${s3.internal.fit}`);
 for (const x of s3.internal.fit_reasons) console.log('  -', x);
 console.log('watch outs:'); for (const x of s3.internal.watch_outs) console.log('  -', x);
+const briefMs = Date.now() - tBrief;
+/* Where the time actually goes. The journey is not the sum of these: the browser starts
+ * discovery while the visitor is still answering and starts the brief while they are
+ * reading a card, so some of this runs under the visitor's own thinking time. */
+const sec = (ms) => (ms / 1000).toFixed(1) + 's';
+console.log('\n== WHERE THE TIME GOES ==');
+console.log(`  profile (crawl + apollo + evidence + profiler)  ${sec(s1.ms)}`);
+console.log(`  discovery (eligibility + propose + validate)    ${sec(s2.ms.discovery)}`);
+console.log(`  writing the cards                               ${sec(s2.ms.cards)}`);
+console.log(`  the brief + ranking accounts                    ${sec(briefMs)}`);
+console.log(`  ------------------------------------------------------`);
+console.log(`  server work, start to finish                    ${sec(Date.now() - t0)}`);
 console.log(`\ntotal ${Math.round((Date.now() - t0) / 1000)}s`);

@@ -1,255 +1,305 @@
 {
- "note": "How an engagement is actually shaped. The opportunity itself is generated from what Lyzr has delivered; these are the commitments underneath it, and a model never writes them. {unit} is the one thing the pilot runs on, supplied per line and capped at four words: one approval chain, one hiring flow, one business unit.",
- "patterns": [
-  {
-   "id": "assess-then-build",
-   "growth_path": "expand",
-   "when": "The client already runs the process and the partner already works inside it. The question is which part of it stops being manual first.",
-   "first_offer": {
-    "name": "{work} assessment",
-    "shape": "3 weeks, one {unit}",
-    "ends_with": "the process mapped end to end with the manual steps costed, and a scoped pilot on one of them"
-   },
-   "delivery": {
-    "shape": "8 to 10 week build on one {unit}, then a managed fee to run and extend it",
-    "team_needed": "1 solution architect + 1 to 2 engineers"
-   },
-   "expansion": "A monthly fee to run it, then the same pattern on the next {unit} in the same account",
-   "discovery": [
-    "How many {unit}s run this process, and how often",
-    "Which steps are already rule-based, and which need judgement",
-    "Which systems hold the data the steps read",
-    "Who approves an exception today, and how it reaches them"
-   ],
-   "roles": {
-    "partner": "The process knowledge, the client relationship, the integration and the delivery team",
-    "lyzr": "The platform the agents run on, the controls, and support through the first build"
-   }
-  },
-  {
-   "id": "prove-then-roll-out",
-   "growth_path": "expand",
-   "when": "The work is technically uncertain rather than commercially uncertain. Prove it on one narrow case, then sell the rollout.",
-   "first_offer": {
-    "name": "{work} feasibility proof",
-    "shape": "2 weeks, one {unit}",
-    "ends_with": "a working proof on one {unit}, with the accuracy measured against their own examples"
-   },
-   "delivery": {
-    "shape": "6 week proof on one {unit}, then a per-{unit} rollout",
-    "team_needed": "1 engineer + 1 person from the client who knows the exceptions"
-   },
-   "expansion": "Each further {unit} is a shorter build on the same proven pattern",
-   "discovery": [
-    "How many {unit}s exist, and which are highest volume",
-    "What a correct result looks like, and who decides that today",
-    "Which systems the result has to be written back into",
-    "What accuracy would have to be true before they trust it unattended"
-   ],
-   "roles": {
-    "partner": "The client's examples, the integration work and the people who judge the output",
-    "lyzr": "The platform, the models and the engineer who sits with you through the proof"
-   }
-  },
-  {
-   "id": "audit-then-build",
-   "growth_path": "win",
-   "when": "A packaged offer for a client the partner does not have yet. The audit is the way in, and it has to be worth paying for on its own.",
-   "first_offer": {
-    "name": "{work} audit",
-    "shape": "2 to 3 weeks, one {unit}",
-    "ends_with": "where the time actually goes in one {unit}, and a scoped build on the worst of it"
-   },
-   "delivery": {
-    "shape": "6 week build on one {unit}, then recurring per {unit}",
-    "team_needed": "1 consultant who knows the domain + 1 engineer"
-   },
-   "expansion": "The second {unit} is a shorter build, and the audit becomes the repeatable way in to the next client",
-   "discovery": [
-    "How much of this work happens in a month, and who does it",
-    "Which parts are judgement and which are the same every time",
-    "What the output has to look like, and who signs it",
-    "What they have already tried here, and why it stopped"
-   ],
-   "roles": {
-    "partner": "The domain expertise, the audit, the build and the client relationship",
-    "lyzr": "The platform, the templates to start from, and enablement for your team"
-   }
-  },
-  {
-   "id": "review-then-deploy",
-   "growth_path": "win",
-   "when": "The constraint is the environment rather than the workflow: regulated, sovereign, on-premise, or an architecture that has to be signed off before anything is built.",
-   "first_offer": {
-    "name": "{work} readiness review",
-    "shape": "3 to 4 weeks, one {unit}",
-    "ends_with": "what can run where, what the controls have to be, and a deployment plan their risk function can sign"
-   },
-   "delivery": {
-    "shape": "10 to 12 week deployment on one {unit}, then infrastructure and support",
-    "team_needed": "1 solution architect + 1 infrastructure engineer + a compliance reviewer"
-   },
-   "expansion": "A support and change contract on the environment, then the next workload into it",
-   "discovery": [
-    "Where the data is allowed to live, and who decides that",
-    "What their risk or audit function has already asked about AI",
-    "Which environments are in scope, and who runs them",
-    "What has to be true before a decision can run without a person"
-   ],
-   "roles": {
-    "partner": "The environment, the client's controls, the deployment and the ongoing support",
-    "lyzr": "The deployable platform, the governance layer and the architecture review"
-   }
-  },
-  {
-   "id": "package-then-sell",
-   "growth_path": "win",
-   "when": "They have built much the same thing more than once for different clients. The question is whether it becomes a solution they sell into an industry rather than a project they re-quote every time.",
-   "first_offer": {
-    "name": "{work} solution blueprint",
-    "shape": "4 weeks, one reference {unit}",
-    "ends_with": "a packaged solution with a fixed scope, a working demo and a price, ready to take to the next three clients"
-   },
-   "delivery": {
-    "shape": "8 week build of the packaged version, then a deployment fee per client",
-    "team_needed": "1 product owner + 2 engineers, part time"
-   },
-   "expansion": "Every new client deploys the same package, so the build is paid for once and each further {unit} is margin",
-   "discovery": [
-    "How many clients have asked for this {work} in the last year",
-    "What changed between the last two times you built it",
-    "Which part of it is the same for every client, and which is not",
-    "Who would buy it if it already existed and had a price"
-   ],
-   "roles": {
-    "partner": "The repeatable solution, the industry knowledge, the sales motion and the deployments",
-    "lyzr": "The platform it is packaged on, the templates, and joint go-to-market on the first clients"
-   }
-  },
-  {
-   "id": "inventory-then-govern",
-   "growth_path": "retain",
-   "when": "The client already has AI running that nobody owns. The money is in the control layer over it, not in building more.",
-   "first_offer": {
-    "name": "Agent estate assessment",
-    "shape": "3 weeks, one {unit}",
-    "ends_with": "an inventory of every agent and copilot running, what each one can reach, and a registry pilot"
-   },
-   "delivery": {
-    "shape": "4 week discovery and registry, then an annual platform and advisory fee",
-    "team_needed": "1 governance consultant + 1 engineer"
-   },
-   "expansion": "An annual platform fee plus a quarterly review covering new agents as they are added",
-   "discovery": [
-    "How many teams have deployed something, and on how many platforms",
-    "Whether anyone owns AI risk formally, and who they report to",
-    "What the audit or regulator has already asked for",
-    "Which environments and data the running agents can reach"
-   ],
-   "roles": {
-    "partner": "The governance engagement, the risk relationship and the consultants who run it",
-    "lyzr": "OpenController for the registry and the controls, and the policy layer"
-   }
-  },
-  {
-   "id": "take-over-and-run",
-   "growth_path": "retain",
-   "when": "Something is already live and fragile. The offer is to own it: monitoring, incidents, versions and a service level.",
-   "first_offer": {
-    "name": "{work} operations review",
-    "shape": "2 weeks, their current estate",
-    "ends_with": "what is running, what is unmonitored, what has already broken, and a takeover plan"
-   },
-   "delivery": {
-    "shape": "Onboarding sprint to take it over, then a monthly fee per workload",
-    "team_needed": "1 engineer on call + 1 service manager"
-   },
-   "expansion": "The monthly fee grows with each new workload that goes live",
-   "discovery": [
-    "What is running in production today, and who built it",
-    "Who gets called when it fails, and what their hours are",
-    "What has already gone wrong, and how they found out",
-    "What a service level would have to cover for them to sign"
-   ],
-   "roles": {
-    "partner": "The support structure, the on-call rota and the client relationship",
-    "lyzr": "The platform, the observability and escalation into our engineering"
-   }
-  },
-  {
-   "id": "roll-out-to-everyone",
-   "growth_path": "expand",
-   "when": "The client wants one capability in front of a whole workforce rather than one use case built well. The work is standing it up, agreeing what good looks like, and getting people to use it.",
-   "first_offer": {
-    "name": "{work} pilot department",
-    "shape": "4 weeks, one {unit}",
-    "ends_with": "one department live with usage measured and an adoption plan for the rest"
-   },
-   "delivery": {
-    "shape": "6 to 8 week rollout across the first wave, then a per seat fee to run and support it",
-    "team_needed": "1 delivery lead + 1 engineer + 1 adoption or change person"
-   },
-   "expansion": "Each further {unit} joins the same deployment, so the cost is in adoption rather than in another build",
-   "discovery": [
-    "How many people would use this, and in which {unit} first",
-    "What they use today for the same thing, approved or not",
-    "Who owns employee tooling and can make it standard",
-    "What has to be true before the policy team signs it off"
-   ],
-   "roles": {
-    "partner": "The rollout, the adoption programme, the integration into how people already work",
-    "lyzr": "The product, the governance underneath it, and support through the first wave"
-   }
-  },
-  {
-   "id": "deploy-in-their-estate",
-   "growth_path": "win",
-   "when": "The client cannot send the work anywhere else. The engagement is installing and commissioning something inside their own environment and proving the first workload on it.",
-   "first_offer": {
-    "name": "{work} deployment readiness review",
-    "shape": "3 weeks, one {unit}",
-    "ends_with": "a sited design, the prerequisites confirmed, and a commissioning plan with dates"
-   },
-   "delivery": {
-    "shape": "8 to 12 week install and commissioning, then an annual operate and support contract",
-    "team_needed": "1 infrastructure architect + 1 engineer, with the client's platform team"
-   },
-   "expansion": "Capacity grows with each further {unit} placed on the same footprint, under the same contract",
-   "discovery": [
-    "Where it would physically sit, and who owns that space",
-    "Which workload has to stay inside the estate, and why",
-    "What the network and identity boundaries look like",
-    "Who signs off a change inside that environment"
-   ],
-   "roles": {
-    "partner": "The siting, the installation, the integration into their estate and the local support",
-    "lyzr": "The appliance, the models and governance on it, and the engineering behind the commissioning"
-   }
-  },
-  {
-   "id": "embed-and-license",
-   "growth_path": "win",
-   "when": "The partner ships software of their own. The work is putting a capability inside that product, under their brand, and selling it to the customers they already have.",
-   "first_offer": {
-    "name": "{work} embedding assessment",
-    "shape": "3 weeks, one {unit}",
-    "ends_with": "the integration mapped against their architecture, and a first feature scoped against their roadmap"
-   },
-   "delivery": {
-    "shape": "10 to 12 week integration into their product, then a licence that scales with their customers",
-    "team_needed": "1 product owner + 2 engineers from their own product team"
-   },
-   "expansion": "Every customer of their product reaches the capability, so revenue follows their install base rather than their delivery hours",
-   "discovery": [
-    "What their product does today and who pays for it",
-    "Which {unit} the capability would land in first",
-    "How their release cycle and their tenancy model work",
-    "What they would have to build themselves instead, and how long it would take"
-   ],
-   "roles": {
-    "partner": "The product, the customers, the roadmap and the first line of support",
-    "lyzr": "The platform layer underneath, the tenancy and governance, and the engineering behind the integration"
-   }
-  }
- ]
+  "note": "How an engagement is actually shaped. The opportunity itself is generated from what Lyzr has delivered; these are the commitments underneath it, and a model never writes them. {unit} is the one thing the pilot runs on, supplied per line and capped at four words: one approval chain, one hiring flow, one business unit. `revenue` is the three streams the brief tables, written here for the same reason.",
+  "patterns": [
+    {
+      "id": "assess-then-build",
+      "growth_path": "expand",
+      "when": "The client already runs the process and the partner already works inside it. The question is which part of it stops being manual first.",
+      "first_offer": {
+        "name": "{work} assessment",
+        "shape": "3 weeks, one {unit}",
+        "ends_with": "the process mapped end to end with the manual steps costed, and a scoped pilot on one of them"
+      },
+      "delivery": {
+        "shape": "8 to 10 week build on one {unit}, then a managed fee to run and extend it",
+        "team_needed": "1 solution architect + 1 to 2 engineers"
+      },
+      "expansion": "A monthly fee to run it, then the same pattern on the next {unit} in the same account",
+      "discovery": [
+        "How many {unit}s go through this today, and how often",
+        "Which steps are already rule-based, and which need judgement",
+        "Which systems hold the data the steps read",
+        "Who approves an exception today, and how it reaches them"
+      ],
+      "roles": {
+        "partner": "The process knowledge, the client relationship, the integration and the delivery team",
+        "lyzr": "The platform the agents run on, the controls, and support through the first build"
+      },
+      "revenue": {
+        "implementation": "Process mapping, solution design, agent configuration, integration with the systems the {unit} already runs on, and deployment of the first build",
+        "recurring": "Running the agents, handling the exceptions, tuning as the process changes, and support for the people who use it",
+        "expansion": "The same pattern on the next {unit} in the same account, then the adjacent processes as they come up"
+      }
+    },
+    {
+      "id": "prove-then-roll-out",
+      "growth_path": "expand",
+      "when": "The work is technically uncertain rather than commercially uncertain. Prove it on one narrow case, then sell the rollout.",
+      "first_offer": {
+        "name": "{work} feasibility proof",
+        "shape": "2 weeks, one {unit}",
+        "ends_with": "a working proof on one {unit}, with the accuracy measured against their own examples"
+      },
+      "delivery": {
+        "shape": "6 week proof on one {unit}, then a per-{unit} rollout",
+        "team_needed": "1 engineer + 1 person from the client who knows the exceptions"
+      },
+      "expansion": "Each further {unit} is a shorter build on the same proven pattern",
+      "discovery": [
+        "How many {unit}s exist, and which are highest volume",
+        "What a correct result looks like, and who decides that today",
+        "Which systems the result has to be written back into",
+        "What accuracy would have to be true before they trust it unattended"
+      ],
+      "roles": {
+        "partner": "The client's examples, the integration work and the people who judge the output",
+        "lyzr": "The platform, the models and the engineer who sits with you through the proof"
+      },
+      "revenue": {
+        "implementation": "The feasibility proof on one {unit}, then the build that follows it: solution design, integration, testing and release",
+        "recurring": "Monitoring each live {unit}, tuning the models, and support through every rollout wave",
+        "expansion": "Each further {unit} as a shorter build on the proven pattern, with no new architecture to pay for"
+      }
+    },
+    {
+      "id": "audit-then-build",
+      "growth_path": "win",
+      "when": "A packaged offer for a client the partner does not have yet. The audit is the way in, and it has to be worth paying for on its own.",
+      "first_offer": {
+        "name": "{work} audit",
+        "shape": "2 to 3 weeks, one {unit}",
+        "ends_with": "where the time actually goes in one {unit}, and a scoped build on the worst of it"
+      },
+      "delivery": {
+        "shape": "6 week build on one {unit}, then recurring per {unit}",
+        "team_needed": "1 consultant who knows the domain + 1 engineer"
+      },
+      "expansion": "The second {unit} is a shorter build, and the audit becomes the repeatable way in to the next client",
+      "discovery": [
+        "How much of this work happens in a month, and who does it",
+        "Which parts are judgement and which are the same every time",
+        "What the output has to look like, and who signs it",
+        "What they have already tried here, and why it stopped"
+      ],
+      "roles": {
+        "partner": "The domain expertise, the audit, the build and the client relationship",
+        "lyzr": "The platform, the templates to start from, and enablement for your team"
+      },
+      "revenue": {
+        "implementation": "The audit and its findings, then design, build, integration and deployment on the first {unit}",
+        "recurring": "Running and supporting each {unit} once it is live, with changes as the process moves",
+        "expansion": "The second {unit} as a shorter build, and the audit itself as the repeatable way in to the next client"
+      }
+    },
+    {
+      "id": "review-then-deploy",
+      "growth_path": "win",
+      "when": "The constraint is the environment rather than the workflow: regulated, sovereign, on-premise, or an architecture that has to be signed off before anything is built.",
+      "first_offer": {
+        "name": "{work} readiness review",
+        "shape": "3 to 4 weeks, one {unit}",
+        "ends_with": "what can run where, what the controls have to be, and a deployment plan their risk function can sign"
+      },
+      "delivery": {
+        "shape": "10 to 12 week deployment on one {unit}, then infrastructure and support",
+        "team_needed": "1 solution architect + 1 infrastructure engineer + a compliance reviewer"
+      },
+      "expansion": "A support and change contract on the environment, then the next workload into it",
+      "discovery": [
+        "Where the data is allowed to live, and who decides that",
+        "What their risk or audit function has already asked about AI",
+        "Which environments are in scope, and who runs them",
+        "What has to be true before a decision can run without a person"
+      ],
+      "roles": {
+        "partner": "The environment, the client's controls, the deployment and the ongoing support",
+        "lyzr": "The deployable platform, the governance layer and the architecture review"
+      },
+      "revenue": {
+        "implementation": "Readiness review, architecture, deployment into their environment, integration and commissioning",
+        "recurring": "Infrastructure management, monitoring, patching and user support on the deployed environment",
+        "expansion": "The next workload into the same environment, and a change contract as their estate grows"
+      }
+    },
+    {
+      "id": "package-then-sell",
+      "growth_path": "win",
+      "when": "They have built much the same thing more than once for different clients. The question is whether it becomes a solution they sell into an industry rather than a project they re-quote every time.",
+      "first_offer": {
+        "name": "{work} solution blueprint",
+        "shape": "4 weeks, one reference {unit}",
+        "ends_with": "a packaged solution with a fixed scope, a working demo and a price, ready to take to the next three clients"
+      },
+      "delivery": {
+        "shape": "8 week build of the packaged version, then a deployment fee per client",
+        "team_needed": "1 product owner + 2 engineers, part time"
+      },
+      "expansion": "Every new client deploys the same package, so the build is paid for once and each further {unit} is margin",
+      "discovery": [
+        "How many clients have asked for this {work} in the last year",
+        "What changed between the last two times you built it",
+        "Which part of it is the same for every client, and which is not",
+        "Who would buy it if it already existed and had a price"
+      ],
+      "roles": {
+        "partner": "The repeatable solution, the industry knowledge, the sales motion and the deployments",
+        "lyzr": "The platform it is packaged on, the templates, and joint go-to-market on the first clients"
+      },
+      "revenue": {
+        "implementation": "The blueprint, then building the packaged version once: design, configuration, the integration points and the deployment method",
+        "recurring": "Running the package for each client who takes it, with support and release management",
+        "expansion": "Every new client deploys the same package, so each further {unit} is delivery rather than another build"
+      }
+    },
+    {
+      "id": "inventory-then-govern",
+      "growth_path": "retain",
+      "when": "The client already has AI running that nobody owns. The money is in the control layer over it, not in building more.",
+      "first_offer": {
+        "name": "Agent estate assessment",
+        "shape": "3 weeks, one {unit}",
+        "ends_with": "an inventory of every agent and copilot running, what each one can reach, and a registry pilot"
+      },
+      "delivery": {
+        "shape": "4 week discovery and registry, then an annual platform and advisory fee",
+        "team_needed": "1 governance consultant + 1 engineer"
+      },
+      "expansion": "An annual platform fee plus a quarterly review covering new agents as they are added",
+      "discovery": [
+        "How many teams have deployed something, and on how many platforms",
+        "Whether anyone owns AI risk formally, and who they report to",
+        "What the audit or regulator has already asked for",
+        "Which environments and data the running agents can reach"
+      ],
+      "roles": {
+        "partner": "The governance engagement, the risk relationship and the consultants who run it",
+        "lyzr": "OpenController for the registry and the controls, and the policy layer"
+      },
+      "revenue": {
+        "implementation": "Discovery across their agent estate, the registry, policy and control setup, and the platform rollout",
+        "recurring": "The platform itself, quarterly reviews, policy updates, and advisory as new agents are added",
+        "expansion": "New agents and new teams brought under the same registry, and the same review extended to the next estate"
+      }
+    },
+    {
+      "id": "take-over-and-run",
+      "growth_path": "retain",
+      "when": "Something is already live and fragile. The offer is to own it: monitoring, incidents, versions and a service level.",
+      "first_offer": {
+        "name": "{work} operations review",
+        "shape": "2 weeks, their current estate",
+        "ends_with": "what is running, what is unmonitored, what has already broken, and a takeover plan"
+      },
+      "delivery": {
+        "shape": "Onboarding sprint to take it over, then a monthly fee per workload",
+        "team_needed": "1 engineer on call + 1 service manager"
+      },
+      "expansion": "The monthly fee grows with each new workload that goes live",
+      "discovery": [
+        "What is running in production today, and who built it",
+        "Who gets called when it fails, and what their hours are",
+        "What has already gone wrong, and how they found out",
+        "What a service level would have to cover for them to sign"
+      ],
+      "roles": {
+        "partner": "The support structure, the on-call rota and the client relationship",
+        "lyzr": "The platform, the observability and escalation into our engineering"
+      },
+      "revenue": {
+        "implementation": "The operations review, the onboarding sprint, the runbooks, and taking the workloads over cleanly",
+        "recurring": "Running each workload, incident handling, tuning, reporting and user support",
+        "expansion": "Each new workload that goes live joins the same contract"
+      }
+    },
+    {
+      "id": "roll-out-to-everyone",
+      "growth_path": "expand",
+      "when": "The client wants one capability in front of a whole workforce rather than one use case built well. The work is standing it up, agreeing what good looks like, and getting people to use it.",
+      "first_offer": {
+        "name": "{work} pilot department",
+        "shape": "4 weeks, one {unit}",
+        "ends_with": "one department live with usage measured and an adoption plan for the rest"
+      },
+      "delivery": {
+        "shape": "6 to 8 week rollout across the first wave, then a per seat fee to run and support it",
+        "team_needed": "1 delivery lead + 1 engineer + 1 adoption or change person"
+      },
+      "expansion": "Each further {unit} joins the same deployment, so the cost is in adoption rather than in another build",
+      "discovery": [
+        "How many people would use this, and in which {unit} first",
+        "What they use today for the same thing, approved or not",
+        "Who owns employee tooling and can make it standard",
+        "What has to be true before the policy team signs it off"
+      ],
+      "roles": {
+        "partner": "The rollout, the adoption programme, the integration into how people already work",
+        "lyzr": "The product, the governance underneath it, and support through the first wave"
+      },
+      "revenue": {
+        "implementation": "The pilot on one {unit}, then rollout across the first wave: configuration, integration, training and launch",
+        "recurring": "Running and supporting the deployment, the adoption work, and changes as teams ask for them",
+        "expansion": "Each further {unit} joins the same deployment, so the work is adoption rather than another build"
+      }
+    },
+    {
+      "id": "deploy-in-their-estate",
+      "growth_path": "win",
+      "when": "The client cannot send the work anywhere else. The engagement is installing and commissioning something inside their own environment and proving the first workload on it.",
+      "first_offer": {
+        "name": "{work} deployment readiness review",
+        "shape": "3 weeks, one {unit}",
+        "ends_with": "a sited design, the prerequisites confirmed, and a commissioning plan with dates"
+      },
+      "delivery": {
+        "shape": "8 to 12 week install and commissioning, then an annual operate and support contract",
+        "team_needed": "1 infrastructure architect + 1 engineer, with the client's platform team"
+      },
+      "expansion": "Capacity grows with each further {unit} placed on the same footprint, under the same contract",
+      "discovery": [
+        "Where it would physically sit, and who owns that space",
+        "Which workload has to stay inside the estate, and why",
+        "What the network and identity boundaries look like",
+        "Who signs off a change inside that environment"
+      ],
+      "roles": {
+        "partner": "The siting, the installation, the integration into their estate and the local support",
+        "lyzr": "The appliance, the models and governance on it, and the engineering behind the commissioning"
+      },
+      "revenue": {
+        "implementation": "Deployment readiness review, install, commissioning, integration and handover inside their own environment",
+        "recurring": "The operate and support contract on the footprint: monitoring, upgrades, capacity and user support",
+        "expansion": "Each further {unit} placed on the same footprint, under the same contract"
+      }
+    },
+    {
+      "id": "embed-and-license",
+      "growth_path": "win",
+      "when": "The partner ships software of their own. The work is putting a capability inside that product, under their brand, and selling it to the customers they already have.",
+      "first_offer": {
+        "name": "{work} embedding assessment",
+        "shape": "3 weeks, one {unit}",
+        "ends_with": "the integration mapped against their architecture, and a first feature scoped against their roadmap"
+      },
+      "delivery": {
+        "shape": "10 to 12 week integration into their product, then a licence that scales with their customers",
+        "team_needed": "1 product owner + 2 engineers from their own product team"
+      },
+      "expansion": "Every customer of their product reaches the capability, so revenue follows their install base rather than their delivery hours",
+      "discovery": [
+        "What their product does today and who pays for it",
+        "Which {unit} the capability would land in first",
+        "How their release cycle and their tenancy model work",
+        "What they would have to build themselves instead, and how long it would take"
+      ],
+      "roles": {
+        "partner": "The product, the customers, the roadmap and the first line of support",
+        "lyzr": "The platform layer underneath, the tenancy and governance, and the engineering behind the integration"
+      },
+      "revenue": {
+        "implementation": "The embedding assessment, integration into their product, and the engineering to ship it to their customers",
+        "recurring": "Keeping the embedded capability current as their product and the models change, plus support",
+        "expansion": "Revenue follows their install base rather than your delivery hours, so every customer of their product reaches the capability"
+      }
+    }
+  ]
 }

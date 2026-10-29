@@ -6,23 +6,59 @@
 <title>Partner Opportunity</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Aeonik is licensed and not served here, so Inter stands in at the one weight the
+     guidelines allow for the display face. JetBrains Mono keeps two: it is a different
+     face and the rule is about Aeonik. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* Lyzr website design system — colour roles, not a loose palette. */
-  --bg:#FAFAF9; --surface:#FFFFFF; --fill:#F1F0EE; --line:#E3E1DE;
-  --ink:#1F2022; --soft:#6B675F; --muted:#8A857C;
-  --accent:#FE4B1E; --navy:#043E77; --forest:#063B28; --oxblood:#593D3D; --green:#2F8F5B;
+  /* The brand guidelines' own tokens, values included. Section 02 is the palette and
+   * section 03 the type; nothing here is sampled or approximated. */
+  --black:#1F2022; --orange:#FE4B1E; --forest:#063B28; --oxblood:#593D3D;
+  --stone:#A8A298; --navy:#043E77; --offwhite:#FAFAF9;
+
+  --paper:#FFFFFF; --ink:#1F2022; --ink-soft:#5B5D61; --ink-faint:#9A9C9F;
+  --line:#E2E2E0; --line-soft:#EFEFED;
+  --bg:var(--offwhite); --surface:var(--paper); --fill:var(--line-soft);
+  --soft:var(--ink-soft); --muted:var(--ink-faint); --accent:var(--orange);
+  /* Used in fourteen places and never defined until now, so every one of them was
+     inheriting whatever colour it sat in. */
+  --ink-2:var(--ink-soft); --ink-3:var(--ink-faint);
+  --green:#2F8F5B;
+
+  /* Two faces and only two. Aeonik carries everything anyone reads; JetBrains Mono
+   * carries everything anyone looks up, and is set in uppercase only. */
   --sans:'Aeonik','Inter',system-ui,-apple-system,sans-serif;
   --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,monospace;
-  /* Two radii, no shadows: 4 on buttons, 6 on cards and panels. */
+
+  /* Aeonik is Regular only. Hierarchy comes from size, colour and space, never weight,
+   * so there is one weight token and raising it is a change to the system. */
+  --w:400;
+
   --r:6px; --rb:4px;
 }
 *{box-sizing:border-box}
+/* One weight means no synthesised bold. With only Aeonik Regular available the browser
+   draws a fake bold for every <b> and <strong>, which is the one thing the type rules are
+   most explicit about. Emphasis is colour instead: the emphasised run stays ink while the
+   copy around it is soft. */
+b,strong{font-weight:var(--w);color:var(--ink)}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
 body{font-size:18px;line-height:1.45}
-.wrap{max-width:720px;margin:0 auto;padding:30px 20px 120px;transition:max-width .4s ease}
-.wrap.wide{max-width:1000px}
+.wrap{max-width:760px;margin:0 auto;padding:30px 24px 72px;transition:max-width .4s ease}
+.wrap.wide{max-width:1040px}
+
+/* The answering screens hold themselves on one screen.
+ *
+ * A question with seven options ran past the fold, so the visitor scrolled to find the
+ * button, and the five-question run felt like a form. These screens are laid out against
+ * the viewport instead: the question sits at the top, the options take the space that is
+ * left, and the actions stay in view. Nothing here caps the brief or the cards, which are
+ * documents and are meant to be scrolled. */
+body:has(#s3.on) .wrap,
+body:has(#s6.on) .wrap{min-height:100dvh;display:flex;flex-direction:column;padding-bottom:28px}
+body:has(#s3.on) .step.on,
+body:has(#s6.on) .step.on{flex:1;display:flex;flex-direction:column;min-height:0}
 
 /* ---------- rail ---------- */
 .rail{display:flex;gap:4px;margin-bottom:44px}
@@ -40,9 +76,12 @@ body{font-size:18px;line-height:1.45}
    nobody reads. */
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
   color:var(--accent);margin:0 0 14px}
-h1{font-size:clamp(30px,4vw,40px);line-height:1.08;letter-spacing:-.028em;margin:0 0 16px;font-weight:600}
-h2{font-size:24px;line-height:1.15;letter-spacing:-.02em;margin:0 0 10px;font-weight:600}
-h3{font-size:18px;line-height:1.3;letter-spacing:-.01em;margin:0 0 6px;font-weight:600}
+/* One weight, so size and space do the work the weight used to. The headings step
+ * further apart than they did and sit on more air, because at a single weight a 2px
+ * difference between two headings reads as a mistake rather than a level. */
+h1{font-size:clamp(32px,4.2vw,44px);line-height:1.06;letter-spacing:-.03em;margin:0 0 18px;font-weight:var(--w)}
+h2{font-size:26px;line-height:1.14;letter-spacing:-.022em;margin:0 0 12px;font-weight:var(--w)}
+h3{font-size:17px;line-height:1.3;letter-spacing:-.008em;margin:0 0 8px;font-weight:var(--w);color:var(--ink)}
 p{margin:0 0 16px}
 .lede{font-size:19px;line-height:1.55;color:var(--ink);max-width:60ch}
 .sub{color:var(--soft);font-size:18px;line-height:1.45;max-width:60ch;margin:0 0 30px}
@@ -89,20 +128,23 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
  * time — slow enough to read, quiet enough to ignore. A card rather than loose text, so
  * the claim reads as something stated rather than something muttered; the outgoing line
  * is taken out of the flow while it leaves, so nothing under it moves. */
-.proof{position:relative;box-sizing:border-box;max-width:36em;margin:34px 0 0;padding:20px 22px 18px;
-  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;min-height:112px}
-.proof::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent)}
-.proof .pi{opacity:0;transform:translateY(8px);animation:pin .7s cubic-bezier(.2,.7,.3,1) forwards}
-.proof .pi.out{position:absolute;top:20px;left:22px;right:22px;animation:pout .5s ease forwards}
-.proof h4{margin:0 0 8px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--accent);font-weight:400}
-.proof p{margin:0;font-size:16px;line-height:1.5;color:var(--ink);text-wrap:pretty}
+/* A frame for the artwork, which is what the guidelines call this: an off-white canvas
+ * holding an asset, no border drawn around the asset itself. The three pieces are square,
+ * so the frame is square and nothing reflows as they swap. */
+/* The artwork carries its own off-white ground, so no frame is drawn around it: a border
+   here reads as a second edge a few pixels outside the one in the picture. The marks sit
+   under the asset rather than on top of it, where they covered the logo. */
+.proof{position:relative;width:min(440px,100%);margin:28px 0 0;padding-bottom:22px}
+.proof .pwin{position:relative;aspect-ratio:1/1;border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.proof .pi{position:absolute;inset:0;opacity:0;animation:pin .8s cubic-bezier(.2,.7,.3,1) forwards}
+.proof .pi.out{animation:pout .6s ease forwards}
+.proof .pi img{width:100%;height:100%;object-fit:contain;display:block}
 /* Three marks, not a spinner: they say how much is left without asking to be watched. */
-.proof .pdots{position:absolute;left:22px;bottom:16px;display:flex;gap:5px}
+.proof .pdots{position:absolute;left:0;bottom:0;display:flex;gap:5px;z-index:2}
 .proof .pdots i{width:16px;height:2px;background:var(--line);transition:background .5s ease}
 .proof .pdots i.on{background:var(--accent)}
-@keyframes pin{to{opacity:1;transform:none}}
-@keyframes pout{to{opacity:0;transform:translateY(-8px)}}
+@keyframes pin{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:none}}
+@keyframes pout{to{opacity:0}}
 @media (prefers-reduced-motion:reduce){
   .proof .pi,.proof .pi.out{animation:none;opacity:1;transform:none}
   .proof .pi.out{display:none}
@@ -118,12 +160,30 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
 .dots{display:flex;gap:5px;margin-bottom:28px}
 .dots i{width:26px;height:3px;background:var(--line)}
 .dots i.on{background:var(--accent)}
-.opts{display:flex;flex-direction:column;gap:10px;margin:8px 0 0;max-width:520px}
+/* Options in two columns from the width where two fit.
+ *
+ * One column of six ran past the fold and the visitor scrolled to find Continue, which
+ * made five quick questions feel like a form. Two columns put the whole question and its
+ * actions on one screen, which is the only thing that made it feel long. */
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:10px;margin:4px 0 0;max-width:620px}
 .opt{text-align:left;background:var(--surface);border:1px solid var(--line);color:var(--ink);
-  padding:16px 20px;border-radius:var(--rb);font-size:17.5px;line-height:1.35;transition:border-color .15s}
+  padding:15px 18px;border-radius:var(--rb);font-size:16.5px;line-height:1.3;
+  display:flex;align-items:center;gap:12px;min-height:56px;transition:border-color .15s,background .15s}
 .opt:hover{border-color:var(--ink)}
-.opt.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
-.opt.on:after{content:'✓';float:right;color:var(--accent)}
+/* The tick is a box that is always there, so choosing changes what is in it rather than
+   adding something and nudging the text. */
+.opt:before{content:'';flex:none;width:18px;height:18px;border:1px solid var(--line);border-radius:2px;
+  background:var(--surface) no-repeat center;transition:.15s}
+.opt.on{border-color:var(--accent);background:#FFF7F5}
+.opt.on:before{background-color:var(--accent);border-color:var(--accent);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='9'%3E%3Cpath d='M1 4.6l3 3L10 1' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+
+/* The question holds the top, the options take what is left, the actions stay in view. */
+#s3 .opts{align-content:start}
+#s3 .row{margin-top:auto;padding-top:22px}
+#s3 .dots{margin-bottom:18px}
+#s3 h1{max-width:22ch}
+#s3 .sub{max-width:52ch;margin-bottom:20px}
 
 /* ---------- 04 explore ---------- */
 .optabs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:28px}
@@ -145,7 +205,7 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
 .optab em{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
   color:var(--muted);font-style:normal}
 .optab.on em{color:var(--accent)}
-.optab strong{font-size:16.5px;line-height:1.3;letter-spacing:-.012em;font-weight:600}
+.optab strong{font-size:16.5px;line-height:1.3;letter-spacing:-.012em;font-weight:var(--w)}
 .detail{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:32px}
 .detail>h2{max-width:26ch}
 /* The card on screen is the brief's play block, a little larger because it is being read
@@ -191,10 +251,37 @@ button{font:inherit;cursor:pointer;border:none;border-radius:var(--rb)}
 /* ---------- accounts ---------- */
 /* The relationship select carries a long label, so it gets room rather than a
    fixed column that cuts it off mid-word. */
-.acct{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,210px);gap:10px;margin-bottom:10px;max-width:720px}
+/* One line per client, ruled rather than boxed.
+ *
+ * Every row used to be two bordered inputs inside a bordered screen, which drew six
+ * rectangles to ask for three names. A rule under each row says the same thing with one
+ * line, and the fields only show their own edge when they are being used. */
+.accts{max-width:660px;border-top:1px solid var(--line);margin:22px 0 0}
+/* The link under the list belongs to the list, so it starts where the list starts. */
+#addacct{display:block;text-align:left;margin:14px 0 0;padding:0}
+#acctnote{max-width:58ch}
+#s6 h1{max-width:18ch}
+#s6 .sub{max-width:54ch}
+#s6 .row{margin-top:auto;padding-top:26px}
+.acct{display:grid;grid-template-columns:minmax(0,1fr) 212px;align-items:center;gap:16px;
+  border-bottom:1px solid var(--line)}
+.acct input,.acct select{border:1px solid transparent;border-radius:0;background:none;
+  height:58px;padding:0;font-size:17px;width:100%}
+.acct input::placeholder{color:var(--ink-faint)}
+.acct input:focus,.acct select:focus{outline:none;border-color:transparent;box-shadow:none}
+.acct input:focus{color:var(--ink)}
+.acct select{color:var(--ink-soft);font-size:15px;text-align:right;cursor:pointer;
+  appearance:none;-webkit-appearance:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6'%3E%3Cpath d='M1 1l3.5 3.5L8 1' fill='none' stroke='%239A9C9F'/%3E%3C/svg%3E") no-repeat right center}
+.acct select:hover{color:var(--ink)}
+/* The row being typed into is the only one that shows an edge. */
+.acct:focus-within{box-shadow:inset 2px 0 0 var(--accent)}
+.acct:focus-within input,.acct:focus-within select{padding-left:14px}
+.acct:focus-within select{padding-left:0;padding-right:14px}
+@media(max-width:620px){.acct{grid-template-columns:1fr;padding:8px 0}
+  .acct select{text-align:left;height:40px}}
 select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;background:var(--surface);
   border:1px solid var(--line);border-radius:var(--rb);color:var(--ink)}
-@media(max-width:620px){.acct{grid-template-columns:1fr}}
 
 /* ---------- documents ----------
    The Lyzr One-Pager System: white page, hairline edge, 6 radius, no shadows, its own
@@ -214,7 +301,7 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
 .lockup{display:flex;align-items:center;gap:26px}
 .lockup img{display:block}
 .lockup .theirs{height:26px;width:auto;max-width:150px;object-fit:contain}
-.lockup .name{font-family:var(--sans);font-size:17px;font-weight:600;letter-spacing:-.015em;
+.lockup .name{font-family:var(--sans);font-size:17px;font-weight:var(--w);letter-spacing:-.015em;
   text-transform:none;color:var(--ink);line-height:26px}
 .lockup .x{color:var(--muted);font-size:15px;font-family:var(--sans);margin:0 -13px}
 .lockup .mark{height:26px;width:26px}
@@ -222,7 +309,7 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
 .sh-doclabel b{display:block;color:var(--ink);font-weight:400}
 .sh-wordmark{height:34px;width:auto}
 .sh-head{font-size:clamp(28px,3.4vw,38px);line-height:1.08;letter-spacing:-.03em;margin:0 0 20px;
-  font-weight:600;max-width:20ch}
+  font-weight:var(--w);max-width:20ch}
 .sh-lede{font-size:17px;line-height:1.6;color:var(--soft);margin:0 0 48px;max-width:58ch}
 .sh-sect{margin-bottom:48px}
 .sh-sect:last-child{margin-bottom:0}
@@ -285,7 +372,7 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
 .lands li:first-child{border-top:none}
 .lands .r{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
 .lands li:first-child .r{color:var(--accent)}
-.lands b{display:block;font-size:16px;font-weight:600}
+.lands b{display:block;font-size:16px;font-weight:var(--w)}
 .lands span{font-size:14.5px;color:var(--soft)}
 .panel{background:var(--navy);color:#fff;border-radius:var(--r);padding:30px 32px}
 .panel h3{color:#fff;margin:0 0 14px;font-size:19px}
@@ -315,7 +402,11 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
 .sells{list-style:none;margin:0;padding:0}
 .sells li{padding:7px 0;border-top:1px solid var(--line)}
 .sells li:first-child{border-top:none}
-.sells li b{font-weight:600}
+.sells li b{font-weight:var(--w)}
+/* `b` inside body copy cannot be a second weight, so it separates on colour: the label
+ * stays ink and what follows goes soft. */
+.sells li b,.blscope li b,.lands b,.sumtab td b{color:var(--ink)}
+.sells li span,.blscope li span,.lands span{color:var(--ink-soft)}
 .sells li span{color:var(--ink-2)}
 .playassume{font-size:13px;color:var(--ink-2);margin:12px 0 0;padding-left:10px;border-left:2px solid var(--line)}
 .playassume span{font:500 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-right:6px}
@@ -326,56 +417,146 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
 .shelf li{margin:0 0 4px;font-size:13px;line-height:1.4}
 .shelf .shlab{margin:0 0 6px}
 
+/* --- the opportunity brief: one A4 sheet per opportunity --- */
+/* The brief is no longer a document with a cover and a conclusion. It is up to three
+   sheets, each one opportunity, each independently readable and each sized to A4 so what
+   is on the screen is what comes out of the printer. The wrapper holds nothing of its
+   own: every sheet is its own page. */
+.sheet{background:none;border:none;border-radius:0;padding:0;font-size:14px;line-height:21px}
+.sheet p{margin:0 0 12px}
+.opg{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:38px 42px 30px;margin:0 0 26px;display:flex;flex-direction:column;min-height:860px}
+.opg:last-child{margin-bottom:0}
+.opg-top{display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding-bottom:18px;border-bottom:1px solid var(--line);
+  font:500 10px/1.5 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.opg-meta{text-align:right}
+.opg-meta b{display:block;color:var(--ink);font-weight:400;letter-spacing:.09em}
+
+/* The headline is the focal point of the page and nothing competes with it: the number
+   above it and the product under it are both set in the mono at a tenth of its size. */
+.opg-lead{padding:30px 0 26px}
+.opg-rank{display:flex;align-items:center;gap:14px;margin:0 0 14px;
+  font:500 10.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.opg-rank span{color:var(--ink-3)}
+.opg-rank em{font-style:normal;color:var(--accent)}
+.opg-head{font-size:31px;line-height:1.14;letter-spacing:-.028em;font-weight:var(--w);
+  margin:0;max-width:21ch;color:var(--ink)}
+.opg-powered{display:inline-block;margin:16px 0 0;padding:6px 11px;border-radius:var(--rb);
+  background:var(--fill);font:500 10px/1 var(--mono);letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3)}
+.opg-powered b{color:var(--accent);font-weight:400}
+
+.opg-sect{margin:0 0 22px}
+.opg-sect>h3{font:500 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 10px}
+.opg-sect p{font-size:14.5px;line-height:1.62;color:var(--ink-2);max-width:66ch}
+.opg-fit{padding-top:22px;border-top:2px solid var(--ink)}
+.opg-fit p{color:var(--ink)}
+.opg-cite{font-size:12px!important;color:var(--ink-3)!important;margin:8px 0 0!important}
+.opg-cite a{color:var(--ink-3);text-decoration:underline;text-underline-offset:2px}
+.opg-cite i{font-style:normal;margin:0 7px;color:var(--line)}
+
+/* Two columns: what they sell, and what Lyzr adds to it. Side by side because the whole
+   argument of the page is the relation between them. */
+.opg-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:0 0 22px}
+.opg-cols .opg-sect{margin:0}
+.opg-adv{padding-left:28px;border-left:1px solid var(--line)}
+.opg-offer{font-size:15.5px!important;color:var(--ink)!important;margin:0 0 8px!important}
+.opg-prod{font-size:15.5px!important;color:var(--accent)!important;margin:0 0 10px!important}
+.opg-ticks{list-style:none;margin:12px 0 0;padding:0}
+.opg-ticks li{position:relative;padding:0 0 0 18px;margin:0 0 7px;font-size:14px;
+  line-height:1.5;color:var(--ink)}
+.opg-ticks li:before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;
+  border-radius:50%;background:var(--accent)}
+.opg-advlist{list-style:none;margin:0;padding:0}
+.opg-advlist li{padding:9px 0;border-top:1px solid var(--line-soft)}
+.opg-advlist li:first-child{border-top:none;padding-top:0}
+.opg-advlist b{display:block;font-weight:var(--w);color:var(--ink);font-size:14px;margin-bottom:3px}
+.opg-advlist span{display:block;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+
+/* Where to start is the only instruction on the page, so it sits on its own ground. */
+.opg-start{background:var(--fill);border-radius:var(--r);padding:18px 20px;margin-bottom:22px}
+.opg-start p{margin:0;font-size:14px}
+.opg-startrow{display:grid;grid-template-columns:1.3fr 1fr;gap:10px 30px;margin:0 0 12px}
+.opg-startrow span{display:block;font:500 9.5px/1 var(--mono);letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+.opg-startrow b{font-size:15px;line-height:1.3;font-weight:var(--w);color:var(--ink)}
+
+/* Resources run in two columns so a long list stays compact and a short one does not
+   leave a hole. The shelf label sits after the title, in the mono, so the links read as
+   one list rather than three. */
+.opg-res{margin-bottom:18px}
+.opg-reslist{list-style:none;margin:0;padding:0;columns:2;column-gap:30px}
+.opg-reslist li{break-inside:avoid;margin:0 0 6px;font-size:13px;line-height:1.45}
+.opg-reslist a{color:var(--navy);text-decoration:underline;text-underline-offset:2px}
+.opg-reslist span{display:inline;margin-left:7px;font:500 9px/1 var(--mono);
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+
+.opg-foot{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  font:500 9.5px/1 var(--mono);letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+
+@media(max-width:720px){
+  .opg{padding:28px 22px;min-height:0}
+  .opg-cols{grid-template-columns:1fr;gap:22px}
+  .opg-adv{padding-left:0;border-left:none;padding-top:22px;border-top:1px solid var(--line)}
+  .opg-head{font-size:26px;max-width:none}
+  .opg-reslist{columns:1}
+}
+
 @media print{
   .rail,.row,.note,.tabs,.copy{display:none!important}
   body{background:#fff;font-size:11pt}
   .wrap{max-width:none;padding:0}
-  .sheet{border:none;border-radius:0;font-size:10.5pt;line-height:1.5;
-    /* What @page used to carry. */
-    padding:14mm 15mm 16mm}
-  /* Keep a section whole on one page wherever it will fit, and never leave a heading
-     stranded at the foot of a page. */
-  /* Print spacing is its own problem. On screen 48px between sections is right; on A4 it
-     put six thousand characters across five pages, most of them empty. The identity is
-     the type and the rules, not the air between them. */
-  .sh-sect{break-inside:auto;page-break-inside:auto;margin-bottom:14pt}
-  .sh-head{margin-bottom:10pt}
-  .sh-lede{margin-bottom:16pt;font-size:11.5pt}
-  .play{padding-bottom:12pt;margin-bottom:12pt}
-  .playhead{font-size:15pt;margin-bottom:6pt}
-  .kit{padding:9pt 11pt;margin-top:9pt}
-  .play .kv{margin-bottom:8pt}
-  .kv{gap:6pt 14pt;font-size:10pt}
-  .shlab{margin:10pt 0 3pt}
-  .reading{margin-top:9pt;gap:9pt}
-  .panel{padding:12pt 14pt}
-  .sh-sect>h3{break-after:avoid;page-break-after:avoid}
-  .quote,.offer,.panel,.lands li,.track li,.steps li{break-inside:avoid;page-break-inside:avoid}
-  .reading,.sells li,.playassume,.playfirst{break-inside:avoid;page-break-inside:avoid}
-  .shlab{break-after:avoid;page-break-after:avoid}
-  .reading{grid-template-columns:repeat(3,1fr)}
-  /* The kit is what gets carried into the meeting, so it must not be split by a page
-   * break: half a discovery checklist at the bottom of page three is useless. */
-  .kit,.kitmail{break-inside:avoid;page-break-inside:avoid}
-  /* A play is long enough that holding it whole forces a page break before almost every
-     one, which is where the empty half pages came from. Hold its parts instead. */
-  .play{break-inside:auto;page-break-inside:auto}
-  .play>h2,.play>h3,.playnum{break-after:avoid;page-break-after:avoid}
-  .kv{break-inside:auto;page-break-inside:auto}
-  .kv dt{break-after:avoid;page-break-after:avoid}
-  .kv dt,.kv dd{break-inside:avoid;page-break-inside:avoid}
-  /* The closing panel was overlapping the page number because it was the last block on a
-     page with nothing under it to push against. */
-  .panel{margin-bottom:0}
-  .sheet>*:last-child{margin-bottom:0}
-  /* Orphans and widows, so a single line never starts or ends a page on its own. */
+  .sheet{border:none;border-radius:0;padding:0}
+  /* One opportunity, one sheet. The page break is forced after every sheet but the last,
+     so a page can never run on to a second and two can never share one. The padding is
+     what @page's margin used to carry: see the note under this block. */
+  /* 285mm, not 297. A block exactly the height of the page rounds up in Chrome and
+     spills a blank sheet after every opportunity, which is where the fourth page of a
+     three-opportunity brief came from. The footer still sits at the bottom because the
+     sheet is a column with `margin-top:auto` under it. */
+  .opg{border:none;border-radius:0;margin:0;padding:14mm 15mm 10mm;
+    min-height:265mm;height:auto;box-sizing:border-box;
+    break-after:page;page-break-after:always;break-inside:avoid;page-break-inside:avoid}
+  .opg:last-child{break-after:auto;page-break-after:auto}
+  .opg-top{padding-bottom:10pt;font-size:7.5pt}
+  .opg-lead{padding:10pt 0 9pt}
+  /* The headline, not the page, was what overflowed: 25pt over a 21 character measure
+     wrapped to five lines and took 50mm before the page had said anything. Shorter lines
+     of smaller type say the same thing in three. */
+  .opg-head{font-size:18pt;line-height:1.16;max-width:36ch}
+  .opg-rank{font-size:8pt;margin-bottom:8pt}
+  .opg-powered{margin-top:9pt;padding:4pt 7pt;font-size:7.5pt;
+    background:#EFEFED!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .opg-sect{margin-bottom:9pt}
+  .opg-sect>h3{font-size:7.5pt;margin-bottom:5pt}
+  .opg-sect p{font-size:9.5pt;line-height:1.45}
+  .opg-fit{padding-top:9pt}
+  .opg-cite{font-size:8pt!important;margin-top:5pt!important}
+  .opg-cols{gap:7mm;margin-bottom:9pt}
+  .opg-adv{padding-left:7mm}
+  .opg-offer,.opg-prod{font-size:10.5pt!important;margin-bottom:5pt!important}
+  .opg-ticks li{font-size:9pt;line-height:1.4;margin-bottom:4pt}
+  .opg-ticks li:before{background:#FE4B1E!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .opg-advlist li{padding:4pt 0}
+  .opg-advlist b{font-size:9pt;line-height:1.3;margin-bottom:2pt}
+  .opg-advlist span{font-size:8.5pt;line-height:1.4}
+  .opg-start{padding:8pt 11pt;margin-bottom:9pt;
+    background:#EFEFED!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .opg-start p{font-size:9pt;line-height:1.45}
+  .opg-startrow{gap:6pt 8mm}
+  .opg-startrow b{font-size:10pt;line-height:1.3}
+  .opg-reslist li{font-size:8pt;line-height:1.35;margin-bottom:3pt}
+  .opg-foot{padding-top:8pt;font-size:7.5pt}
+  /* Nothing inside a sheet may break: a sheet is a page. */
+  .opg-sect,.opg-cols,.opg-start,.opg-res,.opg-lead{break-inside:avoid;page-break-inside:avoid}
   p,li,dd{orphans:3;widows:3}
-  .kit{background:#F6F5F3 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .panel{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .sh-head{font-size:26pt;line-height:1.1}
-  .sh-top{position:running(head)}
+  /* The links stay live and clickable in the PDF, so printing the URL after the title
+     would only be noise on the page. */
   a{text-decoration:none}
-  a[href^="http"]:after{content:' (' attr(href) ')';font-size:8pt;color:#6B675F;word-break:break-all}
+  .opg-cite a,.opg-reslist a{text-decoration:underline}
 }
 /* Zero page margin is what suppresses Chrome's own header and footer: the URL, the date
    and "1/9" are drawn in the margin box, and with no margin box there is nowhere to draw
@@ -447,8 +628,8 @@ select{width:100%;height:46px;padding:0 12px;font:inherit;font-size:17px;backgro
     <div class="backbar"><button data-back="s5">&larr; Back to the opportunities</button></div>
     <p class="eyebrow">Before we write it up</p>
     <h1>Have customers in mind?</h1>
-    <p class="sub">Name the clients you'd think of first and we'll put them in order on your brief, with what to open with. Three is plenty. These go to the Lyzr partner team only — nobody is contacted without your say-so.</p>
-    <div id="accts"></div>
+    <p class="sub">Name the clients you would think of first. We put them in order on your brief, with what to open with. Three is plenty, and nobody is contacted without your say-so.</p>
+    <div class="accts" id="accts"></div>
     <p class="small" id="acctnote" hidden style="margin:2px 0 10px">We filled these in from the clients named on your own site. They are public references, not accounts we know are ready. Change them freely.</p>
     <button class="ghost" id="addacct">+ Add another</button>
     <div class="row"><button class="go" id="acctgo">Build my brief</button><button class="ghost" id="acctskip">Skip this</button></div>

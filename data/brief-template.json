@@ -1,0 +1,71 @@
+{
+  "note": "The fixed scaffold of the opportunity brief. Every partner gets these words; only {partner} is substituted. A model never writes anything in this file, for the same reason it never writes a duration: the program's commitments are ours to state, and a sentence regenerated per run is a sentence nobody approved. This is an external document: it carries no caveats, no research notes and nothing about what remains to be verified.",
+  "earn_labels": {
+    "heading": "How {partner} earns",
+    "column_stream": "Revenue stream",
+    "column_services": "Services {partner} delivers",
+    "implementation": "Implementation revenue",
+    "recurring": "Recurring revenue",
+    "expansion": "Expansion revenue"
+  },
+  "headings": {
+    "summary": "Three opportunities to grow your AI services business",
+    "summary_two": "Two opportunities to grow your AI services business",
+    "summary_one": "Where your AI services business could grow",
+    "why_positioned": "Why {partner} is positioned to win",
+    "take_to_market": "What {partner} could take to market",
+    "lyzr_contributes": "What Lyzr contributes",
+    "sell_first": "Where to sell it first",
+    "first_engagement": "Recommended first engagement",
+    "where_to_start": "Where to start",
+    "first_account": "First account to evaluate",
+    "path": "A proposed path to market",
+    "behind": "What Lyzr puts behind your practice"
+  },
+  "summary_columns": [
+    "Opportunity",
+    "What {partner} can sell",
+    "Revenue potential"
+  ],
+  "path_to_market": [
+    {
+      "step": "Select a customer and workflow",
+      "body": "{partner} identifies a customer with a relevant operational problem, a potential executive sponsor, and access to the systems an initial engagement would need."
+    },
+    {
+      "step": "Build the solution proposition together",
+      "body": "{partner} and Lyzr agree the implementation approach, the division of responsibilities, the customer outcomes, and the commercial structure for initial and recurring services."
+    },
+    {
+      "step": "Demonstrate the offering",
+      "body": "Use one representative workflow to establish feasibility, clarify what the integration actually requires, and prepare a working demonstration where that helps."
+    },
+    {
+      "step": "Take the offering to other accounts",
+      "body": "Turn the validated architecture, the implementation experience and the sales material into a repeatable proposition for similar customers."
+    }
+  ],
+  "behind": [
+    {
+      "title": "A platform to build and deliver",
+      "body": "Access to Lyzr's enterprise agent platform, including Agent Studio, Architect, workflow orchestration and the governance capabilities the solution needs."
+    },
+    {
+      "title": "Platform credits to prototype",
+      "body": "Agent Studio credits to build and demonstrate the first solution."
+    },
+    {
+      "title": "Engineers to build alongside your team",
+      "body": "Lyzr's technical and Applied AI teams work with {partner} on solution architecture and the first build."
+    },
+    {
+      "title": "Joint go-to-market support",
+      "body": "Sales enablement collateral, product demonstrations, co-branded assets and SDR-supported account outreach."
+    }
+  ],
+  "ownership": {
+    "title": "Your customers. Your services. Your domain expertise.",
+    "body": "{partner} owns the customer relationship, the implementation, the business logic, the integrations and the domain knowledge that comes with them. Lyzr provides the agent platform and the partnership behind it."
+  },
+  "cta": "Review these opportunities with the Lyzr partner team"
+}

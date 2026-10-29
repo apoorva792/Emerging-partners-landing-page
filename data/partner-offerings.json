@@ -114,7 +114,15 @@
       "revenue": {
         "implementation": "Find every agent the client is running, put identity and policy on each one, and hand back an inventory with an audit trail",
         "recurring": "Run the control plane for them: policy changes, release gating and the evidence pack their risk function asks for"
-      }
+      },
+      "commercial_motion": "governance_upsell",
+      "follow_on": "Managed agent governance: running the control plane and the evals as the estate grows",
+      "discovery": [
+        "How many agents or copilots are running across the business today, and who owns each one",
+        "What happens when an agent changes: who approves it, and where that is recorded",
+        "Which identity provider the agents authenticate against today, if any",
+        "What your auditors have already asked about AI, and what you showed them"
+      ]
     },
     {
       "id": "open_cowork",
@@ -183,7 +191,9 @@
         "Their clients are small enough that a per-seat rollout is not a programme",
         "The partner sells only to engineering teams, not to the business"
       ],
-      "resources": [],
+      "resources": [
+        "page_agentic_os"
+      ],
       "offering_id": "open_cowork",
       "product_id": "open_cowork",
       "customer_problems": [
@@ -212,17 +222,28 @@
       "revenue": {
         "implementation": "Stand it up for one department, agree what good looks like, then roll it out across the workforce",
         "recurring": "Run adoption, policy and the content behind it, billed per seat per month"
-      }
+      },
+      "commercial_motion": "new_category",
+      "follow_on": "Enterprise knowledge operations: keeping sources, permissions and adoption current",
+      "discovery": [
+        "How many people would use this, and which department would go first",
+        "What staff are using today for the same thing, approved or not",
+        "Who owns employee tooling and can make something standard",
+        "What your acceptable use position on AI says, and who signed it"
+      ]
     },
     {
       "id": "agent_studio",
       "name": "Agent Studio",
       "url": "https://www.lyzr.ai/",
       "catalogue_id": "page_agent_studio",
-      "one_line": "The pro-code workbench an engineering team designs, tests and ships production agents from.",
+      "one_line": "The workbench an engineering team designs, tests and ships production agents from, with SuperFlow orchestrating the long-running ones.",
       "capabilities": [
         "Design, test and ship production agents from one place",
-        "Carries the workflow and the integrations rather than leaving them to be stitched together"
+        "Carries the workflow and the integrations rather than leaving them to be stitched together",
+        "SuperFlow, its orchestration layer, builds the flow visually: agents, LLM pipelines, approvals and long-running processes",
+        "SuperFlow journals every step, so a restart resumes from the point of failure rather than the beginning",
+        "SuperFlow carries the enterprise connectors: OAuth2 with refresh, AWS Signature v4, JWT and mTLS"
       ],
       "partner_shapes": [
         "ai consultancy",
@@ -240,7 +261,10 @@
           "engineering",
           "integration",
           "analytics",
-          "documents"
+          "documents",
+          "ordering",
+          "incident",
+          "governance"
         ],
         "signals": [
           "agent",
@@ -260,7 +284,20 @@
           "mlops",
           "data engineering",
           "custom software",
-          "product engineering"
+          "product engineering",
+          "orchestration",
+          "middleware",
+          "bpm",
+          "workflows",
+          "mulesoft",
+          "boomi",
+          "webmethods",
+          "ipaas",
+          "approval",
+          "approvals",
+          "etl",
+          "straight-through",
+          "processing"
         ],
         "why": "A build platform is sold to a firm that builds. An advisory firm has nobody to put on it."
       },
@@ -290,7 +327,8 @@
       "customer_problems": [
         "Agent prototypes work in a demo and never reach production",
         "Every new use case is rebuilt from scratch with its own integrations",
-        "Nobody can say what an agent did last Tuesday or why"
+        "Nobody can say what an agent did last Tuesday or why",
+        "A workflow that passes testing keeps failing somewhere in production"
       ],
       "sellable_services": [
         {
@@ -304,6 +342,14 @@
         {
           "name": "Run and extend",
           "client_gets": "Changes shipped as the process moves, without a new project each time"
+        },
+        {
+          "name": "Workflow resilience review",
+          "client_gets": "The failure points in one long-running process, named and costed"
+        },
+        {
+          "name": "Durable workflow rebuild",
+          "client_gets": "A process that resumes from the point of failure instead of starting again"
         }
       ],
       "restrictions": [
@@ -312,7 +358,15 @@
       "revenue": {
         "implementation": "Build the first agent on the client's own workflow, in production, then repeat the pattern",
         "recurring": "Run and extend what was built, billed monthly rather than re-quoted per change"
-      }
+      },
+      "commercial_motion": "expand_engagement",
+      "follow_on": "Support and enhancement on each solution once it is live",
+      "discovery": [
+        "How many agent use cases are waiting, and what is blocking the next one",
+        "What happened to the last prototype that did not reach production",
+        "Which systems a new agent has to read from and write back to",
+        "Which long-running processes fail partway through, and who restarts them"
+      ]
     },
     {
       "id": "architect",
@@ -408,106 +462,15 @@
       "revenue": {
         "implementation": "Map the process with the people who run it, then build the first app with them in the room",
         "recurring": "Keep the apps current as the process changes, billed monthly"
-      }
-    },
-    {
-      "id": "superflow",
-      "name": "SuperFlow",
-      "url": "https://www.lyzr.ai/blog/what-is-superflow/",
-      "catalogue_id": "",
-      "one_line": "Visual workflow orchestration with durable execution, so the flow that worked in the demo survives production.",
-      "capabilities": [
-        "Visual workflow building for agents, LLM pipelines, approvals and long-running processes",
-        "Durable execution: every step is journaled and a restart resumes from the point of failure",
-        "Structured approvals with typed fields and files flowing on through the workflow",
-        "Enterprise connectivity built in: OAuth2 with refresh, AWS Signature v4, JWT and mTLS",
-        "Hybrid orchestration that brings existing agents forward alongside new ones"
-      ],
-      "partner_shapes": [
-        "systems integrator",
-        "automation consultancy",
-        "ai consultancy",
-        "managed service provider"
-      ],
-      "complements": [
-        "Integration and middleware practices",
-        "Workflow and BPM work",
-        "Existing RPA or iPaaS estates"
-      ],
-      "requires": {
-        "families": [
-          "integration",
-          "ordering",
-          "documents",
-          "incident",
-          "governance"
-        ],
-        "signals": [
-          "orchestration",
-          "middleware",
-          "integration",
-          "bpm",
-          "workflow",
-          "workflows",
-          "mulesoft",
-          "boomi",
-          "webmethods",
-          "ipaas",
-          "approval",
-          "approvals",
-          "etl",
-          "straight-through",
-          "processing"
-        ],
-        "why": "Durable orchestration is sold to a firm that already owns the client's process plumbing. Without that they are selling a canvas."
       },
-      "implementation": {
-        "pattern": "prove-then-roll-out",
-        "offer": "Rebuild one brittle long-running workflow on durable execution and show it surviving a failure"
-      },
-      "managed": {
-        "pattern": "take-over-and-run",
-        "offer": "Own the orchestration layer and the runbook, billed per workflow per month"
-      },
-      "buyer": "Head of Integration, Head of Automation or an operations director",
-      "trigger": "A workflow that works in testing keeps failing in production, or approvals are being handled over email beside the system",
-      "prerequisites": [
-        "Processes long enough or branching enough to need orchestration",
-        "Access to the systems each step has to call"
-      ],
-      "do_not_recommend_when": [
-        "The work is a single model call with no steps around it",
-        "The partner has no integration or process practice to attach it to"
-      ],
-      "resources": [],
-      "offering_id": "superflow",
-      "product_id": "superflow",
-      "customer_problems": [
-        "A workflow that passes testing keeps failing somewhere in production",
-        "Approvals happen over email beside the system, so nobody can reconstruct a decision",
-        "A crash mid-run means the whole process is restarted by hand"
-      ],
-      "sellable_services": [
-        {
-          "name": "Workflow resilience review",
-          "client_gets": "The failure points in one long-running process, named and costed"
-        },
-        {
-          "name": "Durable workflow rebuild",
-          "client_gets": "A process that resumes from the point of failure instead of starting again"
-        },
-        {
-          "name": "Orchestration managed service",
-          "client_gets": "Someone accountable for the workflows and a runbook when one stops"
-        }
-      ],
-      "restrictions": [
-        "Orchestration, not a single model call: work with no steps around it does not need it"
-      ],
-      "revenue": {
-        "implementation": "Rebuild one brittle long-running workflow on durable execution and show it surviving a failure",
-        "recurring": "Own the orchestration layer and the runbook, billed per workflow per month"
-      }
+      "commercial_motion": "expand_engagement",
+      "follow_on": "Application care as the processes the apps cover keep changing",
+      "discovery": [
+        "How many small automation requests are waiting that nobody will fund individually",
+        "Who owns each of those processes, and whether they could describe it end to end",
+        "What happens today when a process changes and the tool has to change with it",
+        "How long a change takes from asking for it to having it"
+      ]
     },
     {
       "id": "optimus",
@@ -612,7 +575,15 @@
       "revenue": {
         "implementation": "Install and commission the appliance in their environment, with the first workload running on it",
         "recurring": "Operate the appliance under an SLA: patching, model updates and capacity, billed annually"
-      }
+      },
+      "commercial_motion": "new_category",
+      "follow_on": "Private AI operations: running the environment under an operate and support contract",
+      "discovery": [
+        "Which workloads are not permitted to leave your estate, and who decides that",
+        "Where it would physically sit, and who owns that space, power and network",
+        "What your per-token spend looks like now, and how predictable it is",
+        "Who signs off a change inside that environment"
+      ]
     },
     {
       "id": "agentblocks_oem",
@@ -715,7 +686,15 @@
       "revenue": {
         "implementation": "Embed the runtime behind their own product's brand and ship agent features to their existing customers",
         "recurring": "Lyzr carries the platform layer underneath while they own the product, the roadmap and the customer"
-      }
+      },
+      "commercial_motion": "build_ip",
+      "follow_on": "Maintenance and enhancement as their own product ships it onward",
+      "discovery": [
+        "What your product does today and who pays for it",
+        "Which customers are asking for AI features, and what they have asked for",
+        "How your tenancy model works, and what each customer expects to control",
+        "What you would have to build yourselves instead, and how long that would take"
+      ]
     },
     {
       "id": "agent_blocks",
@@ -778,7 +757,9 @@
         "The partner wants a platform rather than parts: that is AgentBlocks OEM, which is a different conversation",
         "They are not building anything themselves"
       ],
-      "resources": [],
+      "resources": [
+        "page_agent_blocks"
+      ],
       "offering_id": "agent_blocks",
       "product_id": "agent_blocks",
       "customer_problems": [
@@ -802,7 +783,15 @@
       "revenue": {
         "implementation": "Replace the part they are hand-rolling, memory or retrieval, in one build and measure what it saves",
         "recurring": "Keep the primitives current underneath their builds as models and tooling move"
-      }
+      },
+      "commercial_motion": "build_ip",
+      "follow_on": "Maintenance and enhancement of the capability they now own",
+      "discovery": [
+        "Which parts of the agent stack you are maintaining yourselves today",
+        "What broke or had to be rewritten after the last model release",
+        "How much of each new build is the same primitives again",
+        "Which framework you are on, and whether you intend to stay on it"
+      ]
     },
     {
       "id": "open_finetuning",
@@ -866,7 +855,9 @@
         "The partner has no data science capability of its own",
         "Prompting and retrieval would get them there without training anything"
       ],
-      "resources": [],
+      "resources": [
+        "page_agentic_os"
+      ],
       "offering_id": "open_finetuning",
       "product_id": "open_finetuning",
       "customer_problems": [
@@ -895,7 +886,16 @@
       "revenue": {
         "implementation": "Fine-tune on one corpus the client owns and measure it against the general model on their own examples",
         "recurring": "Retrain and re-evaluate on a schedule as the client's data moves"
-      }
+      },
+      "commercial_motion": "expand_engagement",
+      "follow_on": "Re-evaluation and re-tuning as the client’s data and models move",
+      "discovery": [
+        "Which task a general model is not good enough at, and how you measure that",
+        "What data you hold that could train it, and where that data is allowed to go",
+        "What prompting and retrieval have already got you, and where they stopped",
+        "Who would own the model and judge whether it improved"
+      ]
     }
-  ]
+  ],
+  "note": ""
 }

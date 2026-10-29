@@ -17,7 +17,12 @@ $('rail').innerHTML = STAGES.map((s, i) => `<div><i></i><span>0${i + 1} &nbsp;${
 
 function show(id) {
   for (const s of [...STEPS, 'sx']) $(s).classList.toggle('on', s === id);
-  const now = STAGE_OF[STEPS.indexOf(id)] ?? 0;
+  /* The questions are asked while the site is still being read, so opening the agent used
+   * to land on "02 Focus" with Discover already ticked and never seen. The visitor had
+   * watched nothing happen under a stage that claimed to be finished. While there is no
+   * profile yet, discovery is genuinely what is running, and the rail says so. */
+  let now = STAGE_OF[STEPS.indexOf(id)] ?? 0;
+  if (id === 's3' && !S.profile) now = 0;
   [...$('rail').children].forEach((el, i) => {
     el.classList.toggle('on', i <= now);
     el.classList.toggle('now', i === now);
@@ -39,37 +44,32 @@ async function post(path, payload) {
 /* Three things about Lyzr, shown one at a time under the progress line while the visitor
  * waits. The cursor is module-level on purpose: the three waits in a session continue the
  * rotation rather than each restarting on the first one. */
+/* The brand's own artwork rather than a sentence about it. A wait is the one moment the
+ * visitor is looking at nothing, so it carries the pieces the design team has already
+ * made: the CB Insights placement, the customers in production, and the product stack. */
 const PROOF = [
-  {
-    label: 'Recognized by CB Insights',
-    text: "Named among the world's 100 most promising AI startups in 2026.",
-  },
-  {
-    label: 'Trusted by global enterprises',
-    text: 'Powering production AI deployments for enterprises including Accenture, PepsiCo, KPMG and WTW.',
-  },
-  {
-    label: '$100M+ in partner opportunities',
-    text: 'Over $100 million in AI opportunities routed to Lyzr partners in 2026.',
-  },
+  { src: '/brand/proof-cbinsights.png', alt: 'Lyzr, ranked 6th in the CB Insights AI 100 for 2026' },
+  { src: '/brand/proof-customers.png', alt: 'Enterprises running Lyzr in production, including Accenture, Verifone, HFS, eMudhra, MSP Corp and WTW' },
+  { src: '/brand/proof-stack.png', alt: 'The Lyzr stack: OpenController, Architect, Agent Studio, Agent Blocks and Optimus' },
 ];
 let proofAt = 0;
 
 function proof(el, ms = 6000) {
   if (!el) return () => {};
   let timer = null;
-  el.innerHTML = `<div class="pdots">${PROOF.map(() => '<i></i>').join('')}</div>`;
+  el.innerHTML = `<div class="pwin"></div><div class="pdots">${PROOF.map(() => '<i></i>').join('')}</div>`;
+  const win = el.querySelector('.pwin');
   const dots = el.querySelector('.pdots');
   const paint = () => {
     const i = proofAt++ % PROOF.length;
     const p = PROOF[i];
     /* Taken out of the flow before the next one lands, so the card never resizes. */
-    const leaving = el.querySelector('.pi:not(.out)');
+    const leaving = win.querySelector('.pi:not(.out)');
     if (leaving) { leaving.classList.add('out'); setTimeout(() => leaving.remove(), 600); }
     const d = document.createElement('div');
     d.className = 'pi';
-    d.innerHTML = `<h4>${esc(p.label)}</h4><p>${esc(p.text)}</p>`;
-    el.insertBefore(d, dots);
+    d.innerHTML = `<img src="${p.src}" alt="${esc(p.alt)}" loading="eager">`;
+    win.append(d);
     [...dots.children].forEach((b, n) => b.classList.toggle('on', n === i));
     timer = setTimeout(paint, ms);
   };
@@ -111,10 +111,8 @@ const FIXED_QUESTIONS = [
       'Cloud & infrastructure',
       'ERP & enterprise systems',
       'Software engineering',
-      'Data & analytics',
       'Business process automation',
       'AI consulting',
-      'Other',
     ],
   },
   {
@@ -122,11 +120,9 @@ const FIXED_QUESTIONS = [
     question: 'Where do you see the biggest opportunity to grow?',
     hint: "We'll use this to shape what we recommend.",
     options: [
-      'Expand within existing accounts',
       'Win new enterprise customers',
       'Add AI services to existing offerings',
       'Build repeatable industry solutions',
-      'Improve delivery margins',
     ],
   },
   {
@@ -166,7 +162,6 @@ const FIXED_QUESTIONS = [
       'Middle East',
       'India & South Asia',
       'Asia Pacific',
-      'Other',
     ],
   },
 ];
@@ -209,6 +204,8 @@ $('start').onclick = () => {
       /* The site finishes being read while the visitor is still on the first question. If
        * they have not answered it yet, draw it again so what we found arrives in time to
        * be of use — ticked, and said in the hint — rather than a moment too late. */
+      /* Discovery has finished, so the rail stops claiming it is still running. */
+      if ($('s3').classList.contains('on')) show('s3');
       if (S.questions[S.qi]?.field === 'service_lines' && !$('qopts').querySelector('.opt.on')) {
         S.seen.delete('service_lines');
         askQ();
@@ -240,6 +237,8 @@ async function askQ() {
       ], 18);
       try { await S.pending.profile; } catch (e) { done(); return fail(e.message); }
       done();
+      /* Discovery is over, so the rail moves on even if the visitor is mid-question. */
+      if ($('s3').classList.contains('on')) show('s3');
       if (S.qi < S.questions.length) return askQ();
     }
     return recommend();
@@ -375,7 +374,9 @@ function renderExplorer() {
  * the brief, where plays are numbered and a link is not worth printing twice. */
 function playBlock(c, { num = '', seen = null, detail = false } = {}) {
   const o = c.first_offer ?? {}, pr = c.proof ?? {}, h = c.how_to_sell ?? {};
-  const res = (c.resources ?? []).filter((r) => !seen || (!seen.has(r.url) && seen.add(r.url)));
+  /* The card is for choosing between three opportunities, so it shows a few links; the
+   * brief page that follows prints the rest. */
+  const res = (c.resources ?? []).filter((r) => !seen || (!seen.has(r.url) && seen.add(r.url))).slice(0, 3);
   const m = /^([\d.,]+(?:[–-][\d.,]+)?\s*(?:%|x|\+)?)\s+(.{4,})$/i.exec(pr.result ?? '');
   const row = (dt, dd) => (dd ? `<dt>${esc(dt)}</dt><dd>${esc(dd)}</dd>` : '');
   const by = { see: [], build: [], sell: [] };
@@ -384,7 +385,7 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
     <ul>${by[key].map((r) => `<li><a href="${encodeURI(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></li>`).join('')}</ul></div>` : '');
 
   return `<article class="play">
-    <p class="playnum">${esc(MOTIONS[c.motion] ?? growthOf(c))}${num ? ` <span>${esc(num)}</span>` : ''}</p>
+    <p class="playnum">${esc(c.motion_label || MOTIONS[c.motion] || growthOf(c))}${num ? ` <span>${esc(num)}</span>` : ''}</p>
     ${detail ? `<h2 class="playhead">${esc(c.headline)}</h2>` : `<h3>${esc(c.headline)}</h3>`}
     <p class="sh-body">${esc(c.what_it_is)}</p>
 
@@ -393,10 +394,12 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
     ${detail && (c.stands_on ?? []).length ? `<p class="playcite">You have done this: ${c.stands_on
       .map((e) => `<a href="${encodeURI(e.url)}" target="_blank" rel="noopener">${esc(e.what)}</a>`).join(' · ')}</p>` : ''}
 
-    ${c.product ? `<p class="shlab">What Lyzr brings</p>
+    ${/* Every card is licence-led, so the product is named here and never replaced by a
+          sentence about the platform in general. A card with no product does not reach
+          this point: the gate drops it. */''}
+    ${c.product ? `<p class="shlab">The licence behind it</p>
       <p class="sh-body"><b>${esc(c.product.name)}</b> ${esc(c.product.does.replace(/^./, (x) => x.toLowerCase()))}
-      ${c.lyzr_advantage ? ` ${esc(c.lyzr_advantage)}` : ''}</p>`
-      : c.roles?.lyzr ? `<p class="shlab">What Lyzr brings</p><p class="sh-body">${esc(c.roles.lyzr)}</p>` : ''}
+      ${c.lyzr_advantage ? ` ${esc(c.lyzr_advantage)}` : ''}</p>` : ''}
 
     ${(c.sellable_services ?? []).length ? `<p class="shlab">What you could sell</p>
       <ul class="sells">${c.sellable_services.map((x) => `<li><b>${esc(x.name)}</b>${x.client_gets ? ` <span>${esc(x.client_gets)}</span>` : ''}</li>`).join('')}</ul>` : ''}
@@ -416,10 +419,7 @@ function playBlock(c, { num = '', seen = null, detail = false } = {}) {
     ${pr.result ? `<p class="playproof">${m ? `<b>${esc(m[1].trim())}</b> ${esc(m[2])}` : esc(pr.result)},
       ${esc(pr.customer ?? '')}${pr.url ? ` · <a href="${encodeURI(pr.url)}" target="_blank" rel="noopener">${esc(pr.title || 'case study')}</a>` : ''}</p>`
       : (c.reference ? `<p class="playproof"><span class="noproof">Built on</span>
-          <a href="${encodeURI(c.reference.url)}" target="_blank" rel="noopener">${esc(c.reference.title)}</a>,
-          no customer story published for this one yet.</p>` : '')}
-
-    ${(c.assumptions ?? []).length ? `<p class="playassume"><span>To confirm with a client:</span> ${c.assumptions.map(esc).join(' · ')}</p>` : ''}
+          <a href="${encodeURI(c.reference.url)}" target="_blank" rel="noopener">${esc(c.reference.title)}</a></p>` : '')}
 
     ${res.length ? `<div class="reading">
       ${shelf('see', 'See it')}${shelf('build', 'Build it')}${shelf('sell', 'Sell it')}
@@ -489,9 +489,9 @@ function acctRow(prefill) {
   d.className = 'acct';
   /* A short label: "How well do you know them?" was wider than any column that leaves
    * room for the name beside it, so it was always cut off mid-word. */
-  d.innerHTML = `<input type="text" placeholder="Client name">
+  d.innerHTML = `<input type="text" placeholder="Client name" aria-label="Client name">
     <select aria-label="How well do you know them?">
-      <option value="">Relationship…</option>
+      <option value="">Relationship</option>
       <option>Champion inside</option>
       <option>Warm</option>
       <option>Dormant</option>
@@ -562,71 +562,108 @@ function lockup() {
     <img class="mark" src="/brand/lyzr-mark-black.svg" alt="Lyzr"></span>`;
 }
 
-function partnerSheet() {
-  const b = S.brief, co = S.profile.company.name || '';
-  const lands = b.where_it_lands ?? [];
-  const plays = S.chosen ?? [];
-  const many = plays.length > 1;
+/* One opportunity, one A4 sheet.
+ *
+ * This is deliberately not `playBlock`: the explore screen is for choosing between three,
+ * so it is compact and scannable; the brief is for reading and forwarding, so it is a
+ * designed page. Each sheet answers five questions and stops: why this firm, what they
+ * could sell, what Lyzr adds, where to start, what to read. The mechanics the card also
+ * carries, the scope, the revenue table, the engagement shape, are not printed here: they
+ * are what turned a brief into eight pages of things the partner already knew. */
+function briefPage(c, page, i, n, co) {
+  const num = String(i + 1).padStart(2, '0');
+  const total = String(n).padStart(2, '0');
+  const cites = (c.stands_on ?? []).slice(0, 3);
 
-  /* Every chosen line, in full, from the card we already verified — not from a second
-   * description written for the brief. This is what makes choosing three worth anything. */
-  /* A link that already appeared under an earlier play is not worth repeating. */
-  const seenRes = new Set();
-  const play = (c, i) => playBlock(c, {
-    num: many ? `Play ${String(i + 1).padStart(2, '0')} of ${plays.length}` : '',
-    seen: seenRes,
-  });
+  /* Every link that genuinely helps them understand, validate or sell this one
+   * opportunity, in the order the catalogue shelves them: see it, build it, sell it. The
+   * proof story leads when there is one, because it is the thing they forward. */
+  const res = [];
+  const pr = c.proof ?? {};
+  if (pr.url && pr.title) res.push({ url: pr.url, title: pr.title, tag: 'Case study' });
+  const TAG = { see: 'See it', build: 'Build it', sell: 'Sell it' };
+  for (const key of ['see', 'build', 'sell']) {
+    for (const r of (c.resources ?? [])) {
+      if ((r.shelf ?? 'build') === key && !res.some((x) => x.url === r.url)) {
+        res.push({ url: r.url, title: r.title, tag: TAG[key] });
+      }
+    }
+  }
 
-  return `<div class="sheet" id="sheet-partner">
-    <header class="sh-top">
+  const adv = (page.advantage ?? []).filter((x) => x.capability && x.why);
+
+  return `<article class="opg">
+    <header class="opg-top">
       ${lockup()}
-      <span class="sh-doclabel"><b>Opportunity brief</b>${esc(new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }))}</span>
+      <span class="opg-meta">Partner opportunity brief<b>${esc(co)}</b></span>
     </header>
 
-    <h1 class="sh-head">${esc(b.headline)}</h1>
-    <p class="sh-lede">${esc(b.the_case ?? '')}</p>
-
-    <section class="sh-sect">
-      <h3>What you already have</h3>
-      <div class="pills">${(b.you_today ?? []).map((x) => `<span class="pill">${esc(x)}</span>`).join('')}</div>
-    </section>
-
-    ${(b.why_lyzr ?? []).length ? `<section class="sh-sect">
-      <h3>What partnering with Lyzr adds</h3>
-      <div class="adds">
-        <p class="addlab">What you already have</p><p class="addlab">What Lyzr adds to it</p>
-        ${b.why_lyzr.map((r) => `<p class="addhave">${esc(r.you_have)}</p><p class="addgain">${esc(r.lyzr_adds)}</p>`).join('')}
-      </div>
-    </section>` : ''}
-
-    <section class="sh-sect">
-      <h3>${many ? `The ${['two', 'three', 'four'][plays.length - 2] ?? plays.length} you picked` : 'The play'}</h3>
-      ${plays.map(play).join('')}
-      ${many && b.how_they_connect ? `<p class="connect">${esc(b.how_they_connect)}</p>` : ''}
-    </section>
-
-
-    ${lands.length ? `<section class="sh-sect">
-      <h3>Where it lands first</h3>
-      <p class="sh-body" style="margin-top:-6px">Accounts to test, some taken from the clients named on your own site. Public references, not verified pipeline.</p>
-      <ol class="lands">${lands.map((l, i) => `<li><span class="r">${String(i + 1).padStart(2, '0')}</span><span><b>${esc(l.account)}</b><span>${esc(l.why)}</span></span></li>`).join('')}</ol>
-    </section>` : ''}
-
-
-    <section class="sh-sect">
-      <div class="panel">
-        <h3>What Lyzr puts behind it</h3>
-        <ul>${(b.how_lyzr_helps ?? []).map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
-        ${(b.next_moves ?? []).length ? `<p class="movelab">Your next move</p>
-          <ol class="moves">${b.next_moves.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>` : ''}
-        <p>${esc(b.the_ask)}</p>
-      </div>
-    </section>
-
-    <div class="sh-foot">
-      <span>${esc(co)} &middot; Opportunity brief</span>
-      <span class="by">Prepared with <img src="/brand/lyzr-black.svg" alt="Lyzr"></span>
+    <div class="opg-lead">
+      <p class="opg-rank"><span>${esc(num)} / ${esc(total)}</span>${i === 0 && n > 1
+        ? '<em>Recommended starting point</em>' : ''}</p>
+      <h1 class="opg-head">${esc(page.headline || c.headline)}</h1>
+      ${c.product ? `<p class="opg-powered">Powered by <b>${esc(c.product.name)}</b></p>` : ''}
     </div>
+
+    <section class="opg-sect opg-fit">
+      <h3>Why this fits ${esc(co)}</h3>
+      <p>${esc(page.why_fits)}</p>
+      ${cites.length ? `<p class="opg-cite">${cites.map((e) => `<a href="${encodeURI(e.url)}" target="_blank" rel="noopener">${esc(e.what)}</a>`).join('<i>·</i>')}</p>` : ''}
+    </section>
+
+    <div class="opg-cols">
+      <section class="opg-sect">
+        <h3>The opportunity</h3>
+        ${page.offering_name ? `<p class="opg-offer">${esc(page.offering_name)}</p>` : ''}
+        <p>${esc(page.the_opportunity)}</p>
+        ${(page.benefits ?? []).length ? `<ul class="opg-ticks">${page.benefits
+          .map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+      </section>
+
+      <section class="opg-sect opg-adv">
+        <h3>The Lyzr advantage</h3>
+        ${c.product ? `<p class="opg-prod">${esc(c.product.name)}</p>` : ''}
+        ${adv.length ? `<ul class="opg-advlist">${adv
+          .map((x) => `<li><b>${esc(x.capability)}</b><span>${esc(x.why)}</span></li>`).join('')}</ul>`
+        : (c.lyzr_advantage ? `<p>${esc(c.lyzr_advantage)}</p>` : '')}
+      </section>
+    </div>
+
+    <section class="opg-sect opg-start">
+      <h3>Where to start</h3>
+      <div class="opg-startrow">
+        ${page.start?.who ? `<div><span>Start with</span><b>${esc(page.start.who)}</b></div>` : ''}
+        ${page.start?.buyer ? `<div><span>Who to speak to</span><b>${esc(up(page.start.buyer))}</b></div>` : ''}
+      </div>
+      ${page.start?.conversation ? `<p>${esc(page.start.conversation)}</p>` : ''}
+    </section>
+
+    ${res.length ? `<section class="opg-sect opg-res">
+      <h3>Resources</h3>
+      <ul class="opg-reslist">${res.map((r) => `<li><a href="${encodeURI(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a><span>${esc(r.tag)}</span></li>`).join('')}</ul>
+    </section>` : ''}
+
+    <footer class="opg-foot">
+      <span>${esc(co)} &times; Lyzr &middot; ${esc(new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }))}</span>
+      <span>Page ${esc(num)} of ${esc(total)}</span>
+    </footer>
+  </article>`;
+}
+
+/* The whole document: nothing but the opportunity pages. No cover, no summary table, no
+ * closing. Every page is read on its own and carries its own header and footer, because
+ * the one that gets forwarded is rarely page one. */
+function partnerSheet() {
+  const b = S.brief, co = S.profile.company.name || '';
+  const chosen = S.chosen ?? [];
+  /* Driven by the pages the writer actually wrote, in its order. An opportunity it could
+   * not make a page for is not printed as an empty sheet. */
+  const pageOf = new Map((b.pages ?? []).map((r) => [r.id, r]));
+  const plays = (b.pages ?? []).map((r) => chosen.find((c) => c.id === r.id)).filter(Boolean);
+  const n = plays.length;
+
+  return `<div class="sheet" id="sheet-partner">
+    ${plays.map((c, i) => briefPage(c, pageOf.get(c.id) ?? {}, i, n, co)).join('')}
   </div>`;
 }
 
@@ -660,7 +697,10 @@ function exportPdf(sheetId, title, btn) {
 /* The print rules above are scoped to @media print; the iframe is only ever printed, so
    they are restated unconditionally here for the preview the dialog shows. */
 body{background:#fff;margin:0}
-.sheet{border:none;border-radius:0;padding:14mm 15mm 16mm}
+.sheet{border:none;border-radius:0;padding:0}
+.opg{border:none;border-radius:0;margin:0;padding:14mm 15mm 10mm;
+  min-height:265mm;height:auto;box-sizing:border-box;break-after:page;page-break-after:always}
+.opg:last-child{break-after:auto;page-break-after:auto}
 .copy,.tabs{display:none}
 /* Restated for the dialog's own preview, which does not always apply the print block. */
 @page{size:A4;margin:0}

@@ -98,7 +98,12 @@
       ],
       "resources": [
         "page_e_commerce"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "industry_application"
     },
     {
       "offering_id": "sol_insurance",
@@ -196,7 +201,12 @@
       ],
       "resources": [
         "page_insurance"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "industry_application"
     },
     {
       "offering_id": "sol_healthcare",
@@ -295,7 +305,12 @@
       ],
       "resources": [
         "page_healthcare"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "industry_application"
     },
     {
       "offering_id": "sol_revenue",
@@ -387,7 +402,12 @@
       ],
       "resources": [
         "page_revenue"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_government",
@@ -486,7 +506,12 @@
       ],
       "resources": [
         "page_government"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "industry_application"
     },
     {
       "offering_id": "sol_fintech",
@@ -583,7 +608,12 @@
       ],
       "resources": [
         "page_fintech"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "industry_application"
     },
     {
       "offering_id": "sol_marketing",
@@ -676,7 +706,12 @@
       ],
       "resources": [
         "page_marketing"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_customer_service",
@@ -770,7 +805,12 @@
       ],
       "resources": [
         "page_customer_service"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_human_resources",
@@ -865,7 +905,12 @@
       ],
       "resources": [
         "page_human_resources"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "industry_application"
     },
     {
       "offering_id": "sol_compliance_and_governance",
@@ -958,7 +1003,12 @@
       ],
       "resources": [
         "page_compliance_and_governance"
-      ]
+      ],
+      "primary_product_id": "opencontroller",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on OpenController; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_legal",
@@ -1052,7 +1102,12 @@
       ],
       "resources": [
         "page_legal"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_procurement",
@@ -1146,7 +1201,12 @@
       ],
       "resources": [
         "page_procurement"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_it_and_platform",
@@ -1239,7 +1299,12 @@
       ],
       "resources": [
         "page_it_and_platform"
-      ]
+      ],
+      "primary_product_id": "opencontroller",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on OpenController; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_revenue_and_sales",
@@ -1333,7 +1398,12 @@
       ],
       "resources": [
         "page_revenue_and_sales"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_responsible_ai",
@@ -1426,7 +1496,12 @@
       ],
       "resources": [
         "page_responsible_ai"
-      ]
+      ],
+      "primary_product_id": "sol_responsible_ai",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/responsible-ai-as-a-service/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_lyzr_nitro",
@@ -1518,7 +1593,14 @@
       ],
       "resources": [
         "page_lyzr_nitro"
-      ]
+      ],
+      "primary_product_id": "sol_lyzr_nitro",
+      "supporting_product_ids": [
+        "superflow"
+      ],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/partners/google/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_orchestration_as_a_service",
@@ -1609,7 +1691,12 @@
       ],
       "resources": [
         "page_orchestration_as_a_service"
-      ]
+      ],
+      "primary_product_id": "sol_orchestration_as_a_service",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/orchestration-as-a-service/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_agents_as_a_service",
@@ -1704,7 +1791,14 @@
       ],
       "resources": [
         "page_agents_as_a_service"
-      ]
+      ],
+      "primary_product_id": "sol_agents_as_a_service",
+      "supporting_product_ids": [
+        "agent_studio"
+      ],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/agents-as-a-service/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_hallucination_manager",
@@ -1795,7 +1889,12 @@
       ],
       "resources": [
         "page_hallucination_manager"
-      ]
+      ],
+      "primary_product_id": "sol_hallucination_manager",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/hallucination-manager-as-a-service/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_knowledge_base",
@@ -1887,7 +1986,12 @@
       ],
       "resources": [
         "page_knowledge_base"
-      ]
+      ],
+      "primary_product_id": "sol_knowledge_base",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/knowledge-base-as-a-service/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_knowledge_graph",
@@ -1981,7 +2085,12 @@
       ],
       "resources": [
         "page_knowledge_graph"
-      ]
+      ],
+      "primary_product_id": "sol_knowledge_graph",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/knowledge-graph-as-a-service/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_ai_agent_memory",
@@ -2073,7 +2182,12 @@
       ],
       "resources": [
         "page_ai_agent_memory"
-      ]
+      ],
+      "primary_product_id": "sol_ai_agent_memory",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/cognis/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_opengap",
@@ -2164,7 +2278,12 @@
       ],
       "resources": [
         "page_opengap"
-      ]
+      ],
+      "primary_product_id": "sol_opengap",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/oss/opengap/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_gitagent",
@@ -2256,7 +2375,12 @@
       ],
       "resources": [
         "page_gitagent"
-      ]
+      ],
+      "primary_product_id": "sol_gitagent",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.lyzr.ai/oss/gitagent/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_madison",
@@ -2347,7 +2471,12 @@
       ],
       "resources": [
         "page_madison"
-      ]
+      ],
+      "primary_product_id": "sol_madison",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://madison.lyzr-ai.com/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_it_operations",
@@ -2440,7 +2569,12 @@
       ],
       "resources": [
         "page_it_operations"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "industry_application"
     },
     {
       "offering_id": "sol_madison_grc",
@@ -2535,7 +2669,12 @@
       ],
       "resources": [
         "page_madison_grc"
-      ]
+      ],
+      "primary_product_id": "sol_madison_grc",
+      "supporting_product_ids": [],
+      "product_mapping_status": "is_a_product",
+      "product_mapping_evidence": "its own product page: https://www.madison.lyzr.ai/",
+      "commercial_use": "licensed_product"
     },
     {
       "offering_id": "sol_dwight",
@@ -2629,7 +2768,12 @@
       ],
       "resources": [
         "page_dwight"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "example_application"
     },
     {
       "offering_id": "sol_kathy",
@@ -2724,7 +2868,13 @@
       ],
       "resources": [
         "page_kathy"
-      ]
+      ],
+      "primary_product_id": "agent_studio",
+      "supporting_product_ids": [],
+      "product_mapping_status": "verified",
+      "product_mapping_evidence": "an application a partner builds and runs on Agent Studio; the page itself is the reference",
+      "commercial_use": "example_application"
     }
-  ]
+  ],
+  "note": "Generated by scripts/build-solution-offerings.js. `product_mapping_status` says what each record is: `is_a_product` has its own product page and can lead a recommendation; `verified` is an application whose page names the product under it; `needs_review` names no product and may give a recommendation context but may never become one on its own. Nothing here is mapped by inference: a page whose capabilities merely sound related to a product is not evidence that it runs on it."
 }

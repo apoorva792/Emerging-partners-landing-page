@@ -1,0 +1,40 @@
+{
+  "note": "The five commercial motions a partner can run with the Lyzr stack. A motion is not a revenue shape (that is patterns.json) and not a use case: it is the relationship between a Lyzr product and the partner's existing business. One recommendation per motion, because three cards on the same motion are three versions of one conversation however different the use cases sound.",
+  "motions": [
+    {
+      "id": "governance_upsell",
+      "label": "Upsell into existing AI projects",
+      "what": "Add a layer to work the partner already delivers. The client already has agents in production; this governs them without replacing what they run.",
+      "sells_to": "the accounts they already hold",
+      "needs": "a partner already building or running AI in production"
+    },
+    {
+      "id": "new_category",
+      "label": "New infrastructure and services offering",
+      "what": "Enter a category the partner does not sell today, on the back of infrastructure or environment work they already do.",
+      "sells_to": "clients whose requirements rule out what the partner can offer now",
+      "needs": "infrastructure, private cloud or regulated delivery experience"
+    },
+    {
+      "id": "expand_engagement",
+      "label": "Expand existing delivery engagements",
+      "what": "Take an engagement the partner already runs and widen its scope with a Lyzr product, rather than starting a new line of business.",
+      "sells_to": "the engagement they are already inside",
+      "needs": "live build, integration or automation engagements"
+    },
+    {
+      "id": "build_ip",
+      "label": "Build reusable or branded IP",
+      "what": "Turn repeated delivery into something the partner owns and licenses, instead of rebuilding it per client.",
+      "sells_to": "every client of a product they ship themselves",
+      "needs": "a product, an accelerator or repeated identical builds"
+    },
+    {
+      "id": "solution_to_segment",
+      "label": "Take a Lyzr solution to your segment",
+      "what": "Deploy a packaged Lyzr solution into a customer segment the partner already serves, instead of building the equivalent from scratch.",
+      "sells_to": "a segment they already have relationships in",
+      "needs": "clients in the segment the solution was built for"
+    }
+  ]
+}

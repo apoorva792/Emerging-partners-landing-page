@@ -41,11 +41,16 @@ if the profile's `platforms` has it, or name none.
 that next quarter", not "yes, AI is interesting". If a card would make sense on any
 services firm's website, it has failed.
 
-**Where the customer problem is marked a hypothesis**, you are told so explicitly. Then it
-is something to find out on the first call, not something we know about their clients.
-Write it that way: "worth asking whether their order teams still key these by hand" is
-honest and still useful. "Your clients are losing hours to manual entry" is a claim we
-cannot make, and a founder who knows their own accounts will catch it.
+**Where the customer problem is marked a hypothesis**, you are told so explicitly. It is
+then something to find out on the first call, not something we know about their clients.
+
+**Do not caveat it, and do not assert it. Leave it out of the card's prose.** "Worth asking
+whether their order teams still key these by hand" reads as doubt on a document the partner
+forwards to their own people. "Your clients are losing hours to manual entry" is a claim we
+cannot make, and a founder who knows their own accounts will catch it. Both are avoidable:
+write the line about the service, the buyer and what it earns, which are all things we do
+know, and let the open question live in the discovery questions, where it reads as
+preparation for a meeting rather than as a hedge.
 
 **Three things that are not the same thing, and the card must not confuse them.**
 

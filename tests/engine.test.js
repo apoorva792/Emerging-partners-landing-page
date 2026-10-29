@@ -48,6 +48,11 @@ test('delivered work is read before service pages, and thin pages are skipped', 
 
 /* ---- fit is computed from their evidence, not from the model's confidence ---- */
 
+/* Every recommendation is licence-led, so the gate needs the Lyzr product behind the
+ * candidate. These tests are about the other conditions, so they pass a product that
+ * qualified and let the rest of the gate do the judging. */
+const PLAY = { offering_id: 'opencontroller', name: 'OpenController', tier: 'product', commercial_motion: 'governance_upsell' };
+
 const caps = {
   basis: 'delivered',
   capabilities: [{ function: 'procurement', service: 'SAP procurement automation', projects: 3, confidence: 'high', stack: ['SAP BTP'] }],
@@ -133,11 +138,11 @@ test('a brilliant idea with no evidence behind it still fails', () => {
   const lyzr = lyzrScore(o, [{ r: record(), s: 20 }]);
   const score = total({ fit: fit.score, lyzr: lyzr.score, adjacency: 5, monetisation: 5, trigger: 5 });
   assert.ok(score >= 50, 'it scores well');
-  assert.equal(gate(o, fit, lyzr).pass, false, 'and is still not shown');
+  assert.equal(gate(o, fit, lyzr, PLAY).pass, false, 'and is still not shown');
 });
 
 test('the weights are the ones the brief promises', () => {
-  assert.deepEqual(WEIGHTS, { fit: 0.30, adjacency: 0.25, lyzr: 0.20, monetisation: 0.15, trigger: 0.10 });
+  assert.deepEqual(WEIGHTS, { fit: 0.28, adjacency: 0.22, lyzr: 0.25, monetisation: 0.15, trigger: 0.10 });
   assert.equal(Math.round(Object.values(WEIGHTS).reduce((a, b) => a + b, 0) * 100), 100);
   assert.equal(total({ fit: 5, adjacency: 5, lyzr: 5, monetisation: 5, trigger: 5 }), 100);
   /* A missing dimension costs its weight rather than defaulting to full marks. */
@@ -175,8 +180,8 @@ test('with no readable site a candidate stands on the profile alone, at the floo
   const got = fitScore(opp(), null);
   assert.equal(got.profileOnly, true);
   assert.equal(got.score, 2);
-  assert.equal(gate(opp(), got, { score: 4 }).pass, true, 'a dead end is worse than a hypothesis');
-  assert.equal(gate(opp(), got, { score: 0 }).pass, false, 'but the Lyzr side is still checked');
+  assert.equal(gate(opp(), got, { score: 4 }, PLAY).pass, true, 'a dead end is worse than a hypothesis');
+  assert.equal(gate(opp(), got, { score: 0 }, PLAY).pass, false, 'but the Lyzr side is still checked');
 });
 
 test('an empty capability map is treated the same as none', () => {

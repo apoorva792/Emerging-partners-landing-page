@@ -148,7 +148,7 @@ test('every play names patterns that exist, and both of its offers', () => {
 
 test('the spec\'s products are all covered, and OEM is not the same thing as the blocks', () => {
   const ids = PLAYS.map((p) => p.id);
-  for (const id of ['opencontroller', 'open_cowork', 'agent_studio', 'architect', 'superflow', 'optimus', 'agentblocks_oem', 'agent_blocks']) {
+  for (const id of ['opencontroller', 'open_cowork', 'agent_studio', 'architect', 'optimus', 'agentblocks_oem', 'agent_blocks']) {
     assert.ok(ids.includes(id), `missing play: ${id}`);
   }
   const oem = playById('agentblocks_oem');
@@ -247,7 +247,7 @@ test('industry solutions and named agents are offerings, not just footnotes', ()
   for (const id of ['sol_madison_grc', 'sol_fintech', 'sol_insurance', 'sol_healthcare', 'sol_customer_service']) {
     assert.ok(ids.includes(id), `missing solution offering: ${id}`);
   }
-  assert.ok(PLAYS.filter((p) => p.tier === 'product').length === 9);
+  assert.ok(PLAYS.filter((p) => p.tier === 'product').length === 8);
   assert.ok(PLAYS.filter((p) => p.tier === 'solution').length >= 20);
 });
 

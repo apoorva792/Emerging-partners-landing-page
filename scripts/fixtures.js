@@ -20,8 +20,8 @@ const answers = questions.map((q) => ({ field: q.field, question: q.question, an
 const rec = await step2(r.profile, answers);
 put('recommend', rec);
 
-/* Two lines, so the fixture exercises the carried-line section too. */
-const chosen = rec.cards.slice(0, 2);
+/* Three, so the fixture exercises the full three-sheet brief. */
+const chosen = rec.cards.slice(0, Number(process.argv[3]) || 3);
 const accounts = (r.profile.named_clients ?? []).slice(0, 3)
   .map((c, i) => ({ name: c.name, strength: ['Champion inside', 'Warm', 'Dormant'][i] ?? 'Warm' }));
 const a = await step3({ profile: r.profile, answers, chosen, cards: rec.cards });

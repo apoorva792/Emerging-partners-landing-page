@@ -2498,6 +2498,2596 @@
     "customers",
     "references"
    ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_production_planning",
+   "type": "solution_page",
+   "title": "Powerful AI Agents for Production Planning That Deliver",
+   "blurb": "Discover how Lyzr's AI agents for production planning automate scheduling, reduce downtime, and optimize manufacturing workflows for enterprise-level results.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-production-planning",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_manufacturing_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Manufacturing AI Agents on Oracle Cloud Fast",
+   "blurb": "Deploy intelligent manufacturing AI agents natively on Oracle Cloud with Lyzr. Automate production, supply chain, and quality workflows without engineering overhead.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-manufacturing-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_manufacturing_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Manufacturing AI Agents on Google Cloud",
+   "blurb": "Building manufacturing AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-manufacturing-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_inventory_optimization",
+   "type": "solution_page",
+   "title": "AI Agents for Inventory Optimization Automate Decisions",
+   "blurb": "AI agents for inventory optimization.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-inventory-optimization",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_legal_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Secure and Compliant Legal AI Agents on AWS",
+   "blurb": "Building legal AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-legal-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "legal",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_aws_lambda",
+   "type": "solution_page",
+   "title": "Deploy AI Agents on AWS Lambda Without Managing Servers",
+   "blurb": "Easily deploy, manage, and scale AI agents on AWS Lambda with Lyzr. Benefit from serverless architecture, zero DevOps overhead, and pay-per-use pricing.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-aws-lambda",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_cybersecurity_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Cybersecurity AI Agents on AWS with Lyzr",
+   "blurb": "Deploy autonomous cybersecurity AI agents on AWS with Lyzr. Automate threat detection, incident response, and compliance workflows across your cloud infrastructure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-cybersecurity-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "compliance & risk",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_aws_ec2_gpu_instances",
+   "type": "solution_page",
+   "title": "Deploy AI Agents on AWS EC2 GPU Instances",
+   "blurb": "Deploying AI agents on aws ec2 gpu instances.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-aws-ec2-gpu-instances",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ecommerce_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Secure, Scalable Ecommerce AI Agents on AWS",
+   "blurb": "Building ecommerce AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-ecommerce-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "e-commerce",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_agriculture_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Agriculture AI Agents on AWS with Lyzr",
+   "blurb": "Building agriculture AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-agriculture-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "agriculture",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_real_estate_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Real Estate AI Agents on AWS Today",
+   "blurb": "Build and deploy real estate AI agents on AWS with Lyzr. Automate lead qualification, lease management, and property operations with enterprise-grade security and speed.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-real-estate-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "real estate",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_logistics_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Building Logistics AI Agents on AWS with Lyzr",
+   "blurb": "Building logistics AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-logistics-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_manufacturing_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Manufacturing AI Agents on AWS with Lyzr",
+   "blurb": "Building manufacturing AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-manufacturing-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_construction_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Construction AI Agents on AWS with Lyzr",
+   "blurb": "Building construction AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-construction-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "construction",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_retail_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Production-Ready Retail AI Agents on NVIDIA",
+   "blurb": "Building retail AI agents on nvidia.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-retail-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "retail",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_media_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Building Media AI Agents on NVIDIA With Lyzr",
+   "blurb": "Building media AI agents on nvidia.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-media-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "media & advertising",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_nvidia_cuda_self_hosted_gpu",
+   "type": "solution_page",
+   "title": "Deploy AI Agents on NVIDIA CUDA Self-Hosted GPU",
+   "blurb": "Learn how to deploy high-performance, GPU-accelerated AI agents on your own NVIDIA CUDA infrastructure for maximum speed, security, and control with Lyzr.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-nvidia-cuda-self-hosted-gpu",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_agriculture_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Building Agriculture AI Agents on NVIDIA With Lyzr",
+   "blurb": "Build and deploy autonomous agriculture AI agents on NVIDIA infrastructure with Lyzr. Crop monitoring, irrigation automation, and precision farming at enterprise scale.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-agriculture-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "agriculture",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_legal_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Enterprise-Grade Legal AI Agents on NVIDIA",
+   "blurb": "Build, deploy, and scale enterprise-grade legal AI agents on NVIDIA. Lyzr's platform automates contract review, compliance, and research with GPU acceleration.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-legal-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "legal",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_insurance_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Secure, High-Performance Insurance AI Agents on NVIDIA",
+   "blurb": "Leverage Lyzr's secure, low-code platform to build high-performance insurance AI agents on NVIDIA hardware. Automate claims, underwriting & more.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-insurance-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "insurance",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_energy_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Building Energy AI Agents on NVIDIA With Lyzr",
+   "blurb": "Build and deploy energy AI agents on NVIDIA infrastructure with Lyzr. Grid optimization, predictive maintenance, and consumption intelligence agents ready in days.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-energy-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "energy & utilities",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_automotive_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Automotive AI Agents on NVIDIA with Lyzr",
+   "blurb": "Build and deploy automotive AI agents on NVIDIA with Lyzr. Private, scalable, enterprise-grade agentic AI for supply chain, quality, and dealer operations.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-automotive-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_nvidia_nim_microservices",
+   "type": "solution_page",
+   "title": "Deploy AI Agents on NVIDIA NIM Microservices Fast",
+   "blurb": "Accelerate your enterprise AI agent deployment on NVIDIA NIM microservices. Lyzr offers a fast, scalable, and secure platform for production-ready AI agents.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-nvidia-nim-microservices",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_marketing_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Building Marketing AI Agents on NVIDIA With Lyzr",
+   "blurb": "Build and deploy marketing AI agents on NVIDIA with Lyzr. GPU-accelerated inference, pre-built templates, and enterprise governance for autonomous campaign execution.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-marketing-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_telecom_billing_support",
+   "type": "solution_page",
+   "title": "Deploy AI agents for telecom billing support now",
+   "blurb": "Deploy Lyzr's intelligent AI agents to autonomously handle telecom billing queries, disputes, and resolution workflows. Reduce costs and improve CSAT.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-telecom-billing-support",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "telecom",
+    "finance",
+    "customer service"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_telecom_network_monitoring",
+   "type": "solution_page",
+   "title": "Deploy AI agents for your telecom network monitoring now",
+   "blurb": "AI agents for telecom network monitoring.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-telecom-network-monitoring",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "telecom",
+    "it operations"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_telecom_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Building Telecom AI Agents on Google Cloud with Lyzr",
+   "blurb": "Build and deploy telecom AI agents on Google Cloud with Lyzr. Automate network operations, prevent churn, and resolve incidents faster with enterprise-grade agentic AI.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-telecom-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "telecom",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_telecom_customer_support",
+   "type": "solution_page",
+   "title": "AI Agents for Telecom Customer Support at Scale",
+   "blurb": "AI agents for telecom customer support.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-telecom-customer-support",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "telecom",
+    "customer service"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_telecom_companies",
+   "type": "solution_page",
+   "title": "Deploy Secure AI Agents for Telecom Companies",
+   "blurb": "Deploy secure AI agents for telecom companies. Lyzr's platform automates network operations, customer support, and billing with enterprise-grade security.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-telecom-companies",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "telecom"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_saas_billing",
+   "type": "solution_page",
+   "title": "Automate Billing With AI Agents for SaaS Billing",
+   "blurb": "AI agents for saas billing.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-saas-billing",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "finance"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_telecom_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Building Telecom AI Agents on Oracle Cloud Infrastructure",
+   "blurb": "Building telecom AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-telecom-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "telecom",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_automotive_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Automotive AI Agents on Google Cloud Today",
+   "blurb": "Building automotive AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-automotive-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_automotive_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Building Automotive AI Agents on AWS with Lyzr",
+   "blurb": "Building automotive AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-automotive-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_automotive_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Building Automotive AI Agents on IBM Cloud",
+   "blurb": "Building automotive AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-automotive-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_automotive_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Automotive AI Agents on Oracle Cloud",
+   "blurb": "Deploy autonomous AI agents for automotive enterprises on Oracle Cloud. Lyzr powers dealer operations, supply chain, and warranty workflows with full data privacy.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-automotive-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_automotive_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Build Automotive AI Agents on Azure with Lyzr",
+   "blurb": "Build and deploy automotive AI agents on Azure with Lyzr. Fleet management, predictive diagnostics, and connected car automation. Production-ready in days.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-automotive-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_shipment_exception_handling",
+   "type": "solution_page",
+   "title": "AI Agents for Shipment Exception Handling at Scale",
+   "blurb": "AI agents for shipment exception handling.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-shipment-exception-handling",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_construction_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Building Construction AI Agents on IBM Cloud Today",
+   "blurb": "Building construction AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-construction-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "construction",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_construction_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Construction AI Agents on NVIDIA With Lyzr",
+   "blurb": "Build and deploy construction AI agents on NVIDIA with Lyzr. Automate safety monitoring, scheduling, and resource management across construction sites with enterprise-grade AI.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-construction-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "construction",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ecommerce_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Build Enterprise-Grade Ecommerce AI Agents on Azure",
+   "blurb": "Accelerate the deployment of scalable ecommerce AI agents on Azure. Lyzr's low-code platform helps you build and launch intelligent shopping experiences faster.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-ecommerce-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "e-commerce",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_defense_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Build Defense AI Agents on Azure with Lyzr",
+   "blurb": "Building defense AI agents on azure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-defense-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "government",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_media_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Build Media AI Agents on Azure with Lyzr",
+   "blurb": "Building media AI agents on azure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-media-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "media & advertising",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_azure_container_apps",
+   "type": "solution_page",
+   "title": "Deploy Enterprise AI Agents on Azure Container Apps",
+   "blurb": "Deploying AI agents on azure container apps.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-azure-container-apps",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_cybersecurity_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Build Cybersecurity AI Agents on Azure with Lyzr",
+   "blurb": "Building cybersecurity AI agents on azure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-cybersecurity-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "compliance & risk",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_healthcare_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Building Enterprise-Grade Healthcare AI Agents on Azure",
+   "blurb": "Building healthcare AI agents on azure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/building-healthcare-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_travel_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Building Travel AI Agents on Azure Made Simple",
+   "blurb": "Building travel AI agents on azure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-travel-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "travel & hospitality",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_manufacturing_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Building Manufacturing AI Agents on Microsoft Azure",
+   "blurb": "Building manufacturing AI agents on azure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-manufacturing-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_real_estate_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Build Real Estate AI Agents on Azure",
+   "blurb": "Deploy AI agents built for real estate workflows on Azure. Automate lease reviews, valuations, and tenant operations with enterprise governance. Start with Lyzr today.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-real-estate-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "real estate",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_azure_openai_service",
+   "type": "solution_page",
+   "title": "Deploy AI Agents on Azure OpenAI Service Securely",
+   "blurb": "Deploying AI agents on azure openai service.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-azure-openai-service",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_cybersecurity_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Cybersecurity AI Agents on Google Cloud",
+   "blurb": "Build and deploy cybersecurity AI agents on Google Cloud with Lyzr. Automate threat detection, incident response, and compliance monitoring with full enterprise governance.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-cybersecurity-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "compliance & risk",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_defense_operations",
+   "type": "solution_page",
+   "title": "AI Agents for Defense Operations: Mission Intelligence",
+   "blurb": "AI agents for defense operations.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-defense-operations",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "government"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_cybersecurity_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Cybersecurity AI Agents on IBM Cloud Today",
+   "blurb": "Building cybersecurity AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-cybersecurity-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "compliance & risk",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_cybersecurity_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Cybersecurity AI Agents on NVIDIA with Lyzr",
+   "blurb": "Building cybersecurity AI agents on nvidia.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-cybersecurity-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "compliance & risk",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_cybersecurity_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Cybersecurity AI Agents on Oracle Cloud",
+   "blurb": "Building cybersecurity AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-cybersecurity-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "compliance & risk",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_secure_ai_agents_for_enterprises",
+   "type": "solution_page",
+   "title": "Deploy Secure AI Agents for Enterprises with Confidence",
+   "blurb": "Secure AI agents for enterprises.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/secure-ai-agents-for-enterprises",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_municipal_services",
+   "type": "solution_page",
+   "title": "Modernize your city with AI agents for municipal services",
+   "blurb": "Deploy AI agents for municipal services to automate workflows, improve citizen satisfaction, and reduce operational costs. Lyzr is the secure AI platform for government.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-municipal-services",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "government"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_citizen_support_services",
+   "type": "solution_page",
+   "title": "AI Agents for Citizen Support Services: Modernize Public Service",
+   "blurb": "AI agents for citizen support services.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-citizen-support-services",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "customer service"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_sourcing_optimization",
+   "type": "solution_page",
+   "title": "Lyzr's AI Agents for Sourcing Optimization Transform Procurement",
+   "blurb": "AI agents for sourcing optimization.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-sourcing-optimization",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "procurement"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_medical_coding",
+   "type": "solution_page",
+   "title": "AI agents for medical coding deliver true accuracy.",
+   "blurb": "Discover how Lyzr's AI agents for medical coding automate ICD-10/CPT assignment, reduce denials, and accelerate your healthcare revenue cycle. Get a demo.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-medical-coding",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_healthcare_data_analysis",
+   "type": "solution_page",
+   "title": "Top AI agents for healthcare data analysis",
+   "blurb": "Deploy secure, HIPAA-compliant AI agents for healthcare data analysis. Automate clinical workflows and improve patient outcomes safely.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-healthcare-data-analysis",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_healthcare_scheduling",
+   "type": "solution_page",
+   "title": "Transform With AI Agents For Healthcare",
+   "blurb": "AI agents for healthcare scheduling.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-healthcare-scheduling",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_medical_documentation",
+   "type": "solution_page",
+   "title": "Secure AI Agents for Medical Documentation, Instantly Deployed",
+   "blurb": "AI agents for medical documentation.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-medical-documentation",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_insurance_pre_authorization",
+   "type": "solution_page",
+   "title": "Deploy AI Agents for Insurance Pre-Authorization Workflows",
+   "blurb": "AI agents for insurance pre authorization.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-insurance-pre-authorization",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "insurance"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_admissions_automation",
+   "type": "solution_page",
+   "title": "Use AI agents for admissions automation to scale enrollment.",
+   "blurb": "Deploy Lyzr's AI agents for admissions automation to reduce review times, increase enrollment yield, and scale your operations. Secure, compliant, and fast.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-admissions-automation",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "education"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_education_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Building Education AI Agents on NVIDIA with Lyzr",
+   "blurb": "Building education AI agents on nvidia.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-education-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "education",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_academic_advising",
+   "type": "solution_page",
+   "title": "Deploy AI Agents for Academic Advising at Scale",
+   "blurb": "AI agents for academic advising.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-academic-advising",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_student_support",
+   "type": "solution_page",
+   "title": "Build and Deploy Scalable AI agents for student support",
+   "blurb": "AI agents for student support.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-student-support",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "education",
+    "customer service"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_education_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Education AI Agents on IBM Cloud Faster",
+   "blurb": "Build and deploy education AI agents on IBM Cloud using Lyzr. From intelligent tutoring to student support automation, launch enterprise-grade agents in days.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-education-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "education",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_education",
+   "type": "solution_page",
+   "title": "AI Agents for Education: Personalized Learning at Scale",
+   "blurb": "AI agents for education.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-education",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "education"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_ibm_cloud_code_engine",
+   "type": "solution_page",
+   "title": "Deploy AI Agents on IBM Cloud Code Engine",
+   "blurb": "Deploying AI agents on ibm cloud code engine.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-ibm-cloud-code-engine",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_banking_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Secure Banking AI Agents on IBM Cloud",
+   "blurb": "Building banking AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/building-banking-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "banking",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_legal_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Building Legal AI Agents on IBM Cloud",
+   "blurb": "Building legal AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-legal-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "legal",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_supply_chain_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Supply Chain AI Agents on IBM Cloud",
+   "blurb": "Building supply chain AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-supply-chain-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_media_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Media AI Agents on IBM Cloud Today",
+   "blurb": "Deploy intelligent media AI agents on IBM Cloud using Lyzr. Pre-built templates, watsonx integration, and enterprise security. Go live in hours, not months.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-media-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "media & advertising",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_retail_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Building Retail AI Agents on IBM Cloud Securely",
+   "blurb": "Building retail AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-retail-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "retail",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_agriculture_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Agriculture AI Agents on IBM Cloud Today",
+   "blurb": "Build and deploy agriculture AI agents on IBM Cloud with Lyzr. Automate crop monitoring, irrigation, and yield forecasting with enterprise-grade AI agent platform.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-agriculture-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "agriculture",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_insurance_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Production-Ready Insurance AI Agents on IBM Cloud",
+   "blurb": "Building insurance AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-insurance-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "insurance",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_hr_tech_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build HR Tech AI Agents on IBM Cloud",
+   "blurb": "Building hr tech AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-hr-tech-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "human resources",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_travel_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Travel AI Agents on Oracle Cloud Today",
+   "blurb": "Build and deploy intelligent Travel AI Agents on Oracle Cloud with Lyzr. Automate bookings, itineraries, and traveler support with enterprise-grade AI agent infrastructure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-travel-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "travel & hospitality",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_travel_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Building Travel AI Agents on Google Cloud with Lyzr",
+   "blurb": "Building travel AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-travel-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "travel & hospitality",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_travel_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Travel AI Agents on AWS with Lyzr",
+   "blurb": "Building travel AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-travel-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "travel & hospitality",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_transportation_companies",
+   "type": "solution_page",
+   "title": "AI Agents for Transportation Companies Transform Your Operations",
+   "blurb": "AI agents for transportation companies.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-transportation-companies",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_travel_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Travel AI Agents on IBM Cloud Today",
+   "blurb": "Build and deploy Travel AI Agents on IBM Cloud with Lyzr. Automate bookings, itineraries, and traveler support with enterprise-grade security and WatsonX integration.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-travel-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "travel & hospitality",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_pharma_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Pharma AI Agents on NVIDIA with Lyzr",
+   "blurb": "Building pharma AI agents on nvidia.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-pharma-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_pharma_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Deploy Pharma AI Agents on Google Cloud Today",
+   "blurb": "Building pharma AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-pharma-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_pharma_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Pharma AI Agents Natively on IBM Cloud",
+   "blurb": "Build compliant pharma AI agents on IBM Cloud with Lyzr. FDA and GxP guardrails, WatsonX integration, multi-agent orchestration, and enterprise-grade deployment for pharma teams.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-pharma-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_pharma_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Build Pharma AI Agents on Azure with Lyzr",
+   "blurb": "Building pharma AI agents on azure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-pharma-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_pharma_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Pharma AI Agents on AWS with Lyzr",
+   "blurb": "Building pharma AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-pharma-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_pharma_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Building Pharma AI Agents on Oracle Cloud with Lyzr",
+   "blurb": "Building pharma AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-pharma-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_defense_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Defense AI Agents on Oracle Cloud Today",
+   "blurb": "Building defense AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-defense-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "government",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_defense_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Defense AI Agents Natively on IBM Cloud",
+   "blurb": "Build and deploy defense AI agents natively on IBM Cloud with Lyzr. Enterprise-grade security, multi-agent orchestration, and defense compliance built in from day one.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-defense-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "government",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_due_diligence_automation",
+   "type": "solution_page",
+   "title": "Securely Deploy AI Agents for Due Diligence Automation",
+   "blurb": "AI agents for due diligence automation.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-due-diligence-automation",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_defense_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Defense AI Agents on NVIDIA with Lyzr",
+   "blurb": "Build secure, sovereign Defense AI Agents on NVIDIA with Lyzr. Air-gapped deployment, CMMC compliance, multi-agent orchestration for mission-critical defense operations.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-defense-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "government",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_defense_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Defense AI Agents on Google Cloud",
+   "blurb": "Build and deploy defense AI agents on Google Cloud with Lyzr. Sovereign deployment, compliance-ready, multi-agent orchestration for classified operations.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-defense-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "government",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_defense_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Building Defense AI Agents on AWS with Lyzr",
+   "blurb": "Build secure, compliant defense AI agents on AWS with Lyzr. GovCloud-native deployment, zero-trust security, FedRAMP alignment, and sovereign agent orchestration.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-defense-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "government",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_contract_drafting",
+   "type": "solution_page",
+   "title": "Deploy Secure, Autonomous AI Agents for Your Contract Drafting",
+   "blurb": "AI agents for contract drafting.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-contract-drafting",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "legal"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_clause_extraction",
+   "type": "solution_page",
+   "title": "Deploy AI Agents for Clause Extraction at Scale",
+   "blurb": "AI agents for clause extraction.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-clause-extraction",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "legal"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_data_pipeline_monitoring",
+   "type": "solution_page",
+   "title": "Intelligent AI Agents for Data Pipeline Monitoring Automation",
+   "blurb": "Deploy Lyzr's AI agents for real-time data pipeline monitoring. Achieve automated pipeline alerts, data flow observability, and intelligent data ops. Try it now.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-data-pipeline-monitoring",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "it operations"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_logistics_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Building Logistics AI Agents on Google Cloud",
+   "blurb": "Build and deploy logistics AI agents on Google Cloud with Lyzr. Automate freight, warehouse, and delivery operations with enterprise-grade governance and real-time intelligence.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-logistics-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_media_buying_optimization",
+   "type": "solution_page",
+   "title": "Your AI Agents for Media Buying Optimization at Scale",
+   "blurb": "Deploy autonomous AI agents to optimize media buying, reduce wasted ad spend, and scale ROAS. Lyzr offers enterprise-grade programmatic advertising automation.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-media-buying-optimization",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "media & advertising"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_insurance_underwriting",
+   "type": "solution_page",
+   "title": "AI Agents for Insurance Underwriting Automate Decisions Fast",
+   "blurb": "AI agents for insurance underwriting.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-insurance-underwriting",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "insurance"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_shipment_tracking",
+   "type": "solution_page",
+   "title": "Automate Logistics with AI Agents for Shipment Tracking",
+   "blurb": "Deploy autonomous AI agents to get real-time shipment tracking, manage exceptions proactively, and provide end-to-end visibility. Reduce manual work today.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-shipment-tracking",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_supply_chain_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build Supply Chain AI Agents on AWS Today",
+   "blurb": "Building supply chain AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-supply-chain-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_logistics",
+   "type": "solution_page",
+   "title": "Deploy AI Agents for Logistics To Transform Operations",
+   "blurb": "AI agents for logistics.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-logistics",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_supply_chain_visibility",
+   "type": "solution_page",
+   "title": "AI Agents for End-to-End Enterprise Supply Chain Visibility",
+   "blurb": "AI agents for supply chain visibility.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-supply-chain-visibility",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_logistics_operations",
+   "type": "solution_page",
+   "title": "Deploy intelligent AI agents for logistics operations.",
+   "blurb": "AI agents for logistics operations.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-logistics-operations",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_logistics_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Logistics AI Agents on Oracle Cloud",
+   "blurb": "Building logistics AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-logistics-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_financial_forecasting",
+   "type": "solution_page",
+   "title": "Deploy AI agents for financial forecasting with Lyzr.",
+   "blurb": "AI agents for financial forecasting.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-financial-forecasting",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "finance"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_hr_tech_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Build HR Tech AI Agents on AWS with Lyzr",
+   "blurb": "Building hr tech AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-hr-tech-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "human resources",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_hr_operations",
+   "type": "solution_page",
+   "title": "Build your intelligent AI agents for HR operations",
+   "blurb": "Deploy Lyzr's AI agents for HR operations to automate hiring, onboarding, and compliance. Reduce admin tasks and focus on strategic HR. Get a demo.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-hr-operations",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "human resources"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_product_support_automation",
+   "type": "solution_page",
+   "title": "Deploy AI Agents for Product Support Automation Today",
+   "blurb": "AI agents for product support automation.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-product-support-automation",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "customer service"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_ecommerce_customer_support",
+   "type": "solution_page",
+   "title": "Build and Deploy AI Agents for Ecommerce Customer Support",
+   "blurb": "AI agents for ecommerce customer support.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-ecommerce-customer-support",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "e-commerce",
+    "customer service"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_customer_support",
+   "type": "solution_page",
+   "title": "Deploy AI Agents for Customer Support in Minutes",
+   "blurb": "AI agents for customer support.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-customer-support",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "customer service"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_backlink_analysis",
+   "type": "solution_page",
+   "title": "Scale Your Support with Generative AI For Customer Support",
+   "blurb": "AI agents for backlink analysis.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-backlink-analysis",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_bank_operations_teams",
+   "type": "solution_page",
+   "title": "AI agents for bank operations teams deliver speed",
+   "blurb": "Deploy intelligent AI agents to automate complex banking workflows, reduce manual effort, and ensure compliance. Discover Lyzr for banking operations.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-bank-operations-teams",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_construction_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Construction AI Agents on Oracle Cloud with Lyzr",
+   "blurb": "Building construction AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-construction-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "construction",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_oracle_autonomous_database",
+   "type": "solution_page",
+   "title": "Deploy AI Agents on Oracle Autonomous Database",
+   "blurb": "Deploying AI agents on oracle autonomous database.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-oracle-autonomous-database",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_legal_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Production-Ready Legal AI Agents on Oracle Cloud",
+   "blurb": "Building legal AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-legal-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "legal",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_supply_chain_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Supply Chain AI Agents on Oracle Cloud",
+   "blurb": "Build and deploy supply chain AI agents on Oracle Cloud with Lyzr. Automate procurement, inventory, and logistics with enterprise-grade multi-agent orchestration.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-supply-chain-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "logistics",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_banking_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Secure Banking AI Agents on Oracle Cloud",
+   "blurb": "Building banking AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/building-banking-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "banking",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_oracle_automation",
+   "type": "solution_page",
+   "title": "Enterprise AI agents for Oracle automation that work autonomously.",
+   "blurb": "AI agents for oracle automation.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-oracle-automation",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_agriculture_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Agriculture AI Agents on Oracle Cloud Today",
+   "blurb": "Building agriculture AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-agriculture-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "agriculture",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_healthcare_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Enterprise-Ready Healthcare AI Agents on Oracle Cloud",
+   "blurb": "Deploy secure, HIPAA-compliant healthcare AI agents on Oracle Cloud. Lyzr provides an enterprise platform for rapid development, integration, and governance.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/building-healthcare-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "healthcare",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_real_estate_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Real Estate AI Agents on Google Cloud",
+   "blurb": "Building real estate AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-real-estate-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "real estate",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_real_estate_ai_agents_on_nvidia",
+   "type": "solution_page",
+   "title": "Build Real Estate AI Agents on NVIDIA Infrastructure",
+   "blurb": "Deploy autonomous real estate AI agents powered by NVIDIA infrastructure. Automate property research, lead qualification, and deal management with Lyzr's enterprise platform.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-real-estate-ai-agents-on-nvidia",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "real estate",
+    "nvidia"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_real_estate_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Real Estate AI Agents on IBM Cloud",
+   "blurb": "Deploy intelligent Real Estate AI Agents on IBM Cloud with Lyzr. Automate property search, contracts, and investor workflows with enterprise security and compliance.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-real-estate-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "real estate",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_energy_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Building Energy AI Agents on Azure with Lyzr",
+   "blurb": "Building energy AI agents on azure.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-energy-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "energy & utilities",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_energy_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Build Energy AI Agents on Oracle Cloud Today",
+   "blurb": "Build and deploy energy AI agents natively on Oracle Cloud with Lyzr. Automate grid optimization, predictive maintenance, and demand forecasting in days.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-energy-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "energy & utilities",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_energy_ai_agents_on_aws",
+   "type": "solution_page",
+   "title": "Building Energy AI Agents on AWS with Lyzr",
+   "blurb": "Building energy AI agents on aws.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-energy-ai-agents-on-aws",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "energy & utilities",
+    "aws"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_energy_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Energy AI Agents on Google Cloud Today",
+   "blurb": "Building energy AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-energy-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "energy & utilities",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_energy_ai_agents_on_ibm_cloud",
+   "type": "solution_page",
+   "title": "Build Energy AI Agents on IBM Cloud Today",
+   "blurb": "Building energy AI agents on ibm cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-energy-ai-agents-on-ibm-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "energy & utilities",
+    "ibm cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_manufacturing_analytics",
+   "type": "solution_page",
+   "title": "AI agents for manufacturing analytics transform your data.",
+   "blurb": "AI agents for manufacturing analytics.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-manufacturing-analytics",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "manufacturing"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_agriculture_ai_agents_on_azure",
+   "type": "solution_page",
+   "title": "Build Agriculture AI Agents on Azure with Lyzr",
+   "blurb": "Build and deploy agriculture AI agents on Azure with Lyzr. Pre-built farm agent templates, IoT integration, and multi-agent orchestration for precision agriculture at scale.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-agriculture-ai-agents-on-azure",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "agriculture",
+    "azure"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_agriculture_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Agriculture AI Agents on Google Cloud Fast",
+   "blurb": "Deploy autonomous agriculture AI agents on Google Cloud using Lyzr. Automate crop monitoring, irrigation, and yield prediction with enterprise-grade farm intelligence.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-agriculture-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "agriculture",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_outbound_sales",
+   "type": "solution_page",
+   "title": "Deploy AI Agents for Your Outbound Sales Team",
+   "blurb": "Deploy autonomous AI agents to handle outbound sales prospecting, outreach, and follow-ups. Increase pipeline and free your SDRs to focus on closing deals.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-outbound-sales",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "revenue & sales"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ecommerce_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Scalable Ecommerce AI Agents on Google Cloud",
+   "blurb": "Building ecommerce AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-ecommerce-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "e-commerce",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_deploy_ai_agents_on_google_cloud_run",
+   "type": "solution_page",
+   "title": "Deploy AI Agents on Google Cloud Run Securely",
+   "blurb": "Deploying AI agents on google cloud run.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/deploy-ai-agents-on-google-cloud-run",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_hr_tech_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Deploy HR Tech AI Agents on Google Cloud",
+   "blurb": "Deploy HR Tech AI Agents on Google Cloud with Lyzr. Automate hiring, onboarding, compliance, and employee support securely within your own GCP environment.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-hr-tech-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "human resources",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_construction_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Construction AI Agents on Google Cloud Fast",
+   "blurb": "Building construction AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-construction-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "construction",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_insurance_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Building Insurance AI Agents on Google Cloud, Enterprise-Ready.",
+   "blurb": "Deploy enterprise-ready AI agents on Google Cloud with Lyzr. Automate insurance claims, underwriting, and policy servicing with our secure, scalable platform.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/building-insurance-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "insurance",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_legal_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build, Deploy, and Manage Legal AI Agents on Google Cloud",
+   "blurb": "Building legal AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-legal-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "legal",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_media_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Media AI Agents on Google Cloud Today",
+   "blurb": "Build and deploy media AI agents on Google Cloud with Lyzr. Multi-modal processing, no-code builder, and native cloud integration for enterprise media teams.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-media-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "media & advertising",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_education_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Education AI Agents on Google Cloud Today",
+   "blurb": "Building education AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-education-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "education",
+    "google cloud"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_product_catalog_management",
+   "type": "solution_page",
+   "title": "Deploy AI agents for product catalog management today",
+   "blurb": "Use Lyzr's AI agents for product catalog management to automate updates, enrich data, and ensure accuracy across all channels. Reduce errors and scale faster.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-product-catalog-management",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "operations"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_ai_agents_for_retail",
+   "type": "solution_page",
+   "title": "Deploy Lyzr’s Autonomous AI Agents for Retail",
+   "blurb": "Deploy Lyzr's enterprise AI agents for retail to automate inventory, personalize customer experiences, and optimize pricing. Secure, scalable, and fast to deploy.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/ai-agents-for-retail",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "retail"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_retail_ai_agents_on_oracle_cloud",
+   "type": "solution_page",
+   "title": "Start Building Retail AI Agents on Oracle Cloud",
+   "blurb": "Building retail AI agents on oracle cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-retail-ai-agents-on-oracle-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "retail",
+    "oracle"
+   ]
+  },
+  {
+   "priority": 3,
+   "id": "res_aiagents_retail_ai_agents_on_google_cloud",
+   "type": "solution_page",
+   "title": "Build Enterprise-Grade Retail AI Agents on Google Cloud",
+   "blurb": "Building retail AI agents on google cloud.",
+   "teaser": "",
+   "url": "https://www.lyzr.ai/ai-agents/buidling-retail-ai-agents-on-google-cloud",
+   "topics": [
+    "agent studio",
+    "agent_studio",
+    "by_industry",
+    "engineering",
+    "workflow_automation",
+    "retail",
+    "google cloud"
+   ]
   }
  ]
 }

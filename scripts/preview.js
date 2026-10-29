@@ -36,8 +36,11 @@ addEventListener('load', () => {
     click('#start');
   });
   if (seq >= 2) for (let i = 0; i < 5; i++) at(250, () => { click('#qopts .opt'); click('#qnext'); });
-  /* Tick a second card so the preview exercises the multi-play brief. */
-  if (seq >= 3) at(900, () => document.querySelectorAll('.optab')[1]?.querySelector('.pickbox')?.click());
+  /* Tick the other two cards so the preview exercises the full three-sheet brief. */
+  if (seq >= 3) at(900, () => {
+    document.querySelectorAll('.optab')[1]?.querySelector('.pickbox')?.click();
+    document.querySelectorAll('.optab')[2]?.querySelector('.pickbox')?.click();
+  });
   if (seq >= 3) at(250, () => click('#build'));
   if (seq >= 4) at(600, () => {
     document.querySelectorAll('#accts .acct input').forEach((el, i) => { el.value = ['Rakuten Symphony', 'Honda', 'Bosch'][i] || ''; });

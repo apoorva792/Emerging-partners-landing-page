@@ -21,7 +21,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { fitScore, lyzrScore, gate, total, adjacency, FLOOR } from '../lib/score.js';
 import { compatible, stepsFor, objects, drifts, domains, systems } from '../lib/fit.js';
-import { eligibility, playsFor, playById } from '../lib/plays.js';
+import { eligibility, playsFor, playById, briefOf, PLAYS } from '../lib/plays.js';
 import { patternById } from '../lib/catalog.js';
 import { verify } from '../lib/verify.js';
 import { relatedTo } from '../lib/resources.js';
@@ -55,6 +55,11 @@ const opp = (over = {}) => ({
 });
 
 /* 1 ---------------------------------------------------------------- */
+
+/* Every recommendation is licence-led, so the gate needs the Lyzr product behind the
+ * candidate. These tests are about the other conditions, so they pass a product that
+ * qualified and let the rest of the gate do the judging. */
+const PLAY = { offering_id: 'opencontroller', name: 'OpenController', tier: 'product', commercial_motion: 'governance_upsell' };
 
 test('1. an idea in a department they have never delivered into cannot reach the page', () => {
   const investment = opp({
@@ -208,19 +213,19 @@ test('10. a product-led recommendation goes through the same evidence gate', () 
   const noEvidence = opp({ cites: [], path: 'product', product: 'opencontroller' });
   const fit = fitScore(noEvidence, integrator);
   assert.equal(fit.score, 0);
-  assert.equal(gate(noEvidence, fit, { score: 5 }).pass, false);
+  assert.equal(gate(noEvidence, fit, { score: 5 }, PLAY).pass, false);
 
   /* And a citation that resolves but is about another department is capped below the gate
    * however strong the product fit. */
   const wrongDept = opp({ function: 'finance', headline: 'Investment modelling', work: 'investment modelling', cites: ['E2'] });
-  assert.equal(gate(wrongDept, fitScore(wrongDept, integrator), { score: 5 }).pass, false);
+  assert.equal(gate(wrongDept, fitScore(wrongDept, integrator), { score: 5 }, PLAY).pass, false);
 });
 
 test('a sound opportunity still passes all of it', () => {
   const good = opp();
   const fit = fitScore(good, integrator);
   const lyzr = { score: 4.4, lead: null, why: '' };
-  assert.equal(gate(good, fit, lyzr).pass, true, JSON.stringify(gate(good, fit, lyzr).fails));
+  assert.equal(gate(good, fit, lyzr, PLAY).pass, true, JSON.stringify(gate(good, fit, lyzr, PLAY).fails));
   const score = total({ fit: fit.score, lyzr: lyzr.score, adjacency: adjacency(good, integrator, fit, null), monetisation: 4, trigger: 4 });
   assert.ok(score >= FLOOR, `a sound opportunity scored ${score}, below the floor`);
 });
@@ -230,7 +235,7 @@ test('the department cap is strict where we could read departments, and honest w
    * one is the Arohak failure and stays below the gate. On a service page we do not, so
    * holding a firm to a resolution we never had just punishes it for its website. */
   const wrongDept = opp({ function: 'finance', headline: 'Investment modelling', work: 'investment modelling', cites: ['E2'] });
-  assert.equal(gate(wrongDept, fitScore(wrongDept, integrator), { score: 5 }).pass, false);
+  assert.equal(gate(wrongDept, fitScore(wrongDept, integrator), { score: 5 }, PLAY).pass, false);
 
   const advertisedOnly = {
     basis: 'advertised',
@@ -242,7 +247,195 @@ test('the department cap is strict where we could read departments, and honest w
   const fit = fitScore(otherDept, advertisedOnly);
   assert.equal(fit.advertised, true);
   assert.ok(fit.score >= 2 && fit.score <= 3, `advertised fit was ${fit.score}`);
-  assert.equal(gate(otherDept, fit, { score: 4 }).pass, true);
+  assert.equal(gate(otherDept, fit, { score: 4 }, PLAY).pass, true);
   /* And it still cannot outrank a firm we could actually read. */
   assert.ok(fit.score < fitScore(opp(), integrator).score);
+});
+
+/* ---- 11. every recommendation is licence-led ----
+ *
+ * The failure this guards against: the brief for Fingent came back with three cards, two
+ * of which named no Lyzr product at all, and the renderer filled the gap with the
+ * pattern's generic sentence about "the platform the agents run on". A partner reads that
+ * as a services catalogue with our logo on it. A card with nothing of ours behind it is a
+ * use case they could build next quarter without us, so it is not an opportunity. */
+
+test('11. an opportunity with no Lyzr product behind it cannot be recommended', () => {
+  const good = opp();
+  const fit = fitScore(good, integrator);
+  const lyzr = { score: 4.4, lead: null, why: '' };
+
+  const withProduct = gate(good, fit, lyzr, PLAY);
+  assert.equal(withProduct.pass, true, JSON.stringify(withProduct.fails));
+
+  /* Same candidate, same evidence, same score. The only difference is that nothing of
+   * ours is behind it, and that alone is disqualifying. */
+  const without = gate(good, fit, lyzr, null);
+  assert.equal(without.pass, false, 'a use case is not a licensed opportunity');
+  assert.ok(without.fails.some((f) => f.includes('no Lyzr product')), without.fails.join('; '));
+});
+
+test('11b. every product the firm qualifies for reaches the model', () => {
+  /* Sorting the eligible products by catalogue score alone handed the model three
+   * products that all run `expand_engagement`, and the governance upsell and the
+   * sovereign deployment never got seen. A firm's second best governance fit is a better
+   * thing to put in front of it than its third best build tool: it is a different meeting
+   * with a different buyer. */
+  const firm = {
+    company: { name: 'Test', one_line: 'We build and run enterprise AI agents' },
+    industries: ['healthcare', 'financial services'],
+    technologies: ['Azure', 'Kubernetes', 'SAP'],
+    services: [{ name: 'AI agent development' }, { name: 'Private cloud engineering' }],
+    capabilities: {
+      basis: 'delivered',
+      capabilities: [{ function: 'engineering', service: 'agent development', projects: 3, confidence: 'high', work: ['built agents'], stack: ['Azure'] }],
+      evidence: [{ id: 'E1', what: 'Enterprise agent platform', function: 'engineering', grounded: true, basis: 'delivered', work: ['agentic workflow in production', 'governance and audit trail'], stack: ['Azure', 'Kubernetes'], problem: 'compliance', outcomes: ['100% coverage'] }],
+      technologies: ['Azure', 'Kubernetes'],
+      advertised_only: ['agentic automation', 'data residency', 'on-premises deployment'],
+    },
+  };
+  const got = playsFor(firm);
+  assert.ok(got.length >= 2, 'a firm this broad is eligible for more than one thing');
+
+  /* The nine are the licence layer and none of them may be cut before the model has
+   * seen it. Leading with one play per motion and capping the list at eight dropped
+   * five of Fingent's nine eligible products, so SuperFlow, Optimus, Architect, Agent
+   * Blocks and Open Finetuning were never considered. Deciding between two products is
+   * the commercial judgement we hand to the model; doing it with a sort order is us
+   * making that call blind. */
+  const eligibleProducts = PLAYS.filter((p) => p.tier === 'product')
+    .filter((p) => eligibility(p, firm).ok).map((p) => p.name);
+  const shownProducts = got.filter((x) => x.play.tier === 'product').map((x) => x.play.name);
+  for (const name of eligibleProducts) {
+    assert.ok(shownProducts.includes(name), `${name} is eligible and never reaches the model`);
+  }
+
+  /* And every play carries one, because selection and the card's own eyebrow read it. */
+  for (const x of got) {
+    assert.ok(x.play.commercial_motion, `${x.play.name} has no commercial motion`);
+  }
+});
+
+/* ---- 12. the same two products for every firm ----
+ *
+ * Three different firms, a manufacturing ERP partner, a Palantir implementation shop and
+ * a mid-market IT consultancy, came out of the agent with the same two recommendations.
+ * Not because they were alike: because eligibility counted matches, and the two records
+ * that ask for the most things matched the most firms. Measured over the saved profiles,
+ * one product led five of six and another four of six.
+ *
+ * Two things fixed it. A term is now worth how much it tells firms apart rather than one
+ * point like any other, and a segment solution is matched on the industries the firm has
+ * actually delivered into rather than on the vertical menu its website publishes, which
+ * on a mid-size firm names eight or ten markets and so matched everything. */
+
+test('12. a record that asks for more things does not thereby fit more firms', () => {
+  const broad = playById('agent_studio');
+  const narrow = playById('optimus');
+  /* The breadth that used to decide this is in the kinds of work a record claims. */
+  assert.ok((broad.requires.families ?? []).length > (narrow.requires.families ?? []).length,
+    'this test is only meaningful while agent studio claims more kinds of work than optimus');
+
+  /* A firm whose evidence is squarely about private, on-premises infrastructure. The
+   * narrow record is the right answer for it, and used to lose to the broad one. */
+  const onPrem = {
+    company: { name: 'Test', one_line: 'We deploy air-gapped private cloud for regulated clients' },
+    industries: [{ name: 'Government' }],
+    technologies: ['Kubernetes', 'OpenShift'],
+    services: [{ name: 'Private cloud engineering' }, { name: 'On-premise deployment' }],
+    capabilities: {
+      basis: 'delivered',
+      capabilities: [{ function: 'infrastructure', service: 'private cloud', projects: 3, confidence: 'high', work: ['air-gapped deployment'], stack: ['Kubernetes'] }],
+      evidence: [{ id: 'E1', what: 'Air-gapped deployment', industry: 'Government', function: 'infrastructure', grounded: true, basis: 'delivered', work: ['on-premise install', 'data residency controls'], stack: ['Kubernetes', 'OpenShift'], problem: 'sovereignty', outcomes: ['deployed'] }],
+      technologies: ['Kubernetes'],
+      industries: ['Government'],
+      advertised_only: ['sovereign', 'air-gapped', 'on-premise', 'data residency'],
+    },
+  };
+  const got = playsFor(onPrem);
+  const names = got.map((x) => x.play.name);
+  assert.ok(names.includes('Lyzr Optimus'), `the on-premise record did not reach an on-premise firm: ${names.join(', ')}`);
+});
+
+test('12b. a segment solution is matched on delivered work, not the vertical menu', () => {
+  /* A financial services firm whose website also lists healthcare, which is what every
+   * mid-size services firm's website does. Its delivered evidence says one thing. */
+  const bank = {
+    company: { name: 'Test', one_line: 'We modernise core systems for banks and credit unions' },
+    /* The menu. Long, and not evidence of anything. */
+    industries: [{ name: 'Financial Services' }, { name: 'Healthcare' }, { name: 'Utilities' }, { name: 'Insurance' }],
+    technologies: ['Azure'],
+    services: [{ name: 'Core banking integration' }],
+    capabilities: {
+      basis: 'delivered',
+      capabilities: [{ function: 'finance', service: 'core banking', projects: 2, confidence: 'high', work: ['payments integration'], stack: ['Azure'] }],
+      /* The delivered record. One market. */
+      evidence: [{ id: 'E1', what: 'Core banking integration', industry: 'Financial services', function: 'finance', grounded: true, basis: 'delivered', work: ['payments integration', 'compliance reporting'], stack: ['Azure'], problem: 'manual reconciliation', outcomes: ['faster close'] }],
+      technologies: ['Azure'],
+      industries: [],
+      advertised_only: [],
+    },
+  };
+  const segments = playsFor(bank).map((x) => x.play).filter((p) => p.industry);
+  for (const p of segments) {
+    assert.ok(!/health/i.test(p.industry),
+      `a healthcare solution reached a bank's integrator on the strength of its website menu: ${p.name}`);
+  }
+});
+
+test('12c. the id we hand the model resolves back to the same play', () => {
+  /* The failure this encodes: the eligible map was keyed on `play.id` while the model was
+   * handed `play.offering_id`. The nine platform records carry the same string in both and
+   * resolved; the twenty nine packaged solutions have no `id` at all, so every one of them
+   * keyed to `undefined`. The model would propose Madison GRC for a bank, the lookup would
+   * miss, and the industry layer could never reach a partner however well it fitted.
+   *
+   * Anything we show the model has to come back to us by the name we showed it. */
+  const fit = { why: '', onFamily: [], onSignal: [], onIndustry: [], score: 1, ok: true };
+  for (const play of PLAYS) {
+    const shown = briefOf({ play, fit }).id;
+    assert.ok(shown, `${play.name} is shown to the model with no id`);
+    const back = playById(shown);
+    assert.ok(back, `${play.name} is shown as "${shown}" and cannot be looked up by it`);
+    assert.equal(back.name, play.name, `"${shown}" resolves to ${back.name}, not ${play.name}`);
+  }
+});
+
+/* ---- 13. an application page is not a licence ----
+ *
+ * The 29 packaged records carried a `product_id` that pointed at the web page they were
+ * read from, never at one of the nine products. Nothing therefore connected a card to a
+ * licence, and an appealing industry page could win a slot against a real product. That
+ * is how a brief came back "licence-led" with nothing of ours underneath it. */
+
+test('13. a record with no licence behind it cannot be the recommendation', () => {
+  const good = opp();
+  const fit = fitScore(good, integrator);
+  const lyzr = { score: 4.4, lead: null, why: '' };
+
+  /* Its own product page: this is a licence and it may lead. */
+  const isProduct = { offering_id: 'sol_madison_grc', name: 'Madison GRC', tier: 'solution', product_mapping_status: 'is_a_product' };
+  assert.equal(gate(good, fit, lyzr, isProduct).pass, true);
+
+  /* An application page naming the product it runs on: also allowed. */
+  const named = { offering_id: 'sol_nitro', name: 'Lyzr Nitro', tier: 'solution', product_mapping_status: 'verified' };
+  assert.equal(gate(good, fit, lyzr, named).pass, true);
+
+  /* An industry page naming no product: context, not a recommendation. */
+  const unmapped = { offering_id: 'sol_healthcare', name: 'Healthcare operations agents', tier: 'solution', product_mapping_status: 'needs_review' };
+  const blocked = gate(good, fit, lyzr, unmapped);
+  assert.equal(blocked.pass, false, 'an application page became a licence-led card');
+  assert.ok(blocked.fails.some((f) => f.includes('cannot be one')), blocked.fails.join('; '));
+});
+
+test('13b. every packaged record carries a mapping verdict', () => {
+  for (const play of PLAYS.filter((p) => p.tier !== 'product')) {
+    assert.ok(['is_a_product', 'verified', 'needs_review'].includes(play.product_mapping_status),
+      `${play.name} has no product_mapping_status`);
+    /* Mapped means mapped to something real, never to a page id. */
+    if (play.product_mapping_status === 'verified') {
+      assert.ok(PLAYS.some((p) => p.offering_id === play.primary_product_id),
+        `${play.name} maps to "${play.primary_product_id}", which is not a play`);
+    }
+  }
 });
