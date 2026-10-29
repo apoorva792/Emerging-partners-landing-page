@@ -82,8 +82,8 @@ Where a sentence is already clear in fifteen words, do not write twenty five.
   A page with no `advantage` you can write honestly is a page we will not print, so
   where the evidence genuinely will not support three, write two, and where it will not
   support two, say so by writing one. Never attribute one product's capability to
-  another. Where two products are involved,
-  say which does what.
+  another. Where you were given a second product, the opportunity runs on both: say which
+  does what, and take each capability from its own record.
 
 - `start`: an object:
   - `who`: **max 10 words.** The named existing customer, or the customer segment where

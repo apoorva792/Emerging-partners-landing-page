@@ -84,7 +84,7 @@ for (const [i, pg] of (b.pages ?? []).entries()) {
     .reduce((n, t) => n + words(t), 0);
   console.log(`\n-- page ${String(i + 1).padStart(2, '0')} of ${(b.pages ?? []).length}  [${narrative} words] --`);
   console.log(`  "${pg.headline}"`);
-  console.log(`  powered by:  ${c?.product?.name ?? '(no product)'}`);
+  console.log(`  powered by:  ${c?.product?.name ?? '(no product)'}${c?.also_product ? ` + ${c.also_product.name}` : ''}`);
   console.log(`  offering:    ${pg.offering_name}`);
   console.log(`  why fits:    ${wrap(pg.why_fits)}`);
   console.log(`  opportunity: ${wrap(pg.the_opportunity)}`);

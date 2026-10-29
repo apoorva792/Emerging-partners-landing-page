@@ -184,9 +184,9 @@ test('the prompt view carries what the model needs and hides what is ours to enf
   const view = briefOf({ play: playById('optimus'), fit: eligibility(playById('optimus'), infra) });
   assert.ok(view.product && view.buyer && view.deployment_revenue && view.recurring_revenue);
   assert.ok(view.customer_problems.length && view.services_you_could_sell.length);
-  /* Restrictions travel, because a ship date and an unpublished licence are things the
-   * model has to not promise. Prerequisites do not: we check those ourselves. */
-  assert.ok(view.restrictions.some((r) => /Q4 2026/.test(r)));
+  /* Restrictions travel, because what we must not promise is the model's problem.
+   * Prerequisites do not: we check those ourselves. */
+  assert.ok(view.restrictions.some((r) => /power, cooling/i.test(r)));
   assert.equal(view.prerequisites, undefined, 'prerequisites are checked by us, not weighed by the model');
   assert.equal(view.capabilities, undefined);
 });
@@ -203,9 +203,10 @@ test('every offering carries the fields the kit is built from', () => {
 });
 
 test('unpublished commercial terms are recorded as restrictions, not as promises', () => {
-  /* The two we know we must not quote: a ship date and OEM licensing. */
-  assert.ok(playById('optimus').restrictions.some((r) => /Q4 2026/i.test(r)));
+  /* OEM licensing is the one we must not quote. Optimus is shipping, so its restriction
+   * is now the physical one and no longer a date. */
   assert.ok(playById('agentblocks_oem').restrictions.some((r) => /not published/i.test(r)));
+  assert.ok(!JSON.stringify(playById('optimus')).match(/Q4 2026/i), 'Optimus is live; no ship date');
   /* And nothing anywhere in the file promises money. */
   const text = JSON.stringify(PLAYS);
   assert.ok(!/\$[\d]/.test(text), 'a figure reached the offerings file');

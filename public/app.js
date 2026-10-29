@@ -602,7 +602,7 @@ function briefPage(c, page, i, n, co) {
       <p class="opg-rank"><span>${esc(num)} / ${esc(total)}</span>${i === 0 && n > 1
         ? '<em>Recommended starting point</em>' : ''}</p>
       <h1 class="opg-head">${esc(page.headline || c.headline)}</h1>
-      ${c.product ? `<p class="opg-powered">Powered by <b>${esc(c.product.name)}</b></p>` : ''}
+      ${c.product ? `<p class="opg-powered">Powered by <b>${esc(c.product.name)}${c.also_product ? ` + ${esc(c.also_product.name)}` : ''}</b></p>` : ''}
     </div>
 
     <section class="opg-sect opg-fit">
@@ -622,7 +622,7 @@ function briefPage(c, page, i, n, co) {
 
       <section class="opg-sect opg-adv">
         <h3>The Lyzr advantage</h3>
-        ${c.product ? `<p class="opg-prod">${esc(c.product.name)}</p>` : ''}
+        ${c.product ? `<p class="opg-prod">${esc(c.product.name)}${c.also_product ? ` <span>with</span> ${esc(c.also_product.name)}` : ''}</p>` : ''}
         ${adv.length ? `<ul class="opg-advlist">${adv
           .map((x) => `<li><b>${esc(x.capability)}</b><span>${esc(x.why)}</span></li>`).join('')}</ul>`
         : (c.lyzr_advantage ? `<p>${esc(c.lyzr_advantage)}</p>` : '')}

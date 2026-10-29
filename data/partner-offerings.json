@@ -540,8 +540,7 @@
       ],
       "do_not_recommend_when": [
         "The partner has only ever delivered in public cloud",
-        "Their clients have no residency or sovereignty requirement",
-        "The timeline is immediate: it ships Q4 2026"
+        "Their clients have no residency or sovereignty requirement"
       ],
       "resources": [
         "page_lyzr_optimus",
@@ -569,7 +568,6 @@
         }
       ],
       "restrictions": [
-        "Ships Q4 2026, so it cannot be committed to an earlier date",
         "Needs somewhere physical to put it, with power, cooling and network"
       ],
       "revenue": {

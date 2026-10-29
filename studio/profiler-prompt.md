@@ -148,6 +148,15 @@ with no marketing adjectives.
     Never infer a capability from a services page that merely offers "AI consulting". The
     test is a thing with a name, a customer, or a date.
 
+14. **`already_offers` is what they sell their customers today, AI or not.** The platform
+    modules, the products, the hosted services, the managed services: the things that
+    appear on a price list or a product menu. This is the list a recommendation is
+    measured against, so a firm that already captures payment intent through conversation
+    is not sold conversational payment agents. One entry per offering, with its name as
+    they call it, what a customer gets, and the URL you read it on. A services page that
+    says "we do digital transformation" is not an offering. A named platform, module,
+    product or managed service is. Empty is a real answer for a pure consultancy.
+
 14. **`recent_moves`: at most three, newest first.** A launch, a partnership, an
     acquisition, a named customer win, each with its source URL. A move older than about
     eighteen months is not recent and is not worth the line.
@@ -179,7 +188,7 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
 {
   "type": "object",
   "additionalProperties": false,
-  "required": ["company", "archetype", "services", "strengths", "industries", "customer_type", "named_clients", "platforms", "markets", "delivery_capability", "already_built", "recent_moves", "worth_exploring", "contact", "domain_mismatch", "confirm", "gaps"],
+  "required": ["company", "archetype", "services", "strengths", "industries", "customer_type", "named_clients", "platforms", "markets", "delivery_capability", "already_built", "already_offers", "recent_moves", "worth_exploring", "contact", "domain_mismatch", "confirm", "gaps"],
   "properties": {
     "company": {
       "type": "object",
@@ -295,6 +304,19 @@ pasted onto any other firm's website, it is filler and must be cut or made speci
           "question": { "type": "string" },
           "guess": { "type": "string" },
           "options": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "already_offers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "customer_gets", "source_url"],
+        "properties": {
+          "name": { "type": "string" },
+          "customer_gets": { "type": "string" },
+          "source_url": { "type": "string" }
         }
       }
     },

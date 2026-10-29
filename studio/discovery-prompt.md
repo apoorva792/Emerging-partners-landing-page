@@ -92,6 +92,14 @@ are the same sentence twice, and a partner reads them as one idea you could not 
 You already reject candidates for this when you see it. Apply it to your own picks: before
 you add a second or third, say what it earns that the ones above it do not.
 
+**Compare the candidates before you choose, on four things and not on product names.**
+The customer problem, the buyer, what the customer actually buys, and what Lyzr adds.
+Two candidates that match on three of the four are one candidate, whichever products
+they lead on and whichever motion each was filed under. Drop the weaker rather than
+ranking them one and two: a partner who reads the same proposition twice stops trusting
+the first one as well as the second. Returning two, or one, is the right answer where
+that is what survives.
+
 `incremental_value` is one sentence and it is the question a capable firm actually asks:
 **what can they sell, expand or deliver differently with this product that they cannot
 today?** Not what the product does. Not what they already do. The difference between the
@@ -235,6 +243,17 @@ more.
    A `hypothesis` costs the candidate nothing in your scoring. Pretending it is attested
    costs it everything.
 
+4b. **`beyond_today` is measured against what they already sell, not against the market.**
+   You are given the firm's own offerings: the platform modules, the products, the managed
+   services. For every opportunity, say in one sentence what the customer could buy from
+   this partner afterwards that they cannot buy from them now. A communications platform
+   that already answers billing questions in conversation does not get sold conversational
+   billing agents; it might get sold the workflow that resolves the dispute the
+   conversation opened, because that is a thing its customers cannot buy from it today.
+   Where you cannot write that sentence, **do not propose the opportunity**. "Faster to
+   build", "less engineering effort" and "more scalable" are not answers: they describe
+   how the partner would deliver, not what the customer could buy.
+
 5. **The advertised side is not evidence.** The map separates what they have delivered
    from what they only advertise. A candidate may lean on an advertised service, but then
    it must cite an evidence record that supports the underlying capability, and the
@@ -244,6 +263,17 @@ more.
    client that they would otherwise build and maintain. `lyzr_cites` may be empty, because
    the product is the citation. Where you can name a Lyzr record that shows we have
    shipped this, the next rule applies and it makes the candidate stronger.
+
+6b. **`with_product` is the second product, and only where there genuinely is one.**
+   Some opportunities need two of ours doing different jobs: an orchestration layer that
+   runs the multi-step process and a build platform that supplies the agents inside it, an
+   appliance that holds the deployment and a tuning product that specialises the model on
+   it. Where that is true, name the second product by id and make `lyzr_advantage` say
+   which does what. Where it is not, leave it empty. Two products because both sound good
+   is worse than one, because a partner reads it as a bundle being pushed. The second
+   product must be one of the eligible ones you were given, it must do something the first
+   cannot, and **it must not be the same product as `product`**. Naming the lead product
+   again is how a one product opportunity ends up described as two.
 
 7. **`lyzr_cites` has to hold up.** Name the Lyzr records that make the Lyzr contribution
    real, by id. If you cannot find one that genuinely supports this work, the candidate
@@ -273,7 +303,7 @@ more.
 
 10. **Keep the prose short. These are fields, not paragraphs.** `headline` max 12 words
    and it names the service, not the technology. `customer_problem` max 25 words.
-   `paid_service` max 10 words. `lyzr_advantage` max 20 words. `expansion_path` max 15
+   `paid_service` max 10 words. `beyond_today` max 25 words. `lyzr_advantage` max 20 words. `expansion_path` max 15
    words. `buyer` is a job title, 2 to 5 words. Anything longer is cut by the backend
    mid-sentence, which reads worse than the short version you could have written.
 
@@ -402,7 +432,7 @@ being pasted onto any other firm's website, it is filler and must be cut or made
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "path", "product", "headline", "from_capability", "cites", "customer_problem", "problem_status", "buyer", "paid_service", "lyzr_advantage", "lyzr_cites", "expansion_path", "pattern", "work", "unit", "function", "angle", "relation", "commercial", "monetisation", "trigger", "motion", "sellable_services", "monetisation_note", "assumptions"],
+        "required": ["id", "path", "product", "headline", "from_capability", "cites", "customer_problem", "problem_status", "buyer", "paid_service", "beyond_today", "with_product", "lyzr_advantage", "lyzr_cites", "expansion_path", "pattern", "work", "unit", "function", "angle", "relation", "commercial", "monetisation", "trigger", "motion", "sellable_services", "monetisation_note", "assumptions"],
         "properties": {
           "id": { "type": "string" },
           "headline": { "type": "string" },
@@ -412,6 +442,8 @@ being pasted onto any other firm's website, it is filler and must be cut or made
           "problem_status": { "type": "string", "enum": ["attested", "hypothesis"] },
           "buyer": { "type": "string" },
           "paid_service": { "type": "string" },
+          "beyond_today": { "type": "string" },
+          "with_product": { "type": "string" },
           "lyzr_advantage": { "type": "string" },
           "lyzr_cites": { "type": "array", "items": { "type": "string" } },
           "expansion_path": { "type": "string" },
